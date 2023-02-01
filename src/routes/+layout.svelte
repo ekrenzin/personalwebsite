@@ -6,7 +6,7 @@
 	export let data;
 </script>
 
-<main class="pt-16">
+<main class="pt-16 h-screen">
 	{#if data.noise}
 		<div class="noise" />
 	{/if}

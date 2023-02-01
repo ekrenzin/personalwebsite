@@ -107,7 +107,7 @@
 		  on:click={() => loadView('desktop', true)}
 		  on:keydown={(e) => { }}
 		>
-		  Click here or on the computer to begin.
+		  Click here to begin.
 		</p>
 	  </div>
 	</div>
@@ -138,7 +138,6 @@
 			md:mt-5 md:text-xl md:max-w-3xl
 		  "
 		>
-		  I am so proud of the work I have done on this project. 
           <a href="https://desktop.vision" target="_blank" rel="noreferrer" class="inline-flex items-center font-medium text-pink-300 dark:text-pink-300 hover:underline">
             Check it out
             <svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -156,7 +155,21 @@
 		  on:click={() => loadView('wall', true)}
 		  on:keydown={(e) => { }}
 		>
-		  Click here or on the computer again to continue.
+		  Click here to continue.
+		</p>
+		<p
+		  class="
+			max-w-md
+			mx-auto
+			text-base text-gray-300
+			sm:text-lg
+			md:mt-5 md:text-xl md:max-w-3xl
+			cursor-pointer
+		  "
+		  on:click={() => loadView('orbiters', true)}
+		  on:keydown={(e) => { }}
+		>
+		  Click here to go back.
 		</p>
 	  </div>
 	</div>

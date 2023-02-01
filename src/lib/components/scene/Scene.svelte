@@ -99,24 +99,24 @@
 			onLoad: () => {
 				desktop.displayTextOnScreen('CLICK ME');
 			},
-			lock: false
+			lock: true
 		},
 		{
 			name: 'desktop',
-			position: { x: 0, y: 0, z: -2.5 },
+			position: { x: 0, y: 0.25, z: -2.5 },
 			bloom: true,
-			bloomIntensity: 0.125,
+			bloomIntensity: 0.5,
 			rotation: { x: 0, y: 0, z: 0 },
 			onLoad: () => {
 				desktop.generateCode();
 			},
-			lock: false
+			lock: true
 		},
 		{
 			name: 'wall',
 			position: { x: -1, y: -0.5, z: 0 },
 			bloom: true,
-			bloomIntensity: 2,
+			bloomIntensity: 4,
 			rotation: { x: 0, y: -Math.PI / 3, z: 0 },
 			lock: true
 		}
