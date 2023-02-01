@@ -14,11 +14,11 @@
 	let scene: Scene;
 	let renderer: WebGLRenderer;
 	let camera: PerspectiveCamera;
-    let images: Array<THREE.Mesh> = [];
+	let images: Array<THREE.Mesh> = [];
 	let renderScene: RenderPass;
 	let bloomComposer: EffectComposer;
 	let bloomPass: UnrealBloomPass;
-    
+
 	const params = {
 		exposure: 0.5,
 		bloomStrength: 1,
@@ -29,9 +29,9 @@
 
 	onMount(async () => {
 		loadScene();
-        loadPostProcessing();
+		loadPostProcessing();
 		loadImages();
-        displayImages()
+		displayImages();
 		return destroy;
 	});
 
@@ -62,18 +62,18 @@
 
 		loadRenderer(renderer, renderLoop);
 		windowResizeEventListener(camera, renderer);
-        //rotate the camera indefinitely with a tween
-        const tween = new TWEEN.Tween(camera.rotation)
-            .to({ x: 2*Math.PI, y: 0, z: 0 }, 10000)
-            .repeat(Infinity)
-            .easing(TWEEN.Easing.Quadratic.InOut)
-            .onUpdate(() => {
-                for (const image of images) {
-                    image.rotation.x = camera.rotation.x;
-                    image.rotation.z = camera.rotation.x;
-                }
-            })
-            .start();
+		//rotate the camera indefinitely with a tween
+		const tween = new TWEEN.Tween(camera.rotation)
+			.to({ x: 2 * Math.PI, y: 0, z: 0 }, 10000)
+			.repeat(Infinity)
+			.easing(TWEEN.Easing.Quadratic.InOut)
+			.onUpdate(() => {
+				for (const image of images) {
+					image.rotation.x = camera.rotation.x;
+					image.rotation.z = camera.rotation.x;
+				}
+			})
+			.start();
 		return { scene, renderer, camera };
 	}
 
@@ -107,33 +107,33 @@
 		// planeCurve(geom, 1);
 		files.forEach((file) => {
 			//create a material
-            const texture = textureLoader.load(file.source)
+			const texture = textureLoader.load(file.source);
 			const material = new THREE.MeshPhongMaterial({
 				map: texture,
-                emissive: 'white',
-                emissiveMap: texture,
-                emissiveIntensity: 0.025
+				emissive: 'white',
+				emissiveMap: texture,
+				emissiveIntensity: 0.025
 			});
 
 			const mesh = new THREE.Mesh(geom, material);
-            images.push(mesh);
+			images.push(mesh);
 		});
 	}
 
-    function displayImages() {
-        //display all of the images in a circle around the camera
-        let radius = 20;
-        let angle = 0;
-        let angleIncrement = (Math.PI * 2) / images.length;
-        images.forEach((image) => {
-            scene.add(image);
-            image.position.y = Math.sin(angle) * radius;
-            image.position.z = Math.cos(angle) * radius;
-            angle += angleIncrement;
-            //image should look at camera
-            image.lookAt(camera.position);
-        });
-    }
+	function displayImages() {
+		//display all of the images in a circle around the camera
+		let radius = 20;
+		let angle = 0;
+		let angleIncrement = (Math.PI * 2) / images.length;
+		images.forEach((image) => {
+			scene.add(image);
+			image.position.y = Math.sin(angle) * radius;
+			image.position.z = Math.cos(angle) * radius;
+			angle += angleIncrement;
+			//image should look at camera
+			image.lookAt(camera.position);
+		});
+	}
 
 	function planeCurve(g, z) {
 		let p = g.parameters;
@@ -173,8 +173,7 @@
 		camera.aspect = width / height;
 		camera.updateProjectionMatrix();
 		renderer.setSize(width, height);
-        if (bloomComposer)
-			bloomComposer.setSize(width, height);
+		if (bloomComposer) bloomComposer.setSize(width, height);
 		window.onresize = () => windowResizeEventListener(camera, renderer);
 	}
 
@@ -201,25 +200,24 @@
 				object.update();
 			}
 		});
-        bloomComposer.render();
+		bloomComposer.render();
 		TWEEN.update();
 	}
 </script>
 
-<div bind:this={sceneContainer} class="sceneContainer" /> 
+<div bind:this={sceneContainer} class="sceneContainer" />
 
 <style>
 	.sceneContainer {
-        position: fixed;
+		position: fixed;
 		top: 0;
-        left: 0;
+		left: 0;
 		z-index: -1;
-        background-color: black;
-        width: 100%;
-        height: 100%;
-      min-height: 100vh;
-      min-width: 100vw;
-        overflow: hidden;
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		min-height: 100vh;
+		min-width: 100vw;
+		overflow: hidden;
 	}
-
 </style>

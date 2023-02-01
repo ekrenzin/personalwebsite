@@ -1,5 +1,6 @@
 <script>
     import ImageGrid from "$lib/components/art/ImageGrid.svelte";
+	import ArtBg from '$lib/components/art/ArtBG.svelte';
     import ArtScene from "$lib/components/art/artScene.svelte";
     let files = [
       {
@@ -75,8 +76,18 @@
           "https://eankrenzin-personal-website.s3.us-west-1.amazonaws.com/art/skyIsland_noFrame.jpeg",
       },
     ];
+
+    let showGallery = false;
 </script>
 <div style="position: relative; ">
-<!-- <ImageGrid bind:files /> -->
+  <button
+    on:click={() => (showGallery = !showGallery)}
+    class="bg-gray-900 text-white font-bold py-2 px-4 rounded"
+    style="position: absolute; top: 0; right: 0; z-index: 1; "
+    >{showGallery ? "Hide" : "Show"} Gallery</button>
+  {#if showGallery}
+  <ImageGrid bind:files />
+  {/if}
 <ArtScene bind:files />
+<ArtBg />
 </div>

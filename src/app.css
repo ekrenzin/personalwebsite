@@ -88,4 +88,23 @@
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    min-width: 100vw;
   }
+
+  
+::-webkit-scrollbar {
+  width: 0px;
+  /* 0px hides the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-font-color);
+  height: 50px;
+  border-radius: 10px;
+  transition: 0.1s;
+}

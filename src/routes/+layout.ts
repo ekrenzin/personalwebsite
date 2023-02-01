@@ -1,6 +1,7 @@
 
 export function load() {
     return {
-      noise: true
+      noise: true,
+      message: false,
     };
   }
