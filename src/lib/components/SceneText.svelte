@@ -102,9 +102,12 @@
 			text-base text-sky-300
 			sm:text-lg
 			md:mt-5 md:text-xl md:max-w-3xl
+			cursor-pointer
 		  "
+		  on:click={() => loadView('desktop', true)}
+		  on:keydown={(e) => { }}
 		>
-		  Click on the computer to begin.
+		  Click here or on the computer to begin.
 		</p>
 	  </div>
 	</div>
@@ -148,9 +151,12 @@
 			text-base text-sky-300
 			sm:text-lg
 			md:mt-5 md:text-xl md:max-w-3xl
+			cursor-pointer
 		  "
+		  on:click={() => loadView('wall', true)}
+		  on:keydown={(e) => { }}
 		>
-		  Click on the computer again to continue.
+		  Click here or on the computer again to continue.
 		</p>
 	  </div>
 	</div>
