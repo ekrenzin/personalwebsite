@@ -94,21 +94,16 @@
 		  Innovating by engineering solutions for Virtual Reality, Web,
 		  Mobile, and Desktop. 
 		</p>
-		<p
-		  class="
-			mt-3
-			max-w-md
-			mx-auto
-			text-base text-sky-300
-			sm:text-lg
-			md:mt-5 md:text-xl md:max-w-3xl
-			cursor-pointer
-		  "
-		  on:click={() => loadView('desktop', true)}
-		  on:keydown={(e) => { }}
-		>
-		  Click here to begin.
-		</p>
+		
+		<button class="
+		mt-3
+		max-w-md
+		mx-auto
+		text-base text-white
+		sm:text-lg
+		md:mt-5 md:text-xl md:max-w-3xl px-8 py-2 rounded-full pulse-accent bg-sky-500 mx-4" on:click={() => loadView('desktop', true)}>
+	  Click here to begin.
+	</button>
 	  </div>
 	</div>
     {:else if activeView.name === "desktop"}
@@ -142,35 +137,16 @@
             Check it out
             <svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-		<p
-		  class="
-			mt-3
-			max-w-md
-			mx-auto
-			text-base text-sky-300
-			sm:text-lg
-			md:mt-5 md:text-xl md:max-w-3xl
-			cursor-pointer
-		  "
-		  on:click={() => loadView('wall', true)}
-		  on:keydown={(e) => { }}
-		>
-		  Click here to continue.
 		</p>
-		<p
-		  class="
-			max-w-md
-			mx-auto
-			text-base text-gray-300
-			sm:text-lg
-			md:mt-5 md:text-xl md:max-w-3xl
-			cursor-pointer
-		  "
-		  on:click={() => loadView('orbiters', true)}
-		  on:keydown={(e) => { }}
-		>
-		  Click here to go back.
-		</p>
+		<button class="
+		mt-3
+		max-w-md
+		mx-auto
+		text-base text-white
+		sm:text-lg
+		md:mt-5 md:text-xl md:max-w-3xl px-8 py-2 rounded-full pulse-accent bg-sky-500 mx-4" on:click={() => loadView('wall', true)}>
+	  Click here to continue.
+	</button>
 	  </div>
 	</div>
     {:else if activeView.name === "wall"}
@@ -207,7 +183,7 @@
         mx-auto
         text-base text-white
         sm:text-lg
-        md:mt-5 md:text-xl md:max-w-3xl px-8 py-2 rounded-full pulse-accent bg-gray-400 mx-4" on:click={() => loadView('desktop', true)}>Go Back</button>
+        md:mt-5 md:text-xl md:max-w-3xl px-8 py-2 rounded-full pulse-accent bg-gray-400 mx-4" on:click={() => loadView('orbiters', true)}>Go Back</button>
         <a href="/home"><button class="
         mt-3
         max-w-md

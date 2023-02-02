@@ -1,7 +1,9 @@
 <script>
     import me from '$lib/assets/me.jpeg';
-</script>
-      <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    
+</script> 
+<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 h-full relative  min-w-fit">
+       
         <div
           class="
             mx-auto
@@ -38,39 +40,7 @@
         </div>
         <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div class="relative lg:row-start-1 lg:col-start-2">
-            <svg
-              class="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
-              width="404"
-              height="384"
-              fill="none"
-              viewBox="0 0 404 384"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="de316486-4a29-4312-bdfc-fbce2132a2c1"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    class="text-gray-200"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width="404"
-                height="384"
-                fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
-              />
-            </svg>
+            
             <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
                 <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
@@ -123,8 +93,7 @@
                 <br />
                 <br />
                 Today, I live with my fiancé in the beautiful state of California with my
-                happy dog, and smug cat. I enjoy running daily in the california costal trails,
-                but often make trips to hike in the mountains, especially Yosemite.
+                happy dog, and smug cat. I enjoy running daily on the California trails.
                 I enjoy travel & adventure, especially in foreign countries. I'm always looking for
                 new places to explore, and new things to learn.
 

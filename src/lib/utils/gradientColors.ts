@@ -27,10 +27,10 @@ function hex (c) {
   function gradientColors(colorStart: string,colorEnd: string,colorCount: number){
   
       // The beginning of your gradient
-      var start = convertToRGB (colorStart);    
+      var end = convertToRGB (colorStart);    
   
       // The end of your gradient
-      var end   = convertToRGB (colorEnd);    
+      var start   = convertToRGB (colorEnd);    
   
       // The number of colors to compute
       var len = colorCount;

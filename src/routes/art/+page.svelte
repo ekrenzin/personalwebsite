@@ -2,6 +2,8 @@
     import ImageGrid from "$lib/components/art/ImageGrid.svelte";
 	import ArtBg from '$lib/components/art/ArtBG.svelte';
     import ArtScene from "$lib/components/art/artScene.svelte";
+
+
     let files = [
       {
         source:
@@ -79,15 +81,22 @@
 
     let showGallery = false;
 </script>
-<div style="position: relative; ">
-  <button
-    on:click={() => (showGallery = !showGallery)}
-    class="bg-gray-900 text-white font-bold py-2 px-4 rounded"
-    style="position: absolute; top: 0; right: 0; z-index: 1; "
-    >{showGallery ? "Hide" : "Show"} Gallery</button>
   {#if showGallery}
   <ImageGrid bind:files />
   {/if}
 <ArtScene bind:files />
+<button
+  on:click={() => (showGallery = !showGallery)}
+  class="cool-button bg-sky-900 text-white py-2 px-4 rounded absolute top-4 right-4"
+  >{showGallery ? "Hide" : "Show"} Gallery</button>
 <ArtBg />
-</div>
+
+<style>
+    .cool-button {
+      opacity: 0.7;
+    }
+
+    .cool-button:hover {
+      opacity: 0.9;
+    }
+</style>

@@ -41,8 +41,12 @@
 
 	const raycaster = new THREE.Raycaster();
 	const mouse = new THREE.Vector2();
+	
+		//hex for red
+		
 	const colors = {
-		colorOne: '#41729F',
+
+		colorOne: '#FF0000',
 		colorTwo: '#274472',
 		colorThree: '#5885AF',
 		colorFour: '#C3E0E5'
@@ -99,7 +103,7 @@
 			onLoad: () => {
 				desktop.displayTextOnScreen('CLICK ME');
 			},
-			lock: true
+			lock: false
 		},
 		{
 			name: 'desktop',
@@ -491,17 +495,8 @@
 	</script>
 </svelte:head>
 
-<div bind:this={sceneContainer} class="sceneContainer">
+<div bind:this={sceneContainer} class="sceneContainer h-full">
 	<canvas bind:this={canvas} />
-	<video
-		bind:this={video}
-		style="display: none"
-		src="https://eankrenzin-personal-website.s3.us-west-1.amazonaws.com/dashboard.mp4"
-		autoplay
-		loop
-		muted
-		playsinline
-	/>
 </div>
 <SceneText bind:currentView {loadView} />
 
@@ -527,19 +522,30 @@
 {/if}
 
 <style>
+	input[type="color"] {
+	-webkit-appearance: none;
+	border: 1px solid white ;
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
 	.sceneContainer {
 		top: 0;
 		left: 0;
 		position: fixed;
-		width: 100vw;
-		height: 100vh;
 		z-index: -1;
 	}
 
 
 	.color-container {
-		position: absolute;
-		bottom: 0;
+		position: fixed;
+		bottom: 20px;
 		left: 0;
 		width: 100%;
 		display: flex;
