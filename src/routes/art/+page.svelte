@@ -79,24 +79,17 @@
       },
     ];
 
-    let showGallery = false;
+    let showGallery = true;
 </script>
   {#if showGallery}
   <ImageGrid bind:files />
   {/if}
-<ArtScene bind:files />
+<!-- <ArtScene bind:files />
 <button
   on:click={() => (showGallery = !showGallery)}
   class="cool-button bg-sky-900 text-white py-2 px-4 rounded absolute top-4 right-4"
   >{showGallery ? "Hide" : "Show"} Gallery</button>
-<ArtBg />
+<ArtBg /> -->
 
 <style>
-    .cool-button {
-      opacity: 0.7;
-    }
-
-    .cool-button:hover {
-      opacity: 0.9;
-    }
 </style>
