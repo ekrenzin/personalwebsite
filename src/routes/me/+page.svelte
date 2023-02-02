@@ -1,5 +1,5 @@
 <script lang="ts">
-    import MeOverview from "$lib/components/me/MeOverview.svelte";
+    import MeOverview from "./MeOverview.svelte";
 </script>
 
 <!-- create a tailwind css card with a dark backgorund -->

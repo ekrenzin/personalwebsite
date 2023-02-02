@@ -17,7 +17,6 @@
 	import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 	import SceneText from '../SceneText.svelte';
 
-
 	let sceneContainer: HTMLDivElement;
 	let canvas: HTMLCanvasElement;
 	let video: HTMLVideoElement;
@@ -29,6 +28,7 @@
 	let bloomComposer: EffectComposer;
 	let bloomLayer: THREE.Layers;
 	let bloomPass: UnrealBloomPass;
+	let loader = new GLTFLoader();
 
 	let desktop: any;
 
@@ -41,17 +41,16 @@
 
 	const raycaster = new THREE.Raycaster();
 	const mouse = new THREE.Vector2();
-	
-		//hex for red
-		
-	const colors = {
 
+	//hex for red
+
+	const colors = {
 		colorOne: '#FF0000',
 		colorTwo: '#274472',
 		colorThree: '#5885AF',
 		colorFour: '#C3E0E5'
 	};
-	
+
 	const overrideColors = {
 		colorOne: null,
 		colorTwo: null,
@@ -82,8 +81,8 @@
 		'#0000FF',
 		'#4B0082',
 		'#9400D3'
-	]
-	
+	];
+
 	const date = new Date();
 	let formattedTime = {
 		days: date.getDate(),
@@ -143,14 +142,18 @@
 		loadOrbiters();
 		setInterval(() => {
 			//change some of the orbiters colors to a random bright color
-			if (!overrideColors.colorOne && !overrideColors.colorTwo && !overrideColors.colorThree && !overrideColors.colorFour)
-			orbiters.children.forEach((orbiter: any, index: number) => {
-				if (index % Math.round(Math.random() * orbitersLength / 5) === 0) {
-					const mat = orbiter.children[0].material
-					mat.color.set(brightColors[Math.floor(Math.random() * brightColors.length)]);
-				}
-			});
-			
+			if (
+				!overrideColors.colorOne &&
+				!overrideColors.colorTwo &&
+				!overrideColors.colorThree &&
+				!overrideColors.colorFour
+			)
+				orbiters.children.forEach((orbiter: any, index: number) => {
+					if (index % Math.round((Math.random() * orbitersLength) / 5) === 0) {
+						const mat = orbiter.children[0].material;
+						mat.color.set(brightColors[Math.floor(Math.random() * brightColors.length)]);
+					}
+				});
 		}, 1000);
 		loadingText = 'Loading Room';
 
@@ -166,6 +169,7 @@
 		}, 2000);
 		window.addEventListener('pointerdown', onPointerDown);
 
+		
 		return destroy;
 	});
 
@@ -261,12 +265,11 @@
 	}
 
 	async function loadOrbiters() {
-
 		for (let i = 0; i < orbitersLength; i++) {
 			const orbitRadius = Math.random() * 2.5 + 0.5;
 			const speed = Math.random() * 0.001 + 0.0001;
 			const orbit = new Orbiter({ radius: orbitRadius, target: desktop.position, speed });
-			const glowingObject = new GlowingShape("white");
+			const glowingObject = new GlowingShape('white');
 			orbit.add(glowingObject);
 			orbiters.add(orbit);
 		}
@@ -284,8 +287,6 @@
 		const gradientTwo = gradientColors(colorThree, colorFour, 20);
 
 		//every 10ms update one orbirter material with the new color
-
-
 
 		orbiters.children.forEach((orbit, i) => {
 			const percentage = i / orbitersLength;
@@ -504,40 +505,32 @@
 <SceneText bind:currentView {loadView} />
 
 {#if currentView.bloom}
-		<div class="color-container">
-		<h1
-		  class="
-			text-2xl
-			tracking-tight
-			font-extrabold
-			text-gray-900
-		  "
-		>
-		  <span class="block text-gray-50 pb-4">Pick Colors</span>
-		</h1>
-		<div  class="color-picker"> 
-		<input type="color" id="head" name="head" bind:value={overrideColors.colorOne} />
-		<input type="color" id="head" name="head" bind:value={overrideColors.colorTwo} />
-		<input type="color" id="head" name="head" bind:value={overrideColors.colorThree} />
-		<input type="color" id="head" name="head" bind:value={overrideColors.colorFour} />
-	</div>
+	<div class="color-picker">
+		<div class="color-container flex cool-button text-white py-2 px-4 rounded ">
+			<input type="color" id="head" name="head" bind:value={overrideColors.colorOne} />
+			<input type="color" id="head" name="head" bind:value={overrideColors.colorTwo} />
+			<input type="color" id="head" name="head" bind:value={overrideColors.colorThree} />
+			<input type="color" id="head" name="head" bind:value={overrideColors.colorFour} />
+		</div>
 	</div>
 {/if}
 
 <style>
-	input[type="color"] {
-	-webkit-appearance: none;
-	border: 1px solid white ;
-	width: 60px;
-	height: 60px;
-	border-radius: 10px;
-}
-input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
-}
-input[type="color"]::-webkit-color-swatch {
-	border: none;
-}
+	input[type='color'] {
+		border: 2px solid gray;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		margin: 5px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	input[type='color']::-webkit-color-swatch-wrapper {
+		padding: 0;
+	}
+	input[type='color']::-webkit-color-swatch {
+		border: none;
+	}
 	.sceneContainer {
 		top: 0;
 		left: 0;
@@ -545,22 +538,22 @@ input[type="color"]::-webkit-color-swatch {
 		z-index: -1;
 	}
 
-
 	.color-container {
-		position: fixed;
-		bottom: 20px;
-		left: 0;
-		width: 100%;
 		display: flex;
-		flex-direction: column;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 	}
 
 	.color-picker {
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}

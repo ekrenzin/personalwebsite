@@ -1,7 +1,5 @@
 <script>
-    import ImageGrid from "$lib/components/art/ImageGrid.svelte";
-	import ArtBg from '$lib/components/art/ArtBG.svelte';
-    import ArtScene from "$lib/components/art/artScene.svelte";
+    import ImageGrid from "./ImageGrid.svelte";
 
 
     let files = [
