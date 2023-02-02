@@ -415,8 +415,11 @@
 	}
 
 	function windowResizeEventListener(camera, renderer) {
-		const sceneBounds = sceneContainer.getBoundingClientRect();
-		const { width, height } = sceneBounds;
+		// const sceneBounds = sceneContainer.getBoundingClientRect();
+		// const { width, height } = sceneBounds;
+		//get theight and width of window
+		const width = window.innerWidth;
+		const height = window.innerHeight;
 		camera.aspect = width / height;
 		camera.updateProjectionMatrix();
 		renderer.setSize(width, height);
