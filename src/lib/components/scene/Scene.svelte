@@ -101,6 +101,19 @@
 			rotation: { x: Math.PI / 16, y: 0, z: 0 },
 			onLoad: () => {
 				desktop.displayTextOnScreen('CLICK ME');
+				desktop.visible = false;
+			},
+			lock: false
+		},
+		{
+			name: 'explanation',
+			position: { x: 0, y: -0.75, z: -1 },
+			bloom: true,
+			bloomIntensity: 2,
+			rotation: { x: 0, y: Math.PI/16, z: 0 },
+			onLoad: () => {
+				desktop.displayTextOnScreen('CLICK ME');
+				desktop.visible = false;
 			},
 			lock: false
 		},
@@ -111,6 +124,7 @@
 			bloomIntensity: 0.5,
 			rotation: { x: 0, y: 0, z: 0 },
 			onLoad: () => {
+				desktop.visible = true;
 				desktop.generateCode();
 			},
 			lock: true
@@ -191,7 +205,6 @@
 		}
 		try {
 			window.removeEventListener('pointerdown', onPointerDown);
-			window.location.reload();
 		} catch (e) {
 			console.log(e);
 		}
@@ -326,6 +339,7 @@
 			}
 		};
 		desktop = new ManagedComputer(desktopOptions, desktopVisionApiCredentials);
+		desktop.visible = false
 		scene.add(desktop);
 		desktop.position.set(0, 0, -5);
 		desktop.displayTextOnScreen('CLICK ME');
@@ -340,14 +354,8 @@
 		if (intersects.length > 0) {
 			const object = intersects[0].object;
 			if (object.name.includes('icon')) {
-			} else if (object.name === 'desktop-vision-desktop') {
-				advanceView();
-			} else {
-				decrementView();
-			}
-		} else {
-			decrementView();
 		}
+	}
 	}
 
 	function advanceView() {
@@ -373,7 +381,6 @@
 	}
 
 	function loadView(viewName: string, overrideLock?: boolean) {
-		if (currentView.lock && !overrideLock) return;
 		for (const view of views) {
 			if (view && view.name === viewName) {
 				if (currentView.name === viewName) return;
@@ -502,7 +509,7 @@
 <div bind:this={sceneContainer} class="sceneContainer h-full">
 	<canvas bind:this={canvas} />
 </div>
-<SceneText bind:currentView {loadView} />
+<SceneText bind:currentView {loadView} {advanceView} {decrementView}/>
 
 {#if currentView.bloom}
 	<div class="color-picker">

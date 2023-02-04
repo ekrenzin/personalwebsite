@@ -2,7 +2,10 @@
     import me from '$lib/assets/me.jpeg';
     
 </script> 
-<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 h-full relative  min-w-fit">
+
+<style>
+</style>
+<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 h-full relative">
        
         <div
           class="

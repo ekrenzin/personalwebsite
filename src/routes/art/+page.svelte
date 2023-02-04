@@ -1,6 +1,7 @@
 <script>
     import ImageGrid from "./ImageGrid.svelte";
-
+    import ArtScene from "./artScene.svelte";
+  import ArtBg from "./ArtBG.svelte";
 
     let files = [
       {
@@ -82,12 +83,7 @@
   {#if showGallery}
   <ImageGrid bind:files />
   {/if}
-<!-- <ArtScene bind:files />
-<button
-  on:click={() => (showGallery = !showGallery)}
-  class="cool-button bg-sky-900 text-white py-2 px-4 rounded absolute top-4 right-4"
-  >{showGallery ? "Hide" : "Show"} Gallery</button>
-<ArtBg /> -->
+<ArtBg />
 
 <style>
 </style>

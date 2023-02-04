@@ -19,7 +19,6 @@
         lg:grid-cols-3
         xl:gap-x-8
       "
-	style="background-color: rgba(0, 0, 0, 0.8);"
 >
 	{#each files as file}
 		<li class="relative">
