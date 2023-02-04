@@ -36,9 +36,9 @@
 
 	$: fadeBetween(currentView);
 </script>
-
+<div class="text-container">
 {#if activeView}
-	<div class="p-8 mt-10 " transition:fade>
+	<div class="mt-10 ">
 		<div
 			style={`opacity: ${opacity}; max-width: 1000px;  margin: auto; border-radius: 20px`}
 			class="py-4 px-2  "
@@ -155,7 +155,8 @@
 			md:mt-5 md:text-xl md:max-w-3xl
 		  "
 						>
-							This is Desktop Vision. Your computer in the cloud. Try interacting with it, you can control your computer from here if you authorize a connection!
+							This is Desktop Vision. Your computer in the cloud. Try interacting with it, you can
+							control your computer from here if you authorize a connection!
 						</p>
 						<p
 							class="
@@ -203,20 +204,20 @@
 					</div>
 				</div>
 			{:else if activeView.name === 'wall'}
-				<div class="final">
-					<div class="text-center">
-						<h1
-							class="
-			text-4xl
-			tracking-tight
-			font-extrabold
-			text-gray-900
-			sm:text-5xl
-			md:text-6xl
-		  "
-						>
+			<div class="mx-auto sm:px-6  sm:px-6 py-4 px-2 backdrop-blur bg-white/500">
+				<div class="text-center">
+					<h1
+						class="
+		text-4xl
+		tracking-tight
+		font-extrabold
+		text-gray-900
+		sm:text-5xl
+		md:text-6xl
+	  "
+					>
 							<span class="block text-gray-50">Now enter</span>
-							<span class="block text-sky-500">eankrenzin.com</span>
+							<span class="block text-sky-300">eankrenzin.com</span>
 						</h1>
 						<p
 							class="
@@ -258,8 +259,19 @@
 		</div>
 	</div>
 {/if}
-
+</div>
 <style>
+	.text-container {
+		position: absolute;
+		left: 0;
+		top: calc(10%);
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+	}
 	@keyframes pulse-accent {
 		0% {
 			box-shadow: 0 0 5px 2px cyan;

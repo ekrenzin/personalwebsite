@@ -70,13 +70,13 @@
                         {#if link.href === $page.url.pathname}
                             <a
                                 href={link.href}
-                                class="rounded-md bg-sky-900 px-3 py-2 text-md font-medium text-white"
+                                class="rounded-md bg-cyan-400 px-3 py-2 text-md font-medium text-white"
                                 >{link.name}</a
                             >
                         {:else}
                             <a
                                 href={link.href}
-                                class="rounded-md px-3 py-2 text-md font-medium hover:bg-sky-700 text-white"
+                                class="rounded-md px-3 py-2 text-md font-medium hover:bg-cyan-500 text-white"
                                 >{link.name}</a
                             >
                         {/if}

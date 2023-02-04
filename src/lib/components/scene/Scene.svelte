@@ -505,11 +505,11 @@
 
 	</script>
 </svelte:head>
+<SceneText bind:currentView {loadView} {advanceView} {decrementView}/>
 
-<div bind:this={sceneContainer} class="sceneContainer h-full">
+<div bind:this={sceneContainer} class="sceneContainer">
 	<canvas bind:this={canvas} />
 </div>
-<SceneText bind:currentView {loadView} {advanceView} {decrementView}/>
 
 {#if currentView.bloom}
 	<div class="color-picker">
@@ -541,9 +541,7 @@
 	.sceneContainer {
 		top: 0;
 		left: 0;
-		position: absolute;
-		z-index: -1;
-
+		height: 100%;
 	}
 
 	.color-container {
