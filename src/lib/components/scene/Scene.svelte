@@ -505,9 +505,9 @@
 
 	</script>
 </svelte:head>
-<SceneText bind:currentView {loadView} {advanceView} {decrementView}/>
 
 <div bind:this={sceneContainer} class="sceneContainer">
+	<SceneText bind:currentView {loadView} {advanceView} {decrementView}/>
 	<canvas bind:this={canvas} />
 </div>
 
@@ -542,6 +542,7 @@
 		top: 0;
 		left: 0;
 		height: 100%;
+		position: relative;
 	}
 
 	.color-container {

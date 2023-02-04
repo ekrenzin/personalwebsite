@@ -87,7 +87,7 @@
                   mt-3
                   max-w-md
                   mx-auto
-                  text-base text-gray-300
+                  text-base text-gray-100
                   sm:text-lg
                   md:mt-5 md:text-xl md:max-w-3xl
                 "

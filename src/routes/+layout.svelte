@@ -16,6 +16,7 @@
 
 <style>
 	main {
+		position: relative;
 		height: 100%;
 		width: 100%;
 		min-width: 100vw;
