@@ -1,7 +1,6 @@
 <script>
     import ImageGrid from "./ImageGrid.svelte";
     import ArtScene from "./artScene.svelte";
-  import ArtBg from "./ArtBG.svelte";
 
     let files = [
       {
@@ -83,7 +82,6 @@
   {#if showGallery}
   <ImageGrid bind:files />
   {/if}
-<ArtBg />
 
 <style>
 </style>
