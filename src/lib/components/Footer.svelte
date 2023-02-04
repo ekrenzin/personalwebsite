@@ -27,7 +27,7 @@
         />
       </div>
     </div>
-    <p class="mt-8 text-center text-base text-gray-400">
-      &copy; 2022 Ean Krenzin-Blank. All rights reserved.
+    <p class="mt-8 text-center text-base text-sky-300">
+      &copy; 2021-{new Date().getFullYear()} Ean Krenzin-Blank. All rights reserved.
     </p>
   </div>
