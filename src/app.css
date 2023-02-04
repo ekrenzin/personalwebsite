@@ -79,7 +79,7 @@
   }
 
   body {
-    background-color: var(--bg-color);
+    background-color: hsla(217, 100%, 50%, 1);
     color: var(--font-color);
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
@@ -88,6 +88,15 @@
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+		background: hsla(217, 100%, 50%, 1);
+
+		background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+
+		background: -moz-linear-gradient(
+			90deg,
+			hsla(217, 100%, 50%, 1) 0%,
+			hsla(197, 100%, 64%, 1) 100%
+		);
   }
 
 	.noise {

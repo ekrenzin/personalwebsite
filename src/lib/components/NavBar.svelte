@@ -41,6 +41,10 @@
 	a {
 		transition: 0.2s;
 	}
+
+	nav {
+		z-index: 100;
+	}
 </style>
 
 <nav class="" >

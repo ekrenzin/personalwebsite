@@ -148,6 +148,7 @@
 	};
 
 	onMount(async () => {
+		console.log("load scene")
 		loadingText = 'Loading Scene';
 		loadScene();
 		loadingText = 'Loading Desktop';
@@ -197,8 +198,7 @@
 		}
 
 		try {
-			scene.remove(desktop);
-			scene.remove(...scene.children);
+			renderer.dispose();
 			console.log('destroyed');
 		} catch (e) {
 			console.log(e);
@@ -541,8 +541,9 @@
 	.sceneContainer {
 		top: 0;
 		left: 0;
-		position: fixed;
+		position: absolute;
 		z-index: -1;
+
 	}
 
 	.color-container {
