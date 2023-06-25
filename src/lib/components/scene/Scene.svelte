@@ -13,6 +13,7 @@
 	import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 	import type { view } from '$lib/types/scene';
 	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+	import { VRButton } from 'three/addons/webxr/VRButton.js';
 
 	import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 	import SceneText from '../SceneText.svelte';
@@ -213,6 +214,8 @@
 	async function loadScene() {
 		scene = new THREE.Scene();
 		renderer = new THREE.WebGLRenderer({ antialias: true, canvas, alpha: true });
+		document.body.appendChild( VRButton.createButton( renderer ) );
+		renderer.xr.enabled = true;
 		camera = new THREE.PerspectiveCamera();
 
 		camera.position.x = currentView.position.x;
