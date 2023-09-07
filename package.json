@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@desktop.vision/js-sdk": "^3.0.7",
 		"@emailjs/browser": "^3.10.0",
 		"@tweenjs/tween.js": "^18.6.4",
 		"three": "^0.149.0"

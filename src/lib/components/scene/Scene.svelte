@@ -14,6 +14,7 @@
 	import type { view } from '$lib/types/scene';
 	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 	import { VRButton } from 'three/addons/webxr/VRButton.js';
+	import { loadSDK } from '@desktop.vision/js-sdk/dist/three.min';
 
 	import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 	import SceneText from '../SceneText.svelte';
@@ -111,7 +112,7 @@
 			position: { x: 0, y: -0.75, z: -1 },
 			bloom: true,
 			bloomIntensity: 2,
-			rotation: { x: 0, y: Math.PI/16, z: 0 },
+			rotation: { x: 0, y: Math.PI / 16, z: 0 },
 			onLoad: () => {
 				desktop.displayTextOnScreen('CLICK ME');
 				desktop.visible = false;
@@ -149,7 +150,7 @@
 	};
 
 	onMount(async () => {
-		console.log("load scene")
+		console.log('load scene');
 		loadingText = 'Loading Scene';
 		loadScene();
 		loadingText = 'Loading Desktop';
@@ -185,7 +186,6 @@
 		}, 2000);
 		window.addEventListener('pointerdown', onPointerDown);
 
-		
 		return destroy;
 	});
 
@@ -214,7 +214,7 @@
 	async function loadScene() {
 		scene = new THREE.Scene();
 		renderer = new THREE.WebGLRenderer({ antialias: true, canvas, alpha: true });
-		document.body.appendChild( VRButton.createButton( renderer ) );
+		document.body.appendChild(VRButton.createButton(renderer));
 		renderer.xr.enabled = true;
 		camera = new THREE.PerspectiveCamera();
 
@@ -315,37 +315,41 @@
 	}
 
 	async function loadComputer() {
-		const { ManagedComputer } = window.DesktopVision.loadSDK(THREE, null, null);
+		try {
+			const { ManagedComputer } = loadSDK(THREE, null, null);
 
-		const keys = await fetch('/api/desktopvision', {
-			method: 'GET',
-			headers: {
-				'content-type': 'application/json'
-			}
-		});
-		const desktopVisionApiCredentials = await keys.json();
-		const video = document.createElement('video');
+			const keys = await fetch('/api/desktopvision', {
+				method: 'GET',
+				headers: {
+					'content-type': 'application/json'
+				}
+			});
+			const desktopVisionApiCredentials = await keys.json();
+			const video = document.createElement('video');
 
-		const desktopOptions = {
-			scene: scene,
-			camera,
-			sceneContainer,
-			renderer,
-			video,
-			initialScalar: 10,
-			iconColor: 'rgb(0, 145, 191)',
-			includeKeyboard: true,
-			hideMultiMonitor: true,
-			hideMoveIcon: true,
-			xrOptions: {
-				parent: camera.parent
-			}
-		};
-		desktop = new ManagedComputer(desktopOptions, desktopVisionApiCredentials);
-		desktop.visible = false
-		scene.add(desktop);
-		desktop.position.set(0, 0, -5);
-		desktop.displayTextOnScreen('CLICK ME');
+			const desktopOptions = {
+				scene: scene,
+				camera,
+				sceneContainer,
+				renderer,
+				video,
+				initialScalar: 10,
+				iconColor: 'rgb(0, 145, 191)',
+				includeKeyboard: true,
+				hideMultiMonitor: true,
+				hideMoveIcon: true,
+				xrOptions: {
+					parent: camera.parent
+				}
+			};
+			desktop = new ManagedComputer(desktopOptions, desktopVisionApiCredentials);
+			desktop.visible = false;
+			scene.add(desktop);
+			desktop.position.set(0, 0, -5);
+			desktop.displayTextOnScreen('CLICK ME');
+		} catch (e) {
+			console.log(e);
+		}
 	}
 
 	function onPointerDown(event) {
@@ -357,8 +361,8 @@
 		if (intersects.length > 0) {
 			const object = intersects[0].object;
 			if (object.name.includes('icon')) {
+			}
 		}
-	}
 	}
 
 	function advanceView() {
@@ -510,7 +514,7 @@
 </svelte:head>
 
 <div bind:this={sceneContainer} class="sceneContainer">
-	<SceneText bind:currentView {loadView} {advanceView} {decrementView}/>
+	<SceneText bind:currentView {loadView} {advanceView} {decrementView} />
 	<canvas bind:this={canvas} />
 </div>
 
