@@ -31,6 +31,7 @@
 	let bloomLayer: THREE.Layers;
 	let bloomPass: UnrealBloomPass;
 	let loader = new GLTFLoader();
+	let vrButton: VRButton;
 
 	let desktop: any;
 
@@ -209,12 +210,20 @@
 		} catch (e) {
 			console.log(e);
 		}
+		console.log('destroyed');
+		try {
+			//get rid of the VR button
+			vrButton.remove();
+		} catch (e) {
+			console.log(e);
+		}
 	}
 
 	async function loadScene() {
 		scene = new THREE.Scene();
 		renderer = new THREE.WebGLRenderer({ antialias: true, canvas, alpha: true });
-		document.body.appendChild(VRButton.createButton(renderer));
+		vrButton = VRButton.createButton(renderer);
+		document.body.appendChild(vrButton);
 		renderer.xr.enabled = true;
 		camera = new THREE.PerspectiveCamera();
 
