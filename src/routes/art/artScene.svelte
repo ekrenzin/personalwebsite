@@ -40,7 +40,6 @@
 	function destroy() {
 		try {
 			scene.remove(...scene.children);
-			console.log('destroyed');
 		} catch (e) {
 			console.warn(e);
 		}

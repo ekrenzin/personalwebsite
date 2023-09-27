@@ -262,6 +262,7 @@
 </div>
 <style>
 	.text-container {
+		z-index: 10;
 		position: absolute;
 		left: 0;
 		top: calc(10%);

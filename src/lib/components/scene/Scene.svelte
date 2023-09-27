@@ -201,7 +201,6 @@
 
 		try {
 			renderer.dispose();
-			console.log('destroyed');
 		} catch (e) {
 			console.log(e);
 		}
@@ -210,7 +209,6 @@
 		} catch (e) {
 			console.log(e);
 		}
-		console.log('destroyed');
 		try {
 			//get rid of the VR button
 			vrButton.remove();
@@ -559,6 +557,14 @@
 		left: 0;
 		height: 100%;
 		position: relative;
+	}
+
+	canvas {
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
 	}
 
 	.color-container {

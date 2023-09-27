@@ -64,43 +64,20 @@
           <div class="mt-8 lg:mt-0">
             <div class="text-base max-w-prose mx-auto lg:max-w-none">
               <p class="text-lg text-slate-300">
-                Even though I'm an engineer, I started working as a graphic
-                designer in New York City. I loved designing, but I felt like
-                something was missing. I wanted to be able to create my own tools,
-                I wanted to feel like a craftsman.
-                <i>I needed to innovate.</i>
-                <br />
-                <br />
-                So I learned how to code. Every night after getting home from my long
-                shift, I would study code until extremely late into the
-                night. I was practically working two full-time jobs, but coding
-                never felt like a burden. My efforts were validated when I was
-                promoted to an iOS developer within the company. I'm obsessed with
-                code now, but my experience designing continues to provide value.
-                The struggles from when I started, continue to motivate me to push
-                forward and never slow down.
-  
-                <br />
-                <br />
-  
-                I'm still completely passionate about software, although now I'm
-                more focused on breaking into specific fields. Something about
-                virtual reality <i>exhilarates</i> me. I love spinning up the
-                headset and interacting with the things I code. Perhaps it's the
-                itch that drove me to start finally getting a good scratch.
-                <br />
-                <br />
-                I have over 5 years of industry experience in a myriad of
-                languages on various platforms. It's been a long road, but I think
-                the imposter syndrome is finally fading.
-                <br />
-                <br />
-                Today, I live with my fiancé in the beautiful state of California with my
-                happy dog, and smug cat. I enjoy running daily on the California trails.
-                I enjoy travel & adventure, especially in foreign countries. I'm always looking for
-                new places to explore, and new things to learn.
-
+                Originating in graphic design roles in New York City, I was quickly captivated by the creative process. However, I aspired to transcend design limitations by developing the very tools I employed—a desire that led me into software engineering. 
+                <i>An aspiration to innovate compelled me.</i>
+                <br /><br />
+                Committing to rigorous self-study post-working hours, I rapidly acquired coding proficiency. This endeavor culminated in my elevation to an iOS developer role within the same company. My design background continues to infuse my development work, adding a unique blend of aesthetic and functional insight.
+                <br /><br />
+                Currently, I am engrossed in specialized software domains, particularly virtual reality. The visceral engagement of this technology, experienced through the very code I write, serves as an ongoing source of exhilaration.
+                <i>It feels like scratching a long-standing itch.</i>
+                <br /><br />
+                With nearly a decade in the industry, traversing multiple languages and platforms, the vestiges of imposter syndrome have begun to dissipate. 
+                <br /><br />
+                I reside in scenic California with my fiancé, our joyful dog, and complacent cat. My personal pursuits include daily runs along Californian trails, international travel, and continuous learning.
+                <i>I perpetually seek new horizons.</i>
               </p>
+              
             </div>
           </div>
         </div>

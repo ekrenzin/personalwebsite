@@ -19,21 +19,8 @@
           }
         }
     </script>
-  <div class="bg-gray-900 rounded-2xl drop-shadow-lg my-10 mx-10 px-4 min-w-fit">
           <div class="relative max-w-xl mx-auto">
             <div class="text-center py-10">
-              <h1
-                class="
-                  text-4xl
-                  tracking-tight
-                  font-extrabold
-                  text-gray-900
-                  sm:text-5xl
-                  md:text-6xl
-                "
-              >
-                <span class="text-gray-100">Contact</span>
-              </h1>
               </div>    
             <div class="">
               <form
@@ -233,5 +220,4 @@
               </p>
             </div>
           </div>
-        </div>
     

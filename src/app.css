@@ -79,7 +79,7 @@
   }
 
   body {
-    background-color: hsla(217, 100%, 50%, 1);
+    background-color: #0C090D;
     color: var(--font-color);
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;

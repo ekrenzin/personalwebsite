@@ -1,15 +1,29 @@
 <script>
 	import '../app.css';
 	import NavBar from '$lib/components/NavBar.svelte';
-	import ComputerScene from '$lib/components/scene/Scene.svelte';
+	import { page } from '$app/stores';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
 
-	import { onMount } from 'svelte';
+
+	const defaultBackground = 'linear-gradient( 0deg, rgba(154, 86, 151, 0.09), rgba(154, 86, 151, 0.09) ), linear-gradient( 214.47deg, rgba(29, 107, 130, 0.09) -13.09%, rgba(4, 134, 152, 0.18) -10.93%, rgba(0, 0, 0, 0) 14.47%, rgba(27, 201, 239, 0.135) 73.4% )';
+
+	let mainBackground = defaultBackground;
+	
+
+	page.subscribe((value) => {
+		const _page = value.url.pathname
+		console.log(_page)
+		if (_page.includes("art")) {
+			mainBackground = "#0C090D"
+		} else {
+			mainBackground = defaultBackground
+		}
+	});
 </script>
 
-<main>
+<main style={`background: ${mainBackground}`}>
 	<NavBar />
 	<slot />
 </main>
