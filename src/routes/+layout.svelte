@@ -3,6 +3,10 @@
 	import NavBar from '$lib/components/NavBar.svelte';
 </script>
 
+<svelte:head>
+  <title>{'Ean Krenzin-Blank'}</title>
+</svelte:head>
+
 <main >
 	<NavBar />
 	<slot />

@@ -125,7 +125,7 @@
             <span>{skill.name}</span>
           </div>
           <!-- Tooltip -->
-          <div transition:fade class="absolute z-10 hidden w-56 p-2 mt-12 ml-12 text-sm leading-tight text-white transform -translate-y-1/2 bg-black rounded-lg group-hover:block">
+          <div class="absolute z-10 hidden w-56 p-2 mt-12 ml-12 text-sm leading-tight text-white transform -translate-y-1/2 bg-black rounded-lg group-hover:block">
             {skill.description}
           </div>
         </li>
