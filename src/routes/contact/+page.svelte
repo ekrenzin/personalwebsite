@@ -197,8 +197,8 @@
                       text-base
                       font-medium
                       text-white
-                      bg-indigo-600
-                      hover:bg-indigo-200
+                      bg-sky-500
+                      hover:bg-sky-400
                       focus:outline-none
                       focus:ring-2
                       focus:ring-offset-2

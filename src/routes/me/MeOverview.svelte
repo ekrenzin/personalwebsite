@@ -18,7 +18,7 @@
           <div>
             <h2
               class="
-                text-base text-indigo-600
+                text-base text-sky-300
                 font-semibold
                 tracking-wide
                 uppercase
