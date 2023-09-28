@@ -7,31 +7,37 @@
 		{
 			href: '/home',
 			name: 'Home',
+			alts: [],
 			icon: null
 		},
 		{
-			href: '/',
+			href: '/scene',
 			name: 'Scene',
+			alts: [],
 			icon: null
 		},
         {
             href: '/art',
             name: 'Art',
+			alts: [],
             icon: null
         },
 		{
-			href: '/me',
+			href: '/',
 			name: 'Me',
+			alts: ["/me"],
 			icon: null
 		},
 		{
 			href: '/contact',
 			name: 'Contact',
+			alts: [],
 			icon: null
 		},
 		{
 			href: '/old',
 			name: 'Old Sites',
+			alts: [],
 			icon: null
 		}
 	];
@@ -67,7 +73,7 @@
 					<div class="flex space-x-4">
                         
 				{#each links as link}
-                        {#if link.href === $page.url.pathname}
+                        {#if link.href === $page.url.pathname || link.alts.includes($page.url.pathname)}
                             <a
                                 href={link.href}
                                 class="rounded-md bg-blue-700 px-3 py-2 text-md font-medium text-white"
@@ -131,7 +137,7 @@
 		<div class="sm:hidden " id="mobile-menu">
 			<div class="space-y-1 px-2 pt-2 pb-3">
 				{#each links as link}
-					{#if link.href === $page.url.pathname}
+					{#if link.href === $page.url.pathname || link.alts.includes($page.url.pathname)}
 						<a
 							href={link.href}
 							class="block rounded-md bg-sky-700 px-3 py-2 text-base font-medium text-white"

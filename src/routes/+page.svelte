@@ -1,6 +1,1 @@
-<script>
-	import ComputerScene from "$lib/components/scene/Scene.svelte";
-</script>
-
-
-<ComputerScene />
+<h1>Redirecting</h1>
