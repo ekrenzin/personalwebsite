@@ -77,9 +77,48 @@
     --disabled: rgb(100, 100, 100);
     --heading-color: #818cab;
   }
+/**
+ * Rotating background pseudo-element
+ */
+ body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(0, 100, 200, 0.5), rgba(20, 20, 80, 0.5), rgba(100, 20, 10, 0.5));
+  background-size: 200% 200%;
+  z-index: -1;
+}
 
-  body {
-    background-color: #0C090D;
+body::before {
+  animation: spinBG 20s infinite linear;
+}
+/**
+ * Rotation keyframes
+ */
+@keyframes spinBG {
+  0% {
+    transform: rotate(0deg);
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-position: 0 0;
+  }
+}
+
+
+body {
+  /* Define the gradient pattern */
+  background: linear-gradient(45deg, #3498db, #2980b9, #3498db);
+  background-size: 200% 100%;
+  /* Apply animation */
+  animation: flowBG 1s infinite linear;
     color: var(--font-color);
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -101,7 +140,6 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-    background-color: ;
 		background-image: url('$lib/assets/noise.png');
 		object-fit: cover;
 		opacity: 0.5;

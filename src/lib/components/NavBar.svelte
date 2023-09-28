@@ -31,7 +31,7 @@
 		},
 		{
 			href: '/old',
-			name: 'Previous Sites',
+			name: 'Old Sites',
 			icon: null
 		}
 	];

@@ -55,7 +55,7 @@
                     height="1376"
                   />
                 </div>
-                <figcaption class="mt-3 flex text-sm text-gray-500">
+                <figcaption class="mt-3 flex text-sm text-gray-300">
                   <span class="ml-2">Photograph by Stefanos Symeonidis</span>
                 </figcaption>
               </figure>
