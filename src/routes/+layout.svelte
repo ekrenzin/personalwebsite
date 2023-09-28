@@ -25,7 +25,7 @@
 
 </script>
 
-<main style={`background: ${mainBackground}`}>
+<main >
 	<NavBar />
 	<slot />
 </main>
@@ -40,14 +40,6 @@
 		display: flex;
 		flex-direction: column;
 		overflow: auto;
-		background: hsla(217, 100%, 50%, 1);
 
-		background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
-
-		background: -moz-linear-gradient(
-			90deg,
-			hsla(217, 100%, 50%, 1) 0%,
-			hsla(197, 100%, 64%, 1) 100%
-		);
 	}
 </style>
