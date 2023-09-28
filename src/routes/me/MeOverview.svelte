@@ -5,7 +5,7 @@
 
 <style>
 </style>
-<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 h-full relative">
+<section class="max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8 h-full relative">
        
         <div
           class="
@@ -18,7 +18,7 @@
           <div>
             <h2
               class="
-                text-base text-sky-300
+                text-base text-sky-400
                 font-semibold
                 tracking-wide
                 uppercase
@@ -44,7 +44,7 @@
         <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div class="relative lg:row-start-1 lg:col-start-2">
             
-            <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
+            <div class="relative text-base max-w-prose lg:max-w-none">
               <figure>
                 <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <img
@@ -55,30 +55,31 @@
                     height="1376"
                   />
                 </div>
-                <figcaption class="mt-3 flex text-sm text-gray-300">
+                <figcaption class="mt-3 flex text-sm text-gray-500">
                   <span class="ml-2">Photograph by Stefanos Symeonidis</span>
                 </figcaption>
               </figure>
             </div>
           </div>
           <div class="mt-8 lg:mt-0">
-            <div class="text-base max-w-prose mx-auto lg:max-w-none">
-              <p class="text-lg text-slate-300">
-                Originating in graphic design roles in New York City, I was quickly captivated by the creative process. However, I aspired to transcend design limitations by developing the very tools I employed—a desire that led me into software engineering. 
-                <i>An aspiration to innovate compelled me.</i>
+            <div class="text-base max-w-prose lg:max-w-none">
+              <p class="text-lg text-slate-200">
+                My journey began in New York City's graphic design scene, where I quickly found a passion for creativity. However, I aimed higher—I wanted to build the tools I used, leading me to transition into software engineering. 
+                <i>Innovation became my driving force.</i>
                 <br /><br />
-                Committing to rigorous self-study post-working hours, I rapidly acquired coding proficiency. This endeavor culminated in my elevation to an iOS developer role within the same company. My design background continues to infuse my development work, adding a unique blend of aesthetic and functional insight.
+                Committed to mastering coding skills in my spare time, I soon advanced to an iOS developer role within the same company. My design roots continue to enrich my software solutions, blending aesthetics with functionality.
                 <br /><br />
-                Currently, I am engrossed in specialized software domains, particularly virtual reality. The visceral engagement of this technology, experienced through the very code I write, serves as an ongoing source of exhilaration.
-                <i>It feels like scratching a long-standing itch.</i>
+                Now, I specialize in emerging technologies like virtual reality. The hands-on experience of shaping this technology is a constant source of excitement.
+                <i>It's as if I've finally found the missing piece.</i>
                 <br /><br />
-                With nearly a decade in the industry, traversing multiple languages and platforms, the vestiges of imposter syndrome have begun to dissipate. 
+                Nearly a decade in, spanning various platforms and languages, my initial doubts have given way to confidence.
                 <br /><br />
-                I reside in scenic California with my fiancé, our joyful dog, and complacent cat. My personal pursuits include daily runs along Californian trails, international travel, and continuous learning.
-                <i>I perpetually seek new horizons.</i>
+                I live in scenic California with my fiancé and our pets. My life outside of work includes daily runs on California's trails, global travel, and a commitment to continuous learning.
+                <i>I'm always looking for the next challenge.</i>
               </p>
+              
               
             </div>
           </div>
         </div>
-      </div>
+      </section>

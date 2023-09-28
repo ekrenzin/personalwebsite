@@ -11,8 +11,8 @@
 			icon: null
 		},
 		{
-			href: '/scene',
-			name: 'Scene',
+			href: '/demo',
+			name: 'Demo',
 			alts: [],
 			icon: null
 		},
