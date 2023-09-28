@@ -23,9 +23,9 @@
             icon: null
         },
 		{
-			href: '/',
+			href: '/me',
 			name: 'Me',
-			alts: ["/me"],
+			alts: [""],
 			icon: null
 		},
 		{
