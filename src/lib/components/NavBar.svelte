@@ -36,7 +36,7 @@
 		},
 		{
 			href: '/old',
-			name: 'Old Sites',
+			name: 'History',
 			alts: [],
 			icon: null
 		}
@@ -53,21 +53,23 @@
 	}
 </style>
 
-<nav class="" >
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="flex h-16 items-center justify-between">
-			<div class="flex items-center">
-				<div class="flex-shrink-0">
+<nav class="">
+	<div class="mx-auto max-w-screen-xl px-8 sm:px-12 lg:px-16 py-4">
+	  <div class="flex h-20 items-center sm:justify-center justify-between">
+		<div class="flex items-center space-x-12 sm:space-x-0">
+		  <div class="flex-shrink-0">
+			<div class="mr-10">
 					<img
 						class="block h-8 w-auto lg:hidden"
 						src={logo}
-						alt="Your Company"
+						alt="Ean Krenzin"
 					/>
 					<img
 						class="hidden h-8 w-auto lg:block"
 						src={logo}
-						alt="Your Company"
+						alt="Ean Krenzin"
 					/>
+				</div>
 				</div>
 				<div class="hidden sm:ml-6 sm:block">
 					<div class="flex space-x-4">
@@ -76,7 +78,7 @@
                         {#if link.href === $page.url.pathname || link.alts.includes($page.url.pathname)}
                             <a
                                 href={link.href}
-                                class="rounded-md bg-blue-700 px-3 py-2 text-md font-medium text-white"
+                                class="rounded-md bg-blue-900 px-3 py-2 text-md font-medium text-white"
                                 >{link.name}</a
                             >
                         {:else}

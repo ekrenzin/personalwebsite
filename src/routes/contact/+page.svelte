@@ -2,19 +2,33 @@
 	import emailjs from '@emailjs/browser';
 
 	/**
+	 * @enum {string}
+	 * Enum for submission status
+	 */
+	enum SubmissionStatus {
+		IDLE = 'idle',
+		SUCCESS = 'success',
+		FAILURE = 'failure'
+	}
+
+	// Initialize submission status
+	let submissionStatus: SubmissionStatus = SubmissionStatus.IDLE;
+
+	/**
 	 * @async
 	 * @function submitEmail
 	 * @param {Event} event - Form submit event
-	 * @description Send email using emailjs
+	 * @description Send email using emailjs and update submissionStatus
 	 */
 	async function submitEmail(event: Event) {
 		event.preventDefault();
 		try {
-      if (!form) throw new Error('Form not found');
+			if (!form) throw new Error('Form not found');
 			await emailjs.sendForm('service_6vij30t', 'template_newrwwq', form, 'BJByXghceDtqQ2Acw');
-			form.reset();
+			submissionStatus = SubmissionStatus.SUCCESS;
 		} catch (e) {
 			console.warn(e);
+			submissionStatus = SubmissionStatus.FAILURE;
 		}
 	}
 
@@ -23,19 +37,20 @@
 
 <div class="relative max-w-xl mx-auto">
 	<div class="text-center py-10" />
-  <!-- Title and Content Section for Contact Page -->
-<section class="text-center py-10 px-6">
-  <!-- Title -->
-  <h1 class="text-4xl font-semibold text-gray-200">Get In Touch</h1>
-  
-  <!-- Subtitle -->
-  <h2 class="text-2xl font-medium text-sky-300 mt-4">Let's Discuss Your Next Project</h2>
+	<!-- Title and Content Section for Contact Page -->
+	<section class="text-center py-10 px-6">
+		<!-- Title -->
+		<h1 class="text-4xl font-semibold text-gray-200">Get In Touch</h1>
 
-  <!-- Text -->
-  <p class="text-base text-sky-100 mt-6 mx-auto max-w-prose">
-    Whether you're interested in working on a new project or just want to say hello, feel free to reach out. I'm always open to discussing new opportunities.
-  </p>
-</section>
+		<!-- Subtitle -->
+		<h2 class="text-2xl font-medium text-sky-300 mt-4">Let's Discuss Your Next Project</h2>
+
+		<!-- Text -->
+		<p class="text-base text-sky-100 mt-6 mx-auto max-w-prose">
+			Whether you're interested in working on a new project or just want to say hello, feel free to
+			reach out. I'm always open to discussing new opportunities.
+		</p>
+	</section>
 	<div class=" px-6">
 		<form
 			class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
@@ -208,6 +223,13 @@
 					Let's talk
 				</button>
 			</div>
+      <div class="text-center mt-4">
+        {#if submissionStatus === SubmissionStatus.SUCCESS}
+          <p class="text-green-400">Your message was successfully sent!</p>
+        {:else if submissionStatus === SubmissionStatus.FAILURE}
+          <p class="text-red-400">Failed to send your message. Please try again.</p>
+        {/if}
+      </div>
 		</form>
 		<p class="mt-4 text-lg leading-6 text-gray-200 text-center py-5">
 			Or email me directly at ean@eankrenzin.com

@@ -1,10 +1,14 @@
 <script lang="ts">
-	import EmploymentHistory from "../me/EmploymentHistory.svelte";
-	import TitleHeader from "./TitleHeader.svelte";
-	import VideoHero from "./VideoHero.svelte";
-
+	import EmploymentHistory from '../me/EmploymentHistory.svelte';
+	import FeaturedProjects from './FeaturedProjects.svelte';
+	import TitleHeader from './TitleHeader.svelte';
+	import VideoHero from './VideoHero.svelte';
 </script>
+
 <div class="relative overflow-hidden ">
-	<TitleHeader />
-	<VideoHero />
+	<div class="relative pt-6 pb-16 sm:pb-24">
+		<TitleHeader />
+		<VideoHero />
+		<!-- <FeaturedProjects /> -->
+	</div>
 </div>
