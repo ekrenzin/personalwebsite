@@ -24,7 +24,7 @@
 <div class="relative max-w-xl mx-auto">
 	<div class="text-center py-10" />
   <!-- Title and Content Section for Contact Page -->
-<section class="text-center py-10">
+<section class="text-center py-10 px-6">
   <!-- Title -->
   <h1 class="text-4xl font-semibold text-gray-200">Get In Touch</h1>
   
@@ -36,7 +36,7 @@
     Whether you're interested in working on a new project or just want to say hello, feel free to reach out. I'm always open to discussing new opportunities.
   </p>
 </section>
-	<div class="">
+	<div class=" px-6">
 		<form
 			class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
 			on:submit={submitEmail}

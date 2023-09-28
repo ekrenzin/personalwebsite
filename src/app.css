@@ -117,6 +117,8 @@ body {
   /* Define the gradient pattern */
   background: linear-gradient(45deg, #3498db, #2980b9, #3498db);
   background-size: 200% 100%;
+  
+		background: hsla(217, 100%, 50%, 1);
   /* Apply animation */
   animation: flowBG 1s infinite linear;
     color: var(--font-color);
