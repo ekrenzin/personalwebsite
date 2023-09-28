@@ -65,14 +65,14 @@
 		{#each employmentHistory as job}
 			<div class="mb-8 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200 frosted">
 				<div class="flex justify-between">
-					<h3 class="text-xl font-semibold">{job.title}</h3>
+					<h3 class="text-xl font-semibold">{job.title} - <span class="text-blue-400">{job.company}</span></h3>
 					<span class="text-blue-200">{job.period}</span>
 				</div>
-				<p class="text-sky-400 mb-2">{job.location}</p>
+				<p class="text-blue-400 mb-2">{job.location}, United States</p>
 				{#if job.showDuties}
 					<ul transition:slide class="list-inside custom-list">
 						{#each job.duties as duty}
-							<li class="mb-1 pl-4">{duty}</li>
+							<li class="mb-1 pl-4 text-slate-100">{duty}</li>
 						{/each}
 					</ul>
 				{/if}
