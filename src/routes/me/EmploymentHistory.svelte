@@ -59,9 +59,13 @@
 	].map((job) => ({ ...job, showDuties: true }));
 </script>
 
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative pt-10" id="employment-history">
 	<div class="mt-16">
-		<h2 class="text-2xl font-semibold mb-4">Employment History</h2>
+		<div class="flex justify-between  mb-4">
+		<h2 class="text-2xl font-semibold">Employment History</h2>
+		<a href="https://eankrenzin-personal-website.s3.us-west-1.amazonaws.com/Resume.pdf" target="_blank" rel="noreferrer" class="text-center bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Download Resume</a>
+
+	</div>
 		{#each employmentHistory as job}
 			<div class="mb-8 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200 frosted">
 				<div class="flex justify-between">

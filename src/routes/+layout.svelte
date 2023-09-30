@@ -5,17 +5,19 @@
 </script>
 
 <svelte:head>
-  <title>{'Ean Krenzin-Blank'}</title>
+	<title>{'Ean Krenzin-Blank'}</title>
 </svelte:head>
 
-<main >
+<div>
 	<NavBar />
-	<slot />
+	<main>
+		<slot />
+	</main>
 	<Footer />
-</main>
+</div>
 
 <style>
-	main {
+	div {
 		position: relative;
 		height: 100%;
 		width: 100%;
@@ -24,6 +26,5 @@
 		display: flex;
 		flex-direction: column;
 		overflow: auto;
-
 	}
 </style>

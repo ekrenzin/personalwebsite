@@ -10,5 +10,6 @@
 		<TitleHeader />
 		<VideoHero />
 		<!-- <FeaturedProjects /> -->
+		<!-- Title -->
 	</div>
 </div>

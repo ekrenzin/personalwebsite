@@ -115,7 +115,7 @@
 	/>
 </svelte:head>
 
-<section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 h-full relative">
+<section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 h-full relative"  id="skills">
     <h2 class="text-2xl font-semibold mb-2">Skills</h2>
     <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {#each skills as skill}

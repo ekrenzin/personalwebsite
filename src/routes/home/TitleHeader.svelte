@@ -25,8 +25,12 @@
               md:mt-5 md:text-xl md:max-w-3xl
             "
             >
-                Innovating by engineering solutions for Virtual Reality, Web, Mobile, and Desktop.
+                Innovating by engineering solutions for <br/> Virtual Reality, Web, Mobile, and Desktop.
             </p>
+            <div class="mx-auto mt-8 flex flex-wrap gap-4 justify-center">
+              <a href="/me" class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
+            </div>
         </div>
+        <!-- Links -->
     </div>
 </div>

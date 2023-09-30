@@ -6,7 +6,7 @@
     import twitter from "$lib/assets/icons/brand_twitter.svg";
 </script>
 
-  <div class="max-w-7xl mx-auto py-16 px-4 sm:py-10 sm:px-6 lg:px-8">
+  <footer class="max-w-7xl mx-auto py-16 px-4 sm:py-10 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8">
       <div class="mt-8 flex justify-center space-x-6">
         <SocialButton
@@ -30,4 +30,4 @@
     <p class="mt-8 text-center text-base text-sky-300">
       &copy; 2021-{new Date().getFullYear()} Ean Krenzin-Blank. All rights reserved.
     </p>
-  </div>
+  </footer>

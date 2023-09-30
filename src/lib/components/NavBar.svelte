@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { fade } from 'svelte/transition';
 	import logo from '$lib/assets/logo.svg';
 
 	let showMenu: boolean = false;
@@ -26,6 +27,12 @@
 			href: '/me',
 			name: 'Me',
 			alts: [""],
+			icon: null
+		},
+		{
+			href: '/me#employment-history',
+			name: 'Resume',
+			alts: [],
 			icon: null
 		},
 		{
@@ -136,7 +143,7 @@
 
 	<!-- Mobile menu, show/hide based on menu state. -->
 	{#if showMenu}
-		<div class="sm:hidden " id="mobile-menu">
+		<div class="sm:hidden " id="mobile-menu" in:fade>
 			<div class="space-y-1 px-2 pt-2 pb-3">
 				{#each links as link}
 					{#if link.href === $page.url.pathname || link.alts.includes($page.url.pathname)}
