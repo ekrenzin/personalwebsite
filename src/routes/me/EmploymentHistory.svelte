@@ -12,7 +12,7 @@
 			duties: [
 				'Led a team of software engineers to develop and deploy a complex full-stack React-frontend application in a short timeframe.',
 				'Designed and developed a highly-available, fault-tolerant web application using modern AWS cloud technologies.',
-				'Worked with Security experts to build a FedRAMP-certified application.',
+				'Worked with Security experts to build a security certified application.',
 				'Developed .Net microservices to modularize a modular-monolithic platform.',
 				'Instituted robust security protocols to facilitate encrypted communication among diverse stakeholders, including law enforcement agencies.'
 			]
