@@ -30,4 +30,25 @@
     <p class="mt-8 text-center text-base text-sky-300">
       &copy; 2021-{new Date().getFullYear()} Ean Krenzin-Blank. All rights reserved.
     </p>
+    <div class="privacy-container">
+    <a href="/privacy">Privacy policy for my random projects</a>
+  </div>
   </footer>
+
+  <style>
+    .privacy-container {
+      display: flex;
+      justify-content: center;
+      opacity: 0.25;
+      transition: 0.5s;
+    }
+
+    .privacy-container:hover {
+      opacity: 1;
+    }
+
+    a {
+      margin: auto;
+      text-align: center;
+    }
+  </style>
