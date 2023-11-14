@@ -9,12 +9,6 @@ export const fetchMarkdownPosts = async (fetch) => {
         const returnData = {};
         for (const category of categories) {
             const categoryData = markdownData[category];
-            for (const post of categoryData) {
-                const markdown = await fetch(`${baseUrl}/${category}/${post.title}.md`);
-                const content = await markdown.text();
-                const preview = extractPreview(content);
-                post.preview = preview;
-            }
             returnData[category] = categoryData;
         }
 
@@ -44,24 +38,3 @@ export const fetchMarkdownPost = async (fetch, {prefix, suffix}) => {
     }
 }
 
-
-
-function extractPreview(content: any) {
-    let contentPreview = "";
-
-    // Find the first paragraph
-    const endOfFirstParagraph = content.indexOf('\n\n');
-    if (endOfFirstParagraph !== -1) {
-        contentPreview = content.substring(0, endOfFirstParagraph);
-    } else {
-        // If there's no second paragraph, return the whole content
-        contentPreview = content;
-    }
-
-    //limit preview to 200 characters
-    if (contentPreview.length > 200) {
-        contentPreview = contentPreview.substring(0, 200) + "...";
-    }
-
-    return contentPreview;
-}
