@@ -4,7 +4,12 @@ import { spawn } from 'child_process';
 function runScriptPlugin() {
   return {
     name: 'run-script-on-hmr',
-    handleHotUpdate({ server }) {
+    handleHotUpdate({ server, file }) {
+      // Check if the changed file is posts.json
+      if (file.endsWith('posts.json')) {
+        // If it's posts.json, do nothing
+        return;
+      }
       // Run your script here
       const process = spawn('node', ['prebuild.js'], { stdio: 'inherit' });
 

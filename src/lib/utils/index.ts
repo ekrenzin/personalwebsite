@@ -1,6 +1,3 @@
-import fs from 'fs';
-import path from 'path';
-
 export const fetchMarkdownPosts = async (fetch) => {
     try {
         const categories = ['essays', 'poems', 'musings', 'stories'];
