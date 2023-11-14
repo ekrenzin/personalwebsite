@@ -7,4 +7,4 @@ It’s a swirl of vibrancy: of sounds, shapes, colors, backgrounds, faces, voice
 It feels like life; like being alive. 
 I handed a poem to a friend to read. 
 He asked me what it meant, and I tried to explain, but it was gone.
-Crimson mixed away into the colors of evening; the yellows and oranges, blues and purples and browns. 
+Crimson mixed away into the colors of evening; the yellows and oranges, the blues and purples and browns. 
