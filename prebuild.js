@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
+const baseUrl = 'static/writing';
 async function prebuildJSON() {
     console.log("PREBUILDING")
     try {
@@ -10,7 +11,7 @@ async function prebuildJSON() {
 
         // Function to read files from a directory
         async function readFiles(type) {
-            const directory = path.resolve(`src/lib/assets/writing/${type}`);
+            const directory = path.resolve(`${baseUrl}/${type}`);
             const files = await fs.promises.readdir(directory);
             return await Promise.all(
                 files.map(async (file) => {
@@ -30,7 +31,7 @@ async function prebuildJSON() {
 
         //output the return data to a json file
         const json = JSON.stringify(returnData);
-        fs.writeFile('src/lib/assets/writing/posts.json', json, 'utf8', (err) => {
+        fs.writeFile(`${baseUrl}/posts.json`, json, 'utf8', (err) => {
             if (err) {
                 console.log(`Error writing file: ${err}`);
             } else {

@@ -1,7 +1,9 @@
+
+const baseUrl = '/writing'; 
+
 export const fetchMarkdownPosts = async (fetch) => {
     try {
         const categories = ['essays', 'poems', 'musings', 'stories'];
-        const baseUrl = '/src/lib/assets/writing'; 
         const markdownJson = await fetch(`${baseUrl}/posts.json`);
         const markdownData = await markdownJson.json();
         const returnData = {};
@@ -33,7 +35,6 @@ export const fetchMarkdownPosts = async (fetch) => {
  */
 export const fetchMarkdownPost = async (fetch, {prefix, suffix}) => {
     try {
-        const baseUrl = '/src/lib/assets/writing';
         const markdown = await fetch(`${baseUrl}/${prefix}/${suffix}.md`);
         const content = await markdown.text();
         return content;

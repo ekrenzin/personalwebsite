@@ -20,7 +20,7 @@ The Images (in order) were retrieved from the following URLs:
 ## Barbara Hepworth, Ancestor I, 1970, bronze, 109" x 54" x 35-1/2" (277 x 137 x 90 cm)
 
 <div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
-    <img src="/src/lib/assets/writing/images/bb1.jpg" alt="Barbara Hepworth, Ancestor I, 1970, bronze" style="max-width: 100%; max-height: 100%;">
+    <img src="/writing/images/bb1.jpg" alt="Barbara Hepworth, Ancestor I, 1970, bronze" style="max-width: 100%; max-height: 100%;">
 </div>
 
 “Ancestor I” by Barbara Hepworth is a commanding piece nearly 10 feet tall. It is comprised of 4 main sections, with a flat base. Sculpted in bronze, it displays a pleasant light green patina that contrasts with darker brown bronze. From the top down the four sections include: horizontal movement section emphasized by a central void and puncture; vertical movement section emphasized by a carved-out center; horizontal movement section emphasized by rib-like indentations; a final vertical movement section emphasized by a central pill shaped void. The statue appears nearly humanoid, embodying the notion of an ancestor, preserved in bronze, watching over the viewer. The piece could be personified to see the sections as a head, neck, chest, and lower body. The statue has variety, with each section introducing a new motif. There is a central balance, with a horizontal symmetry. Upon closer inspection, however, it becomes clear that each section is slightly askew, which disrupts the balance. While each element is held firmly in place, the piece reflects the delicate nature of balance. Stability is thus represented as something fragile. Furthermore, while the movement varies from section to section, it alternates forming a pattern and rhythm.
@@ -28,7 +28,7 @@ The Images (in order) were retrieved from the following URLs:
 ## Barbara Hepworth, Four-Square (Four Circles), 1966, bronze, 23-5/8" × 14" × 11-1/8" (60 cm × 35.6 cm × 28.3 cm)
  
 <div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
-    <img src="/src/lib/assets/writing/images/bb2.jpg" alt="Four-Square (Four Circles), 1966, bronze" style="max-width: 100%; max-height: 100%;">
+    <img src="/writing/images/bb2.jpg" alt="Four-Square (Four Circles), 1966, bronze" style="max-width: 100%; max-height: 100%;">
 </div>
 
 “Four-Square (Four Circles)” by Barbara Hepworth is a relatively humble piece, only ~2 feet tall, with a simplistic design of 4 stacked rectangles and her signature void punched through each, stood atop a bronze base. When analyzing this piece, it’s impossible not to notice the emphasis on the voids, rather than the squares. This fact is reflected in the name itself, where Hepworth ironically nests the words “Four Circles” within a literal circle (  ). While named four squares, there are not four squares. Each rectangle is varied from the others, most obvious in the height separation between the top two rectangles. By adding slight variations in size, in the squares and voids, the viewer’s eye is guided to the twister-like movement of the piece. The pattern of the shapes and alternating direction from the first layer to the second, create a rhythm that spins the eye.
@@ -38,7 +38,7 @@ The Images (in order) were retrieved from the following URLs:
  
  
 <div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
-    <img src="/src/lib/assets/writing/images/bb3.jpg" alt="Barbara Hepworth, Horizontal Form, 1968, Polished bronze" style="max-width: 100%; max-height: 100%;">
+    <img src="/writing/images/bb3.jpg" alt="Barbara Hepworth, Horizontal Form, 1968, Polished bronze" style="max-width: 100%; max-height: 100%;">
 </div>
 
 "Horizontal Form" by Barbara Hepworth is a compact sculpture cast in polished bronze. “Horizontal Form” has a distinctive egg-like silhouette that defies conventional perspectives of the heaviness of metal. The piece, characterized by its curved back and a flat front face, incorporates Hepworth's signature motif: a hole punched through the center. Notably, the piece also contrasts sharp edges with curved ones. Consider the front – flat – in contrast with the back – rounded.  The side edges – flat – in contrast with the top and bottom edges – rounded. "Horizontal Form" studies contrast and balance, where asymmetry (variety) is key. On the left, the form is denser and visually heavier, conveying a sense of stability and grounding. This portion of the sculpture is a counterbalance to the ascending right side. In contrast, the right side extends upward and outward, a longer form that appears metaphorically lighter despite containing more weight literally. The differing weights and lengths on either side accentuate the piece's horizontal movement.
@@ -46,7 +46,7 @@ The Images (in order) were retrieved from the following URLs:
 ## Barbara Hepworth, Forms in Movement (Pavan), 1956, Bronze with a green brown patina. 42½ in (108 cm) wide
  
 <div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
-    <img src="/src/lib/assets/writing/images/bb4.jpg" alt="Barbara Hepworth, Forms in Movement (Pavan), 1956, Bronze with a green brown patina" style="max-width: 100%; max-height: 100%;">
+    <img src="/writing/images/bb4.jpg" alt="Barbara Hepworth, Forms in Movement (Pavan), 1956, Bronze with a green brown patina" style="max-width: 100%; max-height: 100%;">
 </div>
 
 "Forms in Movement (Pavan)" by Barbara Hepworth embodies the core principles of Hepworth's work: fluidity, unity, and the inherent beauty of natural forms. The piece is cast bronze with a green and brown patina. The solidity of bronze contrasts sharply with the impression of movement it imparts. The sculpture itself draws inspiration from a previous work of Hepworth's, "Forms in Movement (Galliard)," which was crafted from polished copper. "Forms in Movement (Pavan)" is characterized by a series of circular formations that, in turn, converge on a fixed center. The overall impression is one of a spiral or vortex, creating an illusion of motion. The sculpture whirls the viewer's gaze, just as water swirls in the rapids of a river and pulls down. The piece's green-brown patina adds a natural element both via the symbolic green and the literal natural process of oxidation that occurs in metals. Just like a pavane (Pavan in England) - an elegant and slow dance popular in the 16th century - this piece embodies an elegant sense of movement, like a dance. Notably, this piece lacks Hepworth’s “hole punch” motif but still contains her use of voids. 
@@ -54,7 +54,7 @@ The Images (in order) were retrieved from the following URLs:
 ## Barbara Hepworth, Figure for Landscape, 1959-1960 bronze with a green/brown patina 102 3/8 in. (260 cm.) 
  
 <div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
-    <img src="/src/lib/assets/writing/images/bb5.jpg" alt="Figure for Landscape, 1959-1960 bronze with a green/brown patina" style="max-width: 100%; max-height: 100%;">
+    <img src="/writing/images/bb5.jpg" alt="Figure for Landscape, 1959-1960 bronze with a green/brown patina" style="max-width: 100%; max-height: 100%;">
 </div>
 
 "Figure for Landscape 1959–60," looms at a commanding nine feet tall. Cast in bronze, this hollowed-out piece presents a skeletal presence and visual movement akin to The Scream by Edvard Munch 1893. While it doesn't depict any explicit human form, the tapering shape invokes an abstract impression of a face. The piece has a slightly foreboding, yet intriguing quality. Hepworth's signature technique of voids is present, however "Figure for Landscape" lacks her visual motif of a “hole punch”. There are four asymmetrical openings to the hollow center of the sculpture. Starting with an aluminum armature, she built layer upon layer of plaster until the structure was solid. Upon drying, she directly carved into the plaster, reworking it continuously until the desired form was achieved. The final form was cast in bronze in two parts (Getty.edu). Hepworth's preference for working outdoors influenced her process and the final product. The piece guides light and wind gently through in a manner quite like the leaves of a plant or tree. Indeed, the figure’s silhouette is quite akin to that of an English Oak leaf. It is the emphasis on the center through her iconic voids that establishes a skeletal feel.
