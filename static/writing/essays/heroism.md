@@ -15,7 +15,7 @@ While Malala epitomizes modern heroism, it is imperative to recognize that not a
  
 
 
-## Extra Discussion:
+## Discussion #1:
 
 > I was part of a discussion on the subject and opted to spark a bit of controversy with my analysis of heroism. Here is a continuation of my thoughts (notably more confrontational):
 
@@ -45,3 +45,37 @@ I agree with the points you’ve made because they effectively highlight the end
 The digital frontier as the battlefield of today is a nice idea. There is a lot of that going on. Unfortunately, we also have plenty of people dying in the real world, and I feel like not acknowledging that undervalues the men and women who fight for this country and other countries on the battlefields. If you want an example of Achilles today, what about what is going on in the Ukraine? What about that country's president, Volodymyr Zelenskyy, who has managed to keep Russia at bay all this time, despite the fact that Russia is a much larger country? That is kind of heroic and definitely not on a computer. Real people are dying. 
 
 This is not to undermine your comparison, just to make a side note that the battlefields of old have changed, but only with more modern killing instruments and people are still out there fighting them. 
+
+
+## Discussion #2
+
+Hello Darlene,
+
+I agree with your perspective that heroic events exist on a diverse spectrum rather than within a fixed definition. Your analysis on Odysseus is fascinating due to your focus on a frequently overlooked dimension of his heroism — the return to Penelope. While not everyone would consider this relationship to be entirely heroic, considering the affairs on his journey, I agree with your perspective. In fact, Odysseus’s perseverance and will to return home is perhaps his greatest display of heroics, as his determination is perhaps his most human quality. That is to say, my subjective definition of heroics heralds commitment above extravagance. Furthermore, I vehemently reject the notions of heroics in destiny. In other words, following your destiny is not heroic, but instead dutiful.
+
+Indeed, this train of thinking is what I found most compelling about Achilles. Immediately, Achilles makes it clear to the reader that he will not mindlessly follow Agamemnon. Rather than following leadership, Achilles upholds an individualism that elevates him to heroics. My argument, therefore, is that a hero chooses to be heroic.
+
+It is my position that a person can only be heroic through a conscious acknowledgment of their own actions. They must be aware of their actions' consequences before they unfold. That is to say, to be heroic, one must understand the totality of the circumstances resulting from the propagation of their motion. This means that a person who slaughters the suitors of their wife is heroic only if they experience a sensation of consequence. Merciless slaughter is brutal to prop up in our contemporary society. To avoid a strawman argument on the morality of this, let’s quickly dissect why a sensation of consequence is essential.
+
+Consider the scenario where Odysseus returns home and kills all of Penelope’s suitors out of principle. He simply sees them with his wife, and off goes their heads. In this scenario, Odysseus would not be heroic. He justified murder without the totality of the circumstances. In his time away, did Odysseus not sleep with other women? Should Penelope desire those women executed? Naturally, she might experience a range of emotions, but ultimately, Penelope should not operate reactively but rather patiently. Penelope will eventually realize without the aid of Calypso and Circe, there would be no Odysseus to return home.
+
+Regarding Odysseus, his actions are heroic in relation to his eventual reunion. Upon returning to Ithaca in disguise, Odysseus gradually learns about the suitors occupying his palace (although he has already heard whispers through Athena and others). As Odysseus interacts with the suitors, their servants, and his family members while disguised as a beggar, he gains insight into their disrespectful and extravagant behavior, plans to marry Penelope, and their plot to kill his son, Telemachus. This allows Odysseus to assess the totality of the situation. His observations and interactions under disguise not only provide him with the necessary information to execute his plan but also enable him to make a conscious choice.
+
+Thus, we see the heroics of Odysseus demonstrated through mercy. This may seem to be an obscure jump; however, consider that mercy does not necessitate lenience but rather the granting of an opportunity to demonstrate improved behavior. Mercy does not necessitate that the subject of one's power is aware of this opportunity, merely that the opportunity is given. This line of thought is undoubtedly contestable, but to borrow from religious scripture, one might consider Matthew 21:28-32, the Parable of the Two Sons. This parable is used to emphasize the importance of genuine repentance and following through on one's commitments rather than merely paying lip service to them. Ironically, it more definitively showcases the Western perspective on mercy. Hell represents the ultimate and absurdly cruel form of punishment. In this parable, mercy is given as an opportunity early on but not as a reminder.
+
+Certainly, the suitors of Penelope were aware of their own wrongdoing and had the opportunity to repent prior to judgment day. Perhaps they were not aware of when judgment day would come or even began to believe that it would never come, but they would struggle to deny the possibility had not occurred to them. In other words, the suitors acted within the knowledge of a contract that their actions would invoke the rage of Odysseus, given his return. Indeed, these suitors might be likened to vultures, opportunistic rather than devious, but regardless, they were given a trial.
+
+Let us now color the discussion of mercy and heroics, but through a more cheerful contemporary example, Bilbo Baggins. While Bilbo Baggins could be considered heroic through his wit, as is so often considered of Odysseus, let us ponder his act of Sparing Gollum instead. To do so, consider the following scene:
+
+Frodo: 'It's a pity Bilbo didn't kill Gollum when he had the chance.'
+
+Gandalf: 'Pity? It's a pity that stayed Bilbo's hand. Many that live deserve death. Some that die deserve life. Can you give it to them, Frodo? Do not be too eager to deal out death in judgment. Even the very wise cannot see all ends. My heart tells me that Gollum has some part to play in it, for good or evil, before this is over. The pity of Bilbo may rule the fate of many.'
+
+Here Gandalf wisely posits that the totality of the circumstances are difficult to ascertain, especially in the aftermath. Gandalf is not arguing that sparing Gollum was correct, but rather supposing that neither he, nor anyone else can truly know what is right and wrong until it’s all over with. This chain of uncertainty spirals quickly, so judgment is thus best left ungiven.
+
+Therefore, while a hero’s judgment may come, it is not a hero's duty to cast it. A hero is a protector, not a slayer. As in Odysseus, a hero chooses to protect their family. As in Achilles, a hero chooses to protect their ideals. As shown in The Hobbit, a hero can also refrain from drastic action altogether. A hero is one who chooses to do good to the extent that they understand it. Thus we conclude, heroics are in conscious choices.
+
+ 
+
+Best,
+Ean
