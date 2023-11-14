@@ -2,14 +2,14 @@
 import { fetchMarkdownPosts, fetchMarkdownPost } from '$lib/utils';
 import { json } from '@sveltejs/kit';
 
-export const GET = async () => {
-	const allPosts = await fetchMarkdownPosts();
+export const GET = async ({fetch}) => {
+	const allPosts = await fetchMarkdownPosts(fetch);
 	return json(allPosts);
 };
 
-export const POST = async ({request}) => {
+export const POST = async ({fetch, request}) => {
 	const { prefix, suffix } = await request.json();
-	const post = await fetchMarkdownPost(prefix, suffix);
+	const post = await fetchMarkdownPost(fetch, {prefix, suffix});
 	return json(post);
 }
 

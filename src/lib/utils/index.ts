@@ -1,47 +1,31 @@
 import fs from 'fs';
 import path from 'path';
 
-export const fetchMarkdownPosts = async () => {
+export const fetchMarkdownPosts = async (fetch) => {
     try {
+        const categories = ['essays', 'poems', 'musings', 'stories'];
+        const baseUrl = '/src/lib/assets/writing'; 
+        const markdownJson = await fetch(`${baseUrl}/posts.json`);
+        const markdownData = await markdownJson.json();
         const returnData = {};
-        const categories = ['essays', 'poems', 'stories', 'musings'];
-
-
-        // Function to read files from a directory
-        async function readFiles(type) {
-            const directory = path.resolve(`src/lib/assets/writing/${type}`);
-            const files = await fs.promises.readdir(directory);
-            return await Promise.all(
-                files.map(async (file) => {
-                    const filePath = path.join(directory, file);
-                    const content = await fs.promises.readFile(filePath, 'utf8');
-                    const preview = extractPreview(content);
-                    const title = path.basename(file, '.md');
-                    return { title, preview, url: `writing/${type}_${title}` };
-                })
-            );
-        }
-
         for (const category of categories) {
-            returnData[category] = await readFiles(category);
-        }
-
-
-        //output the return data to a json file
-        const json = JSON.stringify(returnData);
-        fs.writeFile('src/lib/assets/writing/posts.json', json, 'utf8', (err) => {
-            if (err) {
-                console.log(`Error writing file: ${err}`);
-            } else {
-                console.log(`File is written successfully!`);
+            const categoryData = markdownData[category];
+            for (const post of categoryData) {
+                const markdown = await fetch(`${baseUrl}/${category}/${post.title}.md`);
+                const content = await markdown.text();
+                const preview = extractPreview(content);
+                post.preview = preview;
             }
+            returnData[category] = categoryData;
         }
-        );
+
         return returnData;
     } catch (error) {
-        console.log(error);
+        console.error('Error fetching Markdown posts:', error);
+        throw error; // Rethrow the error for further handling
     }
 }
+
 
 /**
  * Fetches the content of a Markdown post.
@@ -50,13 +34,11 @@ export const fetchMarkdownPosts = async () => {
  * @param {string} suffix - The suffix of the file path.
  * @returns {Promise<string>} The content of the Markdown file.
  */
-export const fetchMarkdownPost = async (prefix, suffix) => {
+export const fetchMarkdownPost = async (fetch, {prefix, suffix}) => {
     try {
-        // Construct the file path
-        const filePath = path.join(`src/lib/assets/writing/${prefix}`, `${suffix}.md`);
-
-        // Read the Markdown file content
-        const content = await fs.promises.readFile(filePath, 'utf8');
+        const baseUrl = '/src/lib/assets/writing';
+        const markdown = await fetch(`${baseUrl}/${prefix}/${suffix}.md`);
+        const content = await markdown.text();
         return content;
     } catch (error) {
         console.error('Error fetching Markdown post:', error);
