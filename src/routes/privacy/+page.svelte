@@ -33,6 +33,6 @@
 
     <h2 class="text-xl font-semibold mt-4 mb-2">7. Contact Us</h2>
     <p class="text-gray-300">
-        If you have any questions about this privacy policy, please contact us via [your contact method here].
+        If you have any questions about this privacy policy, please contact us via email.
     </p>
 </section>

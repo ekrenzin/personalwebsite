@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js,svelte,ts}",
-    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
   ],
 
   theme: {
@@ -10,6 +9,5 @@ module.exports = {
   },
 
   plugins: [
-    require('flowbite/plugin')
   ],
 }

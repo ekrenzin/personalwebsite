@@ -1,9 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
 	import logo from '$lib/assets/logo.svg';
 
 	let showMenu: boolean = false;
+    let showDropdown = false; // New state for dropdown visibility
+
 	let links = [
 		{
 			href: '/home',
@@ -24,17 +27,25 @@
             icon: null
         },
 		{
-			href: '/me',
-			name: 'Me',
-			alts: [""],
-			icon: null
-		},
-		{
-			href: '/me#employment-history',
-			name: 'Resume',
-			alts: [],
-			icon: null
-		},
+            href: '/me',
+            name: 'Me',
+            alts: [""],
+            icon: null,
+            subLinks: [
+                {
+                    href: '/me#story',
+                    name: 'Story'
+                },
+                {
+                    href: '/me#employment-history',
+                    name: 'Resume'
+                },
+				{
+					href: "/writing",
+					name: "Creative Writing"
+				}
+            ]
+        },
 		{
 			href: '/contact',
 			name: 'Contact',
@@ -48,6 +59,8 @@
 			icon: null
 		}
 	];
+
+	
 </script>
 
 <style>
@@ -57,6 +70,28 @@
 
 	nav {
 		z-index: 100;
+	}
+
+	 /* Desktop hover styles */
+	 .dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+    }
+
+    .dropdown-menu {
+        display: none; /* Hide dropdown by default */
+        position: absolute;
+        left: 0;
+		top: 90%;
+        z-index: 1;
+        /* Add more styling as needed */
+    }
+
+	.dropdown-menu a {
+		background-color: #1f2937;
+	}
+
+	.dropdown-menu a:hover {
+		background-color: #0e1118;
 	}
 </style>
 
@@ -81,21 +116,22 @@
 				<div class="hidden sm:ml-6 sm:block">
 					<div class="flex space-x-4">
                         
-				{#each links as link}
-                        {#if link.href === $page.url.pathname || link.alts.includes($page.url.pathname)}
-                            <a
-                                href={link.href}
-                                class="rounded-md bg-blue-900 px-3 py-2 text-md font-medium text-white"
-                                >{link.name}</a
-                            >
-                        {:else}
-                            <a
-                                href={link.href}
-                                class="rounded-md px-3 py-2 text-md font-medium hover:bg-blue-400 text-white"
-                                >{link.name}</a
-                            >
-                        {/if}
-                    {/each}
+						<div class="hidden sm:ml-6 sm:block">
+							<div class="flex space-x-4">
+								{#each links as link}
+									<div class="relative dropdown"> 
+										<a href={link.href} class="{link.href === $page.url.pathname || link.alts.includes($page.url.pathname) ? 'rounded-md bg-blue-900 px-3 py-2 text-md font-medium text-white' : 'rounded-md px-3 py-2 text-md font-medium hover:bg-blue-400 text-white'}" on:click={() => { if (link.subLinks) showDropdown = !showDropdown }}>{link.name}</a>
+										{#if link.subLinks}
+											<div class="absolute left-0 mt-2 shadow-md dropdown-menu">
+												{#each link.subLinks as subLink}
+													<a href={subLink.href} class="block px-4 py-2 text-sm text-gray-100">{subLink.name}</a>
+												{/each}
+											</div>
+										{/if}
+									</div>
+								{/each}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -143,24 +179,21 @@
 
 	<!-- Mobile menu, show/hide based on menu state. -->
 	{#if showMenu}
-		<div class="sm:hidden " id="mobile-menu" in:fade>
-			<div class="space-y-1 px-2 pt-2 pb-3">
-				{#each links as link}
-					{#if link.href === $page.url.pathname || link.alts.includes($page.url.pathname)}
-						<a
-							href={link.href}
-							class="block rounded-md bg-sky-700 px-3 py-2 text-base font-medium text-white"
-							>{link.name}</a
-						>
-					{:else}
-						<a
-							href={link.href}
-							class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-sky-600 hover:text-white"
-							>{link.name}</a
-						>
-					{/if}
-				{/each}
-			</div>
-		</div>
-	{/if}
+    <div class="sm:hidden" id="mobile-menu" in:fade>
+        <div class="space-y-1 px-2 pt-2 pb-3">
+            {#each links as link}
+                <div class="relative dropdown">
+                    
+                    {#if link.subLinks}
+                            {#each link.subLinks as subLink}
+							<a href={subLink.href} class="block rounded-md hover:bg-sky-500  px-3 py-2 text-base font-medium text-white">{subLink.name}</a>
+                            {/each}
+							{:else}
+							<a href={link.href} class="block rounded-md hover:bg-sky-500  px-3 py-2 text-base font-medium text-white">{link.name}</a>
+                    {/if}
+                </div>
+            {/each}
+        </div>
+    </div>
+{/if}
 </nav>

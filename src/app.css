@@ -3,84 +3,79 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #e2d9e1;
-    --secondary-color: #000;
-    --font-color: #e1e1ff;
-    --bg-color: rgb(30, 30, 30);
-    --secondary-bg-color: rgb(10, 10, 10);
-    --heading-color: #818cab;
-  
-    --accent-color: #00ead8;
-  
-    --svg-filter: invert(99%) sepia(0%) saturate(18%) hue-rotate(128deg)
-      brightness(107%) contrast(100%);
-    --svg-filter: invert(45%) sepia(0%) saturate(25%) hue-rotate(174deg)
-      brightness(98%) contrast(88%);
-    --svg-filter-hover: invert(95%) sepia(55%) saturate(2283%) hue-rotate(158deg)
-      brightness(106%) contrast(105%);
-    --svg-filter: invert(93%) sepia(9%) saturate(265%) hue-rotate(124deg)
-      brightness(93%) contrast(87%);
-    --svg-filter-selected: invert(75%) sepia(19%) saturate(1393%)
-      hue-rotate(123deg) brightness(102%) contrast(102%);
-    --svg-filter-button: invert(70%) sepia(95%) saturate(966%) hue-rotate(117deg)
-      brightness(92%) contrast(85%);
-  }
-  
-  [data-theme='light'] {
-    --accent-color: #00b6b0;
-  
-    --primary-color: rgb(30, 30, 30);
-    --secondary-color: rgb(80, 80, 80);
-  
-    --font-color: #252733;
-    --secondary-font-color: #9fa2b4;
-    --tertiary-font-color: #4b506d;
-  
-    --border-color: #dfe0eb;
-    --border-secondary-color: #717171;
-  
-    --bg-color: rgb(245, 245, 250);
-    --secondary-bg-color: #e9f5f4;
-    --tertiary-bg-color: #fff;
-    --alpha-bg-color: #ffffff80;
-  
-    --button-color: rgb(200, 200, 200);
-    --button-bg: #a1c7c1;
-    --button-font-color: #fff;
-  
-    --disabled: rgb(200, 200, 200);
-    --heading-color: #292922;
-  }
-  
-  [data-theme='dark'] {
-    --accent-color: #00ead8;
-  
-    --primary-color: #e2d9e1;
-    --secondary-color: #5a5a5a;
-  
-    --font-color: rgb(230, 230, 230);
-    --secondary-font-color: #737373;
-    --tertiary-font-color: #717171;
-  
-    --border-color: rgb(30, 30, 30);
-    --border-secondary-color: #717171;
-  
-    --bg-color: rgb(20, 20, 20);
-    --secondary-bg-color: #242424;
-    --tertiary-bg-color: rgb(50, 50, 50);
-    --alpha-bg-color: #ffffff10;
-  
-    --button-color: rgb(80, 80, 80);
-    --button-bg: #519a92;
-    --button-background: #404040;
-  
-    --disabled: rgb(100, 100, 100);
-    --heading-color: #818cab;
-  }
+  --primary-color: #e2d9e1;
+  --secondary-color: #000;
+  --font-color: #e1e1ff;
+  --bg-color: rgb(30, 30, 30);
+  --secondary-bg-color: rgb(10, 10, 10);
+  --heading-color: #818cab;
+
+  --accent-color: #00ead8;
+
+  --svg-filter: invert(99%) sepia(0%) saturate(18%) hue-rotate(128deg) brightness(107%) contrast(100%);
+  --svg-filter: invert(45%) sepia(0%) saturate(25%) hue-rotate(174deg) brightness(98%) contrast(88%);
+  --svg-filter-hover: invert(95%) sepia(55%) saturate(2283%) hue-rotate(158deg) brightness(106%) contrast(105%);
+  --svg-filter: invert(93%) sepia(9%) saturate(265%) hue-rotate(124deg) brightness(93%) contrast(87%);
+  --svg-filter-selected: invert(75%) sepia(19%) saturate(1393%) hue-rotate(123deg) brightness(102%) contrast(102%);
+  --svg-filter-button: invert(70%) sepia(95%) saturate(966%) hue-rotate(117deg) brightness(92%) contrast(85%);
+}
+
+[data-theme='light'] {
+  --accent-color: #00b6b0;
+
+  --primary-color: rgb(30, 30, 30);
+  --secondary-color: rgb(80, 80, 80);
+
+  --font-color: #252733;
+  --secondary-font-color: #9fa2b4;
+  --tertiary-font-color: #4b506d;
+
+  --border-color: #dfe0eb;
+  --border-secondary-color: #717171;
+
+  --bg-color: rgb(245, 245, 250);
+  --secondary-bg-color: #e9f5f4;
+  --tertiary-bg-color: #fff;
+  --alpha-bg-color: #ffffff80;
+
+  --button-color: rgb(200, 200, 200);
+  --button-bg: #a1c7c1;
+  --button-font-color: #fff;
+
+  --disabled: rgb(200, 200, 200);
+  --heading-color: #292922;
+}
+
+[data-theme='dark'] {
+  --accent-color: #00ead8;
+
+  --primary-color: #e2d9e1;
+  --secondary-color: #5a5a5a;
+
+  --font-color: rgb(230, 230, 230);
+  --secondary-font-color: #737373;
+  --tertiary-font-color: #717171;
+
+  --border-color: rgb(30, 30, 30);
+  --border-secondary-color: #717171;
+
+  --bg-color: rgb(20, 20, 20);
+  --secondary-bg-color: #242424;
+  --tertiary-bg-color: rgb(50, 50, 50);
+  --alpha-bg-color: #ffffff10;
+
+  --button-color: rgb(80, 80, 80);
+  --button-bg: #519a92;
+  --button-background: #404040;
+
+  --disabled: rgb(100, 100, 100);
+  --heading-color: #818cab;
+}
+
 /**
  * Rotating background pseudo-element
  */
- body::before {
+body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -95,6 +90,7 @@
 body::before {
   animation: spinBG 20s infinite linear;
 }
+
 /**
  * Rotation keyframes
  */
@@ -103,9 +99,11 @@ body::before {
     transform: rotate(0deg);
     background-position: 0 0;
   }
+
   50% {
     background-position: 100% 0;
   }
+
   100% {
     transform: rotate(360deg);
     background-position: 0 0;
@@ -117,50 +115,75 @@ body {
   /* Define the gradient pattern */
   background: linear-gradient(45deg, #3498db, #2980b9, #3498db);
   background-size: 200% 100%;
-  
-		background: hsla(217, 100%, 50%, 1);
+
+  background: hsla(217, 100%, 50%, 1);
   /* Apply animation */
   animation: flowBG 1s infinite linear;
-    color: var(--font-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  color: var(--font-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-	.noise {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 0;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-image: url('$lib/assets/noise.png');
-		object-fit: cover;
-		opacity: 0.5;
-		user-select: none;
-		pointer-events: none;
-	}
-  
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('$lib/assets/noise.png');
+  object-fit: cover;
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+}
+
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 8px;
   /* 0px hides the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 3px;
+  background-color: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-font-color);
+  background: var(--font-color);
   height: 50px;
   border-radius: 10px;
   transition: 0.1s;
+}
+
+
+.frosted {
+  backdrop-filter: blur(10px);
+  background-color: rgba(100, 214, 255, 0.1);
+  transition: 2s;
+}
+
+
+.frosted:hover {
+  background-color: rgba(100, 214, 255, 0.2);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
