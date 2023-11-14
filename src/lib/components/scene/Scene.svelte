@@ -151,7 +151,6 @@
 	};
 
 	onMount(async () => {
-		console.log('load scene');
 		loadingText = 'Loading Scene';
 		loadScene();
 		loadingText = 'Loading Desktop';

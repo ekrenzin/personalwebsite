@@ -15,7 +15,6 @@
     function onIntersect(node: HTMLElement, options = { threshold: 0.1 }) {
         const observer = new IntersectionObserver(([entry]) => {
             if (entry.isIntersecting) {
-                console.log('intersecting')
                 node.style.opacity = '1';
                 node.style.transform = 'none';
             }
