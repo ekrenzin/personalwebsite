@@ -17,8 +17,9 @@ export async function load({ params: { slug: $slug }, fetch }) {
             body: JSON.stringify({ prefix, suffix })
         });
 
-        const post = await response.json();
-        return {post, slug}
+        const data = await response.json();
+        const {post,nextPost, previousPost} = data;
+        return {post, slug, nextPost, previousPost}
     } catch (error) {
         console.log(error)
         return redirect(302, '/writing');

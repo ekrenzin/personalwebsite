@@ -9,7 +9,7 @@ export const GET = async ({fetch}) => {
 
 export const POST = async ({fetch, request}) => {
 	const { prefix, suffix } = await request.json();
-	const post = await fetchMarkdownPost(fetch, {prefix, suffix});
-	return json(post);
+	const {post, nextPost, previousPost} = await fetchMarkdownPost(fetch, {prefix, suffix});
+	return json({post, nextPost, previousPost});
 }
 

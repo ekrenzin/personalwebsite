@@ -37,8 +37,15 @@ function loadHtml(c) {
         {@html loadHtml(data)}
     </article>
     <!-- centered button to go back -->
-    <a class="back" href={`/writing#${data.slug}`} >← Back</a>
-    
+    <div class="flex-row">
+    {#if data && data.previousPost && data.previousPost.url}
+    <a class="previous" href={`/${data.previousPost.url}`} >← Previous</a>
+    {/if}
+    <a class="back" href={`/writing#${data.slug}`} >Back</a>
+    {#if data && data.nextPost && data.nextPost.url}
+    <a class="forward" href={`/${data.nextPost.url}`} >Next →</a>
+    {/if}
+</div>
 </div>
 
 <style>
@@ -52,9 +59,15 @@ article {
   font-family: 'Times New Roman', Times, serif;
 }
 
-.back {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-row a {
+    text-decoration: underline;
 }
 </style>
