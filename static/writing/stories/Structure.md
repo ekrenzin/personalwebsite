@@ -51,38 +51,48 @@ The song ends and they press the button at the other side of the train car to ex
 
 The man is still sprawled out, with his proud yellowed toenail. I pull out my phone and swipe to Word. I read from my new book.
 
-\*
+<i>
+*
+
 I push on the needle down and the words flow like pictures and I’m floating and I’m high and it doesn’t matter that the sky is gray with storm clouds because those clouds are fumes of paint. And paint is my blood.
 
 I wake up. And feel down. Fuck. I scratch my cheek, sliding fingers through beard. My fur brown and blonde and ginger. I slide my hand down into my pants and scratch there too, and my leg twitches like a dog. And I shout out. I roll over and rub my eyes, my hands still sticky from sleep. My eyes still sticky from sleep. I look up, and around. I’m on a bench. I don’t remember getting here, although I sort of do. I was with someone, I think we had sex. My hand is sticky like we had sex, but I could have been by myself. I realize that answers nothing. I don’t know how I got here. But I remember my mom. Maybe that’s how I ended up here. I remember the flames tears rage anger violence spit blood sweat cops chains shackles, I remember that cell. The bars so straight. F. That’s what they called me in there. Maybe it was the name which got me here. I don’t know.
 
 I scratch at my foot, calloused and yellow from walking in the streets at night. One of my shoes is still on, the left one. It’s the good shoe, but they both have holes around the big toe. That’s where my toenail scratches when I’m high. When the electricity shoots through my veins and I tense up and my feet wriggle like the fish in Gollum’s mouth, I am the Ring and Gollum consumes me. I read that book as a kid. I read that book last year.
 *
+</i>
 
 Yeah. It’s crap. I sigh, the metaphors are superficial and obvious. It’s crude for the sake of being provocative, and lacks depth. I don’t relate to the character. I don’t know why I’m writing about drugs when I’ve never done them. Ugh.
 
 “Now arriving Grove Street. Next stop Journal Square.” Our train rattles to a stop in the station and the doors open like an air lock on a spaceship. I stand up, and look behind me, double checking that I hadn’t forgotten anything on the seat, then step out of the train. The hot air of the path station crashes into me. I shiver from the change.
 
 An asian Monk in orange robes shakes jade beads at me. He chants something at me but I duck under his voice and scurry past. Clenching my teeth in a tight smile I look down to avoid confronting his eyes. As I rush to the stairs, I glance back to see the monk has pulled a cellphone from his robes and is scrolling. The overhead fans drown out my laugh as I exit the path station back to the sidewalk. Foot in front of foot in front of foot until I’m back to my apartment.
+
 It takes my whole body to pry open the heavy wood. I’m like Sisyphus, and the door slams behind me as I trip inside. 500 feet, apparently square, my apartment is small, but also big. It’s big. Or small. I think it’s small. I throw my keys on the counter, hang my purse, and walk across the room. It’s two rooms, one with a bed, the other everything else. I walk over to the computer where I sit down. I begin to type.
 
+<i>
 *
+
 Colors constrain my mind and when
 I re-count the day I count the colors
 Black, Red, Orange, Yellow,
-White, black. Gray. So fucking gray.
-
-Fucking Gray. I hate gray. Everything is gray and I hate it. When they take photos, the background is gray. My memories are gray. I pretend there are colors, I write as if there are colors, but it’s all gray. The words I type mix black with white and are gray. Gray gray gray gray fucking Mr. Gray. Mr. Gray’s office was gray, his suit was gray, the publishing building was gray, the sidewalk was gray, the path station was gray, the train was gray, the man's sock was gray, my apartment walls are gray.
-
+White, black. Gray. So fucking gray. Fucking Gray. I hate gray. Everything is gray and I hate it. When they take photos, the background is gray. My memories are gray. I pretend there are colors, I write as if there are colors, but it’s all gray. The words I type mix black with white and are gray. Gray gray gray gray fucking Mr. Gray. Mr. Gray’s office was gray, his suit was gray, the publishing building was gray, the sidewalk was gray, the path station was gray, the train was gray, the man's sock was gray, my apartment walls are gray.
 *
+</i>
+
+
 I can’t tell if I typed it right, but it’s out there now, and I feel better. I hold backspace till I see white and feel worse. I hate myself. I try again.
+
+
+<i>
 *
+
 I shut my doors, threw the key out to sea.
 I decree to all: I refuse to see!
 Yet still they come in flocks, like birds, to me,
 expecting eyes and ears complete and free.
 
-Now peace, that which I have so tantalized,s
+Now peace, that which I have so tantalized,
 Finally a moment, I fantasized,
 breath of air! The quiet of just me! To
 wake from soft morning breeze across the dew.
@@ -116,8 +126,9 @@ Why must you come to establish a zoo?"
 was struck by cupids arrow, and carpets
 have been laid down the aisle
 Avoid as you may, this may take a while."
-
 *
+</i>
+
 It doesn’t flow. My wrist itches and I scratch. “Carpets” The letter “R” is such an awful letter. It makes everything sound hard. I think of words with an R. Shit. I hear a noise from  across the room. It’s my purse rattling the coat hanger. I push my chair back from the desk and spin. I walk over to it. It’s my mom. I let it ring. I let it ring. I feel guilt. I let it ring. Missed call from mom. My phone vibrates again. Text from mom. “Please Call me back ita urgent. I love you” Shit. 
 
 I tap the missed call notification and it starts to ring. She picks up before it rings a second time. Shit. “Hey Honey, thanks for calling me back, I missed you.” 
