@@ -1,6 +1,4 @@
 <script>
-    import { page } from '$app/stores';
-    import { onMount } from 'svelte';
     import { parse, Renderer } from 'marked';
 
 
@@ -39,7 +37,7 @@ function loadHtml(c) {
         {@html loadHtml(data)}
     </article>
     <!-- centered button to go back -->
-    <a class="back" href="/writing" >← Back</a>
+    <a class="back" href={`/writing#${data.slug}`} >← Back</a>
     
 </div>
 

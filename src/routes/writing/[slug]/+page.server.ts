@@ -18,7 +18,7 @@ export async function load({ params: { slug: $slug }, fetch }) {
         });
 
         const post = await response.json();
-        return {post}
+        return {post, slug}
     } catch (error) {
         console.log(error)
         return redirect(302, '/writing');

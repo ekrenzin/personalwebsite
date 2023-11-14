@@ -40,7 +40,7 @@ renderer.paragraph = (text) => {
 };
 </script>
 
-<article use:onIntersect  class="bg-white rounded-lg shadow-lg overflow-hidden p-8 frosted">
+<article use:onIntersect  class="bg-white rounded-lg shadow-lg overflow-hidden p-8 frosted" id={markdownContent.url.split('/').pop()}>
     <p>{@html cleanMD(markdownContent.preview)}</p>
     <a href={markdownContent.url}>
         <button class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded">
