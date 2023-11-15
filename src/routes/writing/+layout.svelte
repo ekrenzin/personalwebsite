@@ -9,10 +9,10 @@
     .bg {
         background-color: rgba(25, 20, 20, 0.95);
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
         z-index: -1;
     }
 </style>
