@@ -1,10 +1,10 @@
 <script lang="ts">
 	import ChatModal from './ChatModal.svelte';
-
-	let showChatHistory = false;
+	import { showChat } from './chatStore';
+	
 
 	function toggleChatHistory() {
-		showChatHistory = !showChatHistory;
+		showChat.update((value) => !value);
 	}
 
 </script>
@@ -19,7 +19,7 @@
 
 </div>
 
-{#if showChatHistory}
+{#if $showChat}
 <ChatModal {toggleChatHistory} />
 {/if}
 <style>
