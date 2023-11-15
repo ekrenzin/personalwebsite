@@ -14,9 +14,9 @@
 	<main>
 		<slot />
 	</main>
-	<ChatBubble />
 	<Footer />
 </div>
+<ChatBubble />
 
 <style>
 	div {

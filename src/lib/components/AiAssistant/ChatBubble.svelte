@@ -24,6 +24,7 @@
 {/if}
 <style>
 	.chat-bubble {
+		z-index: 10000;
 		/* Additional styling if needed */
 		position: fixed;
 		bottom: 1rem;

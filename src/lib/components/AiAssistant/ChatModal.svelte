@@ -93,6 +93,10 @@
 </div>
 
 <style>
+    .wrapper {
+        z-index: 10000;
+		position: fixed;
+    }
     .content {
         display: flex;
         justify-content: flex-start;
@@ -105,6 +109,8 @@
 
     .content-body {
         height: 100%;
+        width: 100%;
+        overflow: auto;
     }
 
     .content-header {
