@@ -7,7 +7,7 @@
     <div class="w-full mx-auto px-4 sm:px-6">
         <video
             class="relative rounded-lg shadow-lg w-full"
-            src="https://eankrenzin-personal-website.s3.us-west-1.amazonaws.com/dashboard.mp4"
+            src="/videos/dashboard.mp4"
             autoplay
             loop
             muted
