@@ -5,7 +5,6 @@ export async function postWorkerData(workerUrl, { request, fetch }) {
     try {
         // Convert the request body to JSON
         const body = JSON.stringify(await request.json());
-        console.log(body);
 
         // Sending request to the Cloudflare worker
         const workerResponse = await fetch(workerUrl, {
