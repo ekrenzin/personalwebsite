@@ -1,6 +1,7 @@
 <script>
 	import { loadHtml } from '$lib/utils/markdown';
     import { showChat, sendMessage } from '$lib/components/AiAssistant/chatStore';
+	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 
 	//dynamically import the markdown file based on the slug
 	export let data;
@@ -16,9 +17,12 @@
 		{@html loadHtml(data.post)}
 	</article>
 	<!-- centered button to go back -->
-    <button class="bg-gray-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-10" on:click={AnalyzeWithAI}>
+	<div class="flex-row">
+    <button class="m-auto bg-gray-800 hover:bg-blue-700 text-white py-2 px-4 rounded mb-10" on:click={AnalyzeWithAI}>
         Analyze with AI
     </button>
+</div>
+<CommentArea source={data.slug} />
 	<div class="flex-row">
 		{#if data && data.previousPost && data.previousPost.url}
 			<a class="previous" href={`/${data.previousPost.url}`}>← Previous</a>

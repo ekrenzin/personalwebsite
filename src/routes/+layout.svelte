@@ -3,6 +3,7 @@
 	import NavBar from '$lib/components/NavBar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import ChatBubble from '$lib/components/AiAssistant/ChatBubble.svelte';
+	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 </script>
 
 <svelte:head>

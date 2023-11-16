@@ -187,3 +187,8 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

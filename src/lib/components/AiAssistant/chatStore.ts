@@ -45,12 +45,11 @@ export async function sendMessage(
     });
 
     const res = await response.json();
-    const { output } = res;
 
     // Remove the loading message
     const filteredMessages = get(messages).filter(message => message.id !== assistant_id);
     // Add the response message
-    updateMessages([...filteredMessages, { content: output, role: "assistant", id: assistant_id }]);
+    updateMessages([...filteredMessages, { content: res, role: "assistant", id: assistant_id }]);
 
 }
 
