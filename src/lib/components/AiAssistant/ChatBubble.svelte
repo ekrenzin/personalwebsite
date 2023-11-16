@@ -1,12 +1,22 @@
 <script lang="ts">
 	import ChatModal from './ChatModal.svelte';
 	import { showChat } from './chatStore';
-	
+	import { onMount } from 'svelte';
 
 	function toggleChatHistory() {
 		showChat.update((value) => !value);
 	}
 
+	onMount(() => {
+		showChat.subscribe((value) => {
+			if (!document) return;
+			if (value) {
+				document.body.style.overflow = 'hidden';
+			} else {
+				document.body.style.overflow = 'auto';
+			}
+		});
+	});
 </script>
 
 <div class="flex flex-col items-end">
@@ -16,12 +26,12 @@
 	>
 		Chat with my AI
 	</button>
-
 </div>
 
 {#if $showChat}
-<ChatModal {toggleChatHistory} />
+	<ChatModal {toggleChatHistory} />
 {/if}
+
 <style>
 	.chat-bubble {
 		z-index: 10000;

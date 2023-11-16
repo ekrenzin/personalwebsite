@@ -57,6 +57,7 @@
 </div>
 
 <style>
+	
 	.wrapper {
 		z-index: 10000;
 		position: fixed;
