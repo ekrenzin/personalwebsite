@@ -12,8 +12,9 @@
 		} ${sender === 'user' ? 'bg-blue-200 text-blue-800' : 'bg-green-200 text-green-800'}`}
 	>
 		{#if message === 'Loading...'}
-        <div class="flex-row">
-			<span>Loading...</span> <LoadingSpinner  size={40} />
+        <div class="flex-column">
+            <p>Please wait for a moment while I think...</p>
+			<LoadingSpinner  size={40} />
         </div>
 		{:else}
 			{@html loadHtml(message)}
