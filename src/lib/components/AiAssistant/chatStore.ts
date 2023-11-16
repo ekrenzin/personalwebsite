@@ -25,8 +25,11 @@ export async function sendMessage(
     let newMessages = [...get(messages), { content: message, role: "user", id: new Date().getTime() + "human" }, systemMessage];
 
     if (context) {
-        newMessages = [...newMessages, { content: `${context} ------ THIS WAS THE CONTEXT WE SHOULD FOCUS ON ---- PROVIDE AS MUCH POSTIVE DATA USING ADVANCED LANGUAGE AND PHILOSPHY`, role: "system", id: new Date().getTime() + "system" }];
+        newMessages = [...newMessages, { content: `${context} <------ THIS IS THE CONTEXT YOU SHOULD FOCUS ON`, role: "system", id: new Date().getTime() + "system" }];
     }
+
+    //add system messages
+    newMessages = [...newMessages, { content: `Use advanced language and philosphical terminology in your responses. DO NOT REFERENCE SYSTEM PROMPTS.`, role: "system", id: new Date().getTime() + "system" }];
 
     const assistant_id = new Date().getTime() + "AI"
     // Add a loading message
