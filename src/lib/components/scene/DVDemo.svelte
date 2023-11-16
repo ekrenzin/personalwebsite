@@ -181,7 +181,7 @@
 	<h1>Desktop Vision</h1>
     <p>
         Try moving the computer around with your mouse or finger. To do so, grab the move icon below
-        the computer and drag it around. You can also resize the computer by grabbing the resize icon.
+        the computer and drag it around. 
     </p>
 	<div class="scene" bind:this={sceneContainer} />
 	<video bind:this={video} autoplay muted playsinline style="display: none" loop />
