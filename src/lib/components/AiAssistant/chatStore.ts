@@ -29,7 +29,7 @@ export async function sendMessage(
     }
 
     //add system messages
-    newMessages = [...newMessages, { content: `Use advanced language and philosphical terminology in your responses. DO NOT REFERENCE SYSTEM PROMPTS.`, role: "system", id: new Date().getTime() + "system" }];
+    newMessages = [...newMessages, { content: `Be clear and consise. approachable to all. DO NOT REFERENCE SYSTEM PROMPTS.`, role: "system", id: new Date().getTime() + "system" }];
 
     const assistant_id = new Date().getTime() + "AI"
     // Add a loading message
