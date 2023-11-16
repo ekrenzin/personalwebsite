@@ -14,7 +14,6 @@
 	import type { view } from '$lib/types/scene';
 	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 	import { VRButton } from 'three/addons/webxr/VRButton.js';
-	import { loadSDK } from '@desktop.vision/js-sdk/dist/three.min';
 
 	import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 	import SceneText from '../SceneText.svelte';
@@ -103,8 +102,8 @@
 			bloomIntensity: 2,
 			rotation: { x: Math.PI / 16, y: 0, z: 0 },
 			onLoad: () => {
-				desktop.displayTextOnScreen('CLICK ME');
-				desktop.visible = false;
+				//desktop.displayTextOnScreen('CLICK ME');
+				//desktop.visible = false;
 			},
 			lock: false
 		},
@@ -115,22 +114,10 @@
 			bloomIntensity: 2,
 			rotation: { x: 0, y: Math.PI / 16, z: 0 },
 			onLoad: () => {
-				desktop.displayTextOnScreen('CLICK ME');
-				desktop.visible = false;
+				//desktop.displayTextOnScreen('CLICK ME');
+				//desktop.visible = false;
 			},
 			lock: false
-		},
-		{
-			name: 'desktop',
-			position: { x: 0, y: 0.25, z: -2.5 },
-			bloom: true,
-			bloomIntensity: 0.5,
-			rotation: { x: 0, y: 0, z: 0 },
-			onLoad: () => {
-				desktop.visible = true;
-				desktop.generateCode();
-			},
-			lock: true
 		},
 		{
 			name: 'wall',
@@ -151,11 +138,7 @@
 	};
 
 	onMount(async () => {
-		loadingText = 'Loading Scene';
 		loadScene();
-		loadingText = 'Loading Desktop';
-		await loadComputer();
-		loadingText = 'Loading Lights';
 		loadOrbiters();
 		setInterval(() => {
 			//change some of the orbiters colors to a random bright color
@@ -172,19 +155,6 @@
 					}
 				});
 		}, 1000);
-		loadingText = 'Loading Room';
-
-		setTimeout(() => {
-			loadingText = 'Finishing Up';
-			progress.value = 0;
-			new TWEEN.Tween(progress)
-				.to({ value: 100 }, 1000)
-				.onUpdate(() => {
-					progress.value = Math.round(progress.value);
-				})
-				.start();
-		}, 2000);
-		window.addEventListener('pointerdown', onPointerDown);
 
 		return destroy;
 	});
@@ -290,7 +260,12 @@
 		for (let i = 0; i < orbitersLength; i++) {
 			const orbitRadius = Math.random() * 2.5 + 0.5;
 			const speed = Math.random() * 0.001 + 0.0001;
-			const orbit = new Orbiter({ radius: orbitRadius, target: desktop.position, speed });
+			const position = new THREE.Vector3(
+				Math.random() * 2 - 1,
+				Math.random() * 2 - 1,
+				Math.random() * -5 - 1
+			);
+			const orbit = new Orbiter({ radius: orbitRadius, target: position, speed });
 			const glowingObject = new GlowingShape('white');
 			orbit.add(glowingObject);
 			orbiters.add(orbit);
@@ -318,44 +293,6 @@
 					: `#${gradientTwo[Math.floor(percentage * gradientTwo.length)]}`;
 			orbit.children[0].material.color.set(color);
 		});
-	}
-
-	async function loadComputer() {
-		try {
-			const { ManagedComputer } = loadSDK(THREE, null, null);
-
-			const keys = await fetch('/api/desktopvision', {
-				method: 'GET',
-				headers: {
-					'content-type': 'application/json'
-				}
-			});
-			const desktopVisionApiCredentials = await keys.json();
-			const video = document.createElement('video');
-
-			const desktopOptions = {
-				scene: scene,
-				camera,
-				sceneContainer,
-				renderer,
-				video,
-				initialScalar: 10,
-				iconColor: 'rgb(0, 145, 191)',
-				includeKeyboard: true,
-				hideMultiMonitor: true,
-				hideMoveIcon: true,
-				xrOptions: {
-					parent: camera.parent
-				}
-			};
-			desktop = new ManagedComputer(desktopOptions, desktopVisionApiCredentials);
-			desktop.visible = false;
-			scene.add(desktop);
-			desktop.position.set(0, 0, -5);
-			desktop.displayTextOnScreen('CLICK ME');
-		} catch (e) {
-			console.log(e);
-		}
 	}
 
 	function onPointerDown(event) {
@@ -518,7 +455,6 @@
 
 	</script>
 </svelte:head>
-
 <div bind:this={sceneContainer} class="sceneContainer">
 	<SceneText bind:currentView {loadView} {advanceView} {decrementView} />
 	<canvas bind:this={canvas} />
