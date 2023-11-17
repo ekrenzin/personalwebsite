@@ -2,7 +2,7 @@
 
 Socrates posits to Meno that no man can define virtue. Undoubtedly this is true, but nevertheless it is a curious idea. Plato through Socrates, examines the bees, juxtaposing nature and virtue, prompting the reader to consider whether it is possible to conceptualize to form of virtue. Meno naively suggests that virtue is relative, to which Socrates dissects. Ultimately, Socrates agrees that virtue is relative, but instead seeks out the kernel that unites the idea of virtuous things.
 
-This is an impossibility. 
+This is likely an impossibility. 
 
 In fact, Socrates must reconsider that there  is no such thing as virtue. When Socrates posits that no man has yet discovered virtue, he should instead seek to prove that no man ever can.
 
