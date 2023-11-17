@@ -3,6 +3,8 @@ name: Node.js CI
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'static/writing/posts.json'
 
 jobs:
   build:
@@ -20,3 +22,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Execute prebuildJSON script
       run: node prebuild.js
+    - name: Setup Git
+      run: |
+        git config --global user.name 'ekrenzin'
+        git config --global user.email 'ean@eankrenzin.com'
+    - name: Commit and Push posts.json
+      run: |
+        git add static/writing/posts.json
+        git commit -m "Update posts.json" || echo "No changes to commit"
+        git push origin HEAD:main
