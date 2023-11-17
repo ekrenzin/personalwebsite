@@ -3,9 +3,10 @@ const baseUrl = '/writing';
 
 export const fetchMarkdownPosts = async (fetch) => {
     try {
-        const categories = ['essays', 'poems', 'musings', 'stories'];
         const markdownJson = await fetch(`${baseUrl}/posts.json`);
         const markdownData = await markdownJson.json();
+        const categories = Object.keys(markdownData);
+        console.log('categories', categories)
         const returnData = {};
         for (const category of categories) {
             const categoryData = markdownData[category];

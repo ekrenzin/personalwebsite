@@ -5,7 +5,6 @@
 	export let toggleChatHistory: () => void;
 
 	let message: string = '';
-	let modalRef;
 
 	async function createMessage() {
 		const messageToSend = message;

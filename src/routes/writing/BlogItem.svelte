@@ -51,6 +51,9 @@ renderer.paragraph = (text) => {
 
 
   <style>
+    p {
+        width: 100%;
+    }
     article {
         display: flex;
         flex-direction: column;

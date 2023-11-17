@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { fetchComments, postComment } from './Comments';
+	import { fetchComments } from './Comments';
 	import { onMount } from 'svelte';
 	import CommentList from './CommentList.svelte';
 	import AddCommentSection from './AddCommentSection.svelte';
 	import type { Comment } from './Comments';
+	
 	export let source = 'test';
 
 	let inititalized = false;
@@ -27,12 +28,11 @@
 
 <section>
 	<h2>Comments</h2>
-    <details>
-        <summary>Click to see comments</summary>
-	<CommentList {comments} />
-	<AddCommentSection {source} {handleComments} />
-    
-</details>
+	<details>
+		<summary>Click to see comments</summary>
+		<CommentList {comments} />
+		<AddCommentSection {source} {handleComments} />
+	</details>
 </section>
 
 <style>
