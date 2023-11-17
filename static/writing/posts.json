@@ -1,1 +1,150 @@
-{"essays":[{"title":"Bronze_age","preview":"## Barbara's Bronze's","url":"writing/essays_Bronze_age"},{"title":"Kairos","preview":"## Kairos: Seizing the Opportune Moments in the Tapestry of Chronos","url":"writing/essays_Kairos"},{"title":"Questioning_Etymology_of_Death","preview":"## Questioning the Etymology of Death","url":"writing/essays_Questioning_Etymology_of_Death"},{"title":"Romatic_vs_enlightenement","preview":"## Enlightenment vs Romanticism ","url":"writing/essays_Romatic_vs_enlightenement"},{"title":"Stone_and_spirit","preview":"## Stone and Spirit: Tracing Architecture and Meaning in the Ancient World","url":"writing/essays_Stone_and_spirit"},{"title":"heroism","preview":"## Moving Past the Sword: The Pen of Modern Heroism","url":"writing/essays_heroism"}],"poems":[{"title":"Blank","preview":"<div align=\"center\">","url":"writing/poems_Blank"},{"title":"BookShop","preview":"<div align=\"center\">","url":"writing/poems_BookShop"},{"title":"By_the_drum","preview":"<div align=\"center\">\n    ","url":"writing/poems_By_the_drum"},{"title":"Doki_Doki","preview":"\n<div align=\"center\">","url":"writing/poems_Doki_Doki"},{"title":"Foucault","preview":"\n<div align=\"center\">","url":"writing/poems_Foucault"},{"title":"Fumes","preview":"<div align=\"center\">","url":"writing/poems_Fumes"},{"title":"Inflate_and_desaturate","preview":"<div align=\"center\">","url":"writing/poems_Inflate_and_desaturate"},{"title":"Moon_above_lagoon","preview":"\n<div align=\"center\">","url":"writing/poems_Moon_above_lagoon"},{"title":"My_good_friend_death","preview":"> I think the thing scariest about death, is even when you feel like you accepted it coming, it comes anyways.","url":"writing/poems_My_good_friend_death"},{"title":"Our_Simulacrum_in_the_Mirror","preview":"<div align=\"center\">","url":"writing/poems_Our_Simulacrum_in_the_Mirror"},{"title":"Refute_Me","preview":"\n<div align=\"center\">","url":"writing/poems_Refute_Me"},{"title":"Saturation","preview":"<div align=\"center\">","url":"writing/poems_Saturation"},{"title":"Scarecrow","preview":"<div align=\"center\">","url":"writing/poems_Scarecrow"},{"title":"Secondhand_Smoke","preview":"<div align=\"center\">","url":"writing/poems_Secondhand_Smoke"},{"title":"Siamese","preview":"<div align=\"center\">","url":"writing/poems_Siamese"},{"title":"SilverBellies","preview":"<div align=\"center\">","url":"writing/poems_SilverBellies"},{"title":"Trivia","preview":"<div align=\"center\">","url":"writing/poems_Trivia"}],"stories":[{"title":"Structure","preview":"## Structure\n  \n<details>\n  <summary>Content Warning: The following piece contains explicit content and may not be suitable for all audiences. It offers a commentary on the raw emotions experienced in...","url":"writing/stories_Structure"},{"title":"brunch","preview":"## Brunch","url":"writing/stories_brunch"}],"musings":[{"title":"meno","preview":"## Musing with Meno","url":"writing/musings_meno"},{"title":"sleep","preview":"## Sleep","url":"writing/musings_sleep"},{"title":"the_joy_of_the_cave","preview":"## The Joy of the Cave","url":"writing/musings_the_joy_of_the_cave"}]}
+{
+  "essays": [
+    {
+      "title": "Bronze_age",
+      "preview": "## Barbara's Bronze's",
+      "url": "writing/essays_Bronze_age"
+    },
+    {
+      "title": "Kairos",
+      "preview": "## Kairos: Seizing the Opportune Moments in the Tapestry of Chronos",
+      "url": "writing/essays_Kairos"
+    },
+    {
+      "title": "Questioning_Etymology_of_Death",
+      "preview": "## Questioning the Etymology of Death",
+      "url": "writing/essays_Questioning_Etymology_of_Death"
+    },
+    {
+      "title": "Romatic_vs_enlightenement",
+      "preview": "## Enlightenment vs Romanticism ",
+      "url": "writing/essays_Romatic_vs_enlightenement"
+    },
+    {
+      "title": "Stone_and_spirit",
+      "preview": "## Stone and Spirit: Tracing Architecture and Meaning in the Ancient World",
+      "url": "writing/essays_Stone_and_spirit"
+    },
+    {
+      "title": "heroism",
+      "preview": "## Moving Past the Sword: The Pen of Modern Heroism",
+      "url": "writing/essays_heroism"
+    }
+  ],
+  "poems": [
+    {
+      "title": "Blank",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Blank"
+    },
+    {
+      "title": "BookShop",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_BookShop"
+    },
+    {
+      "title": "By_the_drum",
+      "preview": "<div align=\"center\">\n    ",
+      "url": "writing/poems_By_the_drum"
+    },
+    {
+      "title": "Doki_Doki",
+      "preview": "\n<div align=\"center\">",
+      "url": "writing/poems_Doki_Doki"
+    },
+    {
+      "title": "Foucault",
+      "preview": "\n<div align=\"center\">",
+      "url": "writing/poems_Foucault"
+    },
+    {
+      "title": "Fumes",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Fumes"
+    },
+    {
+      "title": "Inflate_and_desaturate",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Inflate_and_desaturate"
+    },
+    {
+      "title": "Moon_above_lagoon",
+      "preview": "\n<div align=\"center\">",
+      "url": "writing/poems_Moon_above_lagoon"
+    },
+    {
+      "title": "My_good_friend_death",
+      "preview": "> I think the thing scariest about death, is even when you feel like you accepted it coming, it comes anyways.",
+      "url": "writing/poems_My_good_friend_death"
+    },
+    {
+      "title": "Our_Simulacrum_in_the_Mirror",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Our_Simulacrum_in_the_Mirror"
+    },
+    {
+      "title": "Refute_Me",
+      "preview": "\n<div align=\"center\">",
+      "url": "writing/poems_Refute_Me"
+    },
+    {
+      "title": "Saturation",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Saturation"
+    },
+    {
+      "title": "Scarecrow",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Scarecrow"
+    },
+    {
+      "title": "Secondhand_Smoke",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Secondhand_Smoke"
+    },
+    {
+      "title": "Siamese",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Siamese"
+    },
+    {
+      "title": "SilverBellies",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_SilverBellies"
+    },
+    {
+      "title": "Trivia",
+      "preview": "<div align=\"center\">",
+      "url": "writing/poems_Trivia"
+    }
+  ],
+  "stories": [
+    {
+      "title": "Structure",
+      "preview": "## Structure\n  \n<details>\n  <summary>Content Warning: The following piece contains explicit content and may not be suitable for all audiences. It offers a commentary on the raw emotions experienced in...",
+      "url": "writing/stories_Structure"
+    },
+    {
+      "title": "brunch",
+      "preview": "## Brunch",
+      "url": "writing/stories_brunch"
+    }
+  ],
+  "musings": [
+    {
+      "title": "meno",
+      "preview": "## Musing with Meno",
+      "url": "writing/musings_meno"
+    },
+    {
+      "title": "sleep",
+      "preview": "## Sleep",
+      "url": "writing/musings_sleep"
+    },
+    {
+      "title": "the_joy_of_the_cave",
+      "preview": "## The Joy of the Cave",
+      "url": "writing/musings_the_joy_of_the_cave"
+    }
+  ]
+}
