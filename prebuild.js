@@ -54,11 +54,9 @@ async function prebuildJSON() {
 function extractPreview(content) {
     let contentPreview = "";
     const endOfFirstParagraph = content.indexOf('\n\n');
-    if (endOfFirstParagraph !== -1) {
-        contentPreview = content.substring(0, endOfFirstParagraph);
-    } else {
+    
         contentPreview = content;
-    }
+    
     if (contentPreview.length > 200) {
         contentPreview = contentPreview.substring(0, 200) + "...";
     }
