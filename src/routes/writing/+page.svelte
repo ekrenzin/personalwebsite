@@ -60,10 +60,19 @@
 		experiences, and to connect with others. Perhaps, to me, this is also what life is.
 	</p>
 </section>
+<section>
+	<nav class="category-nav">
+		{#each categories as category}
+			{#if data[category].length > 0}
+				<a href="#{category}" class="category-button">{category.charAt(0).toUpperCase() + category.slice(1)}</a>
+			{/if}
+		{/each}
+	</nav>			
+</section>
 
 {#each categories as category}
 	{#if data[category].length > 0}
-		<section>
+		<section id={category}>
 			<h1>{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
 			<!-- Capitalize the first letter of the category -->
 			{#each data[category] as post}
@@ -96,5 +105,26 @@
 
 	.post {
 		width: 100%;
+	}
+	.category-nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
+		padding: 1rem;
+	}
+
+	.category-button {
+		padding: 0.5rem 1rem;
+		border: none;
+		cursor: pointer;
+		color: #fff;
+		border-radius: 5px;
+		text-decoration: underline;
+		transition: 0.5s;
+	}
+
+	.category-button:hover{
+		transform: scale(1.1);
 	}
 </style>
