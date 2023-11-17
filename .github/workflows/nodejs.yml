@@ -22,12 +22,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Execute prebuildJSON script
       run: node prebuild.js
-    - name: Setup Git
+    - name: Setup Git and Commit changes
       run: |
         git config --global user.name 'ekrenzin'
         git config --global user.email 'ean@eankrenzin.com'
-    - name: Commit and Push posts.json
-      run: |
+        git checkout main
         git add static/writing/posts.json
         git commit -m "Update posts.json" || echo "No changes to commit"
-        git push origin HEAD:main
+        git push --set-upstream origin HEAD:main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
