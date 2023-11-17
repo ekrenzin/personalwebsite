@@ -2,6 +2,7 @@
 	import BlogItem from './BlogItem.svelte';
 	import { onMount } from 'svelte';
 	import '../../md.css';
+	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 
 	interface mdData {
 		title: string;
@@ -60,6 +61,7 @@
 		experiences, and to connect with others. Perhaps, to me, this is also what life is.
 	</p>
 </section>
+	<CommentArea source="writing"/>
 <section>
 	<nav class="category-nav">
 		{#each categories as category}
