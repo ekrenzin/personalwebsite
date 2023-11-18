@@ -1,8 +1,8 @@
-# Bags under my eyes
+# # Bags under my eyes
 
 There are bags under my eyes, big
 Dark splotches of purple on leathery skin.
-They are sunken in like when you scoop powder and it leaves an imprint.
+They are sunken-in like when you scoop powder and it leaves an imprint.
 I feel my face shake when I step, my sinuses hollow.
 It is as if my jaw is sliding around in there,
 The muscle rotting away leaving only bone.
