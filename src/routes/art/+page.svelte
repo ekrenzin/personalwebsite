@@ -70,6 +70,11 @@
 	let showGallery = true;
 </script>
 
+<svelte:head>
+	<title>Art | eankrenzin.com</title>
+	<meta name="description" content="Ean Krenzin-Blank's personal website" />
+</svelte:head>
+
 {#if showGallery}
 	<ImageGrid bind:files />
 {/if}

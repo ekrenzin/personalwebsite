@@ -46,14 +46,21 @@ export const fetchMarkdownPost = async (fetch, { prefix, suffix }) => {
 
 export const fetchCurrentMarkdownPost = async (fetch, { prefix, suffix }) => {
     try {
+        const markdown = await fetch(`${baseUrl}/${prefix}/${suffix}.md`);
+        const post_text = await markdown.text();
+
         const markdownJson = await fetch(`${baseUrl}/posts.json`);
         const markdownData = await markdownJson.json();
 
         //get the index of the current post
         const currentIndex = markdownData[prefix].findIndex(post => post.title === `${suffix}`);
 
-        //get the next post
-        return markdownData[prefix][currentIndex];
+        const post = markdownData[prefix][currentIndex];
+        const title = extractTitle(post_text);
+
+        post.title = title;
+
+        return post;
     } catch (error) {
         console.error('Error fetching Markdown post:', error);
         throw error; // Rethrow the error for further handling
@@ -131,4 +138,17 @@ export const fetchPreviousMarkdownPost = async (fetch, { prefix, suffix }) => {
     }
 }
 
+function extractTitle(markdown: string) {
+    //look for the first line that begins wth # or ## and return the text after that
+    const lines = markdown.split('\n');
+    let title = '';
+    for (const line of lines) {
+        if (line.startsWith('#') || line.startsWith('##')) {
+            title = line.replace('#', '').trim();
+            title = title.replace('#', '').trim();
+            break;
+        }
+    }
+    return title;
+}
 

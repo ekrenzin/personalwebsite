@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Privacy Policy | eankrenzin.com</title>
+    <meta name="description" content="Privacy policy for eankrenzin.com" />
+</svelte:head>
 <section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 h-full relative" id="skills">
     <h1 class="text-2xl font-bold mb-6 border-b pb-2">Privacy Policy</h1>
 

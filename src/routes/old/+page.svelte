@@ -4,7 +4,11 @@
 	import { onMount } from 'svelte';
 </script>
 
-<!-- make a grid of the old sites, 2 columns -->
+
+<svelte:head>
+	<title>Old Personal Websites | eankrenzin.com</title>
+	<meta name="description" content="Old personal websites of Ean Krenzin-Blank" />
+</svelte:head>
 
 <div class="sites-container">
 	<div class="website-container">

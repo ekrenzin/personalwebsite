@@ -21,6 +21,10 @@
 	let categories = Object.keys(data);
 </script>
 
+<svelte:head>
+	<title>Creative Writing | eankrenzin.com</title>
+	<meta name="description" content="Ean Krenzin-Blank's personal website" />
+</svelte:head>
 <section align="center">
 	<h1>Hello, and welcome</h1>
 	<h2>

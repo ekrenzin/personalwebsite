@@ -35,6 +35,10 @@
 	let form: HTMLFormElement;
 </script>
 
+<svelte:head>
+	<title>Contact | eankrenzin.com</title>
+	<meta name="description" content="Ean Krenzin-Blank's personal website" />
+</svelte:head>
 <div class="relative max-w-xl mx-auto">
 	<div class="text-center py-10" />
 	<!-- Title and Content Section for Contact Page -->

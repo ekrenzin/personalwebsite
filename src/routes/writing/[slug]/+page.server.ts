@@ -18,8 +18,10 @@ export async function load({ params: { slug: $slug }, fetch }) {
         });
 
         const data = await response.json();
-        const {post,nextPost, previousPost, currentPost} = data;
-        return {post, slug, nextPost, previousPost, currentPost}
+        data.contentType = prefix;
+        //const {post,nextPost, previousPost, currentPost} = data;
+
+        return data
     } catch (error) {
         console.log(error)
         return redirect(302, '/writing');

@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-    <title>{data.currentPost.title || 'Ean Krenzin-Blank\'s writing'}</title>
+    <title>{data.currentPost.title || 'Ean Krenzin-Blank\'s writing'} | eankrenzin.com</title>
     <meta name="description" content={data.currentPost.preview || 'Read Ean\'s writing, analyze with AI, and leave a comment!'} />
 
     <!-- Open Graph Tags for Social Media -->
@@ -22,7 +22,8 @@
     <meta property="og:description" content={data.currentPost.preview || 'Read Ean\'s writing, analyze with AI, and leave a comment!'} />
     <meta property="og:type" content="article" />
     <!-- Include a default image if data.image is not available -->
-    <meta property="og:image" content={'/me.jpeg'} />
+    <meta property="og:image" content={'/writing.png'} />
+
 </svelte:head>
 
 <div class="container mx-auto page p-4 p-4 text-gray-300">
