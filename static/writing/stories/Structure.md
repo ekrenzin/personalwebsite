@@ -1,7 +1,9 @@
 ## Structure
   
+  The following piece contains explicit content and may not be suitable for all audiences. It offers a commentary on the raw emotions experienced in New York City, a place that not only demands your attention but also insists on self-reflection and acknowledgment of its relentless rhythm. 
+  
 <details>
-  <summary>Content Warning: The following piece contains explicit content and may not be suitable for all audiences. It offers a commentary on the raw emotions experienced in New York City, a place that not only demands your attention but also insists on self-reflection and acknowledgment of its relentless rhythm. [Click Here to view]</summary>
+  <summary>Content Warning: [Click Here to view]</summary>
 
 ---
 
