@@ -10,7 +10,20 @@
 		$showChat = true;
 		sendMessage(`Analyze`, window.location.pathname, data.post);
 	}
+
 </script>
+
+<svelte:head>
+    <title>{data.currentPost.title || 'Default Title'}</title>
+    <meta name="description" content={data.currentPost.preview || 'Default description'} />
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content={data.currentPost.title || 'Default Title'} />
+    <meta property="og:description" content={data.currentPost.preview || 'Default description'} />
+    <meta property="og:type" content="article" />
+    <!-- Include a default image if data.image is not available -->
+    <meta property="og:image" content={'/me.jpeg'} />
+</svelte:head>
 
 <div class="container mx-auto page p-4 p-4 text-gray-300">
 	<article class="prose lg:prose-xl">

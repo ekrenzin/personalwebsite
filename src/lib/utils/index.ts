@@ -26,7 +26,7 @@ export const fetchMarkdownPosts = async (fetch) => {
  * 
  * @param {string} prefix - The prefix of the file path.
  * @param {string} suffix - The suffix of the file path.
- * @returns {Promsie<{ post: string, nextPost: string, previousPost: string }>}} - The content of the Markdown post.
+ * @returns {Promsie<{ post: string, nextPost: any, previousPost: any, currentPost:  }>}} - The content of the Markdown post.
  */
 export const fetchMarkdownPost = async (fetch, { prefix, suffix }) => {
     try {
@@ -35,8 +35,25 @@ export const fetchMarkdownPost = async (fetch, { prefix, suffix }) => {
 
         const nextPost = await fetchNextMarkdownPost(fetch, { prefix, suffix });
         const previousPost = await fetchPreviousMarkdownPost(fetch, { prefix, suffix });
-        const data = { post, nextPost, previousPost };
+        const currentPost = await fetchCurrentMarkdownPost(fetch, { prefix, suffix });
+        const data = { post, nextPost, previousPost, currentPost };
         return data;
+    } catch (error) {
+        console.error('Error fetching Markdown post:', error);
+        throw error; // Rethrow the error for further handling
+    }
+}
+
+export const fetchCurrentMarkdownPost = async (fetch, { prefix, suffix }) => {
+    try {
+        const markdownJson = await fetch(`${baseUrl}/posts.json`);
+        const markdownData = await markdownJson.json();
+
+        //get the index of the current post
+        const currentIndex = markdownData[prefix].findIndex(post => post.title === `${suffix}`);
+
+        //get the next post
+        return markdownData[prefix][currentIndex];
     } catch (error) {
         console.error('Error fetching Markdown post:', error);
         throw error; // Rethrow the error for further handling
