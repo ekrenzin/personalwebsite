@@ -14,12 +14,12 @@
 </script>
 
 <svelte:head>
-    <title>{data.currentPost.title || 'Default Title'}</title>
-    <meta name="description" content={data.currentPost.preview || 'Default description'} />
+    <title>{data.currentPost.title || 'Ean Krenzin-Blank\'s writing'}</title>
+    <meta name="description" content={data.currentPost.preview || 'Read Ean\'s writing, analyze with AI, and leave a comment!'} />
 
     <!-- Open Graph Tags for Social Media -->
-    <meta property="og:title" content={data.currentPost.title || 'Default Title'} />
-    <meta property="og:description" content={data.currentPost.preview || 'Default description'} />
+    <meta property="og:title" content={data.currentPost.title || 'Ean Krenzin-Blank\'s writing'} />
+    <meta property="og:description" content={data.currentPost.preview || 'Read Ean\'s writing, analyze with AI, and leave a comment!'} />
     <meta property="og:type" content="article" />
     <!-- Include a default image if data.image is not available -->
     <meta property="og:image" content={'/me.jpeg'} />
