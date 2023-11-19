@@ -8,7 +8,7 @@ In fact, Socrates must reconsider that there  is no such thing as virtue. When S
 
 This is because virtue exists within a temporal context, relative. Socrates dismissed this, however it is not relative to the “virtuous” person, but rather the observer. This is the essence of Sartre.
 
-Sartre offers a tool of with to analyze old quandaries. With Sartre, one can consider the Socratic dialogues from a phenomelogist perspective, highlights that because the definitions of terms do not exist, paradoxically, they do. In other words, virtuous acts are acts that are virtuous given the context of the moment, bound within the threads of chronos. 
+Sartre offers a tool of with to analyze old quandaries. With Sartre, one can consider the Socratic dialogues from a phenomelogist perspective. Highlighting that because the definitions of terms do not exist, paradoxically, they do. In other words, virtuous acts are acts that are virtuous given the context of the observed moment, bound within the threads of chronos. 
 
 Consider the following, given that one defines an act as virtuous, they must also acknowledge that if everyone were to consider the same action, not everyone would agree to label it virtuous. In other words, no act is universally virtuous. This is especially true, from a non-humanist perspective. Given the human saves the life of another, does the bacteria in the dirt not long for nutrition? This is obviously absurd, but imagine this thread upon a gradient leading back to virtue. Undoubtedly virtue exists, but only to a spectrum of life. Perhaps only within the singular band of humanity. 
 
