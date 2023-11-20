@@ -1,5 +1,5 @@
 <script>
-    import { fly } from 'svelte/transition';
+	import { showChat, sendMessage } from '$lib/components/AiAssistant/chatStore';
 	import BlogItem from './BlogItem.svelte';
 	import { onMount, onDestroy } from 'svelte';
 
@@ -17,6 +17,19 @@
 
 	function prev() {
 		currentIndex = (currentIndex - 1 + posts.length) % posts.length;
+	}
+
+	async function analyzeCategory() {
+		$showChat = true;
+
+		const postsData = posts.map((post) => {
+			const title = post.post_title;
+			const preview = post.preview;
+
+			return title + preview;
+		}).join('///////////////////');
+
+		sendMessage(`Tell me about Ean's ${category}`, window.location.pathname, postsData);
 	}
 
 	onMount(() => {
@@ -86,6 +99,13 @@
 		{:else}
 			View all
 		{/if}
+	</button>
+
+	<button
+		class="mt-4 bg-black hover:bg-gray-900 text-white py-2 px-4 rounded"
+		on:click={analyzeCategory}
+	>
+		Ask AI about the Category
 	</button>
 </section>
 

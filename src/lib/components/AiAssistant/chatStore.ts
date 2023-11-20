@@ -25,7 +25,7 @@ export async function sendMessage(
     let newMessages = [...get(messages), { content: message, role: "user", id: new Date().getTime() + "human" }, systemMessage];
 
     if (context) {
-        newMessages = [...newMessages, { content: `${context} <------ THIS IS THE CONTEXT YOU SHOULD FOCUS ON`, role: "system", id: new Date().getTime() + "system" }];
+        newMessages = [...newMessages, { content: `THIS IS THE CONTEXT YOU SHOULD FOCUS ON ------> ${context} <------ THIS IS THE CONTEXT YOU SHOULD FOCUS ON`, role: "system", id: new Date().getTime() + "system" }];
     }
 
     //add system messages

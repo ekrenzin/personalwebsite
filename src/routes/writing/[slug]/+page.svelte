@@ -3,7 +3,6 @@
 	import { showChat, sendMessage } from '$lib/components/AiAssistant/chatStore';
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import { page } from '$app/stores';  
-	import BlogItem from '../BlogItem.svelte';
 	
 	//dynamically import the markdown file based on the slug
 	export let data;
