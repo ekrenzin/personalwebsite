@@ -23,7 +23,10 @@
 			if (entry.isIntersecting) {
 				node.style.opacity = '1';
 				node.style.transform = 'none';
-			}
+			} else {
+                node.style.opacity = '0';
+                node.style.transform = 'scale(0.4)';
+            }
 		}, options);
 
 		observer.observe(node);
