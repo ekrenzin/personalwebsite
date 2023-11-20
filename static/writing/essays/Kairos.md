@@ -12,6 +12,13 @@ To further illustrate circumstantial proprietary, we may consider the embodiment
 
 In conclusion, the interplay between Chronos and Kairos forms a complex tapestry of human existence. Kairos, derived from ancient Greek philosophy, offers an alternative and transformative perspective on time that contradicts the linear, absolute ontology of Chronos. It invites us to look beyond the apparent void of the historical process, as proposed by Foucault, to seek moments ripe with potential and meaning. These Kairotic moments, akin to the carpenter's bed in Plato's metaphor, are flexible, tailored to their maker's needs, and inevitably ephemeral in the face of the immutable Chronos. Furthermore, the nuanced, relative nature of these moments, as encapsulated in the “Dissoi Logoi,” cautions us against overly simplistic notions of right and wrong, success and failure. Instead, it challenges us to appreciate the specific context or 'occasion' in which each Kairotic moment is born. Kairos is not an objective clock, but an interpretive dance, choreographed by circumstantial proprietary. It serves as a reminder that even within the unyielding march of Chronos, the individual and collective narratives we weave can alter, enrich, and redefine our experience of time. As we confront the ephemerality of our existence within the inexorable passage of Chronos, it is through Kairos that we can seize the reins, capturing and creating moments imbued with profound meaning and transformative potential. Thus, our understanding of history, time, and reality can be ever-evolving, much like the œuvre that accompanies and renews itself throughout the history of the world.
  
+
+
 ## Youtube Link:
 
 [![Summer Stock - Gene Kelly (newspaper)](http://img.youtube.com/vi/fFJrV3pI5Zs/0.jpg)](http://www.youtube.com/watch?v=fFJrV3pI5Zs "Summer Stock - Gene Kelly (newspaper)")
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/kairos.png" alt="kairos" style="max-width: 100%; max-height: 100%;">
+</div>

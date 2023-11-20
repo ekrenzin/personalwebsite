@@ -144,3 +144,8 @@ I cut her off. “You need more money? I don’t have much right now. Look, time
 “How are things Mom?” I toss a lifesaver.
 
 “I’m dying.” My vision goes black. No fucking foreplay. One word after the next word after the next word and suddenly I’ve agreed to meet. Shit.
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/side_walk_dots.png" alt="Sidewalk dots" style="max-width: 100%; max-height: 100%;">
+</div>

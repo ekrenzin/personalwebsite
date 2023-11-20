@@ -23,7 +23,12 @@ async function readFiles(type) {
                     const preview = extractPreview(content);
                     const { imageSources } = parseMarkdown(content);
                     const title = path.basename(file, '.md');
-                    return { title, preview, url: `writing/${type}_${title}`, imageSources };
+                    const data = { title, preview, url: `writing/${type}_${title}`, imageSources };
+
+                    if (imageSources && imageSources.length > 0) {
+                        data.image = imageSources[0];
+                    }
+                    return data
                 } catch (fileReadError) {
                     console.error(`Error reading file ${file}: ${fileReadError}`);
                     return null;

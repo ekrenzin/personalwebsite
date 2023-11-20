@@ -14,3 +14,7 @@ Too shaky ~{ eyes too }~ I'm ; true?
 All words. no way through too?!?
 Amidst the wise, I'm who?!?
 All doubt.!.!.
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/dont-read.png" alt="dont read" style="max-width: 100%; max-height: 100%;">
+</div>

@@ -150,3 +150,8 @@ Plato
 
 ---
 
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/meno.jpg" alt="meno" style="max-width: 100%; max-height: 100%;">
+</div>
