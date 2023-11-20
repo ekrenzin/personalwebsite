@@ -6,9 +6,11 @@
 	import type { Comment } from './Comments';
 	
 	export let source = 'test';
+	export let hidden = true;
 
 	let inititalized = false;
 	let comments: Array<Comment> = [];
+	
 
 	onMount(() => {
 		if (!inititalized) {
@@ -28,11 +30,16 @@
 
 <section>
 	<h2>Comments</h2>
+	{#if hidden}
 	<details>
 		<summary>Click to see comments</summary>
 		<CommentList {comments} />
 		<AddCommentSection {source} {handleComments} />
 	</details>
+	{:else}
+		<CommentList {comments} />
+		<AddCommentSection {source} {handleComments} />
+	{/if}
 </section>
 
 <style>

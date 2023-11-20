@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import '../../md.css';
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
+	import Carousel from './Carousel.svelte';
 
 	interface mdData {
 		title: string;
@@ -60,31 +61,29 @@
 		With that said, don't take anything you read here too seriously. But it's fun to ponder.
 	</p>
 </section>
-	<CommentArea source="writing"/>
-<section>
-	<nav class="category-nav">
-		{#each categories as category}
-			{#if data[category].length > 0}
-				<a href="#{category}" class="category-button">{category.charAt(0).toUpperCase() + category.slice(1)}</a>
-			{/if}
-		{/each}
-	</nav>			
-</section>
 
 {#each categories as category}
+<section id={category}>
+    {#if data[category].length > 0}
+        <Carousel {category} posts={data[category]} />
+    {/if}
+</section>
+{/each}
+<CommentArea source="writing" hidden={false}/>
+
+<section>
+	<h1>All Content</h1>
+{#each categories as category}
 	{#if data[category].length > 0}
-		<section id={category}>
-			<h1>{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
-			<!-- Capitalize the first letter of the category -->
+
 			{#each data[category] as post}
 				<div class="post">
 					<BlogItem markdownContent={post} />
 				</div>
 			{/each}
-		</section>
 	{/if}
 {/each}
-
+</section>
 <style>
 	section {
 		display: flex;
