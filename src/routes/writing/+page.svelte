@@ -28,22 +28,14 @@
 <section align="center">
 	<h1>Hello, and welcome</h1>
 	<h2>
-		This is a deeply personal creative space, where I graple with emotion; Often depression,
-		sometimes joy.
+		This is a deeply personal creative space, where I graple with emotion.
 	</h2>
 	<p>
 		Much of the content on this page is either explicit, or not professional. I think that's ok.
-		Indeed, much of this writing is from a younger man than I am today. The phenomenologist in me
-		considers these writings to be a snapshot of my life at the time of writing. In other words, the
-		person who wrote the words no longer exists, and "I" - the person currating this collection - am
-		simply an auditor.
-
-		<br />
-		<br />
 
 		<b>
 			<u>
-				Not everything we project should be for the purpose of earning money or conforming to
+				I believe that not everything we project should be for the purpose of earning money or conforming to
 				expectations.
 			</u>
 		</b>
@@ -63,6 +55,9 @@
 		I wrote many of these poems and musings in dark moments, but sharing them is a way for me to
 		step in to the light. To an extent, I believe that's what art is; a way for us to share our
 		experiences, and to connect with others. Perhaps, to me, this is also what life is.
+	</p>
+	<p>
+		With that said, don't take anything you read here too seriously. But it's fun to ponder.
 	</p>
 </section>
 	<CommentArea source="writing"/>
