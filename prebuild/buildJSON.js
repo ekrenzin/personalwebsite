@@ -21,9 +21,9 @@ async function readFiles(type) {
                     const filePath = path.join(directory, file);
                     const content = await fs.promises.readFile(filePath, 'utf8');
                     const preview = extractPreview(content);
-                    const { imageSources } = parseMarkdown(content);
-                    const title = path.basename(file, '.md');
-                    const data = { title, preview, url: `writing/${type}_${title}`, imageSources };
+                    const { imageSources, title } = parseMarkdown(content);
+                    const title_path = path.basename(file, '.md');
+                    const data = { post_title: title, title: title_path, preview, url: `writing/${type}_${title_path}`, imageSources };
 
                     if (imageSources && imageSources.length > 0) {
                         data.image = imageSources[0];
@@ -105,8 +105,12 @@ function parseMarkdown(markdown) {
     for (const image of images) {
         imageSources.push(image.attribs.src);
     }
+
+    //get the first h1 or h2 tag and use that as the title
+    const title = $('h1, h2').first().text();
+
     
-    return { html, imageSources }
+    return { html, imageSources, title }
 }
 
 export { buildJSON }

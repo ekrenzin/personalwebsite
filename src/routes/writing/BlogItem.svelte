@@ -6,11 +6,15 @@
 		preview: '',
 		title: '',
 		url: '',
-		imageSources: []
+		imageSources: [],
+		post_title: ''
 	};
 
 	function cleanMD(text: string) {
-		const htmlContent = parse(text);
+		let htmlContent = parse(text);
+
+		// Use regex to remove <div align="center"> and corresponding closing </div>
+		htmlContent = htmlContent.replace(/<div align="center">[\s\S]*?/g, '');
 		return htmlContent;
 	}
 
@@ -53,7 +57,7 @@
 		<p>{@html cleanMD(markdownContent.preview)}</p>
 		<a href={markdownContent.url}>
 			<button class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded">
-				Read more
+				Read {markdownContent.post_title}
 			</button>
 		</a>
 	</div>
@@ -93,7 +97,6 @@
 		padding: 8px;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: center;
 		width: 100%;
 	}
