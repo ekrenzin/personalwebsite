@@ -22,4 +22,8 @@
 		max-width: 90%;
 		margin: auto;
 	}
+
+    div {
+        z-index: 20;
+    }
 </style>

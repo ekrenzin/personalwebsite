@@ -43,4 +43,9 @@
 		flex-direction: column;
 		overflow: auto;
 	}
+
+	main {
+		max-width: 100%;
+		overflow: hidden;
+	}
 </style>

@@ -28,9 +28,26 @@
                 Innovating by engineering solutions for <br/> Virtual Reality, Web, Mobile, and Desktop.
             </p>
             <div class="mx-auto mt-8 flex flex-wrap gap-4 justify-center">
-              <a href="/me" class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
+              <a href="/me" class="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
             </div>
         </div>
         <!-- Links -->
     </div>
 </div>
+
+<style>
+  /* H1 Element - Name and Profession */
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Paragraph Element - Description */
+p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Anchor Element - Button (Optional) */
+a {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+</style>

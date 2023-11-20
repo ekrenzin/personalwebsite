@@ -19,6 +19,7 @@ export async function load({ params: { slug: $slug }, fetch }) {
 
         const data = await response.json();
         data.contentType = prefix;
+        
         //const {post,nextPost, previousPost, currentPost} = data;
 
         return data

@@ -19,7 +19,7 @@ The Images (in order) were retrieved from the following URLs:
  
 ## Barbara Hepworth, Ancestor I, 1970, bronze, 109" x 54" x 35-1/2" (277 x 137 x 90 cm)
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
     <img src="/writing/images/bb1.jpg" alt="Barbara Hepworth, Ancestor I, 1970, bronze" style="max-width: 100%; max-height: 100%;">
 </div>
 
@@ -27,7 +27,7 @@ The Images (in order) were retrieved from the following URLs:
 
 ## Barbara Hepworth, Four-Square (Four Circles), 1966, bronze, 23-5/8" × 14" × 11-1/8" (60 cm × 35.6 cm × 28.3 cm)
  
-<div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
     <img src="/writing/images/bb2.jpg" alt="Four-Square (Four Circles), 1966, bronze" style="max-width: 100%; max-height: 100%;">
 </div>
 
@@ -37,7 +37,7 @@ The Images (in order) were retrieved from the following URLs:
 ## Barbara Hepworth, Horizontal Form, 1968, Polished bronze, on a bronze base. 18⅜ in (46.6 cm) wide
  
  
-<div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
     <img src="/writing/images/bb3.jpg" alt="Barbara Hepworth, Horizontal Form, 1968, Polished bronze" style="max-width: 100%; max-height: 100%;">
 </div>
 
@@ -45,7 +45,7 @@ The Images (in order) were retrieved from the following URLs:
  
 ## Barbara Hepworth, Forms in Movement (Pavan), 1956, Bronze with a green brown patina. 42½ in (108 cm) wide
  
-<div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
     <img src="/writing/images/bb4.jpg" alt="Barbara Hepworth, Forms in Movement (Pavan), 1956, Bronze with a green brown patina" style="max-width: 100%; max-height: 100%;">
 </div>
 
@@ -53,7 +53,7 @@ The Images (in order) were retrieved from the following URLs:
 
 ## Barbara Hepworth, Figure for Landscape, 1959-1960 bronze with a green/brown patina 102 3/8 in. (260 cm.) 
  
-<div style="display: flex; align-items: center; justify-content: center; max-width: 300px;">
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
     <img src="/writing/images/bb5.jpg" alt="Figure for Landscape, 1959-1960 bronze with a green/brown patina" style="max-width: 100%; max-height: 100%;">
 </div>
 
