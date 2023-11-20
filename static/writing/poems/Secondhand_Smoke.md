@@ -31,3 +31,8 @@ In the end, there's naught but the cough, the rasping echo of a pipe turned off,
 The field lies empty, the jay is gone, a silence scrubbed more deafening than any song.
 What was once a vibrant green, life-filled scene, is now just shades of gray.
 A lesson learned in the smoke’s twist and twine, of how we treat this Earth of mine.
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/second_smoke.png" alt="second smoke" style="max-width: 100%; max-height: 100%;">
+</div>

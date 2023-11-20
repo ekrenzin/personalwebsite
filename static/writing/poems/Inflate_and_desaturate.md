@@ -19,3 +19,8 @@ And I am a deflated balloon whose helium escapes the mylar,
 but could be refilled if given the chance. So fragile, nonetheless,
 as the more I am inflated, the thinner my skin, inflated until
 it would take just the kiss of a knife for me to pop.
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/inflate.png" alt="inflate" style="max-width: 100%; max-height: 100%;">
+</div>

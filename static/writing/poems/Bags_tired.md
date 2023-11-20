@@ -1,3 +1,5 @@
+<div align="center">
+
 ## Bags under my eyes
 
 There are bags under my eyes, big
@@ -13,3 +15,7 @@ So much is gone. It is as though I cannot remember anymore.
 Perhaps all there is to remember is the feeling of tiredness.
 
 Clouds are so beautiful until the sky is gray. Then I miss the blues.
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/bags_eyes.png" alt="bags_tired" style="max-width: 100%; max-height: 100%;">
+</div>

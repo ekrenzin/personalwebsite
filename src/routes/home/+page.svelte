@@ -10,7 +10,6 @@
 	<meta name="description" content="Ean Krenzin-Blank's personal website" />
 </svelte:head>
 <div class="relative overflow-hidden container">
-	<div class="relative pt-6 pb-16 sm:pb-24">
 		<img
 			class="image-blur tongue"
 			src="/me_tongue.png"
@@ -26,11 +25,11 @@
 		<VideoHero />
 		<!-- <FeaturedProjects /> -->
 		<!-- Title -->
-	</div>
 </div>
 
 <style>
 	.container {
+		width: 100%;
 		max-width: 1000px;
 		display: flex;
 		flex-direction: column;
@@ -45,11 +44,12 @@
 		filter: grayscale(1);
 		position: absolute;
 		opacity: 0.5;
+		transition: 2s ease-in-out;
 		/* z-index: 10; */
 	}
 
 	.tongue {
-		top: -2rem;
+		top: 2rem;
 		left: -15%;
 	}
 

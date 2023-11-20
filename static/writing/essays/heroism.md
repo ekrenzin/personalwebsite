@@ -79,3 +79,8 @@ Therefore, while a hero’s judgment may come, it is not a hero's duty to cast i
 
 Best,
 Ean
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/heroism.png" alt="death_etymology" style="max-width: 100%; max-height: 100%;">
+</div>

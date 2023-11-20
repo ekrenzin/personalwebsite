@@ -19,3 +19,7 @@ Donna Haraway's work, particularly her “A Cyborg Manifesto,” highlights our 
 Thus, while both the Enlightenment and the Romantic movement have shaped modern western civilization, the principles of the Enlightenment have had a more lasting impacts, ultimately equating to more positives. The Enlightenment's focus on reason, communal progress, and science has underpinned our approach to governance, societal progression, and knowledge. Meanwhile, the Romantic movement's championing of individualism and emotion has been recontextualized and perverted within a communal framework. As we navigate an interconnected and technologically advanced world, it's the Enlightenment's focus on reason and progress that continues to guide us, showing the Enlightenment's enduring and critical influence on our modern world.
 
 > Note that the prompt is not whether the Romantic vs Enlightment is in totality positive, but simply which one was more positive. In other words, 1 million negative influences and 10 positive influences is, by definition, more positive than 0 negative influences and 5 positives. Perhaps my argument is derived from semantics, but what else would justify a stance on the subjective?
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/enlightenment.png" alt="death_etymology" style="max-width: 100%; max-height: 100%;">
+</div>

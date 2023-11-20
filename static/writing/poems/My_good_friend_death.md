@@ -25,3 +25,7 @@ until it’s completely dark.
 And I’m alone. I am afraid. 
 But my friend death comes, and I feel 
 comforted. 
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/friend_death.png" alt="death friend" style="max-width: 100%; max-height: 100%;">
+</div>

@@ -1,5 +1,7 @@
 import fs from 'fs';
 import path from 'path';
+import cheerio from 'cheerio';
+import { parse } from 'marked';
 
 const baseUrl = 'static/writing';
 
@@ -19,8 +21,9 @@ async function readFiles(type) {
                     const filePath = path.join(directory, file);
                     const content = await fs.promises.readFile(filePath, 'utf8');
                     const preview = extractPreview(content);
+                    const { imageSources } = parseMarkdown(content);
                     const title = path.basename(file, '.md');
-                    return { title, preview, url: `writing/${type}_${title}` };
+                    return { title, preview, url: `writing/${type}_${title}`, imageSources };
                 } catch (fileReadError) {
                     console.error(`Error reading file ${file}: ${fileReadError}`);
                     return null;
@@ -82,6 +85,23 @@ async function buildJSON() {
     } catch (error) {
         console.error(`Error in prebuildJSON: ${error}`);
     }
+}
+
+
+function parseMarkdown(markdown) {
+    const html = parse(markdown);
+
+    //load cheerio parse images
+    const $ = cheerio.load(html);
+
+    //get all images
+    const images = $('img');
+    const imageSources = [];
+    for (const image of images) {
+        imageSources.push(image.attribs.src);
+    }
+    
+    return { html, imageSources }
 }
 
 export { buildJSON }

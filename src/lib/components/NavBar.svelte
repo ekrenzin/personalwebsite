@@ -5,7 +5,7 @@
 	import logo from '$lib/assets/logo.svg';
 
 	let showMenu: boolean = false;
-    let showDropdown = false; // New state for dropdown visibility
+	let showDropdown = false; // New state for dropdown visibility
 
 	let links = [
 		{
@@ -20,32 +20,30 @@
 			alts: [],
 			icon: null
 		},
-        {
-            href: '/art',
-            name: 'Art',
-			alts: [],
-            icon: null
-        },
 		{
-            href: '/me',
-            name: 'Me',
-            alts: [""],
-            icon: null,
-            subLinks: [
-                {
-                    href: '/me#story',
-                    name: 'Story'
-                },
-                {
-                    href: '/me#employment-history',
-                    name: 'Resume'
-                },
+			href: '/me',
+			name: 'Me',
+			alts: [''],
+			icon: null,
+			subLinks: [
 				{
-					href: "/writing",
-					name: "Creative Writing"
+					href: '/me#story',
+					name: 'Story'
+				},
+				{
+					href: '/me#employment-history',
+					name: 'Resume'
+				},
+				{
+					href: '/writing',
+					name: 'Creative Writing'
+				},
+				{
+					href: '/art',
+					name: 'Art'
 				}
-            ]
-        },
+			]
+		},
 		{
 			href: '/contact',
 			name: 'Contact',
@@ -59,72 +57,40 @@
 			icon: null
 		}
 	];
-
-	
 </script>
-
-<style>
-	a {
-		transition: 0.2s;
-	}
-
-	nav {
-		z-index: 100;
-	}
-
-	 /* Desktop hover styles */
-	 .dropdown:hover .dropdown-menu {
-        display: block; /* Show dropdown on hover */
-    }
-
-    .dropdown-menu {
-        display: none; /* Hide dropdown by default */
-        position: absolute;
-        left: 0;
-		top: 90%;
-        z-index: 1;
-        /* Add more styling as needed */
-    }
-
-	.dropdown-menu a {
-		background-color: #1f2937;
-	}
-
-	.dropdown-menu a:hover {
-		background-color: #0e1118;
-	}
-</style>
 
 <nav class="">
 	<div class="mx-auto max-w-screen-xl px-8 sm:px-12 lg:px-16 py-4">
-	  <div class="flex h-20 items-center sm:justify-center justify-between">
-		<div class="flex items-center space-x-12 sm:space-x-0">
-		  <div class="flex-shrink-0">
-			<div class="mr-10">
-					<img
-						class="block h-8 w-auto lg:hidden"
-						src={logo}
-						alt="Ean Krenzin"
-					/>
-					<img
-						class="hidden h-8 w-auto lg:block"
-						src={logo}
-						alt="Ean Krenzin"
-					/>
-				</div>
+		<div class="flex h-20 items-center sm:justify-center justify-between">
+			<div class="flex items-center space-x-12 sm:space-x-0">
+				<div class="flex-shrink-0">
+					<div class="mr-10">
+						<img class="block h-8 w-auto lg:hidden" src={logo} alt="Ean Krenzin" />
+						<img class="hidden h-8 w-auto lg:block" src={logo} alt="Ean Krenzin" />
+					</div>
 				</div>
 				<div class="hidden sm:ml-6 sm:block">
 					<div class="flex space-x-4">
-                        
 						<div class="hidden sm:ml-6 sm:block">
 							<div class="flex space-x-4">
 								{#each links as link}
-									<div class="relative dropdown"> 
-										<a href={link.href} class="{link.href === $page.url.pathname || link.alts.includes($page.url.pathname) ? 'rounded-md bg-blue-900 px-3 py-2 text-md font-medium text-white' : 'rounded-md px-3 py-2 text-md font-medium hover:bg-blue-400 text-white'}" on:click={() => { if (link.subLinks) showDropdown = !showDropdown }}>{link.name}</a>
+									<div class="relative dropdown">
+										<a
+											href={link.href}
+											class={link.href === $page.url.pathname ||
+											link.alts.includes($page.url.pathname)
+												? 'rounded-md bg-blue-900 px-3 py-2 text-md font-medium text-white'
+												: 'rounded-md px-3 py-2 text-md font-medium hover:bg-blue-400 text-white'}
+											on:click={() => {
+												if (link.subLinks) showDropdown = !showDropdown;
+											}}>{link.name}</a
+										>
 										{#if link.subLinks}
 											<div class="absolute left-0 mt-2 shadow-md dropdown-menu">
 												{#each link.subLinks as subLink}
-													<a href={subLink.href} class="block px-4 py-2 text-sm text-gray-100">{subLink.name}</a>
+													<a href={subLink.href} class="block px-4 py-2 text-sm text-gray-100"
+														>{subLink.name}</a
+													>
 												{/each}
 											</div>
 										{/if}
@@ -179,21 +145,60 @@
 
 	<!-- Mobile menu, show/hide based on menu state. -->
 	{#if showMenu}
-    <div class="sm:hidden" id="mobile-menu" in:fade>
-        <div class="space-y-1 px-2 pt-2 pb-3">
-            {#each links as link}
-                <div class="relative dropdown">
-                    
-                    {#if link.subLinks}
-                            {#each link.subLinks as subLink}
-							<a href={subLink.href} class="block rounded-md hover:bg-sky-500  px-3 py-2 text-base font-medium text-white">{subLink.name}</a>
-                            {/each}
-							{:else}
-							<a href={link.href} class="block rounded-md hover:bg-sky-500  px-3 py-2 text-base font-medium text-white">{link.name}</a>
-                    {/if}
-                </div>
-            {/each}
-        </div>
-    </div>
-{/if}
+		<div class="sm:hidden" id="mobile-menu" in:fade>
+			<div class="space-y-1 px-2 pt-2 pb-3">
+				{#each links as link}
+					<div class="relative dropdown">
+						{#if link.subLinks}
+							{#each link.subLinks as subLink}
+								<a
+									href={subLink.href}
+									class="block rounded-md hover:bg-sky-500 px-3 py-2 text-base font-medium text-white"
+									>{subLink.name}</a
+								>
+							{/each}
+						{:else}
+							<a
+								href={link.href}
+								class="block rounded-md hover:bg-sky-500 px-3 py-2 text-base font-medium text-white"
+								>{link.name}</a
+							>
+						{/if}
+					</div>
+				{/each}
+			</div>
+		</div>
+	{/if}
 </nav>
+
+<style>
+	a {
+		transition: 0.2s;
+	}
+
+	nav {
+		z-index: 100;
+	}
+
+	/* Desktop hover styles */
+	.dropdown:hover .dropdown-menu {
+		display: block; /* Show dropdown on hover */
+	}
+
+	.dropdown-menu {
+		display: none; /* Hide dropdown by default */
+		position: absolute;
+		left: 0;
+		top: 90%;
+		z-index: 1;
+		/* Add more styling as needed */
+	}
+
+	.dropdown-menu a {
+		background-color: #1f2937;
+	}
+
+	.dropdown-menu a:hover {
+		background-color: #0e1118;
+	}
+</style>

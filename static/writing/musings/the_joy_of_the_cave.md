@@ -37,3 +37,8 @@ Actually, it’s by no means a novel revelation. Religion frequently attempts to
 So what the hell does any of this have to do with a dinner party? Before we return to that, consider an escaped prisoner once more. But imagine that this escaped prisoner never returns to the cave. When greeted by the viewer from outside the matrix, they accept it blindly. They, rather than concerned about their own existence, take delight in their shared experience. To this escapee, is it not wonderful to know that the guards were also blind? The now freed prisoner is grateful for the simulation. It’s not a shackle to the ground, but rather a link to every other conscience. They have proven that they exist, as a higher being deemed them worthy of conversation. They know this higher being will inevitably experience a similar fate, at least until the rules of the world change, ie no time.
 
 Have we not strayed further from the dinner party? In fact, we haven’t. We have arrived instead, at the laughter in the room at my own expense. The chorus of sounds which are warm colors dancing through the air. The friendship we share, and the knowledge that we come across. To strip away the shackles of the cave, one must only consider the chains to be links to other prisoners, and we are free to wander until our hearts give out.
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/cave.png" alt="exhausted" style="max-width: 100%; max-height: 100%;">
+</div>

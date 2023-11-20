@@ -1,10 +1,12 @@
 <script lang="ts">
-    import { parse, Renderer } from 'marked';
+    import ImageCarousel from '$lib/components/ImageCarousel.svelte';
+import { parse, Renderer } from 'marked';
 
     export let markdownContent = {
         preview: "",
         title: "",
-        url: ""
+        url: "",
+        imageSources: []
     };
 
     function cleanMD(text: string) {
@@ -39,33 +41,69 @@ renderer.paragraph = (text) => {
     }).join('');
 };
 </script>
+<article use:onIntersect class="frosted article-container" id={markdownContent.url.split('/').pop()}>
+    <div class="content-container">
+        <p>{@html cleanMD(markdownContent.preview)}</p>
+        <a href={markdownContent.url}>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded">
+                Read more
+            </button>
+        </a>
+    </div>
 
-<article use:onIntersect  class="bg-white rounded-lg shadow-lg overflow-hidden p-8 frosted" id={markdownContent.url.split('/').pop()}>
-    <p>{@html cleanMD(markdownContent.preview)}</p>
-    <a href={markdownContent.url}>
-        <button class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded">
-            Read more
-        </button>
-    </a>
+    {#if markdownContent.imageSources.length > 0}
+    <div class="image-preview-container">
+        <ImageCarousel imageSources={markdownContent.imageSources} />
+    </div>
+    {/if}
 </article>
 
-
-  <style>
-    p {
-        width: 100%;
+<style>
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding: 2rem;
+        transition: opacity 0.5s, transform 0.5s;
+        opacity: 0;
+        transform: scale(0.4);
     }
-    article {
+
+    .content-container {
+        flex: 1;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-preview-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: 0.2s;
-        opacity: 0;
-        transform: scale(0.4);
-        transition: 0.5s;
+        gap: 10px;
+        width: 200px;
     }
 
-    button {
-        transition: 0.5s
+
+    @media (max-width: 600px) {
+        .article-container {
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        .image-preview-container {
+            width: 100%;
+            height: auto;
+        }
     }
-  </style>
+
+    p {
+        width: 100%;
+    }
+</style>

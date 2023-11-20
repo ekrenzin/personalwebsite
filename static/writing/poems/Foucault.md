@@ -49,3 +49,8 @@ Without knowledge we are blind.
 And that is how the Author will bind.
 
 
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/foucault.png" alt="focault" style="max-width: 100%; max-height: 100%;">
+</div>

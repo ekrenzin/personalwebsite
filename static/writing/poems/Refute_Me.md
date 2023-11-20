@@ -34,4 +34,9 @@ With that rebuttal which is gravity
 With the way it grounds our ambitions
 With the way it refuses us. Fuck you.
 
+</details>
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/refute_me.png" alt="refute me" style="max-width: 100%; max-height: 100%;">
 </div>

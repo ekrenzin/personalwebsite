@@ -7,3 +7,9 @@ At some point, I grew a bit older, and I was allowed to watch Home Alone. Embold
 My dreams became creepy puppets invading my home. In my dreams I would run and hide in the closet, screaming for help, but my family would either sleep through my screams or simply not be home. Then they would rip open the closet door and kill me. Repeatedly I died in my dreams. It was Hell to sleep. It meant pain, torture, fear, and death. Each night, I would hide under my blankets and would hold my breath so the monsters could not hear me.
 
  I wonder if fear is the chicken or the egg. When I’m afraid of heights, is it from my dreams as an infant, or was it fear that led to the dreams? Now, as an adult, I have an irrational fear of the second floor of malls. I walk as closely as I can to the storefronts, and I often refuse to cross the center walkways. I diligently circle around the entire mall to reach the other side if need be. 
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/sleep_fall.png" alt="sleep_fall" style="max-width: 100%; max-height: 100%;">
+</div>
+

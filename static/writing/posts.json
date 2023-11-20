@@ -3,190 +3,276 @@
     {
       "title": "Bronze_age",
       "preview": "## Barbara's Bronze's\n\nINTRODUCTION\nThe Bronze age followed the Neolithic Age. Bronze is an amalgam of copper and tin. Bronze not only withstands the passage of time, but it also lends itself to the c...",
-      "url": "writing/essays_Bronze_age"
+      "url": "writing/essays_Bronze_age",
+      "imageSources": [
+        "/writing/images/bb1.jpg",
+        "/writing/images/bb2.jpg",
+        "/writing/images/bb3.jpg",
+        "/writing/images/bb4.jpg",
+        "/writing/images/bb5.jpg"
+      ]
     },
     {
       "title": "Kairos",
       "preview": "## Kairos: Seizing the Opportune Moments in the Tapestry of Chronos\n\nMichel Foucault provides us with an intriguing perspective on the nature of history in the preface of his seminal work History of M...",
-      "url": "writing/essays_Kairos"
+      "url": "writing/essays_Kairos",
+      "imageSources": [
+        "http://img.youtube.com/vi/fFJrV3pI5Zs/0.jpg"
+      ]
     },
     {
       "title": "Questioning_Etymology_of_Death",
       "preview": "## Questioning the Etymology of Death\n\nHow death is regarded in each civilization is a dubious question, as death naturally has a shifting ontology as societies develop. With that said, relics of the ...",
-      "url": "writing/essays_Questioning_Etymology_of_Death"
+      "url": "writing/essays_Questioning_Etymology_of_Death",
+      "imageSources": [
+        "/writing/images/death_etymology.png"
+      ]
     },
     {
       "title": "Romatic_vs_enlightenement",
       "preview": "## Enlightenment vs Romanticism \n\n### Prompt:\nThe Enlightenment and the Romantic Movement in most ways can be seen as in opposition to each other. Nonetheless, they have both had a huge influence on m...",
-      "url": "writing/essays_Romatic_vs_enlightenement"
+      "url": "writing/essays_Romatic_vs_enlightenement",
+      "imageSources": [
+        "/writing/images/enlightenment.png"
+      ]
     },
     {
       "title": "Stone_and_spirit",
       "preview": "## Stone and Spirit: Tracing Architecture and Meaning in the Ancient World\n\nThe architectural record of human history is rich with layers that reveal the intricacies of societal values, technological ...",
-      "url": "writing/essays_Stone_and_spirit"
+      "url": "writing/essays_Stone_and_spirit",
+      "imageSources": [
+        "/writing/images/stone_spirit.png"
+      ]
     },
     {
       "title": "heroism",
       "preview": "## Moving Past the Sword: The Pen of Modern Heroism\n\n> The etymology of the word Hero derives from the Greek word ἥρως (hērōs), meaning protector or defender. The antithesis ειλός (deilós), encapsulat...",
-      "url": "writing/essays_heroism"
+      "url": "writing/essays_heroism",
+      "imageSources": [
+        "/writing/images/heroism.png"
+      ]
     }
   ],
   "musings": [
     {
       "title": "meno",
       "preview": "## Musing with Meno\n\nSocrates posits to Meno that no man can define virtue. Undoubtedly this is true, but nevertheless it is a curious idea. Plato through Socrates, examines the bees, juxtaposing natu...",
-      "url": "writing/musings_meno"
+      "url": "writing/musings_meno",
+      "imageSources": [
+        "/writing/images/meno.png"
+      ]
     },
     {
       "title": "sleep",
       "preview": "## Sleep\n\nSleep and death, to me, have always been chiasmatically bound. My first memory of a dream is one where I die. I am in a stroller, and for some reason, my family leaves me. I crawl from the s...",
-      "url": "writing/musings_sleep"
+      "url": "writing/musings_sleep",
+      "imageSources": [
+        "/writing/images/sleep_fall.png"
+      ]
     },
     {
       "title": "the_joy_of_the_cave",
       "preview": "## The Joy of the Cave\n\nThe other day I attended a dinner party with several close friends. At some point I made reference to a meme that I had recently encountered and the rest of our group stared at...",
-      "url": "writing/musings_the_joy_of_the_cave"
+      "url": "writing/musings_the_joy_of_the_cave",
+      "imageSources": [
+        "/writing/images/cave.png"
+      ]
     }
   ],
   "notes": [
     {
       "title": "descartes_meditation",
       "preview": "## Meditation on First Philosophy\n\n### Citation\nDescartes, Rene\n\n### Notes\n\n### Note on Page 1 (Location 125)\n> Several years have now elapsed since I first became aware that I had accepted, even from...",
-      "url": "writing/notes_descartes_meditation"
+      "url": "writing/notes_descartes_meditation",
+      "imageSources": []
     },
     {
       "title": "mento",
       "preview": "## Meno\n\n### Citation\nPlato\n\n### Notes\n\n### Note on Page 1 (Location 372)\n> Can you tell me, Socrates, whether virtue is acquired by teaching or by practice; or if neither by teaching nor by practice,...",
-      "url": "writing/notes_mento"
+      "url": "writing/notes_mento",
+      "imageSources": []
     },
     {
       "title": "simulacrum",
       "preview": "## Simulacra and simulation\n\n### Citation\nBaudrillard , Jean\n\n### Notes\n\n### Note on Page 1 (Location 6)\n> it is truth that hides the fact that there is none.\n\n---\n\n### Note on Page 3 (Location 30)\n> ...",
-      "url": "writing/notes_simulacrum"
+      "url": "writing/notes_simulacrum",
+      "imageSources": []
     },
     {
       "title": "truth_lies_Nietzsche",
       "preview": "## On Truth and Lies in a Nonmoral Sense\n\n### Citation\nNietzsche, Friedrich\n\n### Notes\n\n### Note on Page 3 (Location 38)\n> And when it is all over with the human intellect, nothing will have happened....",
-      "url": "writing/notes_truth_lies_Nietzsche"
+      "url": "writing/notes_truth_lies_Nietzsche",
+      "imageSources": []
     }
   ],
   "poems": [
     {
       "title": "Bags_tired",
-      "preview": "## Bags under my eyes\n\nThere are bags under my eyes, big\nDark splotches of purple on leathery skin.\nThey are sunken-in like when you scoop powder and it leaves an imprint.\nI feel my face shake when I ...",
-      "url": "writing/poems_Bags_tired"
+      "preview": "<div align=\"center\">\n\n## Bags under my eyes\n\nThere are bags under my eyes, big\nDark splotches of purple on leathery skin.\nThey are sunken-in like when you scoop powder and it leaves an imprint.\nI feel...",
+      "url": "writing/poems_Bags_tired",
+      "imageSources": [
+        "/writing/images/bags_eyes.png"
+      ]
     },
     {
       "title": "Blank",
       "preview": "<div align=\"center\">\n\n## Blank\n\nI should write, but my mind is Blank. \nLike De-Ja-Vu and this Feeling \nis of Russian dolls, Matryoshka \nof all turtles, All the way down, \nA sideways eight, infinitely....",
-      "url": "writing/poems_Blank"
+      "url": "writing/poems_Blank",
+      "imageSources": [
+        "/writing/images/blank.png"
+      ]
     },
     {
       "title": "BookShop",
       "preview": "<div align=\"center\">\n\n## Bookshop Idea\n\nI must here, in the entrance, beg pardon of my reader for the frequent use of the word Idea,\nwhich he will find in the following treatise. \nIt being that term w...",
-      "url": "writing/poems_BookShop"
+      "url": "writing/poems_BookShop",
+      "imageSources": [
+        "/writing/images/bookshop.png"
+      ]
     },
     {
       "title": "By_the_drum",
       "preview": "<div align=\"center\">\n    \n\n## By the Drum\n\nMountain to drum, to blue sky, the sun shines bright,\nSun shines, glitters like gold, over the fields so wide,\nBy the dam, by the dam, by the dam, by the dam...",
-      "url": "writing/poems_By_the_drum"
+      "url": "writing/poems_By_the_drum",
+      "imageSources": [
+        "/writing/images/cottage_drum.png"
+      ]
     },
     {
       "title": "Doki_Doki",
-      "preview": "\n<div align=\"center\">\n\n\n\n## Doki Doki\n\n心 どきどき (Heart pounding)\n痛 どきどき (Pain throbbing)\nSweet moments fleeting,\nBitter memories, yet endearing.\n愛 dance with pastel and ink.\n...",
-      "url": "writing/poems_Doki_Doki"
+      "preview": "\n<div align=\"center\">\n\n\n\n## Doki Doki\n\n心 どきどき (Heart pounding)\n痛 どきどき (Pain throbbing)\nSweet moments fleeting,\nBitter memories, yet endearing.\n愛 dance with pastel and ink.\n\n\n<div style=\"display: flex;...",
+      "url": "writing/poems_Doki_Doki",
+      "imageSources": [
+        "/writing/images/doki_doki.png"
+      ]
     },
     {
       "title": "Foucault",
       "preview": "\n<div align=\"center\">\n\n## Foucault\n\nThe thirst for knowledge cannot be quenched.\nKnowledge is blood that pools en-trenched until feet are drenched.\nThe perfect strategy where progress is blocked,\nTill...",
-      "url": "writing/poems_Foucault"
+      "url": "writing/poems_Foucault",
+      "imageSources": [
+        "/writing/images/foucault.png"
+      ]
     },
     {
       "title": "Fumes",
       "preview": "<div align=\"center\">\n\n\n## Fumes\n\n> This content is explicit\n\n<details>\n  <summary>Trigger Warning</summary>\n  \nSpray color and the fumes whisp\nErratically up and around\nWithout rhyme the fumes are\nMin...",
-      "url": "writing/poems_Fumes"
+      "url": "writing/poems_Fumes",
+      "imageSources": [
+        "/writing/images/fumes.png"
+      ]
     },
     {
       "title": "Inflate_and_desaturate",
       "preview": "<div align=\"center\">\n\n## Inflate and Desaturate\n\nMuch of the time, when I look at art, it leaves me deeply depressed. \nI see colors and they make me sad. When on a walk, I pause,\nto glance up at the s...",
-      "url": "writing/poems_Inflate_and_desaturate"
+      "url": "writing/poems_Inflate_and_desaturate",
+      "imageSources": [
+        "/writing/images/inflate.png"
+      ]
     },
     {
       "title": "Moon_above_lagoon",
       "preview": "\n<div align=\"center\">\n\n## Moon above Lagoon and Lune\n\nIn all my life \nI desired for Dignity.\nI have believed it to be\nSomething achieved,\nIt’s not earned.\n\nFrom a young age, I have been a contrarian. ...",
-      "url": "writing/poems_Moon_above_lagoon"
+      "url": "writing/poems_Moon_above_lagoon",
+      "imageSources": []
     },
     {
       "title": "My_good_friend_death",
       "preview": "> I think the thing scariest about death, is even when you feel like you accepted it coming, it comes anyways.\n\n<div align=\"center\">\n\n## My Good Friend Death\n\nDeath is a friend. Death has no gender,\nB...",
-      "url": "writing/poems_My_good_friend_death"
+      "url": "writing/poems_My_good_friend_death",
+      "imageSources": [
+        "/writing/images/friend_death.png"
+      ]
     },
     {
       "title": "Our_Simulacrum_in_the_Mirror",
       "preview": "<div align=\"center\">\n\n## Our Simulacrum in the Mirror\n\nOf human minds and spines ascended, \nlike unicorns of promised progress,\nhidden behind cloaks of code, modern gods \nbirthed from skull and bones ...",
-      "url": "writing/poems_Our_Simulacrum_in_the_Mirror"
+      "url": "writing/poems_Our_Simulacrum_in_the_Mirror",
+      "imageSources": []
     },
     {
       "title": "Refute_Me",
       "preview": "\n<div align=\"center\">\n\n\n## Refute Me\n\n\n> This content is explicit\n\n<details>\n  <summary>Trigger Warning</summary>\n\nToday the muse refuses, and so my words are ogres \nWith twisted faces contorted\nWith ...",
-      "url": "writing/poems_Refute_Me"
+      "url": "writing/poems_Refute_Me",
+      "imageSources": [
+        "/writing/images/refute_me.png"
+      ]
     },
     {
       "title": "Saturation",
       "preview": "<div align=\"center\">\n\n## Saturation\n\nI arose today and unveiled the shroud,\nI pulled the cord to remove the cloud\nthat yields light to wax and wane. \nThe warden of a window. Stain\nof gray. Once gated,...",
-      "url": "writing/poems_Saturation"
+      "url": "writing/poems_Saturation",
+      "imageSources": []
     },
     {
       "title": "Scarecrow",
       "preview": "<div align=\"center\">\n\n## Scarecrow\n\nA poem that is convoluted, ironic in that it cannot be refuted,\nFor the nature of obscurity, rather than maturity, is a scarecrow.\n...",
-      "url": "writing/poems_Scarecrow"
+      "url": "writing/poems_Scarecrow",
+      "imageSources": []
     },
     {
       "title": "Secondhand_Smoke",
       "preview": "<div align=\"center\">\n\n## Second-hand Smoke\n\nIn the heart of the verdant field I recline, a palette of nature’s songbirds chime,\nWoodpeckers knock the morning bell, owls hoot mourning tales of mice the...",
-      "url": "writing/poems_Secondhand_Smoke"
+      "url": "writing/poems_Secondhand_Smoke",
+      "imageSources": [
+        "/writing/images/second_smoke.png"
+      ]
     },
     {
       "title": "Siamese",
       "preview": "<div align=\"center\">\n\n## Siamese\n\nI see the beauty in\nThe notebooks of others:\nSo organized. I envy the\nMind which is so delicate.\nAnd who’s thoughts do not\nQuiver when performing this\nSurgery of feel...",
-      "url": "writing/poems_Siamese"
+      "url": "writing/poems_Siamese",
+      "imageSources": []
     },
     {
       "title": "SilverBellies",
       "preview": "<div align=\"center\">\n\n## Silver Bellies\n\nWhen the river dries, the minnows are like fallen leaves, \nof the red willows silver bellies, and the flies come for feasts,\nAs the land wastes not. But I see ...",
-      "url": "writing/poems_SilverBellies"
+      "url": "writing/poems_SilverBellies",
+      "imageSources": []
     },
     {
       "title": "Trivia",
       "preview": "<div align=\"center\">\n\n## Trivia\n\nWednesday is Trivia. Some are there to win, others to laugh, and a few more are busy enjoying their drinks. \nIt’s a swirl of vibrancy: of sounds, shapes, colors, backg...",
-      "url": "writing/poems_Trivia"
+      "url": "writing/poems_Trivia",
+      "imageSources": [
+        "/writing/images/trivia.png"
+      ]
     },
     {
       "title": "cat_fly",
       "preview": "<div align=\"center\">\n\n## Cat\n\nCat stares outward, a paw draped over the dresser like a hook,\nLazily scooping the air, bailing out the tears sinking her ship.\nShe sees them in the air, the vespers of e...",
-      "url": "writing/poems_cat_fly"
+      "url": "writing/poems_cat_fly",
+      "imageSources": [
+        "/writing/images/cat_fly.png"
+      ]
     },
     {
       "title": "dont_read",
       "preview": "## Look a Poem\n\nUnder the dim ( I'm just a blur (\nWords all jumbled, a tongue-tied >\n< In the crowd # I'm a ghost, barely =\nCraving a look -- someone to).\n\nMy sentences stumble~~|_ clumsy or frail%%\ns...",
-      "url": "writing/poems_dont_read"
+      "url": "writing/poems_dont_read",
+      "imageSources": []
     },
     {
       "title": "exhastion_prose",
       "preview": "<div align=\"center\">\n\n## Exhaustion\n\nExhaustion is a nefarious beast. Insidious in that it creeps up on you, when you are most vulnerable. Vulnerable in your pleasure, or effort, that leaves you witho...",
-      "url": "writing/poems_exhastion_prose"
+      "url": "writing/poems_exhastion_prose",
+      "imageSources": [
+        "/writing/images/exhaustion.png"
+      ]
     }
   ],
   "stories": [
     {
       "title": "Structure",
       "preview": "## Structure\n  \n  The following piece contains explicit content and may not be suitable for all audiences. It offers a commentary on the raw emotions experienced in New York City, a place that not onl...",
-      "url": "writing/stories_Structure"
+      "url": "writing/stories_Structure",
+      "imageSources": []
     },
     {
       "title": "brunch",
       "preview": "## Brunch\n\n\nI enter the brunch shop. I am with my fiancé, for our weekly treat. Today we want to sit inside. This is atypical. Usually we sit outside, under the red umbrellas that filter light and tin...",
-      "url": "writing/stories_brunch"
+      "url": "writing/stories_brunch",
+      "imageSources": []
     }
   ]
 }
