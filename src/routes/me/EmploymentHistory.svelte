@@ -10,11 +10,6 @@
 			location: 'Miami',
 			website: 'https://sos-tech.com/',
 			duties: [
-				'Led a team of software engineers to develop and deploy a complex full-stack React-frontend application in a short timeframe.',
-				'Designed and developed a highly-available, fault-tolerant web application using modern AWS cloud technologies.',
-				'Worked with Security experts to build a security certified application.',
-				'Developed .Net microservices to modularize a modular-monolithic platform.',
-				'Instituted robust security protocols to facilitate encrypted communication among diverse stakeholders, including law enforcement agencies.'
 			]
 		},
 		{
@@ -24,11 +19,6 @@
 			location: 'San Francisco',
 			website: 'https://vali.ventures/',
 			duties: [
-				'Orchestrated the development of Desktop Vision, a WebRTC, WebXR-powered remote desktop application, affording device-agnostic and immersive computing experiences.',
-				'Architected a highly-available, fault-tolerant system, utilizing modern cloud technologies for optimal scalability.',
-				'Engineered paid tiers incorporating Google cloud computing, device sharing, and collaborative tools, thereby widening revenue streams.',
-				'Served versatile use-cases ranging from remote work to gaming and education.',
-				'Built and deployed native iOS, Android, Meta Quest, Mac, Linux, and Windows applications.'
 			]
 		},
 		{
@@ -38,9 +28,6 @@
 			location: 'New York',
 			website: 'https://graphicexecutions.com/',
 			duties: [
-				'Spearheaded the transition into mobile platforms by contributing to the development of native iOS applications. Utilized Swift and Objective-C to implement feature-rich, user-centric mobile experiences.',
-				'Collaborated cross-functionally with graphic designers and branding experts to ensure seamless integration of visual elements into mobile apps.',
-				"Deployed applications that served a diverse clientele, from SMBs to artists, reinforcing the company's reputation for high-quality work and rapid turnaround."
 			]
 		},
 		{
@@ -50,10 +37,6 @@
 			location: 'New York',
 			website: 'https://graphicexecutions.com/',
 			duties: [
-				'Spearheaded visual strategies that enhanced branding initiatives and digital content. Skilled in utilizing Adobe Creative Suite to design high-impact digital and print media.',
-				'Collaborated closely with printing and website development teams to ensure design coherence and quality across platforms.',
-				'Contributed to quick turnaround times and earned accolades for exceptional customer service, as evidenced by strong client reviews.',
-				"Leveraged understanding of typography, layout, and color theory to produce compelling designs, further solidifying the company's reputation for high-quality output."
 			]
 		}
 	].map((job) => ({ ...job, showDuties: true }));
@@ -63,7 +46,7 @@
 	<div class="mt-16">
 		<div class="flex justify-between  mb-4">
 		<h2 class="text-2xl font-semibold">Employment History</h2>
-		<a href="https://eankrenzin-personal-website.s3.us-west-1.amazonaws.com/Resume.pdf" target="_blank" rel="noreferrer" class="text-center bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Download Resume</a>
+		<!-- <a href="https://eankrenzin-personal-website.s3.us-west-1.amazonaws.com/Resume.pdf" target="_blank" rel="noreferrer" class="text-center bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Download Resume</a> -->
 
 	</div>
 		{#each employmentHistory as job}
