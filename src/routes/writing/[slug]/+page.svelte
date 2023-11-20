@@ -3,6 +3,7 @@
 	import { showChat, sendMessage } from '$lib/components/AiAssistant/chatStore';
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import { page } from '$app/stores';  
+	import PowerfulArticle from '$lib/components/PowerfulArticle.svelte';
 	
 	//dynamically import the markdown file based on the slug
 	export let data;
@@ -41,9 +42,7 @@
 </svelte:head>
 
 <div class="container mx-auto page p-4 p-4 text-gray-300">
-	<article class="prose lg:prose-xl">
-		{@html loadHtml(data.post)}
-	</article>
+	<PowerfulArticle html={loadHtml(data.post)} />
 	<!-- centered button to go back -->
 	<div class="flex-row">
 		<button
@@ -70,10 +69,6 @@
 		position: relative;
 		border-radius: 1rem;
 		max-width: 1000px;
-	}
-
-	article {
-		font-family: 'Times New Roman', Times, serif;
 	}
 
 	.flex-row {
