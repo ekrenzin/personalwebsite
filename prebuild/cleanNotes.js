@@ -68,6 +68,7 @@ function processFile(filePath) {
 
 // Function to process all files in the input directory
 function cleanAllNotes() {
+    console.log('Cleaning all notes...');
     fs.readdir(inputDir, (err, files) => {
         if (err) {
             console.error('Error reading input directory:', err);
