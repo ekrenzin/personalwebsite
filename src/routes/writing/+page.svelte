@@ -29,35 +29,31 @@
 <section align="center">
 	<h1>Hello, and welcome</h1>
 	<h2>
-		This is a deeply personal creative space, where I graple with emotion.
-	</h2>
+		This is a demonstration of artistic expression.
+		</h2>
+		<p>
+		The expression of creativity can be represented through our connection to technology,
+		as storytelling is expressed through the presentation as much as the content.
+		
+		</p>
 	<p>
-		Much of the content on this page is either explicit, or not professional. I think that's ok.
-
 		<b>
 			<u>
-				I believe that not everything we project should be for the purpose of earning money or conforming to
+				Not everything we project should be for the purpose of earning money or conforming to
 				expectations.
 			</u>
 		</b>
 
 		Sometimes we gasp at the world around us, sucking in polluted breaths. We must not forget to
-		accasionally exhale the bad air.
+		accasionally exhale the bad air. Some of this content is "bad" air.
 
 		<br />
 		<br />
 
-		It occured to me that I'd rather share my musings than carry the weight of them alone. That
-		perhaps carrying my thoughts inside was the definition of being alone.
+		It occured to me that I'd rather share my thoughts than carry the weight of them.
 
 		<br />
-		<br />
-
-		I wrote many of these poems and musings in dark moments, but sharing them is a way for me to
-		step in to the light. To an extent, I believe that's what art is; a way for us to share our
-		experiences, and to connect with others. Perhaps, to me, this is also what life is.
-	</p>
-	<p>
+		
 		With that said, don't take anything you read here too seriously. But it's fun to ponder.
 	</p>
 </section>
@@ -69,7 +65,7 @@
     {/if}
 </section>
 {/each}
-<CommentArea source="writing" hidden={false}/>
+<CommentArea source="writing" hidden={true}/>
 
 <section>
 	<h1>All Content</h1>
