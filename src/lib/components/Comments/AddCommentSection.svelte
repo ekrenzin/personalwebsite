@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Toasts } from '../Toasts/Toasts';
 	import { postComment } from './Comments';
 
 	export let source = 'test';
@@ -8,13 +9,22 @@
 	let name: string;
 
 	async function handleSubmit() {
+		Toasts.set([...$Toasts, 'Submitting comment...']);
+		
 		if (!comment || !name) {
 			alert('Please fill out all fields');
 			return;
 		}
 
-		await postComment({ source, user: name, comment: comment });
-        handleComments(source);
+		try {
+			await postComment({ source, user: name, comment: comment });
+			Toasts.set([...$Toasts, 'Comment submitted!'])
+		} catch (e) {
+			console.error(e.message);
+			Toasts.set([...$Toasts, 'Error submitting comment. Please try again later.']);
+			return;
+		}
+		handleComments(source);
 		comment = '';
 		name = '';
 	}

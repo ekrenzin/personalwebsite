@@ -6,6 +6,7 @@
 	import AnalysisSelector from '$lib/components/AiAssistant/AnalysisSelector.svelte';
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import { page } from '$app/stores';
+	import Toasts from '$lib/components/Toasts/ToastsHandler.svelte';
 	
 	let routeID = "";
 	let url = "";
@@ -50,7 +51,7 @@
 </div>
 <AnalysisSelector />
 <ChatBubble />
-
+<Toasts />
 <style>
 	div {
 		position: relative;
