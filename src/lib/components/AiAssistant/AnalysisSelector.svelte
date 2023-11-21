@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { fly, blur } from 'svelte/transition';
     import {tooltip } from '$lib/utils/tooltip';
     import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
@@ -16,7 +17,14 @@
     onMount(() => {
         const updateSelection = (event) => {
             selectedText = window.getSelection().toString();
-            showAnalysisButton.set(!!selectedText);
+
+            if (!selectedText) {
+                setTimeout(() =>{
+                    showAnalysisButton.set(!!selectedText);
+                }, 1000)
+            } else {
+                showAnalysisButton.set(!!selectedText);
+            }
             // Consider dynamic button positioning here based on event and selection
         };
 
@@ -29,16 +37,6 @@
         };
     });
 
-	function checkSelection() {
-        if (!window || !window.getSelection) return;
-		const text = window.getSelection().toString();
-		if (text) {
-			selectedText = text;
-			showAnalysisButton.set(true);
-		} else {
-			showAnalysisButton.set(false);
-		}
-	}
 
 	function analyzeText() {
         const html = document.body.innerHTML;
@@ -67,7 +65,7 @@
 
 
 {#if $showAnalysisButton && !moudeDown}
-	<div class="flex-column analyze-button" style={$buttonStyle}>
+	<div in:blur out:fly class="flex-column analyze-button" style={$buttonStyle}>
         <button
         use:tooltip title="Analyze selection with AI"
         on:click|stopPropagation={analyzeText}
