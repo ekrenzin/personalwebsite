@@ -1,93 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { writable } from 'svelte/store';
-	import { sendMessage, showChat } from './AiAssistant/chatStore';
-
 	export let html: string;
-
-	let showAnalysisButton = writable(false);
-	let buttonStyle = writable('');
-	let selectedText = '';
-
-	onMount(() => {
-		const articleElement = document.querySelector('.article');
-
-		articleElement.addEventListener('mouseup', updateButtonPosition);
-		articleElement.addEventListener('touchend', () => updateButtonPosition);
-
-		let selectionInterval = setInterval(checkSelection, 1000);
-
-		return () => {
-			articleElement.removeEventListener('mouseup', updateButtonPosition);
-			articleElement.removeEventListener('touchend', () => updateButtonPosition);
-			clearInterval(selectionInterval);
-		};
-	});
-
-	function checkSelection() {
-		const text = window.getSelection().toString();
-		if (text) {
-			selectedText = text;
-			showAnalysisButton.set(true);
-		} else {
-			showAnalysisButton.set(false);
-		}
-	}
-
-	function updateButtonPosition(event) {
-		const x = 0;
-		const y = event.clientY - 50 + window.scrollY;
-		const styleString = `top: ${y}px; left: ${x}px; position: absolute;`;
-		buttonStyle.set(styleString);
-
-		checkSelection();
-	}
-
-	function analyzeText() {
-		$showChat = true;
-		sendMessage(`Analyze my selected text: ${selectedText}`, window.location.pathname, html);
-	}
-
-	function generateImage() {
-		$showChat = true;
-		sendMessage(`Generate image from my selected text: ${selectedText}`, window.location.pathname, html);
-	}
 </script>
 
 <article class="article">
 	{@html html}
 </article>
 
-{#if $showAnalysisButton}
-	<div class="flex-column analyze-button" style={$buttonStyle}>
-		<h2>AI Tools</h2>
-		<button
-			on:click={analyzeText}
-			class="bg-sky-800 text-white p-2 rounded shadow-sm focus:outline-none hover:bg-blue-900"
-		>
-			Analyze selection with AI
-		</button>
-		<button
-			on:click={generateImage}
-			class="bg-sky-800 text-white p-2 rounded shadow-sm focus:outline-none hover:bg-blue-900"
-		>
-			Generate Image from selection with AI
-		</button>
-	</div>
-{/if}
-
 <style>
-	.analyze-button {
-		/* Basic styles for the button */
-		position: absolute; /* Position absolute is required for dynamic positioning */
-		z-index: 10; /* Ensure it's above other elements */
-		/* Other styling as needed */
-		gap: 1rem;
-		background-color: rgba(0, 0, 0, 0.8);
-		padding: 1rem;
-		border-radius: 1rem;
-	}
-
 	article {
 		font-family: 'Times New Roman', Times, serif;
 	}

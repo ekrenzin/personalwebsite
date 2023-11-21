@@ -3,6 +3,7 @@
 	import NavBar from '$lib/components/NavBar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import ChatBubble from '$lib/components/AiAssistant/ChatBubble.svelte';
+	import AnalysisSelector from '$lib/components/AiAssistant/AnalysisSelector.svelte';
 </script>
 
 <svelte:head>
@@ -32,6 +33,7 @@
 	</main>
 	<Footer />
 </div>
+<AnalysisSelector />
 <ChatBubble />
 
 <style>

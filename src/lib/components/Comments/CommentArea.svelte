@@ -5,7 +5,7 @@
 	import AddCommentSection from './AddCommentSection.svelte';
 	import type { Comment } from './Comments';
 	
-	export let source = 'test';
+	export let source: string;
 	export let hidden = true;
 
 	let inititalized = false;
@@ -15,26 +15,43 @@
 	onMount(() => {
 		if (!inititalized) {
 			inititalized = true;
-			handleComments(source);
+			handleComments();
 		}
 	});
 
-	async function handleComments(src: string) {
+	async function handleComments() {
+		if (!source) return;
 		if (!inititalized) return;
-		const _comments = await fetchComments(src);
-		comments = _comments;
+		const _comments = await fetchComments(source);
+		comments = _comments.sort((a, b) => {
+			return new Date(b.UpdatedAt).getTime() - new Date(a.UpdatedAt).getTime();
+		});
 	}
 
-	$: handleComments(source);
+	async function toggleSort() {
+		comments = comments.reverse();
+	}
+	
+
 </script>
 
 <section>
 	<h2>Comments</h2>
+	<!-- refresh button -->
 	{#if hidden}
 	<details>
+		<button class="bg-blue-700  hover:bg-blue-800 p-2 rounded" on:click={handleComments} aria-label="Refresh comments">
+		Refesh
+		</button>
+		<!-- sort button -->
+		<button class="bg-blue-700  hover:bg-blue-800 p-2 rounded" on:click={toggleSort} aria-label="Sort comments">
+		Toggle Sort
+		</button>
+		{#key comments}
 		<summary>Click to see comments</summary>
 		<CommentList {comments} />
 		<AddCommentSection {source} {handleComments} />
+		{/key}
 	</details>
 	{:else}
 		<CommentList {comments} />
