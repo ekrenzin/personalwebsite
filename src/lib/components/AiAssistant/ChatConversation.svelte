@@ -5,15 +5,22 @@
 	import LoadingSpinner from '../LoadingSpinner.svelte';
 	export let message: string;
 	export let sender: string;
+
+	let commented = false;
+
 	const ignoredMessages: string[] = [
 		'Hello, how can I assist you? You can try asking about this page.',
 		'Loading...',
 		'Please wait for a moment while I think...'
 	];
 	async function comment() {
+		if (commented) return;
+		commented = true;
 		const slug = $page.params.slug || 'AI_Chats';
 		await postComment({ source: slug, comment: message, user: 'AI Assistant' });
 	}
+``
+
 </script>
 
 {#if sender === 'assistant' || sender === 'user'}
@@ -30,10 +37,12 @@
 		{:else}
 			{@html loadHtml(message)}
 		{/if}
-		{#if sender === 'assistant' && $page.params && $page.params.slug && !ignoredMessages.includes(message)}
+		{#if !commented && sender === 'assistant' && $page.params && $page.params.slug && !ignoredMessages.includes(message)}
 			<button class="focus:outline-none bg-black p-2 rounded-full text-white" on:click={comment}
 				>Comment this response</button
 			>
+			{:else if commented}
+			<p>Commented!</p>
 		{/if}
 	</div>
 {/if}
