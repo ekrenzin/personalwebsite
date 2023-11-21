@@ -12,22 +12,22 @@
 	let selectedText = '';
     let moudeDown = false;
 
-	onMount(() => {
-        const body = document.querySelector('main');
-        if (!body) return;
-        body.addEventListener('mousedown', () => moudeDown = true);
-        body.addEventListener('touchstart', () => moudeDown = true);
-		body.addEventListener('mouseup', updateButtonPosition);
-		body.addEventListener('touchend', () => updateButtonPosition);
 
-		let selectionInterval = setInterval(checkSelection, 1000);
+    onMount(() => {
+        const updateSelection = (event) => {
+            selectedText = window.getSelection().toString();
+            showAnalysisButton.set(!!selectedText);
+            // Consider dynamic button positioning here based on event and selection
+        };
 
-		return () => {
-			body.removeEventListener('mouseup', updateButtonPosition);
-			body.removeEventListener('touchend', () => updateButtonPosition);
-			clearInterval(selectionInterval);
-		};
-	});
+        document.addEventListener('mouseup', updateSelection);
+        document.addEventListener('touchend', updateSelection);
+
+        return () => {
+            document.removeEventListener('mouseup', updateSelection);
+            document.removeEventListener('touchend', updateSelection);
+        };
+    });
 
 	function checkSelection() {
         if (!window || !window.getSelection) return;
@@ -38,16 +38,6 @@
 		} else {
 			showAnalysisButton.set(false);
 		}
-	}
-
-	function updateButtonPosition(event) {
-        moudeDown = false;
-        checkSelection();
-        setTimeout(checkSelection, 500);
-		// const x = 0;
-		// const y = event.clientY + window.scrollY;
-		// const styleString = `top: ${y}px; left: ${x}px; position: absolute;`;
-		// buttonStyle.set(styleString);
 	}
 
 	function analyzeText() {
