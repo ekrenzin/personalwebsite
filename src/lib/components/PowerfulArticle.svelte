@@ -60,6 +60,7 @@
 
 {#if $showAnalysisButton}
 	<div class="flex-column analyze-button" style={$buttonStyle}>
+		<h2>AI Tools</h2>
 		<button
 			on:click={analyzeText}
 			class="bg-sky-800 text-white p-2 rounded shadow-sm focus:outline-none hover:bg-blue-900"
@@ -82,6 +83,9 @@
 		z-index: 10; /* Ensure it's above other elements */
 		/* Other styling as needed */
 		gap: 1rem;
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 1rem;
+		border-radius: 1rem;
 	}
 
 	article {

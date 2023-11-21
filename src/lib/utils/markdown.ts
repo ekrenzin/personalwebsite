@@ -29,3 +29,12 @@ export function loadHtml(data: string) {
     const htmlContent = parse(data, { renderer });
     return htmlContent;
 }
+
+
+export function cleanMD(text: string) {
+    let htmlContent = parse(text);
+
+    // Use regex to remove <div align="center"> and corresponding closing </div>
+    htmlContent = htmlContent.replace(/<div align="center">[\s\S]*?/g, '');
+    return htmlContent;
+}

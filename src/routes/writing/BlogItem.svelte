@@ -1,7 +1,6 @@
 <script lang="ts">
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
-	import { parse, Renderer } from 'marked';
-
+	import { cleanMD } from '$lib/utils/markdown';
 	export let markdownContent = {
 		preview: '',
 		title: '',
@@ -9,14 +8,6 @@
 		imageSources: [],
 		post_title: ''
 	};
-
-	function cleanMD(text: string) {
-		let htmlContent = parse(text);
-
-		// Use regex to remove <div align="center"> and corresponding closing </div>
-		htmlContent = htmlContent.replace(/<div align="center">[\s\S]*?/g, '');
-		return htmlContent;
-	}
 
 	function onIntersect(node: HTMLElement, options = { threshold: 0.1 }) {
 		const observer = new IntersectionObserver(([entry]) => {
@@ -36,23 +27,6 @@
 			}
 		};
 	}
-
-	const renderer = new Renderer();
-
-	// Override how paragraphs are handled
-	renderer.paragraph = (text) => {
-		// Split text by double line breaks to identify paragraphs
-		return text
-			.split(/\n\n+/)
-			.map((paragraph) => {
-				// Split each paragraph by single line break to identify lines
-				return `<p>${paragraph
-					.split(/\n/)
-					.map((line) => `<span style="display: block">${line}</span>`)
-					.join('')}</p>`;
-			})
-			.join('');
-	};
 </script>
 
 <article use:onIntersect class="article-container" id={markdownContent.url.split('/').pop()}>
