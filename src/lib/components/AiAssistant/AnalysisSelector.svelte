@@ -42,6 +42,8 @@
 
 	function updateButtonPosition(event) {
         moudeDown = false;
+        checkSelection();
+        setTimeout(checkSelection, 500);
 		// const x = 0;
 		// const y = event.clientY + window.scrollY;
 		// const styleString = `top: ${y}px; left: ${x}px; position: absolute;`;
