@@ -101,6 +101,26 @@
   ],
   "notes": [
     {
+      "post_title": "1984",
+      "title": "1984",
+      "preview": "## 1984\n\n### Citation\nOrwell, George\n\n### Notes\n\n### Note on Page 3 (Location 79)\n> the Ministry of Truth, which concerned itself with news, entertainment, education, and the fine arts; the Ministry o...",
+      "url": "writing/notes_1984",
+      "imageSources": [
+        "/writing/images/1984.jpg"
+      ],
+      "image": "/writing/images/1984.jpg"
+    },
+    {
+      "post_title": "The Allegory of the Cave (Illustrated)",
+      "title": "allegory_cave",
+      "preview": "## The Allegory of the Cave (Illustrated)\n\n### Citation\nPlato\n\n### Notes\n\n### Note on Page 1 (Location 12)\n> Setting The scene is laid in the house of Cephalus at the Piraeus; and the whole dialogue i...",
+      "url": "writing/notes_allegory_cave",
+      "imageSources": [
+        "/writing/images/allegory_of_the_cave.jpg"
+      ],
+      "image": "/writing/images/allegory_of_the_cave.jpg"
+    },
+    {
       "post_title": "Meditation on First Philosophy",
       "title": "descartes_meditation",
       "preview": "## Meditation on First Philosophy\r\n\r\n### Citation\r\nDescartes, Rene\r\n\r\n### Notes\r\n\r\n### Note on Page 1 (Location 125)\r\n> Several years have now elapsed since I first became aware that I had accepted, e...",
@@ -111,6 +131,26 @@
       "image": "/writing/images/descartes.webp"
     },
     {
+      "post_title": "Erasure: A Novel",
+      "title": "erasure",
+      "preview": "## Erasure: A Novel\n\n### Citation\nEverett, Percival\n\n### Notes\n\n### Note on Page 6 (Location 169)\n> “I’m working on a novel, I guess you’d call it a novel, which treats this critical text by Roland Ba...",
+      "url": "writing/notes_erasure",
+      "imageSources": [
+        "/writing/images/erasure.jpeg"
+      ],
+      "image": "/writing/images/erasure.jpeg"
+    },
+    {
+      "post_title": "The Medium is the Massage",
+      "title": "medium_massage",
+      "preview": "## The Medium is the Massage\n\n### Citation\nMcluhan , Marshall; Fiore, Quentin; Fiarey, Shepard\n\n### Notes\n\n### Note on Page 6 (Location 6)\n> Societies have always been shaped more by the nature of the...",
+      "url": "writing/notes_medium_massage",
+      "imageSources": [
+        "/writing/images/medium_massage.jpg"
+      ],
+      "image": "/writing/images/medium_massage.jpg"
+    },
+    {
       "post_title": "Meno",
       "title": "mento",
       "preview": "## Meno\r\n\r\n### Citation\r\nPlato\r\n\r\n### Notes\r\n\r\n### Note on Page 1 (Location 372)\r\n> Can you tell me, Socrates, whether virtue is acquired by teaching or by practice; or if neither by teaching nor by p...",
@@ -119,6 +159,16 @@
         "/writing/images/meno.jpg"
       ],
       "image": "/writing/images/meno.jpg"
+    },
+    {
+      "post_title": "Reading the Way of Things: Towards a New Technology of Making Sense",
+      "title": "reading_the_way",
+      "preview": "## Reading the Way of Things: Towards a New Technology of Making Sense\n\n### Citation\nCoffeen, Daniel\n\n### Notes\n\n### Note on Page 1 (Location 64)\n> To consume media today is to consume an endless para...",
+      "url": "writing/notes_reading_the_way",
+      "imageSources": [
+        "/writing/images/reading_way.jpg"
+      ],
+      "image": "/writing/images/reading_way.jpg"
     },
     {
       "post_title": "Simulacra and simulation",

@@ -47,6 +47,11 @@
 		$showChat = true;
 		sendMessage(`Analyze my selected text: ${selectedText}`, window.location.pathname, html);
 	}
+
+	function generateImage() {
+		$showChat = true;
+		sendMessage(`Generate image from my selected text: ${selectedText}`, window.location.pathname, html);
+	}
 </script>
 
 <article class="article">
@@ -54,13 +59,20 @@
 </article>
 
 {#if $showAnalysisButton}
-	<button
-		on:click={analyzeText}
-		class="analyze-button bg-blue-800 text-white p-4 rounded-full shadow-lg focus:outline-none hover:bg-blue-900"
-		style={$buttonStyle}
-	>
-		Analyze Selection with AI
-	</button>
+	<div class="flex-column analyze-button" style={$buttonStyle}>
+		<button
+			on:click={analyzeText}
+			class="bg-sky-800 text-white p-2 rounded shadow-sm focus:outline-none hover:bg-blue-900"
+		>
+			Analyze selection with AI
+		</button>
+		<button
+			on:click={generateImage}
+			class="bg-sky-800 text-white p-2 rounded shadow-sm focus:outline-none hover:bg-blue-900"
+		>
+			Generate Image from selection with AI
+		</button>
+	</div>
 {/if}
 
 <style>
@@ -69,6 +81,7 @@
 		position: absolute; /* Position absolute is required for dynamic positioning */
 		z-index: 10; /* Ensure it's above other elements */
 		/* Other styling as needed */
+		gap: 1rem;
 	}
 
 	article {

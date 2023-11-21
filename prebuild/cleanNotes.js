@@ -16,7 +16,7 @@ function parseInput(data) {
     const author = lines[2].trim();
   
     // Extract highlights, accommodating different characters and potential multiline entries
-    const highlightRegex = /Highlight\((blue|yellow|green|red)\) - Page (\d+) [·路] Location (\d+)\s+([\s\S]+?)(?=\nHighlight\(|\n\n|$)/g;
+    const highlightRegex = /Highlight\((blue|yellow|green|red)\)[^Page]*Page (\d+) [·路] Location (\d+)\s+([\s\S]+?)(?=\nHighlight\(|\n\n|$)/g;
   
     let match;
     while ((match = highlightRegex.exec(data)) !== null) {
