@@ -28,12 +28,12 @@
             // Consider dynamic button positioning here based on event and selection
         };
 
-        document.addEventListener('mouseup', () => updateSelection());
-        document.addEventListener('touchend', () => updateSelection());
+        document.addEventListener('mouseup', updateSelection);
+        document.addEventListener('touchend', updateSelection);
 
         return () => {
-            document.removeEventListener('mouseup', () => updateSelection());
-            document.removeEventListener('touchend', () => updateSelection());
+            document.removeEventListener('mouseup', updateSelection);
+            document.removeEventListener('touchend', updateSelection);
         };
     });
 
