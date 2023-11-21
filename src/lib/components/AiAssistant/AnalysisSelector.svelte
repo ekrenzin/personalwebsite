@@ -13,17 +13,21 @@
 	let selectedText = '';
     let moudeDown = false;
 
+    let storedSeletedText = "";
+
 
     onMount(() => {
         const updateSelection = () => {
             selectedText = window.getSelection().toString();
-
+            console.log("Selected text: ", selectedText);
             if (!selectedText) {
                 setTimeout(() =>{
-                    showAnalysisButton.set(!!selectedText);
+                    storedSeletedText = "";
+                    showAnalysisButton.set(false);
                 }, 1000)
             } else {
-                showAnalysisButton.set(!!selectedText);
+                storedSeletedText = selectedText;
+                showAnalysisButton.set(true);
             }
             // Consider dynamic button positioning here based on event and selection
         };
@@ -41,19 +45,18 @@
 	function analyzeText() {
         const html = document.body.innerHTML;
 		$showChat = true;
-		sendMessage(`Analyze my selected text: ${selectedText}`, window.location.pathname, html);
+		sendMessage(`Analyze my selected text: ${storedSeletedText}`, window.location.pathname, html);
 	}
 
 	function generateImage() {
         const html = document.body.innerHTML;
 		$showChat = true;
-		sendMessage(`Generate image from my selected text: ${selectedText}`, window.location.pathname, html);
+		sendMessage(`Generate image from my selected text: ${storedSeletedText}`, window.location.pathname, html);
 	}
 
     function copyToClipboard(event) {
         console.log("Copying text to clipboard...");
-        const text = window.getSelection().toString();
-        navigator.clipboard.writeText(text)
+        navigator.clipboard.writeText(storedSeletedText)
         .then(() => {
             console.log("Text copied to clipboard successfully!");
         })
@@ -64,7 +67,7 @@
 </script>
 
 
-{#if $showAnalysisButton && !moudeDown}
+{#if $showAnalysisButton}
 	<div in:blur out:fly class="flex-column analyze-button" style={$buttonStyle}>
         <button
         use:tooltip title="Analyze selection with AI"
