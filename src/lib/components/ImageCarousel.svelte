@@ -10,6 +10,8 @@
     function previousImage() {
         currentIndex = (currentIndex - 1 + imageSources.length) % imageSources.length;
     }
+
+    $: if (imageSources) currentIndex = 0;
 </script>
 
 <div class="carousel-container">
