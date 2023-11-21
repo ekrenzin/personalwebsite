@@ -1,9 +1,19 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import NavBar from '$lib/components/NavBar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import ChatBubble from '$lib/components/AiAssistant/ChatBubble.svelte';
 	import AnalysisSelector from '$lib/components/AiAssistant/AnalysisSelector.svelte';
+	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
+	import { page } from '$app/stores';
+	
+	let routeID = "";
+	let url = "";
+
+	page.subscribe((value) => {
+		url = value.url.href || "";
+		routeID = value.route.id || "";
+	});
 </script>
 
 <svelte:head>
@@ -31,6 +41,11 @@
 	<main>
 		<slot />
 	</main>
+	{#key routeID}
+	{#if !url.includes("writing")}
+		<CommentArea source={routeID} />
+	{/if}
+	{/key}
 	<Footer />
 </div>
 <AnalysisSelector />

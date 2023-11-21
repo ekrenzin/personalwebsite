@@ -4,14 +4,9 @@
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import { page } from '$app/stores';  
 	import PowerfulArticle from '$lib/components/PowerfulArticle.svelte';
-	
+	import { AnalyzeWithAI, GenerateImageWithAI } from '$lib/components/AiAssistant/AnalyzeAI';
 	//dynamically import the markdown file based on the slug
 	export let data;
-
-	function AnalyzeWithAI() {
-		$showChat = true;
-		sendMessage(`Analyze`, window.location.pathname, data.post);
-	}
 
 </script>
 
@@ -46,11 +41,19 @@
 	<!-- centered button to go back -->
 	<div class="flex-row">
 		<button
-			class="m-auto bg-gray-800 hover:bg-blue-700 text-white py-2 px-4 rounded mb-10 mt-4"
-			on:click={AnalyzeWithAI}
+			class="mt-4 bg-black hover:bg-gray-900 text-white py-2 px-4 rounded"
+			on:click={() => AnalyzeWithAI(data.post)}
 		>
 			Analyze with AI
 		</button>
+		<button
+			class="mt-4 bg-black hover:bg-gray-900 text-white py-2 px-4 rounded"
+			on:click={() => GenerateImageWithAI(data.post)}
+		>
+			Generate Image with AI
+		</button>
+		
+
 	</div>
 	<CommentArea source={data.slug} />
 	<div class="flex-row">
@@ -74,7 +77,8 @@
 	.flex-row {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
+		gap: 1rem;
 		align-items: center;
 		flex-wrap: wrap;
 	}

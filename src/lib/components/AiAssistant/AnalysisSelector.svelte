@@ -3,7 +3,7 @@
     import {tooltip } from '$lib/utils/tooltip';
     import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
-	import { sendMessage, showChat } from './chatStore';
+    import { analyzeText, generateImage } from './AnalyzeAI';
     import clipboard from '$lib/assets/icons/clipboard.svg';
     import analyze from '$lib/assets/icons/analyze.svg';
     import generate from '$lib/assets/icons/photo-plus.svg';
@@ -41,19 +41,6 @@
         };
     });
 
-
-	function analyzeText() {
-        const html = document.body.innerHTML;
-		$showChat = true;
-		sendMessage(`Analyze my selected text: ${storedSeletedText}`, window.location.pathname, html);
-	}
-
-	function generateImage() {
-        const html = document.body.innerHTML;
-		$showChat = true;
-		sendMessage(`Generate image from my selected text: ${storedSeletedText}`, window.location.pathname, html);
-	}
-
     function copyToClipboard(event) {
         console.log("Copying text to clipboard...");
         navigator.clipboard.writeText(storedSeletedText)
@@ -71,14 +58,14 @@
 	<div in:blur out:fly class="flex-column analyze-button" style={$buttonStyle}>
         <button
         use:tooltip title="Analyze selection with AI"
-        on:click|stopPropagation={analyzeText}
+        on:click|stopPropagation={() => analyzeText(selectedText)}
         class="icon-button"
     >
         <img src = {analyze} alt="analyze text" />
     </button>
     <button
         use:tooltip title="Generate Image from selection with AI"
-        on:click|stopPropagation={generateImage}
+        on:click|stopPropagation={() => generateImage(selectedText)}
         class="icon-button"
     >
         <img src = {generate} alt="generate " />

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import BlogItem from './BlogItem.svelte';
-	import { onMount } from 'svelte';
 	import '../../md.css';
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import Carousel from './Carousel.svelte';

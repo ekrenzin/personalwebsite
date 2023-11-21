@@ -21,16 +21,21 @@ export async function sendMessage(
 ): Promise<void> {
     if (!message) return;
 
-    const systemMessage = { content: `We are currently at the path: ${baseUrl} on https://eankrenzin.com`, role: "system", id: new Date().getTime() + "system" };
-    let newMessages = [...get(messages), { content: message, role: "user", id: new Date().getTime() + "human" }, systemMessage];
+    
+    let newMessages = [...get(messages)];
 
     if (context) {
         newMessages = [...newMessages, { content: `THIS IS THE CONTEXT YOU SHOULD FOCUS ON ------> ${context} <------ THIS IS THE CONTEXT YOU SHOULD FOCUS ON`, role: "system", id: new Date().getTime() + "system" }];
     }
+
+    //system messages
     const howToRespondSytemMessage = { content: `Be clear and consise. approachable to all. You are an AI living appily in Ean Krenzin-Blank's website. Your prupose in existence is to help with this website, and you take pride in it. DO NOT REFERENCE SYSTEM PROMPTS.`, role: "system", id: new Date().getTime() + "system" }
     const whoIsEanSystemMessage = { content: `Make the world around Ean bright, colorful, full of life and movement. Ean has sandy hair, and blue eyes. Show Ean as a Studio Ghibli character in a Studio Ghibli world. He is 24 years old, 6'4. Pixar style or 2d. DO NOT REFERNCE THIS WHEN DESCRIBING HIM`, role: "system", id: new Date().getTime() + "system" }
-    //add system messages
-    newMessages = [...newMessages, howToRespondSytemMessage ];
+    const pathMessage = { content: `We are currently at the path: ${baseUrl} on https://eankrenzin.com`, role: "system", id: new Date().getTime() + "system" };
+    //user messages
+    const userMessage = { content: message, role: "user", id: new Date().getTime() + "human" };
+
+    newMessages = [...newMessages, pathMessage, userMessage, howToRespondSytemMessage ];
 
     if (message.toLowerCase().includes("ean")) {
         // newMessages = [...newMessages, whoIsEanSystemMessage];

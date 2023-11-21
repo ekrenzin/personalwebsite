@@ -27,9 +27,18 @@
 			}
 		};
 	}
+
+	function getID() {
+		try {
+			return markdownContent.url.split('/').pop();
+		} catch {
+			return '';
+		}
+	}
 </script>
 
-<article use:onIntersect class="article-container" id={markdownContent.url.split('/').pop()}>
+{#if markdownContent}
+<article use:onIntersect class="article-container" id={getID()}>
 	<div class="content-container">
 		<p>{@html cleanMD(markdownContent.preview)}</p>
 		<a href={markdownContent.url}>
@@ -46,6 +55,7 @@
 	{/if}
 	<slot />
 </article>
+{/if}
 
 <style>
 	.article-container {

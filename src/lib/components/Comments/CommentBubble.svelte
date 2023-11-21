@@ -26,7 +26,7 @@
 
 <div class="comment-container shadow-md rounded-lg">
 	<div class="comment-header font-semibold text-lg mb-2">{comment.User}</div>
-	<div class="text-sky-600 text-sm mb-2">{comment.UpdatedAt}</div>
+	<div class="text-sky-300 text-sm mb-2">{comment.UpdatedAt}</div>
 	<p class="comment-body">{text}</p>
 	{#each $images as image}
 		<img src="{image}" alt="comment" class="my-2" />
