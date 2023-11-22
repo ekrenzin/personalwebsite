@@ -11,14 +11,18 @@
 	};
 	export let index: number;
 
+	let intersecting = false;
+
 	function onIntersect(node: HTMLElement, options = { threshold: 0.1 }) {
 		const observer = new IntersectionObserver(([entry]) => {
 			if (entry.isIntersecting) {
 				node.style.opacity = '1';
 				node.style.transform = 'none';
+				intersecting = true;
 			} else {
 				node.style.opacity = '0';
 				node.style.transform = 'scale(0.4)';
+				intersecting = false;
 			}
 		}, options);
 
@@ -46,6 +50,7 @@
 
 </script>
 
+{#key markdownContent}
 {#if markdownContent}
 	<article use:onIntersect class="article-container" id={getID()}>
 		<div class="content-container">
@@ -57,6 +62,8 @@
 			</a>
 		</div>
 
+		{#key intersecting}
+		{#if intersecting}
 		{#if markdownContent.imageSources.length > 0}
 			<div class="image-preview-container">
 				<ImageCarousel imageSources={markdownContent.imageSources} />
@@ -70,9 +77,12 @@
 			{/each}
 		{/await}
 		{/if}
+		{/if}
+		{/key}
 		<slot />
 	</article>
 {/if}
+{/key}
 
 <style>
 	#p5-canvas {

@@ -43,11 +43,10 @@
       "preview": "## Kairos: Seizing the Opportune Moments in the Tapestry of Chronos\n\nMichel Foucault provides us with an intriguing perspective on the nature of history in the preface of his seminal work History of M...",
       "url": "writing/essays_Kairos",
       "imageSources": [
-        "http://img.youtube.com/vi/fFJrV3pI5Zs/0.jpg",
         "/writing/images/kairos.png"
       ],
       "scripts": [],
-      "image": "http://img.youtube.com/vi/fFJrV3pI5Zs/0.jpg"
+      "image": "/writing/images/kairos.png"
     },
     {
       "post_title": "Questioning the Etymology of Death",

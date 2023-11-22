@@ -1,6 +1,5 @@
 
 (() => {
-console.log("loaded bouncy ball")
 const myScriptTag = document.currentScript;
 const myScriptId = myScriptTag.id.split("script-")[1];
 const selector = 'canvas-' + myScriptId
@@ -15,7 +14,6 @@ new p5((p) => {
             console.error(`No element with id ${selector} found.`);
             return;
         }
-        console.log(`Found element with id ${selector}.`)
         let divWidth = canvasDiv.offsetWidth;
 
         p.createCanvas(divWidth, 400).parent(selector);

@@ -1,6 +1,4 @@
 (() => {
-    console.log("Loaded Three.js Scene");
-
     const myScriptTag = document.currentScript;
     const myScriptId = myScriptTag.id.split("script-")[1];
     const selector = 'canvas-' + myScriptId;
@@ -15,7 +13,6 @@
             console.error(`No element with id ${selector} found.`);
             return;
         }
-        console.log(`Found element with id ${selector}.`);
 
         // Scene setup
         scene = new THREE.Scene();

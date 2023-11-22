@@ -15,8 +15,7 @@ In conclusion, the interplay between Chronos and Kairos forms a complex tapestry
 
 
 ## Youtube Link:
-
-[![Summer Stock - Gene Kelly (newspaper)](http://img.youtube.com/vi/fFJrV3pI5Zs/0.jpg)](http://www.youtube.com/watch?v=fFJrV3pI5Zs "Summer Stock - Gene Kelly (newspaper)")
+https://www.youtube.com/watch?v=fFJrV3pI5Zs
 
 
 <div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
