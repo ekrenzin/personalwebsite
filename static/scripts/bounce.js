@@ -15,8 +15,9 @@ new p5((p) => {
             return;
         }
         let divWidth = canvasDiv.offsetWidth;
+        let divHeight = canvasDiv.offsetHeight;
 
-        p.createCanvas(divWidth, 400).parent(selector);
+        p.createCanvas(divWidth, divHeight).parent(selector);
         
         x = p.width / 2;
         y = p.height / 2;
@@ -48,7 +49,8 @@ new p5((p) => {
             return;
         }
         let divWidth = canvasDiv.offsetWidth;
-        p.resizeCanvas(divWidth, 400);
+        let divHeight = canvasDiv.offsetHeight;
+        p.resizeCanvas(divWidth, divHeight);
     };
 });
 
