@@ -21,7 +21,7 @@
 				intersecting = true;
 			} else {
 				node.style.opacity = '0';
-				// node.style.transform = 'scale(0.4)';
+				node.style.transform = 'scaleX(0.5)';
 				intersecting = false;
 			}
 		}, options);
@@ -62,13 +62,14 @@
 			</a>
 		</div>
 
-		{#key intersecting}
-		{#if intersecting}
 		{#if markdownContent.imageSources.length > 0}
 			<div class="image-preview-container">
 				<ImageCarousel imageSources={markdownContent.imageSources} />
 			</div>
-		{/if}
+			
+			{/if}
+			{#key intersecting}
+			
 		{#if markdownContent.scripts.length > 0}
 		{#await uuidv4() then uid}
 			<div id={`canvas-${index}-${markdownContent.title}`} style="width: 50%" />
@@ -76,7 +77,6 @@
 				<script src={script} id={`script-${index}-${markdownContent.title}`} ></script>
 			{/each}
 		{/await}
-		{/if}
 		{/if}
 		{/key}
 		<slot />
@@ -99,7 +99,7 @@
 		padding: 2rem;
 		transition: opacity 0.5s, transform 0.5s;
 		opacity: 0;
-		/* transform: scale(0.4); */
+		transform: scaleX(0.5);
 		overflow: visible;
 		width: 100%;
 		transition: 0.25s;
