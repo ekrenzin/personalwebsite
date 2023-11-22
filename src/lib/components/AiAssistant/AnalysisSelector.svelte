@@ -58,14 +58,14 @@
 	<div in:blur out:fly class="flex-column analyze-button" style={$buttonStyle}>
         <button
         use:tooltip title="Analyze selection with AI"
-        on:click|stopPropagation={() => analyzeText(selectedText)}
+        on:click|stopPropagation={() => analyzeText(storedSeletedText)}
         class="icon-button"
     >
         <img src = {analyze} alt="analyze text" />
     </button>
     <button
         use:tooltip title="Generate Image from selection with AI"
-        on:click|stopPropagation={() => generateImage(selectedText)}
+        on:click|stopPropagation={() => generateImage(storedSeletedText)}
         class="icon-button"
     >
         <img src = {generate} alt="generate " />
