@@ -1,4 +1,26 @@
 {
+  "Markdown Code": [
+    {
+      "post_title": "Simple Three.js Scene",
+      "title": "0_rotating_cube",
+      "preview": "## Simple Three.js Scene\n\nThis is a simple Three.js scene example. The HTML includes the necessary imports for Three.js and sets up a basic scene with a rotating cube. The style ensures that the canva...",
+      "url": "writing/Markdown Code_0_rotating_cube",
+      "imageSources": [],
+      "scripts": [
+        "/scripts/cube.js"
+      ]
+    },
+    {
+      "post_title": "Bouncing Circle with p5.js",
+      "title": "bouncing_ball",
+      "preview": "## Bouncing Circle with p5.js\n\nIn this tutorial, you will learn how to create a simple animation using p5.js, a popular JavaScript library for creative coding. We will create a canvas where a single r...",
+      "url": "writing/Markdown Code_bouncing_ball",
+      "imageSources": [],
+      "scripts": [
+        "/scripts/bounce.js"
+      ]
+    }
+  ],
   "essays": [
     {
       "post_title": "Barbara's Bronze's",
@@ -12,6 +34,7 @@
         "/writing/images/bb4.jpg",
         "/writing/images/bb5.jpg"
       ],
+      "scripts": [],
       "image": "/writing/images/bb1.jpg"
     },
     {
@@ -23,6 +46,7 @@
         "http://img.youtube.com/vi/fFJrV3pI5Zs/0.jpg",
         "/writing/images/kairos.png"
       ],
+      "scripts": [],
       "image": "http://img.youtube.com/vi/fFJrV3pI5Zs/0.jpg"
     },
     {
@@ -33,6 +57,7 @@
       "imageSources": [
         "/writing/images/death_etymology.png"
       ],
+      "scripts": [],
       "image": "/writing/images/death_etymology.png"
     },
     {
@@ -43,6 +68,7 @@
       "imageSources": [
         "/writing/images/enlightenment.png"
       ],
+      "scripts": [],
       "image": "/writing/images/enlightenment.png"
     },
     {
@@ -53,6 +79,7 @@
       "imageSources": [
         "/writing/images/stone_spirit.png"
       ],
+      "scripts": [],
       "image": "/writing/images/stone_spirit.png"
     },
     {
@@ -63,6 +90,7 @@
       "imageSources": [
         "/writing/images/heroism.png"
       ],
+      "scripts": [],
       "image": "/writing/images/heroism.png"
     }
   ],
@@ -75,6 +103,7 @@
       "imageSources": [
         "/writing/images/meno.png"
       ],
+      "scripts": [],
       "image": "/writing/images/meno.png"
     },
     {
@@ -85,6 +114,7 @@
       "imageSources": [
         "/writing/images/sleep_fall.png"
       ],
+      "scripts": [],
       "image": "/writing/images/sleep_fall.png"
     },
     {
@@ -95,6 +125,7 @@
       "imageSources": [
         "/writing/images/cave.png"
       ],
+      "scripts": [],
       "image": "/writing/images/cave.png"
     }
   ],
@@ -107,6 +138,7 @@
       "imageSources": [
         "/writing/images/1984.jpg"
       ],
+      "scripts": [],
       "image": "/writing/images/1984.jpg"
     },
     {
@@ -117,6 +149,7 @@
       "imageSources": [
         "/writing/images/allegory_of_the_cave.jpg"
       ],
+      "scripts": [],
       "image": "/writing/images/allegory_of_the_cave.jpg"
     },
     {
@@ -127,6 +160,7 @@
       "imageSources": [
         "/writing/images/descartes.webp"
       ],
+      "scripts": [],
       "image": "/writing/images/descartes.webp"
     },
     {
@@ -137,6 +171,7 @@
       "imageSources": [
         "/writing/images/erasure.jpeg"
       ],
+      "scripts": [],
       "image": "/writing/images/erasure.jpeg"
     },
     {
@@ -147,6 +182,7 @@
       "imageSources": [
         "/writing/images/medium_massage.jpg"
       ],
+      "scripts": [],
       "image": "/writing/images/medium_massage.jpg"
     },
     {
@@ -157,6 +193,7 @@
       "imageSources": [
         "/writing/images/meno.jpg"
       ],
+      "scripts": [],
       "image": "/writing/images/meno.jpg"
     },
     {
@@ -167,6 +204,7 @@
       "imageSources": [
         "/writing/images/reading_way.jpg"
       ],
+      "scripts": [],
       "image": "/writing/images/reading_way.jpg"
     },
     {
@@ -177,6 +215,7 @@
       "imageSources": [
         "/writing/images/simulacrum_cover.jpg"
       ],
+      "scripts": [],
       "image": "/writing/images/simulacrum_cover.jpg"
     },
     {
@@ -187,6 +226,7 @@
       "imageSources": [
         "/writing/images/truth_lies.jpg"
       ],
+      "scripts": [],
       "image": "/writing/images/truth_lies.jpg"
     }
   ],
@@ -200,6 +240,7 @@
         "/writing/images/cat.png",
         "/writing/images/cat_fly.png"
       ],
+      "scripts": [],
       "image": "/writing/images/cat.png"
     },
     {
@@ -210,6 +251,7 @@
       "imageSources": [
         "/writing/images/bags_eyes.png"
       ],
+      "scripts": [],
       "image": "/writing/images/bags_eyes.png"
     },
     {
@@ -220,6 +262,7 @@
       "imageSources": [
         "/writing/images/blank.png"
       ],
+      "scripts": [],
       "image": "/writing/images/blank.png"
     },
     {
@@ -230,6 +273,7 @@
       "imageSources": [
         "/writing/images/bookshop.png"
       ],
+      "scripts": [],
       "image": "/writing/images/bookshop.png"
     },
     {
@@ -240,6 +284,7 @@
       "imageSources": [
         "/writing/images/cottage_drum.png"
       ],
+      "scripts": [],
       "image": "/writing/images/cottage_drum.png"
     },
     {
@@ -250,6 +295,7 @@
       "imageSources": [
         "/writing/images/doki_doki.png"
       ],
+      "scripts": [],
       "image": "/writing/images/doki_doki.png"
     },
     {
@@ -260,6 +306,7 @@
       "imageSources": [
         "/writing/images/foucault.png"
       ],
+      "scripts": [],
       "image": "/writing/images/foucault.png"
     },
     {
@@ -270,6 +317,7 @@
       "imageSources": [
         "/writing/images/fumes.png"
       ],
+      "scripts": [],
       "image": "/writing/images/fumes.png"
     },
     {
@@ -280,6 +328,7 @@
       "imageSources": [
         "/writing/images/inflate.png"
       ],
+      "scripts": [],
       "image": "/writing/images/inflate.png"
     },
     {
@@ -290,6 +339,7 @@
       "imageSources": [
         "/writing/images/moon.png"
       ],
+      "scripts": [],
       "image": "/writing/images/moon.png"
     },
     {
@@ -300,6 +350,7 @@
       "imageSources": [
         "/writing/images/friend_death.png"
       ],
+      "scripts": [],
       "image": "/writing/images/friend_death.png"
     },
     {
@@ -310,6 +361,7 @@
       "imageSources": [
         "/writing/images/simulacrum.png"
       ],
+      "scripts": [],
       "image": "/writing/images/simulacrum.png"
     },
     {
@@ -320,6 +372,7 @@
       "imageSources": [
         "/writing/images/refute_me.png"
       ],
+      "scripts": [],
       "image": "/writing/images/refute_me.png"
     },
     {
@@ -330,6 +383,7 @@
       "imageSources": [
         "/writing/images/saturation.png"
       ],
+      "scripts": [],
       "image": "/writing/images/saturation.png"
     },
     {
@@ -340,6 +394,7 @@
       "imageSources": [
         "/writing/images/scarecrow.png"
       ],
+      "scripts": [],
       "image": "/writing/images/scarecrow.png"
     },
     {
@@ -350,6 +405,7 @@
       "imageSources": [
         "/writing/images/second_smoke.png"
       ],
+      "scripts": [],
       "image": "/writing/images/second_smoke.png"
     },
     {
@@ -360,6 +416,7 @@
       "imageSources": [
         "/writing/images/siamese.png"
       ],
+      "scripts": [],
       "image": "/writing/images/siamese.png"
     },
     {
@@ -370,6 +427,7 @@
       "imageSources": [
         "/writing/images/silver-bellies.png"
       ],
+      "scripts": [],
       "image": "/writing/images/silver-bellies.png"
     },
     {
@@ -380,6 +438,7 @@
       "imageSources": [
         "/writing/images/trivia.png"
       ],
+      "scripts": [],
       "image": "/writing/images/trivia.png"
     },
     {
@@ -390,6 +449,7 @@
       "imageSources": [
         "/writing/images/dont-read.png"
       ],
+      "scripts": [],
       "image": "/writing/images/dont-read.png"
     },
     {
@@ -400,6 +460,7 @@
       "imageSources": [
         "/writing/images/exhaustion.png"
       ],
+      "scripts": [],
       "image": "/writing/images/exhaustion.png"
     }
   ],
@@ -412,6 +473,7 @@
       "imageSources": [
         "/writing/images/side_walk_dots.png"
       ],
+      "scripts": [],
       "image": "/writing/images/side_walk_dots.png"
     },
     {
@@ -422,6 +484,7 @@
       "imageSources": [
         "/writing/images/brunch.png"
       ],
+      "scripts": [],
       "image": "/writing/images/brunch.png"
     }
   ]

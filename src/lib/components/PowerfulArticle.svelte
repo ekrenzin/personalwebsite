@@ -4,6 +4,7 @@
 
 <article class="article">
 	{@html html}
+	<slot />
 </article>
 
 <style>

@@ -45,9 +45,9 @@
 	<h1>{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
 	{#if viewAll}
 		<div class="flex-col">
-			{#each posts as post}
+			{#each posts as post, index}
 				<div class="post">
-					<BlogItem markdownContent={post} />
+					<BlogItem markdownContent={post} {index}/>
 				</div>
 			{/each}
 		</div>
@@ -55,7 +55,7 @@
 		<div class="carousel">
 			<div class="carousel-item">
 				{#if posts.length > 0}
-					<BlogItem markdownContent={posts[currentIndex]}>
+					<BlogItem markdownContent={posts[currentIndex]} index={-1}>
 						<div>
 							<button class="nav-button left" name="previous-post" on:click={prev}>
 								<!-- Left Arrow SVG -->

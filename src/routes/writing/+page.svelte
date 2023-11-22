@@ -71,9 +71,9 @@
 {#each categories as category}
 	{#if data[category].length > 0}
 
-			{#each data[category] as post}
+			{#each data[category] as post, index}
 				<div class="post">
-					<BlogItem markdownContent={post} />
+					<BlogItem markdownContent={post} {index} />
 				</div>
 			{/each}
 	{/if}

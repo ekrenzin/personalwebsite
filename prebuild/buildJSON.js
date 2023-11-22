@@ -21,13 +21,19 @@ async function readFiles(type) {
                     const filePath = path.join(directory, file);
                     const content = await fs.promises.readFile(filePath, 'utf8');
                     const preview = extractPreview(content);
-                    const { imageSources, title } = parseMarkdown(content);
+                    const { imageSources, title, scripts } = parseMarkdown(content);
                     const title_path = path.basename(file, '.md');
-                    const data = { post_title: title, title: title_path, preview, url: `writing/${type}_${title_path}`, imageSources };
+                    const data = { post_title: title, title: title_path, preview, url: `writing/${type}_${title_path}`, imageSources, scripts: [] };
 
                     if (imageSources && imageSources.length > 0) {
                         data.image = imageSources[0];
                     }
+
+                    if (scripts && scripts.length > 0) {
+                        data.scripts = scripts;
+                        console.log(data)
+                    }
+                    
                     return data
                 } catch (fileReadError) {
                     console.error(`Error reading file ${file}: ${fileReadError}`);
@@ -106,11 +112,20 @@ function parseMarkdown(markdown) {
         imageSources.push(image.attribs.src);
     }
 
+    const scriptElements = $('script');
+    const scripts = [];
+    for (const script of scriptElements) {
+        const src = script.attribs.src;
+        if (src) {
+            scripts.push(src);
+        }
+    }
+
     //get the first h1 or h2 tag and use that as the title
     const title = $('h1, h2').first().text();
 
     
-    return { html, imageSources, title }
+    return { html, imageSources, title, scripts }
 }
 
 export { buildJSON }
