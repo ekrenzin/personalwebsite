@@ -25,6 +25,7 @@ The Images (in order) were retrieved from the following URLs:
 
 “Ancestor I” by Barbara Hepworth is a commanding piece nearly 10 feet tall. It is comprised of 4 main sections, with a flat base. Sculpted in bronze, it displays a pleasant light green patina that contrasts with darker brown bronze. From the top down the four sections include: horizontal movement section emphasized by a central void and puncture; vertical movement section emphasized by a carved-out center; horizontal movement section emphasized by rib-like indentations; a final vertical movement section emphasized by a central pill shaped void. The statue appears nearly humanoid, embodying the notion of an ancestor, preserved in bronze, watching over the viewer. The piece could be personified to see the sections as a head, neck, chest, and lower body. The statue has variety, with each section introducing a new motif. There is a central balance, with a horizontal symmetry. Upon closer inspection, however, it becomes clear that each section is slightly askew, which disrupts the balance. While each element is held firmly in place, the piece reflects the delicate nature of balance. Stability is thus represented as something fragile. Furthermore, while the movement varies from section to section, it alternates forming a pattern and rhythm.
 
+
 ## Barbara Hepworth, Four-Square (Four Circles), 1966, bronze, 23-5/8" × 14" × 11-1/8" (60 cm × 35.6 cm × 28.3 cm)
  
 <div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">

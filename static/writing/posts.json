@@ -1,26 +1,4 @@
 {
-  "Markdown Code": [
-    {
-      "post_title": "Simple Three.js Scene",
-      "title": "0_rotating_cube",
-      "preview": "## Simple Three.js Scene\n\nThis is a simple Three.js scene example. The HTML includes the necessary imports for Three.js and sets up a basic scene with a rotating cube. The style ensures that the canva...",
-      "url": "writing/Markdown Code_0_rotating_cube",
-      "imageSources": [],
-      "scripts": [
-        "/scripts/cube.js"
-      ]
-    },
-    {
-      "post_title": "Bouncing Circle with p5.js",
-      "title": "bouncing_ball",
-      "preview": "## Bouncing Circle with p5.js\n\nIn this tutorial, you will learn how to create a simple animation using p5.js, a popular JavaScript library for creative coding. We will create a canvas where a single r...",
-      "url": "writing/Markdown Code_bouncing_ball",
-      "imageSources": [],
-      "scripts": [
-        "/scripts/bounce.js"
-      ]
-    }
-  ],
   "essays": [
     {
       "post_title": "Barbara's Bronze's",
