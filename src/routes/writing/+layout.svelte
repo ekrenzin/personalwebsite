@@ -2,10 +2,10 @@
     import '../../md.css'
 </script>
 
-<svelte:head>
+<body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-</svelte:head>
+</body>
 
 <div class="bg" />
 <slot />
