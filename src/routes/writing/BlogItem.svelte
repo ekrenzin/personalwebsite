@@ -64,9 +64,8 @@
 			{#key intersecting}
 				{#if markdownContent.imageSources.length > 0}
 					<div in:fade class="image-preview-container">
-						{#if intersecting}
 							<ImageCarousel imageSources={markdownContent.imageSources} />
-						{/if}
+						
 					</div>
 				{/if}
 
