@@ -72,7 +72,7 @@
 			
 		{#if markdownContent.scripts.length > 0}
 		{#await uuidv4() then uid}
-			<div id={`canvas-${index}-${markdownContent.title}`} style="width: 50%" />
+			<div class="canvas-container" id={`canvas-${index}-${markdownContent.title}`}/>
 			{#each markdownContent.scripts as script}
 				<script src={script} id={`script-${index}-${markdownContent.title}`} ></script>
 			{/each}
@@ -85,9 +85,12 @@
 {/key}
 
 <style>
-	#p5-canvas {
-		border: 2px solid white;
+	.canvas-container {
+		width: 200px;
+		height: 200px;
+		margin: auto;
 	}
+
 	.article-container {
 		background-color: rgba(0, 0, 0, 0.5);
 		display: flex;
