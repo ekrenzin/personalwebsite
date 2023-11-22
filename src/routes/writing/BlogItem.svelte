@@ -21,7 +21,7 @@
 				intersecting = true;
 			} else {
 				node.style.opacity = '0';
-				node.style.transform = 'scale(0.4)';
+				// node.style.transform = 'scale(0.4)';
 				intersecting = false;
 			}
 		}, options);
@@ -99,7 +99,7 @@
 		padding: 2rem;
 		transition: opacity 0.5s, transform 0.5s;
 		opacity: 0;
-		transform: scale(0.4);
+		/* transform: scale(0.4); */
 		overflow: visible;
 		width: 100%;
 		transition: 0.25s;
