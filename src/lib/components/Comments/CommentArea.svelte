@@ -3,6 +3,9 @@
 	import { onMount } from 'svelte';
 	import CommentList from './CommentList.svelte';
 	import AddCommentSection from './AddCommentSection.svelte';
+	import RefreshIcon from '$lib/assets/icons/refresh.svg';
+	import SortIcon from '$lib/assets/icons/sort.svg';
+	import { tooltip } from '$lib/utils/tooltip';
 	import type { Comment } from './Comments';
 	
 	export let source: string;
@@ -40,13 +43,14 @@
 	<!-- refresh button -->
 	{#if hidden}
 	<details>
-		<button class="bg-blue-700  hover:bg-blue-800 p-2 rounded" on:click={handleComments} aria-label="Refresh comments">
-		Refesh
+		<div class="buttons">
+		<button use:tooltip title="refresh comments" class="icon-button" on:click={handleComments}>
+			<img src={RefreshIcon} alt="refresh comments" />
 		</button>
-		<!-- sort button -->
-		<button class="bg-blue-700  hover:bg-blue-800 p-2 rounded" on:click={toggleSort} aria-label="Sort comments">
-		Toggle Sort
+		<button use:tooltip title="sort comments" class="icon-button" on:click={toggleSort}>
+			<img src={SortIcon} alt="sort comments" />
 		</button>
+	</div>
 		{#key comments}
 		<summary>Click to see comments</summary>
 		<CommentList {comments} />
@@ -60,7 +64,12 @@
 </section>
 
 <style>
+	h2, summary {
+		text-align: center;
+	}
+	
 	section {
+		position: relative;
 		width: 100%;
 		max-width: 1000px;
 		margin: 0 auto;
@@ -68,4 +77,20 @@
 		margin-top: 1rem;
 		border-radius: 0.5rem;
 	}
+
+	details {
+		position: relative;
+	}
+
+	.buttons {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.icon-button {
+		height: 2rem;
+		width: 2rem;
+	}
+
 </style>

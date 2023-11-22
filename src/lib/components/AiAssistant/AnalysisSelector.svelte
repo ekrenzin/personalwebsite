@@ -91,11 +91,9 @@
 		background-color: rgba(0, 0, 0, 0.8);
 		padding: 1rem;
 		border-radius: 1rem;
-
 	}
-
-    img {
-        filter: invert(1);
-        width: 1.5rem;
+    button {
+        height: 1rem;
+        width: 1rem;
     }
 </style>

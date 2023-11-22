@@ -91,6 +91,14 @@ body::before {
   animation: spinBG 20s infinite linear;
 }
 
+.icon-button {
+  filter: invert(99%) sepia(0%) saturate(18%) hue-rotate(128deg) brightness(107%) contrast(100%);
+}
+
+.icon-button img {
+  width: 100%;
+  height: 100%;
+}
 /**
  * Rotation keyframes
  */
