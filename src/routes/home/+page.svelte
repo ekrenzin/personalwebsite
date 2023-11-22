@@ -12,13 +12,13 @@
 <div class="relative overflow-hidden container">
 		<img
 			class="image-blur tongue"
-			src="/me_tongue.png"
+			src="/me_tongue.webp"
 			alt="joke_image"
 		/>
 
 		<img
 			class="image-blur grimace"
-			src="/me_grimace.png"
+			src="/me_grimace.webp"
 			alt="joke_image"
 		/>
 		<TitleHeader />
