@@ -57,12 +57,6 @@
 				leftHand.position.set(0, 0, 100);
 				rightHand.position.set(0, 0, 100);
 
-				// Traverse the model and log bones
-				avatarModel.traverse(function (object) {
-					if (object.isBone) {
-						console.log(object.name); // Log the bone name
-					}
-				});
 				scene.add(gltf.scene);
 			},
 			undefined,

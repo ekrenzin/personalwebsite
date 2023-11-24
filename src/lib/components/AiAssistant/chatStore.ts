@@ -58,9 +58,11 @@ export async function sendMessage(
 
     // Remove the loading message
     const filteredMessages = get(messages).filter(message => message.id !== assistant_id);
+    
+
     // Add the response message
     updateMessages([...filteredMessages, { content: res, role: "assistant", id: assistant_id }]);
-
+    readMessage(res);
 }
 
 export function updateMessages(newMessages: Message[]) {
@@ -68,3 +70,28 @@ export function updateMessages(newMessages: Message[]) {
         return newMessages;
     });
 }
+
+export async function readMessage(message: string) {
+    try {
+        console.log("READ MESSAGE: ", message);
+        const response = await fetch('/api/ellevenlabsAI', {
+            method: 'POST',
+            body: JSON.stringify({ message }),
+            headers: {
+                'content-type': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const audioBlob = await response.blob();
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = new Audio(audioUrl);
+        audio.play();
+    } catch (error) {
+        console.error('Error in readMessage:', error);
+    }
+}
+
