@@ -122,10 +122,7 @@
         if (targetPoint) head.lookAt(targetPoint);
     }
   </script>
-  
-  <svelte:head>
-    <title>3D Avatar</title>
-  </svelte:head>
+
   
   <canvas bind:this={canvas}></canvas>
   
