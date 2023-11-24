@@ -5,35 +5,54 @@ const inputDir = 'unclean_notes';
 const outputDir = 'static/writing/notes';
 
 
-// Function to parse the input data
-// Function to parse the input data
 function parseInput(data) {
-    const notes = [];
-    const lines = data.split(/\r\n|\r|\n/); // Split the data by new lines
-  
-    // Extract title and author from their specific line positions
-    const title = lines[1].trim();
-    const author = lines[2].trim();
-  
-    // Extract highlights, accommodating different characters and potential multiline entries
-    const highlightRegex = /Highlight\((blue|yellow|green|red)\)[^Page]*Page (\d+) [·路] Location (\d+)\s+([\s\S]+?)(?=\nHighlight\(|\n\n|$)/g;
-  
-    let match;
-    while ((match = highlightRegex.exec(data)) !== null) {
+  const notes = [];
+  const lines = data.split(/\r\n|\r|\n/); // Split the data by new lines
+
+  // Extract title and author from their specific line positions
+  const title = lines[1].trim();
+  const author = lines[2].trim();
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+
+    // Check if the line starts with 'Highlight'
+    if (line.startsWith('Highlight')) {
+      // Extract the necessary details from the line
+      // The extraction logic will depend on the expected format of the line
+      // For example, if the format is consistent, you can use string operations or a simpler regex
+
+      // Example of extracting details using string methods:
+      const details = line.split(' '); // Split the line into words
+      const color = details[1]; // Assuming the color follows 'Highlight'
+      const page = details[3]; // Assuming page number is at a fixed position
+      const location = details[5]; // Assuming location is at a fixed position
+      let text = '';
+
+      // Collecting the text until the next 'Highlight' or end of data
+      while (++i < lines.length && !lines[i].startsWith('Highlight')) {
+        text += lines[i] + ' ';
+      }
+      i--; // Adjust the index since the loop will increment it
+
+      text = text.trim().replace(/\r\n|\r|\n/g, " "); // Clean up the text
+
       notes.push({
-        color: match[1],
-        page: match[2],
-        location: match[3],
-        text: match[4].trim().replace(/\r\n|\r|\n/g, " ") // Replaces newlines with spaces
+        color,
+        page,
+        location,
+        text
       });
     }
-  
-    return {
-      title,
-      author,
-      notes
-    };
   }
+
+  return {
+    title,
+    author,
+    notes
+  };
+}
+
   
 
 
