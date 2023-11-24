@@ -8,6 +8,7 @@ export const messages = writable([
 export const showChat = writable(false);
 export const readOutLoud = writable(retrieveReadOutLoud());
 export const welcomeRead = writable(false);
+export const audioMessages = writable<Array<typeof Audio>>([]);
 
 function retrieveReadOutLoud() {
     try {
@@ -103,8 +104,22 @@ export async function readMessage(message: string) {
         const audioUrl = URL.createObjectURL(audioBlob);
         const audio = new Audio(audioUrl);
         audio.play();
+        audioMessages.update((audioMessages) => {
+            return [...audioMessages, audio];
+        });
     } catch (error) {
         console.error('Error in readMessage:', error);
     }
 }
+
+
+readOutLoud.subscribe((readOutLoud) => {
+    if (!readOutLoud) {
+        const audio = get(audioMessages);
+        audio.forEach((audio) => {
+            audio.pause();
+        });
+    }
+})
+
 

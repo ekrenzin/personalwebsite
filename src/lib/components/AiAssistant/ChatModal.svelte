@@ -4,6 +4,7 @@
 	import volume_on from '$lib/assets/icons/volume_on.svg';
 	import volume_off from '$lib/assets/icons/volume_off.svg';
 	import { onMount } from 'svelte';
+	import { tooltip } from '$lib/utils/tooltip';
 
 	export let toggleChatHistory: () => void;
 
@@ -40,6 +41,12 @@
 	function welcomeAudio() {
 		if (!$readOutLoud) return;
 		if ($welcomeRead) return;
+		//if there is a local store set to true, bail
+		if (localStorage.getItem('welcomeRead') === 'true') return;
+
+		//store the welcomeRead value in local storage
+		localStorage.setItem('welcomeRead', 'true');
+
 		welcomeRead.set(true);
 		audio.play();
 	}
@@ -62,9 +69,9 @@
 				<h2>AI Assistant</h2>
 				<button class="icon-button" id="volume-toggle" on:click={toggleAudio}>
 					{#if !reading}
-						<img src={volume_off} alt="volume off" class="w-6 h-6" />
+						<img use:tooltip title={'Listen'}  src={volume_off} alt="volume off" class="w-6 h-6" />
 					{:else}
-						<img src={volume_on} alt="volume on" class="w-6 h-6" />
+						<img use:tooltip title={'Mute'} src={volume_on} alt="volume on" class="w-6 h-6" />
 					{/if}
 				</button>
 			</div>
