@@ -1,14 +1,15 @@
 <script lang="ts">
 	import ChatHistory from './ChatHistory.svelte';
-	import { sendMessage, readOutLoud } from './chatStore';
+	import { sendMessage, readOutLoud, welcomeRead } from './chatStore';
 	import volume_on from '$lib/assets/icons/volume_on.svg';
 	import volume_off from '$lib/assets/icons/volume_off.svg';
 	import { onMount } from 'svelte';
 
 	export let toggleChatHistory: () => void;
 
-	let message: string = '';
+	const audio = new Audio('/ai_audio.mp3');
 
+	let message: string = '';
 	let reading = false;
 
 	async function createMessage() {
@@ -34,16 +35,20 @@
 
 	onMount(() => {
 		welcomeAudio();
-
 	});
 
 	function welcomeAudio() {
-		//if the local storage item is set, then the user has already seen the modal
-		if (localStorage.getItem('aiModalSeen')) return;
-		localStorage.setItem('aiModalSeen', 'true');
-		const audio = new Audio('/ai_audio.mp3');
+		if (!$readOutLoud) return;
+		if ($welcomeRead) return;
+		welcomeRead.set(true);
 		audio.play();
 	}
+
+	readOutLoud.subscribe((value) => {
+		if (!value) {
+			audio.pause();
+		}
+	});
 </script>
 
 <div class="wrapper flex-row">

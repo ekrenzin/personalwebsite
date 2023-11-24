@@ -7,6 +7,7 @@ export const messages = writable([
 
 export const showChat = writable(false);
 export const readOutLoud = writable(retrieveReadOutLoud());
+export const welcomeRead = writable(false);
 
 function retrieveReadOutLoud() {
     try {
