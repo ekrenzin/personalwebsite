@@ -87,7 +87,7 @@ export function updateMessages(newMessages: Message[]) {
 
 export async function readMessage(message: string) {
     try {
-        console.log("READ MESSAGE: ", message);
+        console.log("CONVERTING MESSAGE TO AUDIO");
         const response = await fetch('/api/ellevenlabsAI', {
             method: 'POST',
             body: JSON.stringify({ message }),
@@ -104,6 +104,7 @@ export async function readMessage(message: string) {
         const audioUrl = URL.createObjectURL(audioBlob);
         const audio = new Audio(audioUrl);
         audio.play();
+        console.log("PLAYING AUDIO");
         audioMessages.update((audioMessages) => {
             return [...audioMessages, audio];
         });
