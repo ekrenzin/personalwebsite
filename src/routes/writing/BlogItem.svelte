@@ -55,7 +55,7 @@
 			<div class="content-container">
 				<p>{@html cleanMD(markdownContent.preview)}</p>
 				<a href={markdownContent.url}>
-					<button class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded">
+					<button id="read-more-{markdownContent.post_title}" class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded">
 						Read {markdownContent.post_title}
 					</button>
 				</a>

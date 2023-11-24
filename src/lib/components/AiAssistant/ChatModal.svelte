@@ -1,16 +1,48 @@
 <script lang="ts">
 	import ChatHistory from './ChatHistory.svelte';
-	import { sendMessage } from './chatStore';
+	import { sendMessage, readOutLoud } from './chatStore';
+	import volume_on from '$lib/assets/icons/volume_on.svg';
+	import volume_off from '$lib/assets/icons/volume_off.svg';
+	import { onMount } from 'svelte';
 
 	export let toggleChatHistory: () => void;
 
 	let message: string = '';
+
+	let reading = false;
 
 	async function createMessage() {
 		const messageToSend = message;
 		if (!message) return;
 		message = '';
 		sendMessage(messageToSend, window.location.pathname);
+	}
+
+	async function toggleAudio() {
+		if ($readOutLoud) {
+			readOutLoud.set(false);
+		} else {
+			readOutLoud.set(true);
+		}
+		//set the local storage item to be the readOutLoud value
+		localStorage.setItem('readOutLoud', JSON.stringify($readOutLoud));
+	}
+
+	readOutLoud.subscribe((value) => {
+		reading = value;
+	});
+
+	onMount(() => {
+		welcomeAudio();
+
+	});
+
+	function welcomeAudio() {
+		//if the local storage item is set, then the user has already seen the modal
+		if (localStorage.getItem('aiModalSeen')) return;
+		localStorage.setItem('aiModalSeen', 'true');
+		const audio = new Audio('/ai_audio.mp3');
+		audio.play();
 	}
 </script>
 
@@ -21,8 +53,15 @@
 		<div
 			class="content relative p-5 bg-black rounded-lg shadow-xl max-h-screen w-full m-4 overflow-y-auto"
 		>
-			<div class="content-header">
+			<div class="content-header flex-row">
 				<h2>AI Assistant</h2>
+				<button class="icon-button" id="volume-toggle" on:click={toggleAudio}>
+					{#if !reading}
+						<img src={volume_off} alt="volume off" class="w-6 h-6" />
+					{:else}
+						<img src={volume_on} alt="volume on" class="w-6 h-6" />
+					{/if}
+				</button>
 			</div>
 			<!-- Close Button -->
 			<button
@@ -80,6 +119,9 @@
 
 	.content-header {
 		height: 80px;
+		justify-content: space-between;
+		align-items: center;
+
 	}
 
 	.content-footer {

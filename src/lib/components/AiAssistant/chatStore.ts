@@ -6,7 +6,19 @@ export const messages = writable([
 ]);
 
 export const showChat = writable(false);
+export const readOutLoud = writable(retrieveReadOutLoud());
 
+function retrieveReadOutLoud() {
+    try {
+    const readOutLoud = localStorage.getItem("readOutLoud");
+    if (readOutLoud) {
+        return JSON.parse(readOutLoud);
+    }
+    return true;
+} catch (error) {
+    return true;
+}
+}
 
 interface Message {
     content: string;
