@@ -2,6 +2,7 @@
 	import ChatModal from './ChatModal.svelte';
 	import { showChat } from './chatStore';
 	import { onMount } from 'svelte';
+	import Avatar from '$lib/components/Avatar/Avatar.svelte';
 
 	function toggleChatHistory() {
 		showChat.update((value) => !value);
@@ -31,6 +32,8 @@
 {#if $showChat}
 	<ChatModal {toggleChatHistory} />
 {/if}
+<Avatar />
+
 
 <style>
 	.chat-bubble {
