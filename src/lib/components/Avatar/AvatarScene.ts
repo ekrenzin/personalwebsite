@@ -1,7 +1,7 @@
 import { writable, get } from "svelte/store";
 import { Scene,  Object3D,  Camera, WebGLRenderer, AmbientLight, DirectionalLight} from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import type { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import type { GLTF } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 const avatarHeadPositionBase = { x: Math.PI/8, y: -Math.PI/26, z: -Math.PI/36 };
 
