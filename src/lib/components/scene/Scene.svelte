@@ -12,7 +12,6 @@
 	import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 	import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 	import type { view } from '$lib/types/scene';
-	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 	import { VRButton } from 'three/addons/webxr/VRButton.js';
 
 	import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
@@ -29,7 +28,6 @@
 	let bloomComposer: EffectComposer;
 	let bloomLayer: THREE.Layers;
 	let bloomPass: UnrealBloomPass;
-	let loader = new GLTFLoader();
 	let vrButton: VRButton;
 
 	let desktop: any;
