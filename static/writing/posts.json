@@ -119,6 +119,17 @@
       "image": "/writing/images/1984.jpg"
     },
     {
+      "post_title": "Meditations (AmazonClassics Edition)",
+      "title": "Meditations_Aurelius",
+      "preview": "## Meditations (AmazonClassics Edition)\n\n### Citation\nAurelius, Marcus\n\n### Notes\n\n### Note on Page 5 (Location Location)\n> The Stoics aspired to the repression of all emotion, and the Epicureans to f...",
+      "url": "writing/notes_Meditations_Aurelius",
+      "imageSources": [
+        "/writing/images/meditations_aurelius.jpeg"
+      ],
+      "scripts": [],
+      "image": "/writing/images/meditations_aurelius.jpeg"
+    },
+    {
       "post_title": "The Allegory of the Cave (Illustrated)",
       "title": "allegory_cave",
       "preview": "## The Allegory of the Cave (Illustrated)\n\n### Citation\nPlato\n\n### Notes\n\n### Note on Page 1 (Location 12)\n> Setting The scene is laid in the house of Cephalus at the Piraeus; and the whole dialogue i...",
@@ -258,11 +269,11 @@
       "preview": "<div align=\"center\">\n\n## Cat\n\nCat stares outward, a paw draped over the dresser like a hook,\nLazily scooping the air, bailing out the tears sinking her ship.\nShe sees them in the air, the vespers of e...",
       "url": "writing/poems_0_cat_fly",
       "imageSources": [
-        "/writing/images/cat.png",
-        "/writing/images/cat_fly.png"
+        "/writing/images/cat_fly.png",
+        "/writing/images/cat.png"
       ],
       "scripts": [],
-      "image": "/writing/images/cat.png"
+      "image": "/writing/images/cat_fly.png"
     },
     {
       "post_title": "Bags under my eyes",

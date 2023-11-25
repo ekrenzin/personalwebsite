@@ -21,11 +21,13 @@ Exploding into the carpet.
 Cat smiles.
 Dangling her hook, with one eye open, and one ear perked up.
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/cat.png" alt="exhausted" style="max-width: 100%; max-height: 100%;">
-</div>
 
 
 <div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
     <img src="/writing/images/cat_fly.png" alt="exhausted" style="max-width: 100%; max-height: 100%;">
+</div>
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/cat.png" alt="exhausted" style="max-width: 100%; max-height: 100%;">
 </div>
