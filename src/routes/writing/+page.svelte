@@ -25,36 +25,32 @@
 	<title>Creative Writing | eankrenzin.com</title>
 	<meta name="description" content="Ean Krenzin-Blank's personal website" />
 </svelte:head>
-<section align="center">
-	<h1>Hello, and welcome</h1>
-	<h2>
-		This is a demonstration of artistic expression.
-		</h2>
-		<p>
-		The expression of creativity can be represented through our connection to technology,
-		as storytelling is expressed through the presentation as much as the content.
-		
+<section class="max-w-sm mx-auto text-center my-12">
+    <h1 class="text-8xl font-semibold mb-4">Writing</h1>
+    <h2 class="text-2xl font-medium mb-6">
+        reflection, philosphy, and art.
+    </h2>
+    <p class="text-gray-400">
+		Creativity finds expression in our bond with technology, where the art of storytelling is reflected as much by how it is presented as the philosophy behind it.
 		</p>
-	<p>
-		<b>
-			<u>
-				Not everything we project should be for the purpose of earning money or conforming to
-				expectations.
-			</u>
-		</b>
-
-		Sometimes we gasp at the world around us, sucking in polluted breaths. We must not forget to
-		accasionally exhale the bad air. Some of this content is "bad" air.
-
-		<br />
-		<br />
-
-		It occured to me that I'd rather share my thoughts than carry the weight of them.
-
-		<br />
 		
-		With that said, don't take anything you read here too seriously. But it's fun to ponder.
-	</p>
+	<p class="text-gray-400">
+		When viewing this site, and my work, please keep in mind the technology wrapping it.
+    </p>
+    <p class="text-gray-400">
+        It occurred to me that I'd rather share my thoughts than carry the weight of them.
+        <br>
+        With that said, don't take anything you read here too seriously. But it's fun to ponder.
+    </p>
+    <p class="text-gray-400 italic">
+        <span class="text-gray-300 font-semibold underline decoration-wavy decoration-primary-500">
+            Not everything we project should be for the purpose of earning money or conforming to
+            expectations.
+        </span>
+        <br>
+        Sometimes we gasp at the world around us, sucking in polluted breaths. We must not forget to
+        occasionally exhale the bad air. Some of this content is "bad" air.
+    </p>
 </section>
 
 {#each categories as category}
