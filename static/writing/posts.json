@@ -130,12 +130,26 @@
       "image": "/writing/images/allegory_of_the_cave.jpg"
     },
     {
+      "post_title": "The Art of War",
+      "title": "art_of_war",
+      "preview": "## The Art of War\n\n### Citation\nSun Tzu\n\n### Notes\n\n### Note on Page 1 (Location Location)\n> These are: (1) the Moral Law; (2) Heaven; (3) Earth; (4) the Commander; (5) method and discipline.\n\n---\n\n##...",
+      "url": "writing/notes_art_of_war",
+      "imageSources": [
+        "/writing/images/art_of_war.jpeg"
+      ],
+      "scripts": [],
+      "image": "/writing/images/art_of_war.jpeg"
+    },
+    {
       "post_title": "Being and Nothingness",
       "title": "being_nothingness.text",
       "preview": "## Being and Nothingness\n\n### Citation\nSartre, Jean-Paul\n\n### Notes\n\n### Note on Page The (Location of)\n> I have to actualize the meaning of the world and of my essence: I decide it alone, without any...",
       "url": "writing/notes_being_nothingness.text",
-      "imageSources": [],
-      "scripts": []
+      "imageSources": [
+        "/writing/images/being_and_nothingness.jpeg"
+      ],
+      "scripts": [],
+      "image": "/writing/images/being_and_nothingness.jpeg"
     },
     {
       "post_title": "Meditation on First Philosophy",
@@ -182,6 +196,17 @@
       "image": "/writing/images/meno.jpg"
     },
     {
+      "post_title": "Paradise Lost: A Norton Critical Edition (Second Edition) (Norton Critical Editions)",
+      "title": "paradise_loast",
+      "preview": "## Paradise Lost: A Norton Critical Edition (Second Edition) (Norton Critical Editions)\n\n### Citation\nMilton, John\n\n### Notes\n\n### Note on Page 26 (Location Location)\n> John Milton was born on Decembe...",
+      "url": "writing/notes_paradise_loast",
+      "imageSources": [
+        "/writing/images/paradise_lost.jpeg"
+      ],
+      "scripts": [],
+      "image": "/writing/images/paradise_lost.jpeg"
+    },
+    {
       "post_title": "Reading the Way of Things: Towards a New Technology of Making Sense",
       "title": "reading_the_way",
       "preview": "## Reading the Way of Things: Towards a New Technology of Making Sense\n\n### Citation\nCoffeen, Daniel\n\n### Notes\n\n### Note on Page 1 (Location 64)\n> To consume media today is to consume an endless para...",
@@ -208,8 +233,11 @@
       "title": "the_road.text",
       "preview": "## The Road: Pulitzer Prize Winner (Vintage International)\n\n### Citation\nMcCarthy, Cormac\n\n### Notes\n\n### Note on Page 9 (Location Location)\n> What would you do if I died? If you died I would want to ...",
       "url": "writing/notes_the_road.text",
-      "imageSources": [],
-      "scripts": []
+      "imageSources": [
+        "/writing/images/the_road.jpeg"
+      ],
+      "scripts": [],
+      "image": "/writing/images/the_road.jpeg"
     },
     {
       "post_title": "On Truth and Lies in a Nonmoral Sense",

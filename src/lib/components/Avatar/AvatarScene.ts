@@ -3,7 +3,7 @@ import { Scene,  Object3D,  Camera, WebGLRenderer, AmbientLight, DirectionalLigh
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import type { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 
-const avatarHeadPositionBase = { x: Math.PI/12, y: 0, z: 0 };
+const avatarHeadPositionBase = { x: Math.PI/8, y: -Math.PI/26, z: -Math.PI/36 };
 
 const avatarScene = writable<Scene>();
 const avatarModel = writable<GLTF>();

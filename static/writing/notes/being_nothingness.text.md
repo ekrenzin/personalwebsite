@@ -395,3 +395,8 @@ Sartre, Jean-Paul
 
 ---
 
+
+
+<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+    <img src="/writing/images/being_and_nothingness.jpeg" alt="cover" style="max-width: 100%; max-height: 100%;">
+</div>
