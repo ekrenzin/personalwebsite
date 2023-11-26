@@ -163,6 +163,17 @@
       "image": "/writing/images/being_and_nothingness.jpeg"
     },
     {
+      "post_title": "Beowulf",
+      "title": "beowulf",
+      "preview": "## Beowulf\n\n### Citation\nAnonymous\n\n### Notes\n\n### Note on Page 78 (Location undefined)\n> I never heard of a vessel so decked out with battle weapons and the vestments of war, swords and corselets; on...",
+      "url": "writing/notes_beowulf",
+      "imageSources": [
+        "/writing/images/beowulf.jpeg"
+      ],
+      "scripts": [],
+      "image": "/writing/images/beowulf.jpeg"
+    },
+    {
       "post_title": "Meditation on First Philosophy",
       "title": "descartes_meditation",
       "preview": "## Meditation on First Philosophy\n\n### Citation\nDescartes, Rene\n\n### Notes\n\n### Note on Page 1 (Location 125)\n> Several years have now elapsed since I first became aware that I had accepted, even from...",
@@ -205,6 +216,17 @@
       ],
       "scripts": [],
       "image": "/writing/images/meno.jpg"
+    },
+    {
+      "post_title": "The Order of Time",
+      "title": "order_of_time",
+      "preview": "## The Order of Time\n\n### Citation\nRovelli, Carlo\n\n### Notes\n\n### Note on Page Loss (Location Direction)\n> Perhaps poetry is another of science’s deepest roots: the capacity to see beyond the visible....",
+      "url": "writing/notes_order_of_time",
+      "imageSources": [
+        "/writing/images/order_of_time.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/order_of_time.png"
     },
     {
       "post_title": "Paradise Lost: A Norton Critical Edition (Second Edition) (Norton Critical Editions)",

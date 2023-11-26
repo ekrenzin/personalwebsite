@@ -36,7 +36,7 @@
 				},
 				{
 					href: '/writing',
-					name: 'Creative Writing'
+					name: 'Writing'
 				},
 				{
 					href: '/art',

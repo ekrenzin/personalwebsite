@@ -22,7 +22,7 @@
 </script>
 
 <svelte:head>
-	<title>Creative Writing | eankrenzin.com</title>
+	<title>Writing | eankrenzin.com</title>
 	<meta name="description" content="Ean Krenzin-Blank's personal website" />
 </svelte:head>
 <section class="max-w-sm mx-auto text-center my-12">
