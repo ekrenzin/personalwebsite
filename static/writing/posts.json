@@ -377,7 +377,7 @@
     {
       "post_title": "Fumes",
       "title": "Fumes",
-      "preview": "<div align=\"center\">\n\n\n## Fumes\n\n> This content is explicit\n\n<details>\n  <summary>Trigger Warning</summary>\n  \nSpray color and the fumes whisp\nErratically up and around\nWithout rhyme the fumes are\nMin...",
+      "preview": "<div align=\"center\">\n\n\n## Fumes\n\nremoved\n\n<div style=\"display: flex; align-items: center; justify-content: center; max-width: 100%;\">\n    <img src=\"/writing/images/fumes.png\" alt=\"fumes\" style=\"max-wi...",
       "url": "writing/poems_Fumes",
       "imageSources": [
         "/writing/images/fumes.png"
@@ -527,13 +527,24 @@
       ],
       "scripts": [],
       "image": "/writing/images/exhaustion.png"
+    },
+    {
+      "post_title": "Turkey",
+      "title": "turkey",
+      "preview": "<div align=\"center\">\n\n## Turkey\n\nThe early bird gets the worm,\nbut the fattest turkey becomes dinner.\n\n<div style=\"display: flex; align-items: center; justify-content: center; max-width: 100%;\">\n    <...",
+      "url": "writing/poems_turkey",
+      "imageSources": [
+        "/writing/images/turkey.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/turkey.png"
     }
   ],
   "stories": [
     {
       "post_title": "Structure",
       "title": "Structure",
-      "preview": "## Structure\n  \n  The following piece contains explicit content and may not be suitable for all audiences. It offers a commentary on the raw emotions experienced in New York City, a place that not onl...",
+      "preview": "## Structure\n  \n  removed\n\n<div style=\"display: flex; align-items: center; justify-content: center; max-width: 100%;\">\n    <img src=\"/writing/images/side_walk_dots.png\" alt=\"Sidewalk dots\" style=\"max-...",
       "url": "writing/stories_Structure",
       "imageSources": [
         "/writing/images/side_walk_dots.png"

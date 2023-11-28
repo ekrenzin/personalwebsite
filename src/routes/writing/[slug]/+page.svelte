@@ -36,7 +36,7 @@
     <meta name="keywords" content={`AI, Writing, Analysis, Comments, Ean Krenzin-Blank, ${data.currentPost.title}`} />
 </svelte:head>
 
-<div class="container mx-auto page p-4 p-4 text-gray-300">
+<div class="container mx-auto page p-4 text-gray-300 px-10">
 	<PowerfulArticle html={loadHtml(data.post)} />
 	<!-- centered button to go back -->
 	<div class="flex-row">
