@@ -37,7 +37,7 @@ avatarModel.subscribe((model) => {
 function loadAvatar(scene: THREE.Scene, lights: THREE.Object3D) {
     const loader = new GLTFLoader();
     loader.load(
-        './my_head.glb',
+        '/my_head.glb',
         function (gltf: GLTF) {
             gltf.scene.position.y = -5.7;
             gltf.scene.position.z = -1;

@@ -17,6 +17,10 @@ async function readFiles(type) {
         const files = await fs.promises.readdir(directory);
         return await Promise.all(
             files.map(async (file) => {
+                //if the file is not a markdown file, ignore it
+                if (!file.endsWith('.md')) {
+                    return;
+                }
                 try {
                     const filePath = path.join(directory, file);
                     const content = await fs.promises.readFile(filePath, 'utf8');
@@ -86,6 +90,8 @@ async function buildJSON() {
         for (const category of cleanedCategories) {
             console.log(`Processing category: ${category}`);
             returnData[category] = await readFiles(category);
+            //remove null values
+            returnData[category] = returnData[category].filter(data => data);
         }
 
         // Output the return data to a JSON file

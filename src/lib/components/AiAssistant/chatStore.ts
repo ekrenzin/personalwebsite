@@ -11,6 +11,7 @@ export const welcomeRead = writable(false);
 export const audioMessages = writable<Array<typeof Audio>>([]);
 
 function retrieveReadOutLoud() {
+    return false;
     try {
     const readOutLoud = localStorage.getItem("readOutLoud");
     if (readOutLoud) {
