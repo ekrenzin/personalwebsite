@@ -297,16 +297,15 @@
   ],
   "poems": [
     {
-      "post_title": "Cat",
-      "title": "0_cat_fly",
-      "preview": "<div align=\"center\">\n\n## Cat\n\nCat stares outward, a paw draped over the dresser like a hook,\nLazily scooping the air, bailing out the tears sinking her ship.\nShe sees them in the air, the vespers of e...",
-      "url": "writing/poems_0_cat_fly",
+      "post_title": "ABC",
+      "title": "11_30_2023",
+      "preview": "# ABC\n\nDate: 11-30-2023\n\nAdam awakens, ancestral Angel, \nAmber ambrosia, apples abound, \nAphrodite's allure, astonishing.\n\nBeautiful baby born believing.\nBrave beneath blue blankets,\nBastard becomes b...",
+      "url": "writing/poems_11_30_2023",
       "imageSources": [
-        "/writing/images/cat_fly.png",
-        "/writing/images/cat.png"
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701334876420.png"
       ],
       "scripts": [],
-      "image": "/writing/images/cat_fly.png"
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701334876420.png"
     },
     {
       "post_title": "Bags under my eyes",
@@ -505,6 +504,18 @@
       ],
       "scripts": [],
       "image": "/writing/images/trivia.png"
+    },
+    {
+      "post_title": "Cat",
+      "title": "cat_fly",
+      "preview": "<div align=\"center\">\n\n## Cat\n\nCat stares outward, a paw draped over the dresser like a hook,\nLazily scooping the air, bailing out the tears sinking her ship.\nShe sees them in the air, the vespers of e...",
+      "url": "writing/poems_cat_fly",
+      "imageSources": [
+        "/writing/images/cat_fly.png",
+        "/writing/images/cat.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/cat_fly.png"
     },
     {
       "post_title": "Look a Poem",
