@@ -67,13 +67,13 @@
 		>
 			<div class="content-header flex-row">
 				<h2>AI Assistant</h2>
-				<button class="icon-button" id="volume-toggle" on:click={toggleAudio}>
+				<!-- <button class="icon-button" id="volume-toggle" on:click={toggleAudio}>
 					{#if !reading}
 						<img use:tooltip title={'Listen'}  src={volume_off} alt="volume off" class="w-6 h-6" />
 					{:else}
 						<img use:tooltip title={'Mute'} src={volume_on} alt="volume on" class="w-6 h-6" />
 					{/if}
-				</button>
+				</button> -->
 			</div>
 			<!-- Close Button -->
 			<button

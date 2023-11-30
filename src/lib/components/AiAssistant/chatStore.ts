@@ -88,6 +88,7 @@ export function updateMessages(newMessages: Message[]) {
 
 export async function readMessage(message: string) {
     try {
+        return;
         console.log("CONVERTING MESSAGE TO AUDIO");
         const response = await fetch('/api/ellevenlabsAI', {
             method: 'POST',
