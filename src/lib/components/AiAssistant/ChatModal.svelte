@@ -1,10 +1,7 @@
 <script lang="ts">
 	import ChatHistory from './ChatHistory.svelte';
 	import { sendMessage, readOutLoud, welcomeRead } from './chatStore';
-	import volume_on from '$lib/assets/icons/volume_on.svg';
-	import volume_off from '$lib/assets/icons/volume_off.svg';
 	import { onMount } from 'svelte';
-	import { tooltip } from '$lib/utils/tooltip';
 
 	export let toggleChatHistory: () => void;
 
@@ -56,15 +53,24 @@
 			audio.pause();
 		}
 	});
+
+    function handleWrapperClick() {
+        toggleChatHistory();
+    }
+
+    function handleContentClick(event: MouseEvent) {
+        event.stopPropagation();
+    }
 </script>
 
-<div class="wrapper flex-row">
-	<div
-		class="fixed inset-0 bg-gray-900 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center"
-	>
-		<div
-			class="content relative p-5 bg-black rounded-lg shadow-xl max-h-screen w-full m-4 overflow-y-auto"
-		>
+<div class="wrapper flex-row" on:pointerdown={handleWrapperClick}>
+    <div
+        class="fixed inset-0 bg-gray-900 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center"
+    >
+        <div
+            class="content relative p-5 bg-black rounded-lg shadow-xl max-h-screen w-full m-4 overflow-y-auto"
+            on:pointerdown={handleContentClick}
+        >
 			<div class="content-header flex-row">
 				<h2>AI Assistant</h2>
 				<!-- <button class="icon-button" id="volume-toggle" on:click={toggleAudio}>
