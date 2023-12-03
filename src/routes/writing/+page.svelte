@@ -3,6 +3,7 @@
 	import '../../md.css';
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import Carousel from './Carousel.svelte';
+	import Videos from './videos.svelte';
 
 	interface mdData {
 		title: string;
@@ -52,7 +53,7 @@
         occasionally exhale the bad air. Some of this content is "bad" air.
     </p>
 </section>
-
+<Videos />
 {#each categories as category}
 <section id={category}>
     {#if data[category].length > 0}
