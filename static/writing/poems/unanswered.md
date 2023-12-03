@@ -36,7 +36,3 @@ One thing alone, which is that she was here for me.
 And perhaps this time she did not answer, but so many other times she did.
 That was enough, and always will be. I'm so grateful that she answered, every week, for years.
 
-
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="https://workers-ai.eankrenzin.workers.dev/?key=image-1701627777235.png" alt="trivia" style="max-width: 100%; max-height: 100%;">
-</div>
