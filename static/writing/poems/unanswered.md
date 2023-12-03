@@ -13,10 +13,10 @@ This time it's temporary, but everything is temporary until it's not.
 That comes up a lot at work, solutions to complete a job,
 but not to do it well. I wanted to tell her about my week. 
 It was a long one.
-She has dementia, or alzheimers. Really she just has old age.
-It's therapeaudic to tell someone who you know will forget what you've said.
+She has dementia, or Alzheimer's. Really she just has old age.
+It's therapeutic to tell someone who you know will forget what you've said.
 In a way, it's inspiring because it shows clearly what matters.
-In the end, that hard week really did not mater, and when she forgets
+In the end, that hard week really did not matter, and when she forgets
 I forget too, a bit.
 I wonder how long I will remember her. I know it's forever,
 but death becomes a fog. Will I remember the way she asked about school,
