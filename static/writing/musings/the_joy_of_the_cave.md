@@ -39,6 +39,4 @@ So what the hell does any of this have to do with a dinner party? Before we retu
 Have we not strayed further from the dinner party? In fact, we haven’t. We have arrived instead, at the laughter in the room at my own expense. The chorus of sounds which are warm colors dancing through the air. The friendship we share, and the knowledge that we come across. To strip away the shackles of the cave, one must only consider the chains to be links to other prisoners, and we are free to wander until our hearts give out.
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/cave.png" alt="exhausted" style="max-width: 100%; max-height: 100%;">
-</div>
+![exhausted](/writing/images/cave.png)

@@ -49,6 +49,4 @@ Sartre, Jean-Paul. 1943. Being and Nothingness. Éditions Gallimard, Philosophic
 Walters, Charles, dir. 1950. Summer Stock. Metro-Goldwyn-Mayer Corp. 
  
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/defining_dissapointment.png" alt="death_etymology" style="max-width: 100%; max-height: 100%;">
-</div>
+![death_etymology](/writing/images/defining_dissapointment.png)

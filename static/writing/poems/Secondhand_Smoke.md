@@ -33,6 +33,4 @@ What was once a vibrant green, life-filled scene, is now just shades of gray.
 A lesson learned in the smoke’s twist and twine, of how we treat this Earth of mine.
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/second_smoke.png" alt="second smoke" style="max-width: 100%; max-height: 100%;">
-</div>
+![second smoke](/writing/images/second_smoke.png)

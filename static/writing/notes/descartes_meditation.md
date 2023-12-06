@@ -116,6 +116,4 @@ Descartes, Rene
 ---
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/descartes.webp" alt="descartes" style="max-width: 100%; max-height: 100%;">
-</div>
+![descartes](/writing/images/descartes.webp)

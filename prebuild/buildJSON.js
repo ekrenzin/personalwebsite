@@ -23,7 +23,9 @@ async function readFiles(type) {
                 }
                 try {
                     const filePath = path.join(directory, file);
-                    const content = await fs.promises.readFile(filePath, 'utf8');
+                    let content = await fs.promises.readFile(filePath, 'utf8');
+                    // content = replaceHtmlImagesWithMarkdown(content);
+                    // await fs.promises.writeFile(filePath, content, 'utf8');
                     const preview = extractPreview(content);
                     const { imageSources, title, scripts } = parseMarkdown(content);
                     const title_path = path.basename(file, '.md');
@@ -51,6 +53,21 @@ async function readFiles(type) {
     }
 }
 
+
+
+/**
+ * Replaces specific HTML image formats within Markdown content with Markdown image syntax.
+ * @param {string} markdownContent - The Markdown content of the file.
+ * @returns {string} - The modified Markdown content.
+ */
+function replaceHtmlImagesWithMarkdown(markdownContent) {
+    const imageDivRegex = /<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">\s*<img src="([^"]+)" alt="([^"]*)" style="max-width: 100%; max-height: 100%;">\s*<\/div>/g;
+
+    return markdownContent.replace(imageDivRegex, (match, src, alt) => {
+        return `![${alt}](${src})`;
+    });
+}
+
 /**
  * Gets the categories from the directory names.
  * @returns {Promise<string[]>}
@@ -66,7 +83,7 @@ async function getCategories() {
 }
 
 /**
- * Extracts a preview from the content.
+ * Extracts a preview from the content, excluding Markdown images.
  * @param {string} content - The content from which to extract the preview.
  * @returns {string} - A string representing the preview.
  */
@@ -74,6 +91,7 @@ function extractPreview(content) {
     const contentPreview = content.substring(0, 200) + "...";
     return contentPreview;
 }
+
 
 /**
  * Prebuilds JSON data from writing categories.

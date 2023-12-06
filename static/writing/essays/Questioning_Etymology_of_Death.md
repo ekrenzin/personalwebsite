@@ -11,6 +11,4 @@ In modern Western societies, the concept of death often evokes fear and is large
 Undoubtedly, when we consider instead the perspective of contemporary religious thinkers, this evaluation can be prodded, and holes unmasked. As in all things, humans operate on a gradient. I would argue that the 20th century has largely eliminated our roots through conflict on a scale unfathomable to nations of ancient history. Modern artifacts, especially after WW1 reflect this deviation. For example, Fountain by Marcel Duchamp, and other avant-garde artwork post WW1, highlight the hopelessness and lack of purpose which has grown and brewed, perhaps since Nietzsche. Perhaps what becomes most clear in the modern context, however, is that we have more ideas or records of ideas than ever before. In that sense, while generally less optimistic, the modern perspective of death has diversified. Thus we see that Humans come to terms with death in various ways, and while culture is a way to categorize these perceptions, overall death can be understood to have a shifting ontology.
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/death_etymology.png" alt="death_etymology" style="max-width: 100%; max-height: 100%;">
-</div>
+![death_etymology](/writing/images/death_etymology.png)

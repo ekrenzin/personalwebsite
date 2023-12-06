@@ -20,6 +20,4 @@ Shackled here, while he lives.
 But either way, the thoughts we
 Share are Siamese and of love.
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/siamese.png" alt="siamese" style="max-width: 100%; max-height: 100%;">
-</div>
+![siamese](/writing/images/siamese.png)

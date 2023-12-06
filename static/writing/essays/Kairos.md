@@ -18,6 +18,4 @@ In conclusion, the interplay between Chronos and Kairos forms a complex tapestry
 https://www.youtube.com/watch?v=fFJrV3pI5Zs
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/kairos.png" alt="kairos" style="max-width: 100%; max-height: 100%;">
-</div>
+![kairos](/writing/images/kairos.png)

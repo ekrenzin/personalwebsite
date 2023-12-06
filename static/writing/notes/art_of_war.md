@@ -117,6 +117,4 @@ Sun Tzu
 
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/art_of_war.jpeg" alt="cover" style="max-width: 100%; max-height: 100%;">
-</div>
+![cover](/writing/images/art_of_war.jpeg)

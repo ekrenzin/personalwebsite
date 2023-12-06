@@ -8,3 +8,7 @@ article p {
 blockquote {
     font-style: italic;
 }
+
+.tag {
+    border: 2px solid #fff;
+}

@@ -25,6 +25,4 @@ When you open Plato’s Phaedrus.
 Diving deep into irony and metonym
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/bookshop.png" alt="bookshop" style="max-width: 100%; max-height: 100%;">
-</div>
+![bookshop](/writing/images/bookshop.png)

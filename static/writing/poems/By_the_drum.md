@@ -12,6 +12,4 @@ Where, where to be, where to be, where will you be, where to stay,
 Little cottage, flowers smell sweet, cottage, are you free, little cottage?
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/cottage_drum.png" alt="cotatge" style="max-width: 100%; max-height: 100%;">
-</div>
+![cotatge](/writing/images/cottage_drum.png)

@@ -50,6 +50,4 @@ In the past several decades, various unicorns have been born like Athena from Ze
 Yet, we continue to exist. At least for the moment, humans make the decisions, and the symbols replacing the ‘real’ replace the ‘real’ of humans. Indeed, while this remains to be a post-modern and pre-post-human world, the creations we form are to be designed for humans. As we cling to our final breaths before breathing is enhanced (regulated) by a machine, we can, and should enjoy the fresh air. Touch grass and enjoy the liberty of owning your yard- a statistical improbability for most born after the turn of the millennium. At least we are alive.
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/simulacrum.png" alt="simulacrum" style="max-width: 100%; max-height: 100%;">
-</div>
+![simulacrum](/writing/images/simulacrum.png)

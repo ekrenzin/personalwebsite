@@ -9,6 +9,8 @@
 	let camera: PerspectiveCamera;
 	let renderer: WebGLRenderer;
 	let mouse = new Vector2();
+	let bufferDelay = 0.1;
+	let buffering = false
 
 	onMount(() => {
 		const scene = new Scene();
@@ -57,6 +59,17 @@
 
 
 	function onMouseMove(event: MouseEvent) {
+		//add in a buffer
+		if (!buffering) {
+			buffering = true;
+			setTimeout(() => {
+				buffering = false;
+			}, bufferDelay * 1000 * Math.random());
+		} else {
+			return;
+		}
+
+
 		const canvasBounds = canvas.getBoundingClientRect();
 		mouse.x = ((event.clientX - canvasBounds.left) / canvasBounds.width) * 2 - 1;
 		mouse.y = -((event.clientY - canvasBounds.top) / canvasBounds.height) * 2 + 1;

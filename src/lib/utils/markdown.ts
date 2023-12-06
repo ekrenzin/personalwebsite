@@ -1,5 +1,6 @@
 
 import { parse, Renderer } from 'marked';
+import cheerio from 'cheerio';
 
 const renderer = new Renderer();
 
@@ -33,8 +34,35 @@ export function loadHtml(data: string) {
 
 export function cleanMD(text: string) {
     let htmlContent = parse(text);
+    const $ = cheerio.load(htmlContent);
+    
+    //use cheerio to remove all div align center
 
-    // Use regex to remove <div align="center"> and corresponding closing </div>
-    htmlContent = htmlContent.replace(/<div align="center">[\s\S]*?/g, '');
+    $('div').each(function (i, elem) {
+        if ($(this).attr('align') === 'center') {
+            $(this).replaceWith($(this).html());
+        }
+    });
+
+    //remove images
+    $('img').each(function (i, elem) {
+        $(this).replaceWith('');
+    });
+
+    /*
+        replace text that is denoting a tag ("#tag") with a custom div. \
+        Do not do this for text which goes # content - as this is a heading
+        Multiple tags in a single line will be replaced with multiple divs
+    */
+    // const regex = /#\([^]+)\}/g;
+    // htmlContent = htmlContent.replace(regex, (match, tagName) => {
+    //     const div = `<div class="tag">${tagName}</div>`;
+    //     console.log(div);
+    //     return div;
+    // });
+
+
+    htmlContent = $.html();
+    
     return htmlContent;
 }

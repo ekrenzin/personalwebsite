@@ -5,6 +5,7 @@ import { Tween } from '@tweenjs/tween.js';
 
 let raycaster = new Raycaster();
 let returnHeadTimeout: any;
+let previousTween: any;
 
 function updateHeadRotation(mouse: Vector2, camera: THREE.Camera) {
     const model = get(avatarModel)?.scene;
@@ -21,6 +22,7 @@ function updateHeadRotation(mouse: Vector2, camera: THREE.Camera) {
         new Plane(planeNormal, planePoint.dot(planeNormal)),
         targetPoint
     );
+    if (previousTween) previousTween.stop();
 
     // if (targetPoint) neck.lookAt(targetPoint);
     if (targetPoint) {
@@ -30,8 +32,9 @@ function updateHeadRotation(mouse: Vector2, camera: THREE.Camera) {
         const newHeadRotation = head.rotation.clone();
         //set the head back to the original rotation
         head.rotation.copy(originalHeadRotation);
+
         // Tween for head
-        new Tween(head.rotation)
+        previousTween = new Tween(head.rotation)
             .to({ x: newHeadRotation.x, y: newHeadRotation.y, z: newHeadRotation.z }, 100)
             .start();
     }

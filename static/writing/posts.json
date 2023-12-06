@@ -107,6 +107,17 @@
       "image": "/writing/images/meno.png"
     },
     {
+      "post_title": "The Absurdity of Travel",
+      "title": "motivations_for_travel",
+      "preview": "## The Absurdity of Travel\r\n\r\nThe motivation for travel is absurd, and I am completely ensnared by it.\r\n\r\nWes Anderson's \"The Darjeeling Limited\" is an artistic masterpiece, epitomizing creative ingen...",
+      "url": "writing/musings_motivations_for_travel",
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701896664337.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701896664337.png"
+    },
+    {
       "post_title": "Sleep",
       "title": "sleep",
       "preview": "## Sleep\r\n\r\nSleep and death, to me, have always been chiasmatically bound. My first memory of a dream is one where I die. I am in a stroller, and for some reason, my family leaves me. I crawl from the...",
@@ -131,17 +142,20 @@
     {
       "post_title": "My Birth",
       "title": "z_birth",
-      "preview": "# My Birth\r\n\r\n#thoughts #birth\r\n\r\n12-05-2023\r\n\r\nMaybe writing in a journal is a sign of being born. You have decided that the person who exists at that time, deserves to exist later. Forcing a life in...",
+      "preview": "## My Birth\r\n\r\n#thoughts #birth\r\n\r\n12-05-2023\r\n\r\nMaybe writing in a journal is a sign of being born. You have decided that the person who exists at that time, deserves to exist later. Forcing a life i...",
       "url": "writing/musings_z_birth",
-      "imageSources": [],
-      "scripts": []
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701890473758.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701890473758.png"
     }
   ],
   "notes": [
     {
       "post_title": "1984",
       "title": "1984",
-      "preview": "## 1984\n\n### Citation\nOrwell, George\n\n### Notes\n\n### Note on Page 3 (Location 79)\n> the Ministry of Truth, which concerned itself with news, entertainment, education, and the fine arts; the Ministry o...",
+      "preview": "## 1984\r\n\r\n### Citation\r\nOrwell, George\r\n\r\n### Notes\r\n\r\n### Note on Page 3 (Location 79)\r\n> the Ministry of Truth, which concerned itself with news, entertainment, education, and the fine arts; the Mi...",
       "url": "writing/notes_1984",
       "imageSources": [
         "/writing/images/1984.jpg"
@@ -152,7 +166,7 @@
     {
       "post_title": "The Allegory of the Cave (Illustrated)",
       "title": "allegory_cave",
-      "preview": "## The Allegory of the Cave (Illustrated)\n\n### Citation\nPlato\n\n### Notes\n\n### Note on Page 1 (Location 12)\n> Setting The scene is laid in the house of Cephalus at the Piraeus; and the whole dialogue i...",
+      "preview": "## The Allegory of the Cave (Illustrated)\r\n\r\n### Citation\r\nPlato\r\n\r\n### Notes\r\n\r\n### Note on Page 1 (Location 12)\r\n> Setting The scene is laid in the house of Cephalus at the Piraeus; and the whole di...",
       "url": "writing/notes_allegory_cave",
       "imageSources": [
         "/writing/images/allegory_of_the_cave.jpg"
@@ -207,7 +221,7 @@
     {
       "post_title": "Erasure: A Novel",
       "title": "erasure",
-      "preview": "## Erasure: A Novel\n\n### Citation\nEverett, Percival\n\n### Notes\n\n### Note on Page 6 (Location 169)\n> “I’m working on a novel, I guess you’d call it a novel, which treats this critical text by Roland Ba...",
+      "preview": "## Erasure: A Novel\r\n\r\n### Citation\r\nEverett, Percival\r\n\r\n### Notes\r\n\r\n### Note on Page 6 (Location 169)\r\n> “I’m working on a novel, I guess you’d call it a novel, which treats this critical text by R...",
       "url": "writing/notes_erasure",
       "imageSources": [
         "/writing/images/erasure.jpeg"
@@ -229,7 +243,7 @@
     {
       "post_title": "The Medium is the Massage",
       "title": "medium_massage",
-      "preview": "## The Medium is the Massage\n\n### Citation\nMcluhan , Marshall; Fiore, Quentin; Fiarey, Shepard\n\n### Notes\n\n### Note on Page 6 (Location 6)\n> Societies have always been shaped more by the nature of the...",
+      "preview": "## The Medium is the Massage\r\n\r\n### Citation\r\nMcluhan , Marshall; Fiore, Quentin; Fiarey, Shepard\r\n\r\n### Notes\r\n\r\n### Note on Page 6 (Location 6)\r\n> Societies have always been shaped more by the natur...",
       "url": "writing/notes_medium_massage",
       "imageSources": [
         "/writing/images/medium_massage.jpg"
@@ -273,7 +287,7 @@
     {
       "post_title": "Reading the Way of Things: Towards a New Technology of Making Sense",
       "title": "reading_the_way",
-      "preview": "## Reading the Way of Things: Towards a New Technology of Making Sense\n\n### Citation\nCoffeen, Daniel\n\n### Notes\n\n### Note on Page 1 (Location 64)\n> To consume media today is to consume an endless para...",
+      "preview": "## Reading the Way of Things: Towards a New Technology of Making Sense\r\n\r\n### Citation\r\nCoffeen, Daniel\r\n\r\n### Notes\r\n\r\n### Note on Page 1 (Location 64)\r\n> To consume media today is to consume an endl...",
       "url": "writing/notes_reading_the_way",
       "imageSources": [
         "/writing/images/reading_way.jpg"
@@ -284,7 +298,7 @@
     {
       "post_title": "Simulacra and simulation",
       "title": "simulacrum",
-      "preview": "## Simulacra and simulation\n\n### Citation\nBaudrillard , Jean\n\n### Notes\n\n### Note on Page 1 (Location 6)\n> it is truth that hides the fact that there is none.\n\n---\n\n### Note on Page 3 (Location 30)\n> ...",
+      "preview": "## Simulacra and simulation\r\n\r\n### Citation\r\nBaudrillard , Jean\r\n\r\n### Notes\r\n\r\n### Note on Page 1 (Location 6)\r\n> it is truth that hides the fact that there is none.\r\n\r\n---\r\n\r\n### Note on Page 3 (Loc...",
       "url": "writing/notes_simulacrum",
       "imageSources": [
         "/writing/images/simulacrum_cover.jpg"
@@ -306,7 +320,7 @@
     {
       "post_title": "On Truth and Lies in a Nonmoral Sense",
       "title": "truth_lies_Nietzsche",
-      "preview": "## On Truth and Lies in a Nonmoral Sense\n\n### Citation\nNietzsche, Friedrich\n\n### Notes\n\n### Note on Page 3 (Location 38)\n> And when it is all over with the human intellect, nothing will have happened....",
+      "preview": "## On Truth and Lies in a Nonmoral Sense\r\n\r\n### Citation\r\nNietzsche, Friedrich\r\n\r\n### Notes\r\n\r\n### Note on Page 3 (Location 38)\r\n> And when it is all over with the human intellect, nothing will have h...",
       "url": "writing/notes_truth_lies_Nietzsche",
       "imageSources": [
         "/writing/images/truth_lies.jpg"
@@ -319,7 +333,7 @@
     {
       "post_title": "ABC",
       "title": "11_30_2023",
-      "preview": "<center>\r\n\r\n# ABC\r\n\r\nDate: 11-30-2023\r\n\r\nAdam awakens, ancestral Angel,\r\nAmber ambrosia, apples abound, \r\nAphrodite's allure, astonishing.\r\n\r\n\r\nBeautiful baby born believing.\r\nBrave beneath blue blank...",
+      "preview": "## ABC\r\n\r\nDate: 11-30-2023\r\n\r\nAdam awakens, ancestral Angel,\r\nAmber ambrosia, apples abound, \r\nAphrodite's allure, astonishing.\r\n\r\n\r\nBeautiful baby born believing.\r\nBrave beneath blue blankets,\r\nBasta...",
       "url": "writing/poems_11_30_2023",
       "imageSources": [
         "https://workers-ai.eankrenzin.workers.dev/?key=image-1701334876420.png"
@@ -386,7 +400,7 @@
     {
       "post_title": "Doki Doki",
       "title": "Doki_Doki",
-      "preview": "\r\n<div align=\"center\">\r\n\r\n\r\n\r\n## Doki Doki\r\n\r\n心 どきどき (Heart pounding)\r\n痛 どきどき (Pain throbbing)\r\nSweet moments fleeting,\r\nBitter memories, yet endearing.\r\n愛 dance with pastel and ink.\r\n\r\n\r\n<div style=\"...",
+      "preview": "\r\n<div align=\"center\">\r\n\r\n\r\n\r\n## Doki Doki\r\n\r\n心 どきどき (Heart pounding)\r\n痛 どきどき (Pain throbbing)\r\nSweet moments fleeting,\r\nBitter memories, yet endearing.\r\n愛 dance with pastel and ink.\r\n\r\n\r\n![doki doki]...",
       "url": "writing/poems_Doki_Doki",
       "imageSources": [
         "/writing/images/doki_doki.png"
@@ -430,7 +444,7 @@
     {
       "post_title": "Fumes",
       "title": "Fumes",
-      "preview": "<div align=\"center\">\r\n\r\n\r\n## Fumes\r\n\r\nremoved\r\n\r\n<div style=\"display: flex; align-items: center; justify-content: center; max-width: 100%;\">\r\n    <img src=\"/writing/images/fumes.png\" alt=\"fumes\" style...",
+      "preview": "<div align=\"center\">\r\n\r\n\r\n## Fumes\r\n\r\nremoved\r\n\r\n![fumes](/writing/images/fumes.png)\r\n...",
       "url": "writing/poems_Fumes",
       "imageSources": [
         "/writing/images/fumes.png"
@@ -507,7 +521,7 @@
     {
       "post_title": "Scarecrow",
       "title": "Scarecrow",
-      "preview": "<div align=\"center\">\r\n\r\n## Scarecrow\r\n\r\nA poem that is convoluted, ironic in that it cannot be refuted,\r\nFor the nature of obscurity, rather than maturity, is a scarecrow.\r\n\r\n<div style=\"display: flex...",
+      "preview": "<div align=\"center\">\r\n\r\n## Scarecrow\r\n\r\nA poem that is convoluted, ironic in that it cannot be refuted,\r\nFor the nature of obscurity, rather than maturity, is a scarecrow.\r\n\r\n![scarecrow](/writing/ima...",
       "url": "writing/poems_Scarecrow",
       "imageSources": [
         "/writing/images/scarecrow.png"
@@ -570,7 +584,7 @@
     {
       "post_title": "Turkey",
       "title": "turkey",
-      "preview": "<div align=\"center\">\r\n\r\n## Turkey\r\n\r\nThe early bird gets the worm,\r\nbut the fattest turkey becomes dinner.\r\n\r\n<div style=\"display: flex; align-items: center; justify-content: center; max-width: 100%;\"...",
+      "preview": "<div align=\"center\">\r\n\r\n## Turkey\r\n\r\nThe early bird gets the worm,\r\nbut the fattest turkey becomes dinner.\r\n\r\n![turkey](/writing/images/turkey.png)...",
       "url": "writing/poems_turkey",
       "imageSources": [
         "/writing/images/turkey.png"
@@ -603,7 +617,7 @@
     {
       "post_title": "Structure",
       "title": "Structure",
-      "preview": "## Structure\r\n  \r\n  removed\r\n\r\n<div style=\"display: flex; align-items: center; justify-content: center; max-width: 100%;\">\r\n    <img src=\"/writing/images/side_walk_dots.png\" alt=\"Sidewalk dots\" style=...",
+      "preview": "## Structure\r\n  \r\n  removed\r\n\r\n![Sidewalk dots](/writing/images/side_walk_dots.png)...",
       "url": "writing/stories_Structure",
       "imageSources": [
         "/writing/images/side_walk_dots.png"

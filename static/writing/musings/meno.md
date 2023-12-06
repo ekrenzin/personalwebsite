@@ -21,6 +21,4 @@ Given this understanding, it becomes possible to solve for subjective virtuosity
 Aside from this musing, I would point out that When Socrates complains that in responding justice, Meno is creating a tautological argument, Socrates underscores the crux of the issue. All words and thoughts stem from other words or thoughts. Ironically, Socrates claims otherwise, suggesting instead an inherent knowledge from a soul. However beings for-themselves (Hegel traveled down the path with für sich, but it was Sartre with pour-soi who solidified the idea) do not truly exist; The look of another is required.In other words, the crux of the issue is that Socrates is seeking to define virtue, but unable to because virtue is a bi-product of something else, just as justice is of virtue.
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/meno.png" alt="sleep_fall" style="max-width: 100%; max-height: 100%;">
-</div>
+![sleep_fall](/writing/images/meno.png)

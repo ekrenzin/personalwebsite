@@ -37,6 +37,4 @@ With the way it refuses us. Fuck you.
 </details>
 
 
-<div style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
-    <img src="/writing/images/refute_me.png" alt="refute me" style="max-width: 100%; max-height: 100%;">
-</div>
+![refute me](/writing/images/refute_me.png)
