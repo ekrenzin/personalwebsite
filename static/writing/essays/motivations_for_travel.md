@@ -16,4 +16,4 @@ Given that a metaphorical journey is meaningful, it can be understood that Trave
 
 Travel, like life, is not about the destination or the Kantian intent, but about the journey. It is unforeseeable; a surprise is down every alley. Travel is a journey into the heart of absurdism, where the pursuit itself becomes the purpose, and the lessons discovered along the way are more valuable than any treasure buried within a Dragon's hoard.
 
-![absurd travel](https://workers-ai.eankrenzin.workers.dev/?key=image-1701896664337.png)
+![absurd travel](https://workers-ai.eankrenzin.workers.dev/?key=image-1701902022793.png)
