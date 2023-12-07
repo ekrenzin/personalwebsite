@@ -13,7 +13,6 @@ const baseUrl = 'static/writing';
 async function readFiles(type) {
     try {
         const directory = path.resolve(`${baseUrl}/${type}`);
-        console.log(`Reading files from directory: ${directory}`);
         const files = await fs.promises.readdir(directory);
         return await Promise.all(
             files.map(async (file) => {
@@ -110,6 +109,9 @@ async function buildJSON() {
             returnData[category] = await readFiles(category);
             //remove null values
             returnData[category] = returnData[category].filter(data => data);
+
+            //log the length of each category
+            console.log(`Category ${category} has ${returnData[category].length} items`);
         }
 
         // Output the return data to a JSON file
