@@ -36,21 +36,15 @@
 		</p>
 		
 	<p class="text-gray-400">
-		When viewing this site, and my work, please keep in mind the technology wrapping it.
+		When viewing this site, and my work, please keep in mind the technology wrapping it. The purpose is in the presentation.
+		My poetry, musings, essays, and thoughts are the threads weaving together to form a digital canvas to paint an idea.
+		With that said, much of this is graphic, it is intended to be provactive.
+		<br/>
+		The interaction with the variety of themes should be a visceral experience, and this is intended for you to process 
+		accompanied by the AI assistant. The experience of this communcaition with Self and Other, wherein the LLM is akin to a voice recorder, is the art of this project.
     </p>
     <p class="text-gray-400">
-        It occurred to me that I'd rather share my thoughts than carry the weight of them.
-        <br>
-        With that said, don't take anything you read here too seriously. But it's fun to ponder.
-    </p>
-    <p class="text-gray-400 italic">
-        <span class="text-gray-300 font-semibold underline decoration-wavy decoration-primary-500">
-            Not everything we project should be for the purpose of earning money or conforming to
-            expectations.
-        </span>
-        <br>
-        Sometimes we gasp at the world around us, sucking in polluted breaths. We must not forget to
-        occasionally exhale the bad air. Some of this content is "bad" air.
+        Do not take anything you read here too seriously. It is merely fun to ponder, a way to pass the time like tossing cards during a game of bridge. Absurd in nature.
     </p>
 </section>
 <Videos />
