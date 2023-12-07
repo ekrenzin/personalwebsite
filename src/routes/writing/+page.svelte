@@ -40,6 +40,7 @@
 		My poetry, musings, essays, and thoughts are the threads weaving together to form a digital canvas to paint an idea.
 		With that said, much of this is graphic, it is intended to be provactive.
 		<br/>
+		<br/>
 		The interaction with the variety of themes should be a visceral experience, and this is intended for you to process 
 		accompanied by the AI assistant. The experience of this communcaition with Self and Other, wherein the LLM is akin to a voice recorder, is the art of this project.
     </p>
