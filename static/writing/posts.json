@@ -429,6 +429,17 @@
       "image": "/writing/images/friend_death.png"
     },
     {
+      "post_title": "A New Day, A New Essence",
+      "title": "New_day_new_existence",
+      "preview": "## A New Day, A New Essence\n \n#essence #existentialism #rebirth #death #absurdism\n\nA new day, a new existence - the dreams we have are death,\nIn the silent theater of night, they draw their final brea...",
+      "url": "writing/poems_New_day_new_existence",
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701975481920.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701975481920.png"
+    },
+    {
       "post_title": "Our Simulacrum in the Mirror",
       "title": "Our_Simulacrum_in_the_Mirror",
       "preview": "<div align=\"center\">\n\n## Our Simulacrum in the Mirror\n\nOf human minds and spines ascended, \nlike unicorns of promised progress,\nhidden behind cloaks of code, modern gods \nbirthed from skull and bones ...",
@@ -574,11 +585,8 @@
       "title": "unanswered",
       "preview": "## Unanswered\n\nDate: 12-03-2023\n\nThe phone rings, my muscles tense in anticipation\nsore from the day before, I stretch. Yawning, but I\nam not tired. The phone rings. I sigh, knowingly.\nI'm calling a c...",
       "url": "writing/poems_unanswered",
-      "imageSources": [
-        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701627777235.png"
-      ],
-      "scripts": [],
-      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701627777235.png"
+      "imageSources": [],
+      "scripts": []
     }
   ],
   "stories": [
