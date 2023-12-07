@@ -468,8 +468,11 @@
       "title": "Left_behind",
       "preview": "## Left Behind\r\n\r\n#musings #thoughts #other #poems \r\n\r\nI am forgotten because I chose not to remember. It pains me when someone asks if I remember an experience, for I never do. Instead I remember the...",
       "url": "writing/poems_Left_behind",
-      "imageSources": [],
-      "scripts": []
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701980561293.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701980561293.png"
     },
     {
       "post_title": "Moon above Lagoon and Lune",

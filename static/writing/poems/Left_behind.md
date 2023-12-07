@@ -24,3 +24,5 @@ Oh, how I yearn for those gone by,
 In memories' absence, I silently sigh.  
 Each forgotten moment, a vanishing trace,  
 Of the other who lived, in this temporal space.
+
+![Left Behind](https://workers-ai.eankrenzin.workers.dev/?key=image-1701980561293.png)
