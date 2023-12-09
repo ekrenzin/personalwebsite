@@ -166,6 +166,7 @@
 		align-items: center;
 		gap: 10px;
 		width: 200px;
+		height: 100%;
 	}
 
 	@media (max-width: 600px) {
@@ -176,7 +177,7 @@
 
 		.image-preview-container {
 			width: 100%;
-			height: auto;
+			height: 400px;
 		}
 	}
 

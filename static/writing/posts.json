@@ -573,6 +573,17 @@
       "image": "/writing/images/cat_fly.png"
     },
     {
+      "post_title": "Dark Ages",
+      "title": "dafk_ages",
+      "preview": "## Dark Ages\n\nIn history's deep and shadowed halls,\nWhere echoes of the past like whispers fall,\nLies the tale of ages lost in night,\nThe Early Middle Ages, shrouded in twilight.\n\nA time maligned, in ...",
+      "url": "writing/poems_dafk_ages",
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1702154713964.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702154713964.png"
+    },
+    {
       "post_title": "Look a Poem",
       "title": "dont_read",
       "preview": "## Look a Poem\n\nUnder the dim ( I'm just a blur (\nWords all jumbled, a tongue-tied >\n< In the crowd # I'm a ghost, barely =\nCraving a look -- someone to).\n\nMy sentences stumble~~|_ clumsy or frail%%\ns...",
@@ -639,8 +650,11 @@
       "title": "1",
       "preview": "# 1\n\n------\n# NEW CHAT\n------\n\nOTHER\n\nYour reflection on narcissism through the lens of Pessoa and the myth of Narcissus is insightful. Narcissism, as a trait, does often carry a negative connotation,...",
       "url": "writing/self-and-other_1",
-      "imageSources": [],
-      "scripts": []
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1702113942594.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702113942594.png"
     }
   ],
   "stories": [
