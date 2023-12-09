@@ -4,6 +4,7 @@
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import Carousel from './Carousel.svelte';
 	import Videos from './videos.svelte';
+	import {updateWritingStore, writingSettings } from './writingStore';
 
 	interface mdData {
 		title: string;
@@ -20,6 +21,7 @@
 
 	export let data: blogData;
 	let categories = Object.keys(data);
+	writingSettings.subscribe(console.log)
 </script>
 
 <svelte:head>
@@ -52,6 +54,9 @@
         Do not take anything you read here as serious, beyond the experience of technology.
 	</b>
     </p>
+	<button id="disco-button" class="m-auto bottom-0 left-0 m-4 bg-white hover:bg-pink-600 text-black py-2 px-4 rounded"
+	
+on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}>Turn Lights {$writingSettings.discoColors ? "off" : "on"}</button>
 </section>
 <Videos />
 {#each categories as category}

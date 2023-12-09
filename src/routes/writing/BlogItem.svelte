@@ -2,6 +2,9 @@
 	import { fade } from 'svelte/transition';
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
 	import { cleanMD } from '$lib/utils/markdown';
+	import {onMount} from 'svelte';
+	import { tweened } from 'svelte/motion';
+	import { writingSettings } from './writingStore';
 	export let markdownContent = {
 		preview: '',
 		title: '',
@@ -11,8 +14,34 @@
 		scripts: []
 	};
 	export let index: number;
+	let article: HTMLElement;
 
+	const hue = tweened(0, { duration: 100 });
+	const saturation = tweened(100, { duration: 100 });
+	const brightness = tweened(100, { duration: 100 });
+	
 	let intersecting = false;
+
+
+	hue.subscribe((value) => {
+		if (article) {
+			article.style.filter = `hue-rotate(${value}deg) saturate(${$saturation}%) brightness(${$brightness}%)`;
+		}
+	});
+	
+	function setRandomColor() {
+		if ($writingSettings.discoColors) {
+			hue.set(Math.floor(Math.random() * 360));
+			saturation.set(100 + Math.random() * 50); // range: 50% to 100%
+			brightness.set(100 + Math.random() * 50); // range: 50% to 100%
+			
+		} else {
+			hue.set(0);
+			saturation.set(100);
+			brightness.set(100);
+		}
+}
+
 
 	function onIntersect(node: HTMLElement, options = { threshold: 0.1 }) {
 		const observer = new IntersectionObserver(([entry]) => {
@@ -42,21 +71,30 @@
 			return '';
 		}
 	}
+
 	function uuidv4() {
 		return '10000000-1000-4000-8000-100000000000'.replace(/[018]/g, (c) =>
 			(c ^ (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))).toString(16)
 		);
 	}
+	
+	
+	onMount(() => {
+		//random filter hue that changes every second on the article
+		setInterval(() => {
+			setRandomColor();
+		}, Math.random() * 100 + 100);
+	});
 </script>
 
 {#key markdownContent}
 	{#if markdownContent}
-		<article use:onIntersect class="article-container" id={getID()}>
+		<article bind:this={article} use:onIntersect class="article-container" id={getID()}>
 			<div class="content-container">
 				<p>{@html cleanMD(markdownContent.preview)}</p>
 				<a href={markdownContent.url}>
 					<button id="read-more-{markdownContent.post_title.replace(/-/g, ' ')}" class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded">
-						Read {markdownContent.post_title.replace(/-/g, ' ')}
+						Read More
 					</button>
 				</a>
 			</div>
