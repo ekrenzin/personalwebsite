@@ -42,7 +42,7 @@
 </script>
 
 <section id={category}>
-	<h1>{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
+	<h1>{category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')}</h1>
 	{#if viewAll}
 		<div class="flex-col">
 			{#each posts as post, index}

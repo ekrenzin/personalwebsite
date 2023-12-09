@@ -103,7 +103,8 @@ async function buildJSON() {
         const categories = await getCategories();
         //ignore these categories
         const ignoredCategories = ['images'];
-        const cleanedCategories = categories.filter(category => !ignoredCategories.includes(category));
+        const cleanedCategories = categories.filter(category => !ignoredCategories.includes(category))
+       
         for (const category of cleanedCategories) {
             console.log(`Processing category: ${category}`);
             returnData[category] = await readFiles(category);
