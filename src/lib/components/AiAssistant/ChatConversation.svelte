@@ -25,9 +25,9 @@
 
 {#if sender === 'assistant' || sender === 'user'}
 	<div
-		class={`p-2.5 text-sm w-70 mx-2 my-1 rounded-lg shadow ${
+		class={`chat-message p-2.5 text-sm w-70 mx-2 my-1 rounded-lg shadow ${
 			sender === 'user' ? 'ml-auto' : 'mr-auto'
-		} ${sender === 'user' ? 'bg-blue-200 text-blue-800' : 'bg-green-200 text-green-800'}`}
+		} ${sender === 'user' ? 'bg-blue-200 text-blue-800' : 'bg-gray-700 text-gray-200'}`}
 	>
 		{#if message === 'Loading...'}
 			<div class="flex-column">
@@ -65,5 +65,10 @@
 		align-items: center;
 		height: 100%;
 		width: 100%;
+	}
+
+
+	:global(.chat-message img) {
+		max-height: 50vh;
 	}
 </style>
