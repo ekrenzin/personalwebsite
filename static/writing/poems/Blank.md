@@ -8,4 +8,4 @@ is of Russian dolls, Matryoshka
 of all turtles, All the way down, 
 A sideways eight, infinitely. 
 
-![blank](/writing/images/blank.png)
+![blank](https://workers-ai.eankrenzin.workers.dev/?key=image-1702229911693.png)

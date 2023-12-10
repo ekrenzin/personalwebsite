@@ -1,6 +1,6 @@
 ## Left Behind
 
-#musings #thoughts #other #poems 
+2023-12-8
 
 I am forgotten because I chose not to remember. It pains me when someone asks if I remember an experience, for I never do. Instead I remember the other who was self then. My history is lost, only the other who observed it remains. I hope that he will surface from the deep abyss, erupting from the waves as a whale does. Perhaps in death, if only to say goodbye. How deeply I miss them all.
 

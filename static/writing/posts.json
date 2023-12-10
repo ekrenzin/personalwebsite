@@ -27,6 +27,17 @@
       "image": "/writing/images/defining_dissapointment.png"
     },
     {
+      "post_title": "Motivation",
+      "title": "Embracing_motivation",
+      "preview": "## Motivation\n\nMotivation is a curious entity. It is the fuel in the bonfires of life, burning brightly down to embers. Yet if one loses motivation, they grow cold and \"burnt out.\" With that said, the...",
+      "url": "writing/essays_Embracing_motivation",
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701419629192.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701419629192.png"
+    },
+    {
       "post_title": "Kairos: Seizing the Opportune Moments in the Tapestry of Chronos",
       "title": "Kairos",
       "preview": "## Kairos: Seizing the Opportune Moments in the Tapestry of Chronos\n\nMichel Foucault provides us with an intriguing perspective on the nature of history in the preface of his seminal work History of M...",
@@ -82,6 +93,17 @@
       "image": "/writing/images/heroism.png"
     },
     {
+      "post_title": "Musing with Meno",
+      "title": "meno",
+      "preview": "## Musing with Meno\n\nSocrates posits to Meno that no man can define virtue. Undoubtedly this is true, but nevertheless it is a curious idea. Plato through Socrates, examines the bees, juxtaposing natu...",
+      "url": "writing/essays_meno",
+      "imageSources": [
+        "/writing/images/meno.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/meno.png"
+    },
+    {
       "post_title": "The Absurdity of Travel",
       "title": "motivations_for_travel",
       "preview": "## The Absurdity of Travel\n\nThe motivation for travel is absurd, and I am completely ensnared by it.\n\nWes Anderson's \"The Darjeeling Limited\" is an artistic masterpiece, epitomizing creative ingenuity...",
@@ -95,37 +117,26 @@
   ],
   "musings": [
     {
-      "post_title": "Motivation",
-      "title": "Embracing_motivation",
-      "preview": "## Motivation\n\nMotivation is a curious entity. It is the fuel in the bonfires of life, burning brightly down to embers. Yet if one loses motivation, they grow cold and \"burnt out.\" With that said, the...",
-      "url": "writing/musings_Embracing_motivation",
-      "imageSources": [
-        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701419629192.png"
-      ],
-      "scripts": [],
-      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701419629192.png"
-    },
-    {
-      "post_title": "Musing with Meno",
-      "title": "meno",
-      "preview": "## Musing with Meno\n\nSocrates posits to Meno that no man can define virtue. Undoubtedly this is true, but nevertheless it is a curious idea. Plato through Socrates, examines the bees, juxtaposing natu...",
-      "url": "writing/musings_meno",
-      "imageSources": [
-        "/writing/images/meno.png"
-      ],
-      "scripts": [],
-      "image": "/writing/images/meno.png"
-    },
-    {
       "post_title": "Sleep",
       "title": "sleep",
       "preview": "## Sleep\n\nSleep and death, to me, have always been chiasmatically bound. My first memory of a dream is one where I die. I am in a stroller, and for some reason, my family leaves me. I crawl from the s...",
       "url": "writing/musings_sleep",
       "imageSources": [
-        "/writing/images/sleep_fall.png"
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1702230091875.png"
       ],
       "scripts": [],
-      "image": "/writing/images/sleep_fall.png"
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702230091875.png"
+    },
+    {
+      "post_title": "Spider in the Drain",
+      "title": "spider_in_the_drain",
+      "preview": "## Spider in the Drain\n\n\n2023-12-10\n\nMy father came to visit me when it was unveiled that I had a brain tumor: like a circus animal, or a tourist attraction. He stayed in our home, briefly, and it was...",
+      "url": "writing/musings_spider_in_the_drain",
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1702227940813.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702227940813.png"
     },
     {
       "post_title": "The Joy of the Cave",
@@ -357,10 +368,10 @@
       "preview": "<div align=\"center\">\n\n## Blank\n\nI should write, but my mind is Blank. \nLike De-Ja-Vu and this Feeling \nis of Russian dolls, Matryoshka \nof all turtles, All the way down, \nA sideways eight, infinitely....",
       "url": "writing/poems_Blank",
       "imageSources": [
-        "/writing/images/blank.png"
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1702229911693.png"
       ],
       "scripts": [],
-      "image": "/writing/images/blank.png"
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702229911693.png"
     },
     {
       "post_title": "Bookshop Idea",
@@ -431,7 +442,7 @@
     {
       "post_title": "Left Behind",
       "title": "Left_behind",
-      "preview": "## Left Behind\n\n#musings #thoughts #other #poems \n\nI am forgotten because I chose not to remember. It pains me when someone asks if I remember an experience, for I never do. Instead I remember the oth...",
+      "preview": "## Left Behind\n\n2023-12-8\n\nI am forgotten because I chose not to remember. It pains me when someone asks if I remember an experience, for I never do. Instead I remember the other who was self then. My...",
       "url": "writing/poems_Left_behind",
       "imageSources": [
         "https://workers-ai.eankrenzin.workers.dev/?key=image-1701980561293.png"
@@ -464,7 +475,7 @@
     {
       "post_title": "A New Day, A New Essence",
       "title": "New_day_new_existence",
-      "preview": "## A New Day, A New Essence\n \n#essence #existentialism #rebirth #death #absurdism\n\nA new day, a new existence - the dreams we have are death,\nIn the silent theater of night, they draw their final brea...",
+      "preview": "## A New Day, A New Essence\n \n2023-12-07\n\nA new day, a new existence - the dreams we have are death,\nIn the silent theater of night, they draw their final breath.\nStimuli intense to the point of vapor...",
       "url": "writing/poems_New_day_new_existence",
       "imageSources": [
         "https://workers-ai.eankrenzin.workers.dev/?key=image-1701975481920.png"
@@ -608,7 +619,7 @@
     {
       "post_title": "The Silence of Indifference",
       "title": "silence_of_indifference",
-      "preview": "## The Silence of Indifference\n\n12-02-2023\n\n#selfharm #other #conscious #pain #abuse\n\nIn the realm of shadowed thoughts, where whispers fade, Dwells Self, aloof, in indifference's shade. Its gaze, tho...",
+      "preview": "## The Silence of Indifference\n\n2023-12-07\n\n\nIn the realm of shadowed thoughts, where whispers fade, Dwells Self, aloof, in indifference's shade. Its gaze, though distant, cuts sharper than steel, Ign...",
       "url": "writing/poems_silence_of_indifference",
       "imageSources": [
         "https://workers-ai.eankrenzin.workers.dev/?key=image-1702008523288.png"

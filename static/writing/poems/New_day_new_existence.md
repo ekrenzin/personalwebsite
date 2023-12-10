@@ -1,6 +1,6 @@
 ## A New Day, A New Essence
  
-#essence #existentialism #rebirth #death #absurdism
+2023-12-07
 
 A new day, a new existence - the dreams we have are death,
 In the silent theater of night, they draw their final breath.
