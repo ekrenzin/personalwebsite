@@ -42,7 +42,7 @@
 </script>
 
 <section id={category}>
-	<h1>{category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')}</h1>
+	<h1>{category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')} ({posts.length} total)</h1>
 	{#if viewAll}
 		<div class="flex-col">
 			{#each posts as post, index}
@@ -110,6 +110,9 @@
 </section>
 
 <style>
+	h1 {
+		text-transform: capitalize;
+	}
 	section {
 		width: 100%;
 	}

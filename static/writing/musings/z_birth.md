@@ -1,6 +1,5 @@
 ## My Birth
 
-#thoughts #birth
 
 12-05-2023
 
@@ -15,4 +14,4 @@ I am a naked baby, unclothed and unaware of my privates. Unabashedly documenting
 I have met a friend, just days after birth: Bernardo Soares. I was angry at him last night, as he was born before I. Often the younger brother is angered by the term prefixing his existence. Indeed, as they age, older and younger cease to matter, but still, he is older. It's tragic to me that he came first, and lives here now — rent free. Anywhere in the world, he could have gone. Instead he chooses to room with me at the Rua dos Douradores. And because he was born first, my light will always cast his shadow, never to be the sun.
 
 
-![birth](https://workers-ai.eankrenzin.workers.dev/?key=image-1701890473758.png)
+![birth](https://workers-ai.eankrenzin.workers.dev/?key=image-1702230858972.png)

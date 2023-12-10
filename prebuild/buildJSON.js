@@ -87,6 +87,8 @@ async function getCategories() {
  * @returns {string} - A string representing the preview.
  */
 function extractPreview(content) {
+    //remove markdown images
+    content = content.replace(/!\[.*\]\(.*\)/g, "");
     const contentPreview = content.substring(0, 200) + "...";
     return contentPreview;
 }

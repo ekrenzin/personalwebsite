@@ -1,120 +1,4 @@
 {
-  "essays": [
-    {
-      "post_title": "Barbara's Bronze's",
-      "title": "Bronze_age",
-      "preview": "## Barbara's Bronze's\n\nINTRODUCTION\nThe Bronze age followed the Neolithic Age. Bronze is an amalgam of copper and tin. Bronze not only withstands the passage of time, but it also lends itself to the c...",
-      "url": "writing/essays_Bronze_age",
-      "imageSources": [
-        "/writing/images/bb1.jpg",
-        "/writing/images/bb2.jpg",
-        "/writing/images/bb3.jpg",
-        "/writing/images/bb4.jpg",
-        "/writing/images/bb5.jpg"
-      ],
-      "scripts": [],
-      "image": "/writing/images/bb1.jpg"
-    },
-    {
-      "post_title": "Defining Disappointment",
-      "title": "Defining_dissapointment",
-      "preview": "## Defining Disappointment \n\n> “Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. So throw off the bowlines, sail away from the safe harbor. ...",
-      "url": "writing/essays_Defining_dissapointment",
-      "imageSources": [
-        "/writing/images/defining_dissapointment.png"
-      ],
-      "scripts": [],
-      "image": "/writing/images/defining_dissapointment.png"
-    },
-    {
-      "post_title": "Motivation",
-      "title": "Embracing_motivation",
-      "preview": "## Motivation\n\nMotivation is a curious entity. It is the fuel in the bonfires of life, burning brightly down to embers. Yet if one loses motivation, they grow cold and \"burnt out.\" With that said, the...",
-      "url": "writing/essays_Embracing_motivation",
-      "imageSources": [
-        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701419629192.png"
-      ],
-      "scripts": [],
-      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701419629192.png"
-    },
-    {
-      "post_title": "Kairos: Seizing the Opportune Moments in the Tapestry of Chronos",
-      "title": "Kairos",
-      "preview": "## Kairos: Seizing the Opportune Moments in the Tapestry of Chronos\n\nMichel Foucault provides us with an intriguing perspective on the nature of history in the preface of his seminal work History of M...",
-      "url": "writing/essays_Kairos",
-      "imageSources": [
-        "/writing/images/kairos.png"
-      ],
-      "scripts": [],
-      "image": "/writing/images/kairos.png"
-    },
-    {
-      "post_title": "Questioning the Etymology of Death",
-      "title": "Questioning_Etymology_of_Death",
-      "preview": "## Questioning the Etymology of Death\n\nHow death is regarded in each civilization is a dubious question, as death naturally has a shifting ontology as societies develop. With that said, relics of the ...",
-      "url": "writing/essays_Questioning_Etymology_of_Death",
-      "imageSources": [
-        "/writing/images/death_etymology.png"
-      ],
-      "scripts": [],
-      "image": "/writing/images/death_etymology.png"
-    },
-    {
-      "post_title": "Enlightenment vs Romanticism",
-      "title": "Romatic_vs_enlightenement",
-      "preview": "## Enlightenment vs Romanticism \n\n### Prompt:\nThe Enlightenment and the Romantic Movement in most ways can be seen as in opposition to each other. Nonetheless, they have both had a huge influence on m...",
-      "url": "writing/essays_Romatic_vs_enlightenement",
-      "imageSources": [
-        "/writing/images/enlightenment.png"
-      ],
-      "scripts": [],
-      "image": "/writing/images/enlightenment.png"
-    },
-    {
-      "post_title": "Stone and Spirit: Tracing Architecture and Meaning in the Ancient World",
-      "title": "Stone_and_spirit",
-      "preview": "## Stone and Spirit: Tracing Architecture and Meaning in the Ancient World\n\nThe architectural record of human history is rich with layers that reveal the intricacies of societal values, technological ...",
-      "url": "writing/essays_Stone_and_spirit",
-      "imageSources": [
-        "/writing/images/stone_spirit.png"
-      ],
-      "scripts": [],
-      "image": "/writing/images/stone_spirit.png"
-    },
-    {
-      "post_title": "Moving Past the Sword: The Pen of Modern Heroism",
-      "title": "heroism",
-      "preview": "## Moving Past the Sword: The Pen of Modern Heroism\n\n> The etymology of the word Hero derives from the Greek word ἥρως (hērōs), meaning protector or defender. The antithesis ειλός (deilós), encapsulat...",
-      "url": "writing/essays_heroism",
-      "imageSources": [
-        "/writing/images/heroism.png"
-      ],
-      "scripts": [],
-      "image": "/writing/images/heroism.png"
-    },
-    {
-      "post_title": "Musing with Meno",
-      "title": "meno",
-      "preview": "## Musing with Meno\n\nSocrates posits to Meno that no man can define virtue. Undoubtedly this is true, but nevertheless it is a curious idea. Plato through Socrates, examines the bees, juxtaposing natu...",
-      "url": "writing/essays_meno",
-      "imageSources": [
-        "/writing/images/meno.png"
-      ],
-      "scripts": [],
-      "image": "/writing/images/meno.png"
-    },
-    {
-      "post_title": "The Absurdity of Travel",
-      "title": "motivations_for_travel",
-      "preview": "## The Absurdity of Travel\n\nThe motivation for travel is absurd, and I am completely ensnared by it.\n\nWes Anderson's \"The Darjeeling Limited\" is an artistic masterpiece, epitomizing creative ingenuity...",
-      "url": "writing/essays_motivations_for_travel",
-      "imageSources": [
-        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701902022793.png"
-      ],
-      "scripts": [],
-      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701902022793.png"
-    }
-  ],
   "musings": [
     {
       "post_title": "Sleep",
@@ -152,13 +36,13 @@
     {
       "post_title": "My Birth",
       "title": "z_birth",
-      "preview": "## My Birth\n\n#thoughts #birth\n\n12-05-2023\n\nMaybe writing in a journal is a sign of being born. You have decided that the person who exists at that time, deserves to exist later. Forcing a life into th...",
+      "preview": "## My Birth\n\n\n12-05-2023\n\nMaybe writing in a journal is a sign of being born. You have decided that the person who exists at that time, deserves to exist later. Forcing a life into this world. If that...",
       "url": "writing/musings_z_birth",
       "imageSources": [
-        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701890473758.png"
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1702230858972.png"
       ],
       "scripts": [],
-      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701890473758.png"
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702230858972.png"
     }
   ],
   "notes": [
@@ -398,7 +282,7 @@
     {
       "post_title": "Doki Doki",
       "title": "Doki_Doki",
-      "preview": "\n<div align=\"center\">\n\n\n\n## Doki Doki\n\n心 どきどき (Heart pounding)\n痛 どきどき (Pain throbbing)\nSweet moments fleeting,\nBitter memories, yet endearing.\n愛 dance with pastel and ink.\n\n\n![doki doki](/writing/imag...",
+      "preview": "\n<div align=\"center\">\n\n\n\n## Doki Doki\n\n心 どきどき (Heart pounding)\n痛 どきどき (Pain throbbing)\nSweet moments fleeting,\nBitter memories, yet endearing.\n愛 dance with pastel and ink.\n\n\n...",
       "url": "writing/poems_Doki_Doki",
       "imageSources": [
         "/writing/images/doki_doki.png"
@@ -420,7 +304,7 @@
     {
       "post_title": "Fumes",
       "title": "Fumes",
-      "preview": "<div align=\"center\">\n\n\n## Fumes\n\nremoved\n\n![fumes](/writing/images/fumes.png)\n...",
+      "preview": "<div align=\"center\">\n\n\n## Fumes\n\nremoved\n\n\n...",
       "url": "writing/poems_Fumes",
       "imageSources": [
         "/writing/images/fumes.png"
@@ -519,13 +403,13 @@
     {
       "post_title": "Scarecrow",
       "title": "Scarecrow",
-      "preview": "<div align=\"center\">\n\n## Scarecrow\n\nA poem that is convoluted, ironic in that it cannot be refuted,\nFor the nature of obscurity, rather than maturity, is a scarecrow.\n\n![scarecrow](/writing/images/sca...",
+      "preview": "## Scarecrow\n\nA poem that is convoluted, ironic in that it cannot be refuted,\nFor the nature of obscurity, rather than maturity, is a scarecrow.\n\n\n\n...",
       "url": "writing/poems_Scarecrow",
       "imageSources": [
-        "/writing/images/scarecrow.png"
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1702231124782.png"
       ],
       "scripts": [],
-      "image": "/writing/images/scarecrow.png"
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702231124782.png"
     },
     {
       "post_title": "Second-hand Smoke",
@@ -638,7 +522,7 @@
     {
       "post_title": "Turkey",
       "title": "turkey",
-      "preview": "<div align=\"center\">\n\n## Turkey\n\nThe early bird gets the worm,\nbut the fattest turkey becomes dinner.\n\n![turkey](/writing/images/turkey.png)...",
+      "preview": "<div align=\"center\">\n\n## Turkey\n\nThe early bird gets the worm,\nbut the fattest turkey becomes dinner.\n\n...",
       "url": "writing/poems_turkey",
       "imageSources": [
         "/writing/images/turkey.png"
@@ -668,11 +552,127 @@
       "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702113942594.png"
     }
   ],
+  "short-essays": [
+    {
+      "post_title": "Barbara's Bronze's",
+      "title": "Bronze_age",
+      "preview": "## Barbara's Bronze's\n\nINTRODUCTION\nThe Bronze age followed the Neolithic Age. Bronze is an amalgam of copper and tin. Bronze not only withstands the passage of time, but it also lends itself to the c...",
+      "url": "writing/short-essays_Bronze_age",
+      "imageSources": [
+        "/writing/images/bb1.jpg",
+        "/writing/images/bb2.jpg",
+        "/writing/images/bb3.jpg",
+        "/writing/images/bb4.jpg",
+        "/writing/images/bb5.jpg"
+      ],
+      "scripts": [],
+      "image": "/writing/images/bb1.jpg"
+    },
+    {
+      "post_title": "Defining Disappointment",
+      "title": "Defining_dissapointment",
+      "preview": "## Defining Disappointment \n\n> “Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. So throw off the bowlines, sail away from the safe harbor. ...",
+      "url": "writing/short-essays_Defining_dissapointment",
+      "imageSources": [
+        "/writing/images/defining_dissapointment.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/defining_dissapointment.png"
+    },
+    {
+      "post_title": "Motivation",
+      "title": "Embracing_motivation",
+      "preview": "## Motivation\n\nMotivation is a curious entity. It is the fuel in the bonfires of life, burning brightly down to embers. Yet if one loses motivation, they grow cold and \"burnt out.\" With that said, the...",
+      "url": "writing/short-essays_Embracing_motivation",
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701419629192.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701419629192.png"
+    },
+    {
+      "post_title": "Kairos: Seizing the Opportune Moments in the Tapestry of Chronos",
+      "title": "Kairos",
+      "preview": "## Kairos: Seizing the Opportune Moments in the Tapestry of Chronos\n\nMichel Foucault provides us with an intriguing perspective on the nature of history in the preface of his seminal work History of M...",
+      "url": "writing/short-essays_Kairos",
+      "imageSources": [
+        "/writing/images/kairos.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/kairos.png"
+    },
+    {
+      "post_title": "Questioning the Etymology of Death",
+      "title": "Questioning_Etymology_of_Death",
+      "preview": "## Questioning the Etymology of Death\n\nHow death is regarded in each civilization is a dubious question, as death naturally has a shifting ontology as societies develop. With that said, relics of the ...",
+      "url": "writing/short-essays_Questioning_Etymology_of_Death",
+      "imageSources": [
+        "/writing/images/death_etymology.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/death_etymology.png"
+    },
+    {
+      "post_title": "Enlightenment vs Romanticism",
+      "title": "Romatic_vs_enlightenement",
+      "preview": "## Enlightenment vs Romanticism \n\n### Prompt:\nThe Enlightenment and the Romantic Movement in most ways can be seen as in opposition to each other. Nonetheless, they have both had a huge influence on m...",
+      "url": "writing/short-essays_Romatic_vs_enlightenement",
+      "imageSources": [
+        "/writing/images/enlightenment.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/enlightenment.png"
+    },
+    {
+      "post_title": "Stone and Spirit: Tracing Architecture and Meaning in the Ancient World",
+      "title": "Stone_and_spirit",
+      "preview": "## Stone and Spirit: Tracing Architecture and Meaning in the Ancient World\n\nThe architectural record of human history is rich with layers that reveal the intricacies of societal values, technological ...",
+      "url": "writing/short-essays_Stone_and_spirit",
+      "imageSources": [
+        "/writing/images/stone_spirit.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/stone_spirit.png"
+    },
+    {
+      "post_title": "Moving Past the Sword: The Pen of Modern Heroism",
+      "title": "heroism",
+      "preview": "## Moving Past the Sword: The Pen of Modern Heroism\n\n> The etymology of the word Hero derives from the Greek word ἥρως (hērōs), meaning protector or defender. The antithesis ειλός (deilós), encapsulat...",
+      "url": "writing/short-essays_heroism",
+      "imageSources": [
+        "/writing/images/heroism.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/heroism.png"
+    },
+    {
+      "post_title": "Musing with Meno",
+      "title": "meno",
+      "preview": "## Musing with Meno\n\nSocrates posits to Meno that no man can define virtue. Undoubtedly this is true, but nevertheless it is a curious idea. Plato through Socrates, examines the bees, juxtaposing natu...",
+      "url": "writing/short-essays_meno",
+      "imageSources": [
+        "/writing/images/meno.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/meno.png"
+    },
+    {
+      "post_title": "The Absurdity of Travel",
+      "title": "motivations_for_travel",
+      "preview": "## The Absurdity of Travel\n\nThe motivation for travel is absurd, and I am completely ensnared by it.\n\nWes Anderson's \"The Darjeeling Limited\" is an artistic masterpiece, epitomizing creative ingenuity...",
+      "url": "writing/short-essays_motivations_for_travel",
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1701902022793.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1701902022793.png"
+    }
+  ],
   "stories": [
     {
       "post_title": "Structure",
       "title": "Structure",
-      "preview": "## Structure\n  \n  removed\n\n![Sidewalk dots](/writing/images/side_walk_dots.png)...",
+      "preview": "## Structure\n  \n  removed\n\n...",
       "url": "writing/stories_Structure",
       "imageSources": [
         "/writing/images/side_walk_dots.png"
