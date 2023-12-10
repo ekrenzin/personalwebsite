@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-
+import { EAN_API_KEY } from '$env/static/private';
 
 export async function postWorkerData(workerUrl, { request, fetch }) {
     try {
@@ -11,6 +11,7 @@ export async function postWorkerData(workerUrl, { request, fetch }) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'x-api-key': EAN_API_KEY,
             },
             body,
         });
