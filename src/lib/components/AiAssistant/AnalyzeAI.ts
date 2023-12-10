@@ -14,6 +14,7 @@ function generateImage(text: string) {
 }
 
 
+
 function AnalyzeWithAI(context: string) {
     showChat.set(true);
     sendMessage(`Analyze`, window.location.pathname, context);

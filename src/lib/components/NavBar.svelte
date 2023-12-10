@@ -41,6 +41,12 @@
 				{
 					href: '/art',
 					name: 'Art'
+				},
+				{
+					href: '/ai',
+					name: 'AI Log',
+					alts: [],
+					icon: null
 				}
 			]
 		},

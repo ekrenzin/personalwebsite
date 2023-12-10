@@ -1,4 +1,5 @@
 <script lang="ts">
+	import InfiniteAiHistory from '$lib/components/AiAssistant/InfiniteAIHistory.svelte';
 	import EmploymentHistory from '../me/EmploymentHistory.svelte';
 	import FeaturedProjects from './FeaturedProjects.svelte';
 	import TitleHeader from './TitleHeader.svelte';

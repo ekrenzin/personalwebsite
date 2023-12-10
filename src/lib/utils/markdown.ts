@@ -1,6 +1,7 @@
 
 import { parse, Renderer } from 'marked';
 import cheerio from 'cheerio';
+import DOMPurify from 'dompurify';
 
 const renderer = new Renderer();
 
@@ -27,7 +28,8 @@ renderer.blockquote = (quote) => {
 
 // Use the custom renderer in the parse function
 export function loadHtml(data: string) {
-    const htmlContent = parse(data, { renderer });
+    const cleanHtml = DOMPurify.sanitize(data);
+    const htmlContent = parse(cleanHtml, { renderer });
     return htmlContent;
 }
 

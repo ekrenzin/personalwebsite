@@ -1,7 +1,31 @@
 
+/**
+ * Fetches comments from the server with pagination support.
+ * This function is designed for an infinitely scrolling comment list.
+ * @param {string} source - The source identifier for the comments.
+ * @param {number} page - The current page number.
+ * @param {number} limit - The number of comments to fetch per page.
+ * @returns {Promise<Array>} A promise that resolves to an array of comments.
+ */
+export async function fetchPaginatedComments(page = 1, limit = 10) {
+    // API call with pagination parameters
+    const response = await fetch('/api/comments', {
+        method: 'POST',
+        body: JSON.stringify({ page, limit, method: "all" }),
+        headers: {
+            'content-type': 'application/json'
+        }
+    });
+    const res = await response.json();
+    const { results } = res;
+    if (!results) {
+        return [];
+    }
+    return results;
+}
+
 
 export async function fetchComments(source: string){
-    
     // API call
     const response = await fetch('/api/comments', {
         method: 'POST',

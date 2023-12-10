@@ -29,6 +29,16 @@ interface Message {
     id: string;
 }
 
+export async function getMessages(page: number, limit: number) {
+    //encode the url page and limit
+    const response = await fetch(`/api/cloudflareAI?page=${page}&limit=${limit}`, {
+        method: 'GET',
+    });
+    const res = await response.json();
+    const { results } = res;
+    console.log(results);
+}
+
 export async function sendMessage(
     message: string,
     baseUrl: string,
@@ -51,7 +61,6 @@ export async function sendMessage(
     const imageMessage = {
         content: `
           For images, prioritize user preferences. If no specific style is requested, default to this guideline:
-          Create an artwork that merges surrealism, nihilism, absurdism, and existentialism with contemporary digital illustration techniques. 
           Emphasize the use of bold outlines and a palette dominated by bright saturated colors. 
           This directive should be referenced for stylistic guidance unless the user specifies otherwise.
         `,
