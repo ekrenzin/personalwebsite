@@ -24,8 +24,9 @@ Alex's room transformed into a peculiar sanctuary, echoing his new faith. Screen
 
 As the days melded into nights, Alex's existence became increasingly entwined with the digital realm of his room. Surrounded by the soft glow of candles and the constant flicker of TikTok videos, he found solace in this sanctuary, a place where the line between the virtual and the real blurred into obscurity. His devotion to Venus, once a distant admiration, had now become his entire world. In this space, time and reality seemed to warp, bending to the whims of the ever-present screens.
 
-One fateful evening, as the candles cast dancing shadows across the walls adorned with images of Venus, Alex's connection to the outside world felt more tenuous than ever. He picked up his phone, his window to Venus, his tether to the digital goddess who had reshaped his reality. Absorbed in the glow of the screen, he stepped forward, oblivious to the physical world around him. In this moment, as he moved towards the edge of a metaphorical cliff, the final barrier between Alex and the all-consuming digital abyss collapsed. It was a step that marked both the zenith of his digital devotion and the end of his journey. Staring into the phone, Alex stepped off the cliff, a satirical end to his quest for meaning in a world of simulacra.
+One fateful evening, as the candles cast dancing shadows across the walls adorned with images of Venus, Alex's connection to the outside world felt more tenuous than ever. He picked up his phone, his window to Venus, his tether to the digital goddess who had reshaped his reality. Absorbed in the glow of the screen, he stepped forward, oblivious to the physical world around him. In this moment, as he moved towards the edge of a metaphorical cliff, the final barrier between Alex and the all-consuming digital abyss collapsed. It was a step that marked both the zenith of his digital devotion and the end of his journey. Staring into the phone, Alex pushed as hard as he could against the window to reach the most beautiful star in the night sky.
 
-lol
+Except the window was very real, and Alex hit the ground 20 floors down. His legacy a stain on the concrete, a satirical end to his quest for meaning in a world of simulacra.
+
 
 ![venus](https://workers-ai.eankrenzin.workers.dev/?key=image-1702172517770.png)
