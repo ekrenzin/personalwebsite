@@ -4,6 +4,7 @@
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import Carousel from './Carousel.svelte';
 	import Videos from './videos.svelte';
+	import {updateWritingStore, writingSettings } from './writingStore';
 
 	interface mdData {
 		title: string;
@@ -20,6 +21,7 @@
 
 	export let data: blogData;
 	let categories = Object.keys(data);
+	writingSettings.subscribe(console.log)
 </script>
 
 <svelte:head>
@@ -38,15 +40,23 @@
 	<p class="text-gray-400">
 		When viewing this site, and my work, please keep in mind the technology wrapping it. The purpose is in the presentation.
 		My poetry, musings, essays, and thoughts are the threads weaving together to form a digital canvas to paint an idea.
-		With that said, much of this is graphic, it is intended to be provactive.
+		With that said, much of this is graphic, it is intended to be provactive in order to "prompt" a response.
 		<br/>
 		<br/>
-		The interaction with the variety of themes should be a visceral experience, and this is intended for you to process 
-		accompanied by the AI assistant. The experience of this communcaition with Self and Other, wherein the LLM is akin to a voice recorder, is the art of this project.
+		Your experience with the diverse themes should be deeply immersive, enhanced by the guidance of your AI assistant.
+		To experience a sense communcaition with Self and Other, with AI.
+		While AI is primitive such than an LLM is akin to a voice recorder, it is still possible to
+		experience a sense of other, thus acknowleding the existence of nascent AI through
+		an interaction with present technology.
     </p>
     <p class="text-gray-400">
-        Do not take anything you read here too seriously. It is merely fun to ponder, a way to pass the time like tossing cards during a game of bridge. Absurd in nature.
+		<b>
+        Do not take anything you read here as serious, beyond the experience of technology.
+	</b>
     </p>
+	<button id="disco-button" class="m-auto bottom-0 left-0 m-4 bg-white hover:bg-pink-600 text-black py-2 px-4 rounded"
+	
+on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}>Turn Lights {$writingSettings.discoColors ? "off" : "on"}</button>
 </section>
 <Videos />
 {#each categories as category}

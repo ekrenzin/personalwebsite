@@ -2,6 +2,7 @@
 	import ChatHistory from './ChatHistory.svelte';
 	import { sendMessage, readOutLoud, welcomeRead } from './chatStore';
 	import { onMount } from 'svelte';
+	import SendIcon from "$lib/assets/icons/send.svg";
 
 	export let toggleChatHistory: () => void;
 
@@ -71,16 +72,6 @@
             class="content relative p-5 bg-black rounded-lg shadow-xl max-h-screen w-full m-4 overflow-y-auto"
             on:pointerdown={handleContentClick}
         >
-			<div class="content-header flex-row">
-				<h2>AI Assistant</h2>
-				<!-- <button class="icon-button" id="volume-toggle" on:click={toggleAudio}>
-					{#if !reading}
-						<img use:tooltip title={'Listen'}  src={volume_off} alt="volume off" class="w-6 h-6" />
-					{:else}
-						<img use:tooltip title={'Mute'} src={volume_on} alt="volume on" class="w-6 h-6" />
-					{/if}
-				</button> -->
-			</div>
 			<!-- Close Button -->
 			<button
 				class="absolute top-0 right-0 m-2 text-gray-600 hover:text-gray-800"
@@ -89,22 +80,22 @@
 				&#10005;
 			</button>
 
-			<div class="content-body bg-gray-900 p-4 mb-4">
+			<div class="content-body mb-4">
 					<ChatHistory  />
 			</div>
 
 			<div class="content-footer">
 				<!-- Message Input and Send Button -->
-				<div class="bottom-5 inset-x-0 mx-5">
+				<div class="inset-x-0 mx- ">
 					<textarea
-						class="w-full text-gray-900 h-20 mt-2 p-2 rounded-lg shadow-lg"
+						class="w-full bg-gray-100 text-gray-800 p-2 rounded-lg shadow-lg"
 						bind:value={message}
 					/>
 					<button
 						on:click={createMessage}
-						class="w-full bg-blue-500 text-white p-2 rounded-lg shadow-lg mt-2"
+						class="send-icon"
 					>
-						Send
+						<img src={SendIcon} alt="send"/>
 					</button>
 				</div>
 			</div>
@@ -124,7 +115,7 @@
 		flex-direction: column;
 		width: 1000px;
 		height: 1000px;
-		max-height: 90%;
+		max-height: 95%;
 		max-width: 90%;
 	}
 
@@ -143,6 +134,20 @@
 	}
 
 	.content-footer {
-		height: 150px;
+		position: relative;
+		padding-right: 3rem;
 	}
+
+	.send-icon {
+		filter: invert(100%);
+		position: absolute;
+		right: 0rem;
+		/* align vertically centered */
+		top: 50%;
+		transform: translateY(-50%);
+		width: 2rem;
+		height: 2rem;
+	}
+
+	
 </style>

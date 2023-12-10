@@ -1,8 +1,7 @@
 ## The Silence of Indifference
 
-12-02-2023
+2023-12-07
 
-#selfharm #other #conscious #pain #abuse
 
 In the realm of shadowed thoughts, where whispers fade, Dwells Self, aloof, in indifference's shade. Its gaze, though distant, cuts sharper than steel, Ignoring Other, whose existence it won't feel.
 

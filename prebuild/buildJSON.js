@@ -87,6 +87,8 @@ async function getCategories() {
  * @returns {string} - A string representing the preview.
  */
 function extractPreview(content) {
+    //remove markdown images
+    content = content.replace(/!\[.*\]\(.*\)/g, "");
     const contentPreview = content.substring(0, 200) + "...";
     return contentPreview;
 }
@@ -103,7 +105,8 @@ async function buildJSON() {
         const categories = await getCategories();
         //ignore these categories
         const ignoredCategories = ['images'];
-        const cleanedCategories = categories.filter(category => !ignoredCategories.includes(category));
+        const cleanedCategories = categories.filter(category => !ignoredCategories.includes(category))
+       
         for (const category of cleanedCategories) {
             console.log(`Processing category: ${category}`);
             returnData[category] = await readFiles(category);
