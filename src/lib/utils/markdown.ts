@@ -28,9 +28,14 @@ renderer.blockquote = (quote) => {
 
 // Use the custom renderer in the parse function
 export function loadHtml(data: string) {
+    try {
     const cleanHtml = DOMPurify.sanitize(data);
     const htmlContent = parse(cleanHtml, { renderer });
     return htmlContent;
+    } catch (err) {
+        console.log(err);
+        return '';
+    }
 }
 
 
