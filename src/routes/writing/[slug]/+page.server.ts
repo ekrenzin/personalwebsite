@@ -22,11 +22,11 @@ export async function load({ params: { slug: $slug }, fetch }) {
         data.slug = $slug;
         
         //const {post,nextPost, previousPost, currentPost} = data;
-
+        if (!data.post) throw new Error('Post not found');
+        
         return data
-    } catch (error) {
-        console.log(error)
-        return redirect(302, '/writing');
+    } catch (e) {
+        throw redirect(302, '/writing');
     }
 
 }
