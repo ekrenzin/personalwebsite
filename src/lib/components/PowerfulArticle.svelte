@@ -11,4 +11,8 @@
 	article {
 		font-family: 'Times New Roman', Times, serif;
 	}
+
+	:global(.article img) {
+		max-width: 400px;
+	}
 </style>

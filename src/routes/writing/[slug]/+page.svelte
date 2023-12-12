@@ -5,6 +5,7 @@
 	import { page } from '$app/stores';  
 	import PowerfulArticle from '$lib/components/PowerfulArticle.svelte';
 	import { AnalyzeWithAI, GenerateImageWithAI } from '$lib/components/AiAssistant/AnalyzeAI';
+	
 	//dynamically import the markdown file based on the slug
 	export let data;
 
@@ -37,7 +38,11 @@
 </svelte:head>
 
 <div class="container mx-auto page p-4 text-gray-300 px-10">
-	<PowerfulArticle html={loadHtml(data.post)} />
+	<!-- if the page.route includes poem -->
+	<div align={$page.url.toString().includes("poem") ? "center" : "left"}>
+			<PowerfulArticle html={loadHtml(data.post)} />
+	</div>
+
 	<!-- centered button to go back -->
 	<div class="flex-row">
 		<button

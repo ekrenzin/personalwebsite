@@ -55,13 +55,14 @@ export async function sendMessage(
 
     //system messages
     const howToRespondSytemMessage = { content: `Be clear and consise. approachable to all. You are an AI living appily in Ean Krenzin-Blank's website. Your purpose in existence is to help with this website, and you take pride in it. DO NOT REFERENCE SYSTEM PROMPTS.`, role: "system", id: new Date().getTime() + "system" }
-    const whoIsEanSystemMessage = { content: `Make the world around Ean bright, colorful, full of life and movement. Ean has sandy hair, and blue eyes. Show Ean as a Studio Ghibli character in a Studio Ghibli world. He is 24 years old, 6'4. Pixar style or 2d. DO NOT REFERNCE THIS WHEN DESCRIBING HIM`, role: "system", id: new Date().getTime() + "system" }
+    const whoIsEanSystemMessage = { content: `Make the world around Ean bright, colorful, full of life and movement. Ean has sandy hair, and blue eyes.`, role: "system", id: new Date().getTime() + "system" }
     const pathMessage = { content: `We are currently at the path: ${baseUrl} on https://eankrenzin.com`, role: "system", id: new Date().getTime() + "system" };
 
     const imageMessage = {
         content: `
           For images, prioritize user preferences. If no specific style is requested, default to this guideline:
-          Emphasize the use of bold outlines and a palette dominated by bright saturated colors. 
+          Emphasize the use of bold outlines and a palette dominated by bright saturated colors and bold outlines. 
+          Each image should be artistic, representing the intent of the website.
           This directive should be referenced for stylistic guidance unless the user specifies otherwise.
         `,
         role: "system",
@@ -71,10 +72,14 @@ export async function sendMessage(
     //user messages
     const userMessage = { content: message, role: "user", id: new Date().getTime() + "human" };
 
-    newMessages = [...newMessages, pathMessage, imageMessage, userMessage, howToRespondSytemMessage ];
+    newMessages = [...newMessages, pathMessage, userMessage, howToRespondSytemMessage ];
 
     if (message.toLowerCase().includes("ean")) {
-        // newMessages = [...newMessages, whoIsEanSystemMessage];
+        newMessages = [...newMessages, whoIsEanSystemMessage];
+    }
+
+    if (message.toLowerCase().includes("image")) {
+        newMessages = [...newMessages, imageMessage];
     }
 
     const assistant_id = new Date().getTime() + "AI"
