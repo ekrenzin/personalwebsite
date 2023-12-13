@@ -5,6 +5,7 @@
 	import Carousel from './Carousel.svelte';
 	import Videos from './videos.svelte';
 	import {updateWritingStore, writingSettings } from './writingStore';
+	import SearchBar from '$lib/components/writing/SearchBar.svelte';
 
 	interface mdData {
 		title: string;
@@ -66,6 +67,7 @@
 	
 on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}>Turn Lights {$writingSettings.discoColors ? "off" : "on"}</button> -->
 </section>
+<SearchBar />
 <Videos />
 {#each categories as category}
 <section id={category}>

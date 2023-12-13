@@ -6,49 +6,74 @@ import { parse } from 'marked';
 const baseUrl = 'static/writing';
 
 /**
- * Reads files from a directory with enhanced error handling and logging.
- * @param {string} type - The category type.
- * @returns {Promise<Object[]>} - An array of objects containing file information.
+ * Asynchronously reads and processes Markdown files from a specified directory.
+ * It filters out non-markdown files, reads the markdown content, and extracts necessary data.
+ * @param {string} category - The category type representing the subdirectory to read from.
+ * @returns {Promise<Object[]>} - An array of objects containing data extracted from each file.
  */
-async function readFiles(type) {
+async function processFiles(category, mode) {
+    const directory = path.resolve(`${baseUrl}/${category}`);
+
     try {
-        const directory = path.resolve(`${baseUrl}/${type}`);
         const files = await fs.promises.readdir(directory);
-        return await Promise.all(
-            files.map(async (file) => {
-                //if the file is not a markdown file, ignore it
-                if (!file.endsWith('.md')) {
-                    return;
-                }
-                try {
-                    const filePath = path.join(directory, file);
-                    let content = await fs.promises.readFile(filePath, 'utf8');
-                    // content = replaceHtmlImagesWithMarkdown(content);
-                    // await fs.promises.writeFile(filePath, content, 'utf8');
-                    const preview = extractPreview(content);
-                    const { imageSources, title, scripts } = parseMarkdown(content);
-                    const title_path = path.basename(file, '.md');
-                    const data = { post_title: title, title: title_path, preview, url: `writing/${type}_${title_path}`, imageSources, scripts: [] };
-
-                    if (imageSources && imageSources.length > 0) {
-                        data.image = imageSources[0];
-                    }
-
-                    if (scripts && scripts.length > 0) {
-                        data.scripts = scripts;
-                        console.log(data)
-                    }
-                    
-                    return data
-                } catch (fileReadError) {
-                    console.error(`Error reading file ${file}: ${fileReadError}`);
-                    return null;
-                }
-            })
-        );
-    } catch (dirReadError) {
-        console.error(`Error reading directory ${type}: ${dirReadError}`);
+        const data = await Promise.all(files.map(async file => {
+            const fileData = await processFilePreviews(directory, file, category)
+            switch (mode) {
+                case "content":
+                    return fileData?.content;
+                case "preview":
+                    return fileData?.preview;
+                default:
+                    return fileData.preview;
+            }
+        }));
+        //filter out null values
+        return data.filter(d => d);
+    } catch (error) {
+        console.error(`Error reading directory '${category}': ${error}`);
         return [];
+    }
+}
+
+/**
+ * Processes an individual file. If it's a markdown file, reads its contents and extracts data.
+ * @param {string} directory - The directory path.
+ * @param {string} file - The file name.
+ * @param {string} category - The category type representing the subdirectory to read from.
+ * @returns {Promise<Object|null>} - An object containing file data or null if not a markdown file or on error.
+ */
+async function processFilePreviews(directory, file, category) {
+    if (!file.endsWith('.md')) return null;
+
+    try {
+        const filePath = path.join(directory, file);
+        const content = await fs.promises.readFile(filePath, 'utf8');
+        const preview = extractPreview(content);
+        const { imageSources, title, scripts } = parseMarkdown(content);
+        const titlePath = path.basename(file, '.md');
+
+        const data = {
+            post_title: title,
+            title: titlePath,
+            preview,
+            url: `writing/${category}_${titlePath}`,
+            imageSources,
+            scripts: scripts || []
+        };
+
+        if (imageSources?.length > 0) {
+            data.image = imageSources[0];
+        }
+
+        return {
+            preview: data, content: {
+                ...data,
+                content: `${content}`
+            }
+        };
+    } catch (error) {
+        console.error(`Error reading file '${file}': ${error}`);
+        return null;
     }
 }
 
@@ -101,27 +126,26 @@ function extractPreview(content) {
 async function buildJSON() {
     console.log("PREBUILDING JSON");
     try {
-        const returnData = {};
+        const previewData = {};
+        let contentData = [];
         const categories = await getCategories();
         //ignore these categories
         const ignoredCategories = ['images', "KJV-Bible"];
         const cleanedCategories = categories.filter(category => !ignoredCategories.includes(category))
-       
-        for (const category of cleanedCategories) {
-            console.log(`Processing category: ${category}`);
-            returnData[category] = await readFiles(category);
-            //remove null values
-            returnData[category] = returnData[category].filter(data => data);
 
-            //log the length of each category
-            console.log(`Category ${category} has ${returnData[category].length} items`);
+        for (const category of cleanedCategories) {
+            previewData[category] = await processFiles(category, 'preview');
+            contentData = [...await processFiles(category, 'content'), ...contentData];
         }
 
+
         // Output the return data to a JSON file
-        const json = JSON.stringify(returnData, null, 2);
-        await fs.promises.writeFile(`${baseUrl}/posts.json`, json, 'utf8');
+        const previewJson = JSON.stringify(previewData, null, 2);
+        const contentJson = JSON.stringify(contentData, null, 2);
+        await fs.promises.writeFile(`${baseUrl}/posts.json`, previewJson, 'utf8');
+        await fs.promises.writeFile(`${baseUrl}/content.json`, contentJson, 'utf8');
         console.log(`File is written successfully!`);
-        return returnData;
+        return previewData;
     } catch (error) {
         console.error(`Error in prebuildJSON: ${error}`);
     }
@@ -153,7 +177,7 @@ function parseMarkdown(markdown) {
     //get the first h1 or h2 tag and use that as the title
     const title = $('h1, h2').first().text();
 
-    
+
     return { html, imageSources, title, scripts }
 }
 

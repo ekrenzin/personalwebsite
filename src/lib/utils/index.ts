@@ -1,5 +1,6 @@
 const baseUrl = '/writing';
 
+
 export const fetchMarkdownPosts = async (fetch) => {
     try {
         const markdownJson = await fetch(`${baseUrl}/posts.json`);
@@ -150,4 +151,36 @@ function extractTitle(markdown: string) {
         }
     }
     return title;
+}
+/**
+ * Search through posts based on a given search term.
+ * @param {Function} fetch - The fetch function to make HTTP requests.
+ * @param {string} searchTerm - The term to search for in the posts.
+ * @return {Promise<Array>} - A promise that resolves to an array of matching posts.
+ */
+export async function searchPosts(fetch, searchTerm) {
+    try {
+        // Fetch the content from the server
+        const response = await fetch(`${baseUrl}/content.json`);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        // Parse the response as JSON
+        const posts = await response.json();
+
+        // Filter posts based on the search term
+        const lowercasedSearchTerm = searchTerm.toLowerCase();
+        const filteredPosts = posts.filter(post => {
+            // Assuming each post object has properties like title, content, etc.
+            // Adjust the fields to search based on your post object structure
+            return post.title.toLowerCase().includes(lowercasedSearchTerm) ||
+                   post.content.toLowerCase().includes(lowercasedSearchTerm);
+        });
+
+        return filteredPosts;
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        throw error; // Or handle error as per your application's error handling policy
+    }
 }

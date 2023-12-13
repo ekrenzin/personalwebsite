@@ -31,6 +31,7 @@ export function loadHtml(data: string) {
     try {
         const cleanHtml = DOMPurify.sanitize(data);
         const htmlContent = parse(cleanHtml, { renderer });
+        //remove html tags
         return htmlContent;
     } catch (err) {
         return parse(data, { renderer });
@@ -104,6 +105,7 @@ export function cleanMDParsed(text: string) {
     $('h2').each(function (i, elem) {
         $(this).replaceWith('');
     });
+
 
     //now return the cleaned text
     htmlContent = $.html();

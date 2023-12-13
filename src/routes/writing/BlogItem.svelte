@@ -14,6 +14,8 @@
 		scripts: []
 	};
 	export let index: number;
+	export let showImages = true;
+
 	let article: HTMLElement;
 
 	const hue = tweened(0, { duration: 100 });
@@ -101,7 +103,7 @@
 					</button>
 				</a>
 			</div>
-
+			{#if showImages}
 			{#key intersecting}
 				{#if markdownContent.imageSources.length > 0}
 					<div in:fade class="image-preview-container">
@@ -118,6 +120,7 @@
 					{/await}
 				{/if}
 			{/key}
+			{/if}
 			<slot />
 		</article>
 	{/if}
