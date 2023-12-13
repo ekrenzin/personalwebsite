@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { WebGLRenderer, Scene, PerspectiveCamera, Vector2 } from 'three';
 	import TWEEN from '@tweenjs/tween.js';
-	import { avatarCamera, avatarScene, avatarModel, avatarRenderer } from './AvatarScene';
+	import { avatarCamera, avatarScene, avatarRenderer } from './AvatarScene';
 	import { updateHeadRotation } from './AvatarHead';
 
 	let canvas: HTMLCanvasElement;
@@ -95,8 +95,8 @@
 	canvas {
 		width: 200px;
 		height: 200px;
-		position: fixed;
-		bottom: 0;
+		position: absolute;
+		top: 0;
 		right: 0;
 		user-select: none;
 		pointer-events: auto;

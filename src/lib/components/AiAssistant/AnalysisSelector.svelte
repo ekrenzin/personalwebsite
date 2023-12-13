@@ -19,7 +19,6 @@
     onMount(() => {
         const updateSelection = () => {
             selectedText = window.getSelection().toString();
-            console.log("Selected text: ", selectedText);
             if (!selectedText) {
                 setTimeout(() =>{
                     storedSeletedText = "";

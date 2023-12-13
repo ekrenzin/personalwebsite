@@ -3,7 +3,16 @@ import { Scene,  Object3D,  Camera, WebGLRenderer, AmbientLight, DirectionalLigh
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import type { GLTF } from "three/examples/jsm/loaders/GLTFLoader.js";
 
-const avatarHeadPositionBase = { x: Math.PI/8, y: -Math.PI/26, z: -Math.PI/36 };
+/**
+ * Base position for avatar head in Euler angles.
+ * @type {{x: number, y: number, z: number}}
+ */
+const avatarHeadPositionBase = {
+    x: 0.01864011450329834, 
+    y: 0.4059150385232674, 
+    z: 0.07616496161387079 
+};
+
 
 const avatarScene = writable<Scene>();
 const avatarModel = writable<GLTF>();
@@ -39,11 +48,12 @@ function loadAvatar(scene: THREE.Scene, lights: THREE.Object3D) {
     loader.load(
         '/my_head.glb',
         function (gltf: GLTF) {
-            gltf.scene.position.y = -5.7;
+            gltf.scene.position.y = -5.5;
             gltf.scene.position.z = -1;
-            gltf.scene.position.x = 0.25;
+            gltf.scene.position.x = 1.8;
+            gltf.scene.rotation.y = -Math.PI/4;
 
-            gltf.scene.scale.set(8, 8, 8);
+            gltf.scene.scale.set(5, 5, 5);
             avatarModel.set(gltf);
             scene.add(gltf.scene);
 
@@ -51,6 +61,7 @@ function loadAvatar(scene: THREE.Scene, lights: THREE.Object3D) {
                 //point the lights at the head
                 const head = gltf.scene.getObjectByName('Head');
                 if (!head) return;
+                
                 lights.lookAt(head.position);
                 head.rotation.set(avatarHeadPositionBase.x, avatarHeadPositionBase.y, avatarHeadPositionBase.z);
             } catch (error) {

@@ -32,7 +32,6 @@ function updateHeadRotation(mouse: Vector2, camera: THREE.Camera) {
         const newHeadRotation = head.rotation.clone();
         //set the head back to the original rotation
         head.rotation.copy(originalHeadRotation);
-
         // Tween for head
         previousTween = new Tween(head.rotation)
             .to({ x: newHeadRotation.x, y: newHeadRotation.y, z: newHeadRotation.z }, 100)

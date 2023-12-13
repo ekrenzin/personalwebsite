@@ -38,14 +38,14 @@
 	text-gray-50
 	md:text-6xl
 	pb-4">Writing</h1>
-    <h2 class="text-2xl font-medium mb-6 capitalize">
+    <h2 class="text-2xl font-medium mb-6 capitalize text-color-cyan">
         reflection, philosphy, and art.
     </h2>
-    <p class="text-gray-400">
+    <p >
 		Creativity finds expression in our bond with technology, where the art of storytelling is reflected as much by how it is presented as the philosophy behind it.
 		</p>
 		
-	<p class="text-gray-400">
+	<p >
 		When viewing this site, and my work, please keep in mind the technology wrapping it. The purpose is in the presentation.
 		My poetry, musings, essays, and thoughts are the threads weaving together to form a digital canvas to paint an idea.
 		With that said, much of this is graphic, it is intended to be provactive in order to "prompt" a response.
@@ -57,14 +57,14 @@
 		experience a sense of other, thus acknowleding the existence of nascent AI through
 		an interaction with present technology.
     </p>
-    <p class="text-gray-400">
-		<b>
+    <p >
+		<i>
         Do not take anything you read here as serious, beyond the experience of technology.
-	</b>
+	</i>
     </p>
-	<button id="disco-button" class="m-auto bottom-0 left-0 m-4 bg-white hover:bg-pink-600 text-black py-2 px-4 rounded"
+	<!-- <button id="disco-button" class="m-auto bottom-0 left-0 m-4 bg-white hover:bg-pink-600 text-black py-2 px-4 rounded"
 	
-on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}>Turn Lights {$writingSettings.discoColors ? "off" : "on"}</button>
+on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}>Turn Lights {$writingSettings.discoColors ? "off" : "on"}</button> -->
 </section>
 <Videos />
 {#each categories as category}
@@ -117,25 +117,17 @@ on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}
 	.post {
 		width: 100%;
 	}
-	.category-nav {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 1rem;
-		padding: 1rem;
+	
+	p {
+		color: var(--text-color);
 	}
 
-	.category-button {
-		padding: 0.5rem 1rem;
-		border: none;
-		cursor: pointer;
-		color: #fff;
-		border-radius: 5px;
-		text-decoration: underline;
-		transition: 0.5s;
+	h2 {
+		font-weight: 700;
+		color: skyblue
 	}
 
-	.category-button:hover{
-		transform: scale(1.1);
+	i {
+		opacity: 0.8;
 	}
 </style>

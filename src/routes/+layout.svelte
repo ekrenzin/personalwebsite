@@ -7,14 +7,28 @@
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
 	import { page } from '$app/stores';
 	import Toasts from '$lib/components/Toasts/ToastsHandler.svelte';
+	import Avatar from '$lib/components/Avatar/Avatar.svelte';
 	
 	let routeID = "";
 	let url = "";
-
+	const avatar_urls = ["writing", "demo"];
 	page.subscribe((value) => {
 		url = value.url.href || "";
 		routeID = value.route.id || "";
 	});
+
+	function processAvatarUrls(){
+		let shouldShow = false;
+		//if the url contains any of the avatar urls, return true
+		for(let i = 0; i < avatar_urls.length; i++){
+			if(url.includes(avatar_urls[i])){
+				shouldShow = true;
+				break;
+			}
+		}
+		console.log("should show: " + shouldShow);
+		return shouldShow;
+	}
 </script>
 
 <svelte:head>
@@ -45,6 +59,9 @@
 	{#key routeID}
 	{#if !url.includes("writing")}
 		<CommentArea source={routeID} />
+	{/if}
+	{#if processAvatarUrls()}
+		<Avatar />
 	{/if}
 	{/key}
 	<Footer />
