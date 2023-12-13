@@ -18,6 +18,7 @@
 	});
 
 	function processAvatarUrls(){
+		return true;
 		let shouldShow = false;
 		//if the url contains any of the avatar urls, return true
 		for(let i = 0; i < avatar_urls.length; i++){

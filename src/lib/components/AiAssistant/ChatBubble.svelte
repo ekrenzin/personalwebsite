@@ -2,7 +2,7 @@
 	import ChatModal from './ChatModal.svelte';
 	import { showChat } from './chatStore';
 	import { onMount } from 'svelte';
-	import ChatIcon from '$lib/assets/icons/chat.svg';
+	import Avatar from '$lib/components/Avatar/Avatar.svelte';
 
 	function toggleChatHistory() {
 		showChat.update((value) => !value);
@@ -22,10 +22,10 @@
 
 <div class="flex flex-col items-end">
 	<button
-		class="fab"
+		class="chat-bubble bg-blue-500 text-white p-2 rounded-full shadow-lg focus:outline-none hover:bg-blue-600 transition"
 		on:click={toggleChatHistory}
 	>
-	<img class='icon-button' src={ChatIcon} alt="Chat" />
+		Chat with my AI
 	</button>
 </div>
 
@@ -33,3 +33,13 @@
 	<ChatModal {toggleChatHistory} />
 {/if}
 
+
+<style>
+	.chat-bubble {
+		z-index: 10000;
+		/* Additional styling if needed */
+		position: fixed;
+		bottom: 1rem;
+		right: 1rem;
+	}
+</style>

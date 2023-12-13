@@ -8,9 +8,9 @@ import type { GLTF } from "three/examples/jsm/loaders/GLTFLoader.js";
  * @type {{x: number, y: number, z: number}}
  */
 const avatarHeadPositionBase = {
-    x: 0.01864011450329834, 
-    y: 0.4059150385232674, 
-    z: 0.07616496161387079 
+    x: 0, 
+    y: -0.4059150385232674, 
+    z: 0
 };
 
 
@@ -48,12 +48,11 @@ function loadAvatar(scene: THREE.Scene, lights: THREE.Object3D) {
     loader.load(
         '/my_head.glb',
         function (gltf: GLTF) {
-            gltf.scene.position.y = -5.5;
+            gltf.scene.position.y = -6;
             gltf.scene.position.z = -1;
-            gltf.scene.position.x = 1.8;
-            gltf.scene.rotation.y = -Math.PI/4;
+            gltf.scene.position.x = 0.5;
 
-            gltf.scene.scale.set(5, 5, 5);
+            gltf.scene.scale.set(8, 8, 8);
             avatarModel.set(gltf);
             scene.add(gltf.scene);
 

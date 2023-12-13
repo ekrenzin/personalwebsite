@@ -95,8 +95,8 @@
 	canvas {
 		width: 200px;
 		height: 200px;
-		position: absolute;
-		top: 0;
+		position: fixed;
+		bottom: 0;
 		right: 0;
 		user-select: none;
 		pointer-events: auto;
