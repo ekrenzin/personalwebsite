@@ -47,10 +47,21 @@
   ],
   "poems": [
     {
+      "post_title": "Inflate and Desaturate",
+      "title": "0_Inflate_and_desaturate",
+      "preview": "<div align=\"center\">\n\n## Inflate and Desaturate\n\nMuch of the time, when I look at art, it leaves me deeply depressed. \nI see colors and they make me sad. When on a walk, I pause,\nto glance up at the s...",
+      "url": "writing/poems_0_Inflate_and_desaturate",
+      "imageSources": [
+        "/writing/images/inflate.png"
+      ],
+      "scripts": [],
+      "image": "/writing/images/inflate.png"
+    },
+    {
       "post_title": "ABC",
-      "title": "11_30_2023",
+      "title": "ABC",
       "preview": "## ABC\n\nDate: 11-30-2023\n\nAdam awakens, ancestral Angel,\nAmber ambrosia, apples abound, \nAphrodite's allure, astonishing.\n\n\nBeautiful baby born believing.\nBrave beneath blue blankets,\nBastard becomes ...",
-      "url": "writing/poems_11_30_2023",
+      "url": "writing/poems_ABC",
       "imageSources": [
         "https://workers-ai.eankrenzin.workers.dev/?key=image-1701334876420.png"
       ],
@@ -135,15 +146,15 @@
       "image": "/writing/images/fumes.png"
     },
     {
-      "post_title": "Inflate and Desaturate",
-      "title": "Inflate_and_desaturate",
-      "preview": "<div align=\"center\">\n\n## Inflate and Desaturate\n\nMuch of the time, when I look at art, it leaves me deeply depressed. \nI see colors and they make me sad. When on a walk, I pause,\nto glance up at the s...",
-      "url": "writing/poems_Inflate_and_desaturate",
+      "post_title": "Reluctant Recluse",
+      "title": "I_shut_my_doors",
+      "preview": "## Reluctant Recluse\n\nI shut my doors, threw the key out to sea.\nI decree to all: I refuse to see!\nYet still they come in flocks, like birds, to me,\nexpecting eyes and ears complete and free.\n\nNow pea...",
+      "url": "writing/poems_I_shut_my_doors",
       "imageSources": [
-        "/writing/images/inflate.png"
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1702491389997.png"
       ],
       "scripts": [],
-      "image": "/writing/images/inflate.png"
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1702491389997.png"
     },
     {
       "post_title": "Left Behind",
@@ -727,7 +738,7 @@
     {
       "post_title": "Structure",
       "title": "Structure",
-      "preview": "## Structure\n  \n  removed\n\n...",
+      "preview": "## Structure\n  \n> The following piece contains explicit content and may not be suitable for all audiences. It offers a commentary on the raw thoughts experienced in New York City, a place that not onl...",
       "url": "writing/stories_Structure",
       "imageSources": [
         "/writing/images/side_walk_dots.png"

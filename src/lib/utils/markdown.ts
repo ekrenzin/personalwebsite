@@ -72,3 +72,41 @@ export function cleanMD(text: string) {
     
     return htmlContent;
 }
+
+export function cleanMDParsed(text: string) {
+    //returns cleaned md, but parses out the h2, h1, h3, h4, h5, h6 tags into headers, images into images, and links into links
+    let htmlContent = parse(text);
+    const $ = cheerio.load(htmlContent);
+
+    //remove images
+    $('img').each(function (i, elem) {
+        $(this).replaceWith('');
+    });
+
+    //remove links
+    $('a').each(function (i, elem) {
+        $(this).replaceWith('');
+    });
+
+    //find headers
+    let headers: string[] = [];
+    $('h1').each(function (i, elem) {
+        headers.push($(this).text());
+    });
+    $('h2').each(function (i, elem) {
+        headers.push($(this).text());
+    });
+
+    //now remove headers
+    $('h1').each(function (i, elem) {
+        $(this).replaceWith('');
+    });
+    $('h2').each(function (i, elem) {
+        $(this).replaceWith('');
+    });
+
+    //now return the cleaned text
+    htmlContent = $.html();
+    
+    return { htmlContent, headers };
+}

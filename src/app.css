@@ -7,6 +7,7 @@
   --secondary-color: #000;
   --font-color: #e1e1ff;
   --bg-color: rgb(30, 30, 30);
+  --button-bg: rgb(40, 50, 80);
   --secondary-bg-color: rgb(10, 10, 10);
   --heading-color: #818cab;
 
@@ -209,4 +210,14 @@ h3 {
 .flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.action-button {
+  background-color: var(--button-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.action-button:hover {
+  filter: brightness(1.2);
 }
