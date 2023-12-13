@@ -172,6 +172,11 @@ body {
   transition: 0.1s;
 }
 
+.frosted-clear{ /* Adjust the background color and opacity */
+  backdrop-filter: blur(10px); /* The blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional: adds a border for more effect */
+}
 
 .frosted {
   backdrop-filter: blur(10px);

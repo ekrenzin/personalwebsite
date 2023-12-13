@@ -22,6 +22,7 @@
 	export let data: blogData;
 	let categories = Object.keys(data);
 	writingSettings.subscribe(console.log)
+	
 </script>
 
 <svelte:head>
@@ -29,8 +30,15 @@
 	<meta name="description" content="Ean Krenzin-Blank's personal website" />
 </svelte:head>
 <section class="max-w-sm mx-auto text-center my-12">
-    <h1 class="text-8xl font-semibold mb-4">Writing</h1>
-    <h2 class="text-2xl font-medium mb-6">
+    <h1 class="
+	text-4xl
+	tracking-tight
+	font-extrabold
+	sm:text-5xl
+	text-gray-50
+	md:text-6xl
+	pb-4">Writing</h1>
+    <h2 class="text-2xl font-medium mb-6 capitalize">
         reflection, philosphy, and art.
     </h2>
     <p class="text-gray-400">
@@ -66,10 +74,16 @@ on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}
     {/if}
 </section>
 {/each}
-<CommentArea source="writing" hidden={true}/>
 
 <section>
-	<h1>All Content</h1>
+	<h1 class="
+	text-4xl
+	tracking-tight
+	font-extrabold
+	sm:text-5xl
+	text-gray-50
+	md:text-6xl
+	pb-4">All Content</h1>
 {#each categories as category}
 	{#if data[category].length > 0}
 

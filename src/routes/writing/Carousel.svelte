@@ -42,7 +42,14 @@
 </script>
 
 <section id={category}>
-	<h1>{category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')} ({posts.length} total)</h1>
+	<h1 align='center' class="
+	text-4xl
+	tracking-tight
+	font-extrabold
+	sm:text-2xl
+	text-gray-50
+	md:text-3xl
+	pb-4">{category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')} ({posts.length} total)</h1>
 	{#if viewAll}
 		<div class="flex-col">
 			{#each posts as post, index}

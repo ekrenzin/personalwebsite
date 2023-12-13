@@ -7,8 +7,8 @@
               text-4xl
               tracking-tight
               font-extrabold
-              text-gray-900
               sm:text-5xl
+              text-gray-50
               md:text-6xl
             "
             >

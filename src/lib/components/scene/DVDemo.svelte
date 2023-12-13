@@ -178,11 +178,23 @@
 
 <svelte:window on:resize={windowResizeEventListener} />
 <section id="dv-js-sdk-demo">
-	<h1>Desktop Vision</h1>
+	<div class="max-w-xl mx-auto">
+	<h1
+	class="
+  text-4xl
+  tracking-tight
+  font-extrabold
+  sm:text-5xl
+  text-gray-50
+  md:text-6xl
+  pb-4
+"
+>Desktop Vision</h1>
     <p>
         Try moving the computer around with your mouse or finger. To do so, grab the move icon below
         the computer and drag it around. 
     </p>
+</div>
 	<div class="scene" bind:this={sceneContainer} />
 	<video bind:this={video} autoplay muted playsinline style="display: none" loop />
 	<div class="interactive-info">
@@ -211,18 +223,6 @@
 		min-height: 500px;
 	}
 
-	h1 {
-		margin: auto;
-		font-weight: 300;
-		font-size: 2rem;
-	}
-	p {
-		max-width: 500px;
-		margin: auto;
-		margin-bottom: 20px;
-		font-weight: 300;
-		text-align: center;
-	}
 
 	.interactive-info {
 		padding: 5%;

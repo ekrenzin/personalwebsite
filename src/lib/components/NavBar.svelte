@@ -1,11 +1,36 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import logo from '$lib/assets/logo.svg';
 
 	let showMenu: boolean = false;
-	let showDropdown = false; // New state for dropdown visibility
+	let showDropdown = false;
+	let isOffset = false;
+
+	onMount(() => {
+		// Define the function to update navbar class
+		const updateNavbarClass = () => {
+			const yOffset = window.pageYOffset || document.documentElement.scrollTop;
+
+			if (yOffset > 0) {
+				isOffset = true;
+			} else {
+				isOffset = false;
+			}
+		};
+
+		// Add scroll event listener
+		window.addEventListener('scroll', updateNavbarClass);
+
+		// Set initial state
+		updateNavbarClass();
+
+		// Return a cleanup function to be called on component destruction
+		return () => {
+			window.removeEventListener('scroll', updateNavbarClass);
+		};
+	});
 
 	let links = [
 		{
@@ -63,11 +88,11 @@
 			icon: null
 		}
 	];
-</script>
 
-<nav class="">
-	<div class="mx-auto max-w-screen-xl px-8 sm:px-12 lg:px-16 py-4">
-		<div class="flex h-20 items-center sm:justify-center justify-between">
+</script>
+<nav class:frosted-clear={showMenu || isOffset}>
+	<div class="mx-auto max-w-screen-xl px-8 sm:px-12 lg:px-16 ">
+		<div class="flex md:py-4 py-3 items-center sm:justify-center justify-between">
 			<div class="flex items-center space-x-12 sm:space-x-0">
 				<div class="flex-shrink-0">
 					<div class="mr-10">
@@ -176,15 +201,22 @@
 		</div>
 	{/if}
 </nav>
-
+<div class="nav-spacer" />
 <style>
+	.nav-spacer {
+		height: 5rem;
+	}
 	a {
 		transition: 0.2s;
 	}
 
 	nav {
 		z-index: 100;
+		position: fixed;
+		width: 100%;
 	}
+
+	
 
 	/* Desktop hover styles */
 	.dropdown:hover .dropdown-menu {
