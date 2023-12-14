@@ -27,7 +27,6 @@
 		flex-direction: column;
 		align-items: flex-start; /* Aligns bubbles to the left */
 		width: 100%;
-		max-height: calc(500px + 30vh);
 		overflow: auto;
 	}
 </style>

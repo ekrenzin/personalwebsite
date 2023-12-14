@@ -39,7 +39,7 @@
 </script>
 
 <section>
-	<h2>Comments</h2>
+	<h1>Comments</h1>
 	<!-- refresh button -->
 	{#if hidden}
 	<details>
@@ -58,8 +58,16 @@
 		{/key}
 	</details>
 	{:else}
-		<CommentList {comments} />
+		<div class="buttons">
+		<button use:tooltip title="refresh comments" class="icon-button" on:click={handleComments}>
+			<img src={RefreshIcon} alt="refresh comments" />
+		</button>
+		<button use:tooltip title="sort comments" class="icon-button" on:click={toggleSort}>
+			<img src={SortIcon} alt="sort comments" />
+		</button>
+	</div>
 		<AddCommentSection {source} {handleComments} />
+		<CommentList {comments} />
 	{/if}
 </section>
 
@@ -76,8 +84,13 @@
 		padding: 1rem;
 		margin-top: 1rem;
 		border-radius: 0.5rem;
+		text-align: center;
 	}
 
+	summary {
+		cursor: pointer;
+		text-align: center;
+	}
 	details {
 		position: relative;
 	}
@@ -93,4 +106,15 @@
 		width: 2rem;
 	}
 
+	/* max width 600 then position buttons  */
+	@media (max-width: 600px) {
+		.buttons {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 1rem;
+		}
+	}
 </style>

@@ -63,6 +63,7 @@
         Do not take anything you read here as serious, beyond the experience of technology.
 	</i>
     </p>
+	<CommentArea source="writing" hidden={true} />
 	<!-- <button id="disco-button" class="m-auto bottom-0 left-0 m-4 bg-white hover:bg-pink-600 text-black py-2 px-4 rounded"
 	
 on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}>Turn Lights {$writingSettings.discoColors ? "off" : "on"}</button> -->
