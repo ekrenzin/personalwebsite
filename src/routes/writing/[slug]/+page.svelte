@@ -60,7 +60,6 @@
 		
 
 	</div>
-	<CommentArea source={data.slug} hidden={false} />
 	<div class="flex-row">
 		{#if data && data.previousPost && data.previousPost.url}
 			<a class="previous-post" href={`/${data.previousPost.url}`}>← Previous</a>
@@ -70,6 +69,7 @@
 			<a class="next-post" href={`/${data.nextPost.url}`}>Next →</a>
 		{/if}
 	</div>
+	<CommentArea source={data.slug} hidden={false} />
 </div>
 
 <style>
