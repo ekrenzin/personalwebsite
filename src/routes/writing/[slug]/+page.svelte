@@ -2,45 +2,59 @@
 	import { loadHtml } from '$lib/utils/markdown';
 	import { showChat, sendMessage } from '$lib/components/AiAssistant/chatStore';
 	import CommentArea from '$lib/components/Comments/CommentArea.svelte';
-	import { page } from '$app/stores';  
+	import { page } from '$app/stores';
 	import PowerfulArticle from '$lib/components/PowerfulArticle.svelte';
 	import { AnalyzeWithAI, GenerateImageWithAI } from '$lib/components/AiAssistant/AnalyzeAI';
-	
+
 	//dynamically import the markdown file based on the slug
 	export let data;
-
 </script>
 
 <svelte:head>
-    <title>{data.currentPost.title || 'Ean Krenzin-Blank\'s writing'} | eankrenzin.com</title>
-    <meta name="description" content={data.currentPost.preview || 'Read Ean\'s writing, analyze with AI, and leave a comment!'} />
+	<title>{data.currentPost.title || "Ean Krenzin-Blank's writing"} | eankrenzin.com</title>
+	<meta
+		name="description"
+		content={data.currentPost.preview ||
+			"Read Ean's writing, analyze with AI, and leave a comment!"}
+	/>
 
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content={data.currentPost.title || 'Ean Krenzin-Blank\'s writing'} />
-    <meta property="og:description" content={data.currentPost.preview || 'Read Ean\'s writing, analyze with AI, and leave a comment!'} />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content={data.currentPost.image || '/writing.png'} />
-    <meta property="og:url" content={$page.url.toString()} />
-	<meta property="og:site_name" content={data.currentPost.title || 'Ean Krenzin-Blank\'s writing'} >
+	<!-- Open Graph Tags -->
+	<meta property="og:title" content={data.currentPost.title || "Ean Krenzin-Blank's writing"} />
+	<meta
+		property="og:description"
+		content={data.currentPost.preview ||
+			"Read Ean's writing, analyze with AI, and leave a comment!"}
+	/>
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content={data.currentPost.image || '/writing.png'} />
+	<meta property="og:url" content={$page.url.toString()} />
+	<meta property="og:site_name" content={data.currentPost.title || "Ean Krenzin-Blank's writing"} />
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={data.currentPost.title || 'Ean Krenzin-Blank\'s writing'} />
-    <meta name="twitter:description" content={data.currentPost.preview || 'Read Ean\'s writing, analyze with AI, and leave a comment!'} />
-    <meta name="twitter:image" content={data.currentPost.image || '/writing.png'} />
+	<!-- Twitter Card Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={data.currentPost.title || "Ean Krenzin-Blank's writing"} />
+	<meta
+		name="twitter:description"
+		content={data.currentPost.preview ||
+			"Read Ean's writing, analyze with AI, and leave a comment!"}
+	/>
+	<meta name="twitter:image" content={data.currentPost.image || '/writing.png'} />
 
-    <!-- Other Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <link rel="canonical" href={$page.url.toString()} />
-    <meta name="author" content="Ean Krenzin-Blank" />
-    <meta name="keywords" content={`AI, Writing, Analysis, Comments, Ean Krenzin-Blank, ${data.currentPost.title}`} />
+	<!-- Other Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8" />
+	<link rel="canonical" href={$page.url.toString()} />
+	<meta name="author" content="Ean Krenzin-Blank" />
+	<meta
+		name="keywords"
+		content={`AI, Writing, Analysis, Comments, Ean Krenzin-Blank, ${data.currentPost.title}`}
+	/>
 </svelte:head>
 
 <div class="container mx-auto page p-4 text-gray-300 px-10">
 	<!-- if the page.route includes poem -->
-	<div align={$page.url.toString().includes("poem") ? "center" : "left"}>
-			<PowerfulArticle html={loadHtml(data.post)} />
+	<div align={$page.url.toString().includes('poem') ? 'center' : 'left'}>
+		<PowerfulArticle html={loadHtml(data.post)} />
 	</div>
 
 	<!-- centered button to go back -->
@@ -57,8 +71,6 @@
 		>
 			Generate Image with AI
 		</button>
-		
-
 	</div>
 	<div class="flex-row">
 		{#if data && data.previousPost && data.previousPost.url}
@@ -69,7 +81,9 @@
 			<a class="next-post" href={`/${data.nextPost.url}`}>Next →</a>
 		{/if}
 	</div>
-	<CommentArea source={data.slug} hidden={false} />
+	{#key data.slug}
+		<CommentArea source={data.slug} hidden={false} />
+	{/key}
 </div>
 
 <style>
@@ -95,5 +109,4 @@
 	button {
 		transition: 0.5s;
 	}
-
 </style>
