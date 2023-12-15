@@ -19,11 +19,22 @@ function runScriptPlugin() {
         console.error(err)
       }
 
+      const ignoredFiles = [
+        'posts.json',
+        'content.json',
+      ];
       // Check if the changed file is posts.json
       if (file.endsWith('posts.json')) {
         // If it's posts.json, do nothing
         return;
       }
+
+      // Check if the changed file is content.json
+      if (file.endsWith('content.json')) {
+        // If it's content.json, do nothing
+        return;
+      }
+      
       // Set the flag before running the script
       fs.writeFileSync(flagFilePath, '');
       const process = spawn('node', ['prebuild.js'], { stdio: 'inherit' });
