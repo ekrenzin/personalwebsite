@@ -14,29 +14,7 @@ To proceed, let us assess first the cave itself. While apt at the time, it leave
 
 Hopefully, this elucidates my argument, but if not, consider now your own perspective, as a viewer of the matrix. Does it not plant a seed of doubt? That perhaps you are being observed too? 
 
-Consider the scenario where you enter this game and explain the simulation to the people of the world. This can go one of two general directions. Either they believe you, or  they do not believe you.
-
-Option A: They believe you
-
-Given that the people of this world believe you, what then? You have informed them of their own tragedy, and they believed you. You have relinquished your burden to the miserable sops of the matrix, and can happily return to your own reality where you exist. You continue to observe your own reality, but then someone comes to you and claims to be from outside of the matrix. Do you believe them? Given your experience, the least hypocritical response would be to believe their claims. What then? Your “savior” relinquishes their burden unto you, and you have been enlightened of the existence of the cave. Notice however, that we have encountered a tautology. By informing others of the existence of the cave, you inevitably realize that you too, are within the cave. Indeed, it is impossible to gain knowledge without feeling the tightening of the shackles around one’s wrists.
-
-So then, at this stage, what are you?
-
-Option B: They do not believe you
-
-The people of the matrix instead reject your revelation and you return to your world dreary and burdened. Rather than a weight lifted, you experience frustration at the inability for the people of the cave to synthesize your truth, or perhaps your own inadequacies. Now someone proposes that you too are inside of the matrix, however you reject their musings. Instead, you opt to consider your existence to be the pinnacle of realities, the upper echelon of reality, the final turtle at the bottom of the others. Again, we see a tautology, which takes a different path but ultimately results in the same outcome. 
-
-Absurdly, one will realize that ANY combination will result in a tautology, and thus position the enlightened individual as one who is shackled. Ironically too, the more knowledge they gain, the more they will become aware of their shackles. 
-
-This is my question, what are the shackles? It may seem wasteful to spend time pondering simply to arrive back where we started, but consider what we have learned.
-
-We have learned that there is no way to prove existence to others, and that our burden is something that grows as we learn more. This is a revelation. The burden is growth. 
-
-Actually, it’s by no means a novel revelation. Religion frequently attempts to restrict the pursuit of knowledge. That is to say, one purpose of religion is to ward off the spiraling existentialism. What an absurd idea, that the fruit of our effort is a Sin.
-
-So what the hell does any of this have to do with a dinner party? Before we return to that, consider an escaped prisoner once more. But imagine that this escaped prisoner never returns to the cave. When greeted by the viewer from outside the matrix, they accept it blindly. They, rather than concerned about their own existence, take delight in their shared experience. To this escapee, is it not wonderful to know that the guards were also blind? The now freed prisoner is grateful for the simulation. It’s not a shackle to the ground, but rather a link to every other conscience. They have proven that they exist, as a higher being deemed them worthy of conversation. They know this higher being will inevitably experience a similar fate, at least until the rules of the world change, ie no time.
-
-Have we not strayed further from the dinner party? In fact, we haven’t. We have arrived instead, at the laughter in the room at my own expense. The chorus of sounds which are warm colors dancing through the air. The friendship we share, and the knowledge that we come across. To strip away the shackles of the cave, one must only consider the chains to be links to other prisoners, and we are free to wander until our hearts give out.
+Have we not strayed from the dinner party? In fact, we haven’t. We have arrived instead, at the laughter in the room at my own expense. The chorus of sounds which are warm colors dancing through the air. The friendship we share, and the knowledge that we come across. To strip away the shackles of the cave, one must only consider the chains to be links to other prisoners, and we are free to wander until our hearts give out.
 
 
 ![cave](/writing/images/cave.png)
