@@ -130,7 +130,7 @@ async function buildJSON() {
         let contentData = [];
         const categories = await getCategories();
         //ignore these categories
-        const ignoredCategories = ['images', "KJV-Bible"];
+        const ignoredCategories = ['images'];
         const cleanedCategories = categories.filter(category => !ignoredCategories.includes(category))
 
         for (const category of cleanedCategories) {
