@@ -26,18 +26,34 @@ renderer.blockquote = (quote) => {
     return `<blockquote>${quote}</blockquote>`;
 };
 
-// Use the custom renderer in the parse function
+
+/**
+ * Loads HTML content, sanitizes it, and processes it with a custom renderer.
+ * Falls back to plain text processing if an error occurs.
+ * @param {string} data - The HTML data to be processed.
+ * @returns Processed content using the custom renderer.
+ */
 export function loadHtml(data: string) {
     try {
-        //test script
+        // Sanitize and process HTML content
         const cleanHtml = sanitize(data);
-        const htmlContent = parse(cleanHtml, { renderer });
-        //remove html tags
-        return htmlContent;
+        return parse(cleanHtml, { renderer });
     } catch (err) {
         console.log(err);
-        // return parse(data, { renderer });
+        // Convert to plain text by stripping HTML tags
+        const plainText = stripHtmlTags(data);
+        // Process plain text with the custom renderer
+        return parse(plainText, { renderer });
     }
+}
+
+/**
+ * Strips HTML tags from a string.
+ * @param {string} html - The string containing HTML.
+ * @returns The string without HTML tags.
+ */
+function stripHtmlTags(html) {
+    return html.replace(/<\/?[^>]+(>|$)/g, "");
 }
 
 
