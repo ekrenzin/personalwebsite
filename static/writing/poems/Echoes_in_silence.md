@@ -22,7 +22,7 @@ In her seclusion, her cardiac essence ossified, overthrown.
 
 No vocational odyssey, nor in kinship's bonds does she reside,  
 No fraternal fervor, around her, sentimentality will hide.  
-A filial concatenation, cleaved by fabrications' guise,  
+A filial concatenation, cleaved by angers' guise,  
 In her abdication, a spirit in taciturn lamentation dies.
 
 In the waning light, shadows whisper of a tale untold,  

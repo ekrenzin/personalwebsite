@@ -1,7 +1,6 @@
 
 import { parse, Renderer } from 'marked';
 import cheerio from 'cheerio';
-import DOMPurify from 'dompurify';
 
 const renderer = new Renderer();
 
@@ -29,18 +28,19 @@ renderer.blockquote = (quote) => {
 // Use the custom renderer in the parse function
 export function loadHtml(data: string) {
     try {
-        const cleanHtml = DOMPurify.sanitize(data);
+        const cleanHtml = parse(data);
         const htmlContent = parse(cleanHtml, { renderer });
         //remove html tags
         return htmlContent;
     } catch (err) {
+        console.log(err);
         return parse(data, { renderer });
     }
 }
 
 
 export function cleanMD(text: string) {
-    let htmlContent = parse(text);
+    let htmlContent = loadHtml(parse(text));
     const $ = cheerio.load(htmlContent);
     
     //use cheerio to remove all div align center

@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
     import { loadHtml } from '$lib/utils/markdown';
+	import { Render } from 'svelte-purify';
 
 	type Message = {
 		MessageId: number;
@@ -70,11 +71,11 @@
     <div class="thread">
             <div class="message prompt">
                 <h3>Human:</h3>
-                {@html loadHtml(message.Prompt)}
+				<Render html={loadHtml(message.Prompt)} />
             </div>
             <div class="message result">
                 <h3>AI:</h3>
-                {@html loadHtml(message.Result)}
+				<Render html={loadHtml(message.Result)} />
             </div>
         </div>
 	{/each}
