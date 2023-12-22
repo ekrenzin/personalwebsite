@@ -1,17 +1,29 @@
 <script lang="ts">
-	import InfiniteAiHistory from '$lib/components/AiAssistant/InfiniteAIHistory.svelte';
-	import EmploymentHistory from '../me/EmploymentHistory.svelte';
-	import FeaturedProjects from './FeaturedProjects.svelte';
 	import TitleHeader from './TitleHeader.svelte';
 	import VideoHero from './VideoHero.svelte';
-	import Me from '../me/+page.svelte';
-	import Demo from '../demo/+page.svelte';
-	import Contact from '../contact/+page.svelte';
+	import Contact from '../contact/Contact.svelte';
 </script>
 
 <svelte:head>
-	<title>Ean Krenzin-Blank | eankrenzin.com</title>
-	<meta name="description" content="Ean Krenzin-Blank's personal website" />
+    <!-- Primary Meta Tags -->
+	<meta name="description" content="Ean Krenzin-Blank: Innovating in VR, Web, Mobile, and Desktop Development.">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://eankrenzin.com/">
+	<meta property="og:title" content="Ean Krenzin-Blank - Software Engineer">
+	<meta property="og:description" content="Ean Krenzin-Blank: Innovating in VR, Web, Mobile, and Desktop Development.">
+	<meta property="og:image" content="/me.jpeg">
+	<meta property="og:site_name" content="Ean Krenzin-Blank">
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://eankrenzin.com/">
+	<meta name="twitter:title" content="Ean Krenzin-Blank - Software Engineer">
+	<meta name="twitter:description" content="Ean Krenzin-Blank: Innovating in VR, Web, Mobile, and Desktop Development.">
+	<meta name="twitter:image" content="/me.jpeg">
+	<meta name="twitter:site" content="@ekrenzin8">
+	<meta name="twitter:creator" content="@ekrenzin8">
 </svelte:head>
 <div class="relative overflow-hidden container">
 		<img

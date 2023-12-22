@@ -1,4 +1,5 @@
 import { writable, get, type Writable } from "svelte/store";
+import { browser } from '$app/environment';
 
 interface WritingSettings {
     writing?: Array<string>;
@@ -24,7 +25,7 @@ try {
     if (!lsWritingSettings) throw new Error("No writingSettings in local storage");
     writingSettings.set(JSON.parse(lsWritingSettings));
 } catch (error) {
-    console.error("Error in writingStore.ts:", error);
+    console.warn("Error in writingStore.ts:", error);
     const settings: WritingSettings = {
         writing: [],
         error: "none",
