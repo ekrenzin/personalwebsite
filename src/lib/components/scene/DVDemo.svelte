@@ -175,7 +175,9 @@
         }
 	}
 </script>
-
+<svelte:head>
+	<script src="https://js.desktop.vision/three/v3.0.1/bundle.min.js" async></script>
+</svelte:head>
 <svelte:window on:resize={windowResizeEventListener} />
 <section id="dv-js-sdk-demo">
 	<div class="max-w-xl mx-auto">
