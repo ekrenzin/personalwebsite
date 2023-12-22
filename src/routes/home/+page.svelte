@@ -4,6 +4,9 @@
 	import FeaturedProjects from './FeaturedProjects.svelte';
 	import TitleHeader from './TitleHeader.svelte';
 	import VideoHero from './VideoHero.svelte';
+	import Me from '../me/+page.svelte';
+	import Demo from '../demo/+page.svelte';
+	import Contact from '../contact/+page.svelte';
 </script>
 
 <svelte:head>
@@ -27,6 +30,9 @@
 		<!-- <FeaturedProjects /> -->
 		<!-- Title -->
 </div>
+<!-- <Me /> -->
+<!-- <Demo /> -->
+<Contact />
 
 <style>
 	.container {

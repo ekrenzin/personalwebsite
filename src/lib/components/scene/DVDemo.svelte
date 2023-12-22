@@ -197,14 +197,14 @@
 </div>
 	<div class="scene" bind:this={sceneContainer} />
 	<video bind:this={video} autoplay muted playsinline style="display: none" loop />
-	<div class="interactive-info">
+	<!-- <div class="interactive-info">
 		<button
 			class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded"
 			on:click={restartScene}
 		>
 			Reset
 		</button>
-	</div>
+	</div> -->
 </section>
 
 <style>
