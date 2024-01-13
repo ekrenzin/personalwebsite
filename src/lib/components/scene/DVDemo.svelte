@@ -25,7 +25,12 @@
 
 	onMount(loadedScript);
 	function loadedScript() {
-		console.log('Loaded the Desktop Vision JS SDK');
+    if (!window.DesktopVision) {
+      console.log('Desktop Vision JS SDK not loaded')
+      //try again in 1 second
+      setTimeout(loadedScript, 1000)
+      return
+    }
 		const { ManagedComputer } = window.DesktopVision.loadSDK(
 			THREE,
 			XRControllerModelFactory,

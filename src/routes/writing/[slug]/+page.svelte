@@ -10,46 +10,6 @@
 	export let data;
 </script>
 
-<svelte:head>
-	<title>{data.currentPost.title || "Ean Krenzin-Blank's writing"} | eankrenzin.com</title>
-	<meta
-		name="description"
-		content={data.currentPost.preview ||
-			"Read Ean's writing, analyze with AI, and leave a comment!"}
-	/>
-
-	<!-- Open Graph Tags -->
-	<meta property="og:title" content={data.currentPost.title || "Ean Krenzin-Blank's writing"} />
-	<meta
-		property="og:description"
-		content={data.currentPost.preview ||
-			"Read Ean's writing, analyze with AI, and leave a comment!"}
-	/>
-	<meta property="og:type" content="article" />
-	<meta property="og:image" content={data.currentPost.image || '/writing.png'} />
-	<meta property="og:url" content={$page.url.toString()} />
-	<meta property="og:site_name" content={data.currentPost.title || "Ean Krenzin-Blank's writing"} />
-
-	<!-- Twitter Card Tags -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content={data.currentPost.title || "Ean Krenzin-Blank's writing"} />
-	<meta
-		name="twitter:description"
-		content={data.currentPost.preview ||
-			"Read Ean's writing, analyze with AI, and leave a comment!"}
-	/>
-	<meta name="twitter:image" content={data.currentPost.image || '/writing.png'} />
-
-	<!-- Other Tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta charset="UTF-8" />
-	<link rel="canonical" href={$page.url.toString()} />
-	<meta name="author" content="Ean Krenzin-Blank" />
-	<meta
-		name="keywords"
-		content={`AI, Writing, Analysis, Comments, Ean Krenzin-Blank, ${data.currentPost.title}`}
-	/>
-</svelte:head>
 
 <div class="container mx-auto page p-4 text-gray-300 px-10">
 	<!-- if the page.route includes poem -->

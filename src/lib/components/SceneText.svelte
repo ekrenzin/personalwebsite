@@ -27,6 +27,12 @@
   let velocityArray = velocity.array
 
   function loadedScript() {
+    if (!window.DesktopVision) {
+      console.log('Desktop Vision JS SDK not loaded')
+      //try again in 1 second
+      setTimeout(loadedScript, 1000)
+      return
+    }
     console.log('Loaded the Desktop Vision JS SDK')
     const { ManagedComputer } = window.DesktopVision.loadSDK(
       THREE,
