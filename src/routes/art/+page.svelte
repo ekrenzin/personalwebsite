@@ -72,7 +72,24 @@
 
 <svelte:head>
 	<title>Art | eankrenzin.com</title>
-	<meta name="description" content="Ean Krenzin-Blank's personal website" />
+	<meta name="description" content="Ean Krenzin-Blank's Art" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://eankrenzin.com/">
+	<meta property="og:title" content="Ean Krenzin-Blank's Art">
+	<meta property="og:description" content="Ean Krenzin-Blank's Art">
+	<meta property="og:image" content="https://eankrenzin-personal-website.s3.us-west-1.amazonaws.com/art/head.jpg">
+	<meta property="og:site_name" content="Ean Krenzin-Blank">
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://eankrenzin.com/">
+	<meta name="twitter:title" content="Ean Krenzin-Blank's Art">
+	<meta name="twitter:description" content="Ean Krenzin-Blank's Art">
+	<meta name="twitter:image" content="https://eankrenzin-personal-website.s3.us-west-1.amazonaws.com/art/head.jpg">
+	<meta name="twitter:site" content="@ekrenzin8">
+	<meta name="twitter:creator" content="@ekrenzin8">
 </svelte:head>
 
 {#if showGallery}

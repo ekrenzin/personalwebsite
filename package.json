@@ -37,6 +37,7 @@
 		"@tweenjs/tween.js": "^21.0.0",
 		"cheerio": "^1.0.0-rc.12",
 		"dompurify": "^3.0.6",
+		"isomorphic-dompurify": "^1.13.0",
 		"marked": "^10.0.0",
 		"three": "^0.158.0",
 		"tippy.js": "^6.3.7"

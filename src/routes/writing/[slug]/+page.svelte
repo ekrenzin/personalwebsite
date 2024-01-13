@@ -72,7 +72,7 @@
 			Generate Image with AI
 		</button>
 	</div>
-	<div class="flex-row">
+	<div class="flex-row mt-4">
 		{#if data && data.previousPost && data.previousPost.url}
 			<a class="previous-post" href={`/${data.previousPost.url}`}>← Previous</a>
 		{/if}

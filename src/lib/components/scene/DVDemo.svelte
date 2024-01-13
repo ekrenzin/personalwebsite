@@ -175,7 +175,9 @@
         }
 	}
 </script>
-
+<svelte:head>
+	<script src="https://js.desktop.vision/three/v3.0.1/bundle.min.js" async></script>
+</svelte:head>
 <svelte:window on:resize={windowResizeEventListener} />
 <section id="dv-js-sdk-demo">
 	<div class="max-w-xl mx-auto">
@@ -197,14 +199,14 @@
 </div>
 	<div class="scene" bind:this={sceneContainer} />
 	<video bind:this={video} autoplay muted playsinline style="display: none" loop />
-	<div class="interactive-info">
+	<!-- <div class="interactive-info">
 		<button
 			class="mt-4 bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 rounded"
 			on:click={restartScene}
 		>
 			Reset
 		</button>
-	</div>
+	</div> -->
 </section>
 
 <style>

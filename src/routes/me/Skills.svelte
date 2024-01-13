@@ -4,7 +4,7 @@
 	const skills = [
   {
     name: 'HTML & CSS',
-    icon: 'fab fa-html5',
+    icon: 'fa-brands fa-html5',
     description: 'Expertise in building semantically correct, responsive, and highly performant front-end layouts.'
   },
   {
@@ -14,7 +14,7 @@
   },
   {
     name: 'JavaScript / TypeScript / C#',
-    icon: 'fab fa-js-square',
+    icon: 'fa-brands fa-js-square',
     description: 'Advanced proficiency in client-side and server-side scripting languages, ensuring optimal functionality and user experience.'
   },
   {
@@ -39,7 +39,7 @@
   },
   {
     name: 'React / Vue / Svelte',
-    icon: 'fab fa-react',
+    icon: 'fa-brands fa-react',
     description: 'Strong expertise in modern front-end frameworks, enhancing UI performance and maintainability.'
   },
 {
@@ -89,31 +89,23 @@
 },
 {
   name: 'iOS',
-  icon: 'fab fa-apple',
+  icon: 'fa-brands fa-apple',
   description: 'Proficient in Swift and Objective-C, with experience in building and managing robust, scalable iOS applications.'
 },
 {
   name: 'Android',
-  icon: 'fab fa-android',
+  icon: 'fa-brands fa-android',
   description: 'Skilled in Java and Kotlin for Android development, with expertise in managing the full development lifecycle.'
 },
 {
   name: 'Meta Quest',
-  icon: 'fas fa-vr-cardboard',
+  icon: 'fa fa-vr-cardboard',
   description: 'Experience in developing and managing VR applications for the Meta Quest platform, using both Unity and Unreal Engine.'
 }
 ];
 
 
 </script>
-
-<!-- Skills Component -->
-<svelte:head>
-	<link
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-		rel="stylesheet"
-	/>
-</svelte:head>
 
 <section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 h-full relative"  id="skills">
     <h2 class="text-2xl font-semibold mb-2">Skills</h2>

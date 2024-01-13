@@ -7,75 +7,80 @@
 	import SortIcon from '$lib/assets/icons/sort.svg';
 	import { tooltip } from '$lib/utils/tooltip';
 	import type { Comment } from './Comments';
-	
+
 	export let source: string;
 	export let hidden = true;
 
 	let inititalized = false;
 	let comments: Array<Comment> = [];
-	
 
 	onMount(() => {
-		if (!inititalized) {
+		try {
+			if (inititalized) return;
 			inititalized = true;
 			handleComments();
+		} catch (error) {
+			console.warn('Error initializing comments:', error);
 		}
 	});
 
 	async function handleComments() {
-		if (!source) return;
-		if (!inititalized) return;
-		const _comments = await fetchComments(source);
-		comments = _comments.sort((a, b) => {
-			return new Date(b.UpdatedAt).getTime() - new Date(a.UpdatedAt).getTime();
-		});
+		try {
+			if (!source) return;
+			if (!inititalized) return;
+			const _comments = await fetchComments(source);
+			comments = _comments.sort((a, b) => {
+				return new Date(b.UpdatedAt).getTime() - new Date(a.UpdatedAt).getTime();
+			});
+		} catch (error) {
+			console.warn('Error fetching comments:', error);
+		}
 	}
 
 	async function toggleSort() {
 		comments = comments.reverse();
 	}
-	
-
 </script>
 
 <section>
 	<h1>Comments</h1>
 	<!-- refresh button -->
 	{#if hidden}
-	<details>
-		<div class="buttons">
-		<button use:tooltip title="refresh comments" class="icon-button" on:click={handleComments}>
-			<img src={RefreshIcon} alt="refresh comments" />
-		</button>
-		<button use:tooltip title="sort comments" class="icon-button" on:click={toggleSort}>
-			<img src={SortIcon} alt="sort comments" />
-		</button>
-	</div>
-		{#key comments}
-		<summary>Click to see comments</summary>
-		<CommentList {comments} />
-		<AddCommentSection {source} {handleComments} />
-		{/key}
-	</details>
+		<details>
+			<div class="buttons">
+				<button use:tooltip title="refresh comments" class="icon-button" on:click={handleComments}>
+					<img src={RefreshIcon} alt="refresh comments" />
+				</button>
+				<button use:tooltip title="sort comments" class="icon-button" on:click={toggleSort}>
+					<img src={SortIcon} alt="sort comments" />
+				</button>
+			</div>
+			{#key comments}
+				<summary>Click to see comments</summary>
+				<CommentList {comments} />
+				<AddCommentSection {source} {handleComments} />
+			{/key}
+		</details>
 	{:else}
 		<div class="buttons">
-		<button use:tooltip title="refresh comments" class="icon-button" on:click={handleComments}>
-			<img src={RefreshIcon} alt="refresh comments" />
-		</button>
-		<button use:tooltip title="sort comments" class="icon-button" on:click={toggleSort}>
-			<img src={SortIcon} alt="sort comments" />
-		</button>
-	</div>
+			<button use:tooltip title="refresh comments" class="icon-button" on:click={handleComments}>
+				<img src={RefreshIcon} alt="refresh comments" />
+			</button>
+			<button use:tooltip title="sort comments" class="icon-button" on:click={toggleSort}>
+				<img src={SortIcon} alt="sort comments" />
+			</button>
+		</div>
 		<AddCommentSection {source} {handleComments} />
 		<CommentList {comments} />
 	{/if}
 </section>
 
 <style>
-	h2, summary {
+	h2,
+	summary {
 		text-align: center;
 	}
-	
+
 	section {
 		position: relative;
 		width: 100%;

@@ -26,9 +26,27 @@
 	
 </script>
 
+
 <svelte:head>
-	<title>Writing | eankrenzin.com</title>
-	<meta name="description" content="Ean Krenzin-Blank's personal website" />
+    <!-- Primary Meta Tags -->
+	<meta name="description" content="Ean Krenzin-Blank's Writing">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://eankrenzin.com/">
+	<meta property="og:title" content="Ean Krenzin-Blank's Writing">
+	<meta property="og:description" content="Ean Krenzin-Blank's Writing">
+	<meta property="og:image" content="https://workers-ai.eankrenzin.workers.dev/?key=image-1702113942594.png">
+	<meta property="og:site_name" content="Ean Krenzin-Blank">
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://eankrenzin.com/">
+	<meta name="twitter:title" content="Ean Krenzin-Blank's Writing">
+	<meta name="twitter:description" content="Ean Krenzin-Blank's Writing">
+	<meta name="twitter:image" content="https://workers-ai.eankrenzin.workers.dev/?key=image-1702113942594.png">
+	<meta name="twitter:site" content="@ekrenzin8">
+	<meta name="twitter:creator" content="@ekrenzin8">
 </svelte:head>
 <section class="max-w-sm mx-auto text-center my-12">
     <h1 class="

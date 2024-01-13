@@ -1,4 +1,534 @@
 {
+  "KJV-Bible": [
+    {
+      "post_title": "Genesis",
+      "title": "01 - Genesis - KJV",
+      "preview": "\r\n# Genesis\r\n\r\n## Genesis Chapter 1\r\n\r\n1 In the beginning God created the heaven and the earth.\r\n\r\n2 And the earth was without form, and void; and darkness was upon the face of the deep. And the Spiri...",
+      "url": "writing/KJV-Bible_01 - Genesis - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Exodus",
+      "title": "02 - Exodus - KJV",
+      "preview": "\r\n# Exodus\r\n\r\n## Exodus Chapter 1\r\n\r\n1 Now these are the names of the children of Israel, which came into Egypt; every man and his household came with Jacob.\r\n\r\n2 Reuben, Simeon, Levi, and Judah,\r\n\r\n3...",
+      "url": "writing/KJV-Bible_02 - Exodus - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Leviticus",
+      "title": "03 - Leviticus - KJV",
+      "preview": "\r\n# Leviticus\r\n\r\n## Leviticus Chapter 1\r\n\r\n1 And the Lord called unto Moses, and spake unto him out of the tabernacle of the congregation, saying,\r\n\r\n2 Speak unto the children of Israel, and say unto ...",
+      "url": "writing/KJV-Bible_03 - Leviticus - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Numbers",
+      "title": "04 - Numbers - KJV",
+      "preview": "\r\n# Numbers\r\n\r\n## Numbers Chapter 1\r\n\r\n1 And the Lord spake unto Moses in the wilderness of Sinai, in the tabernacle of the congregation, on the first day of the second month, in the second year after...",
+      "url": "writing/KJV-Bible_04 - Numbers - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Deuteronomy",
+      "title": "05 - Deuteronomy - KJV",
+      "preview": "\r\n# Deuteronomy\r\n\r\n## Deuteronomy Chapter 1\r\n\r\n1 These be the words which Moses spake unto all Israel on this side Jordan in the wilderness, in the plain over against the Red sea, between Paran, and T...",
+      "url": "writing/KJV-Bible_05 - Deuteronomy - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Joshua",
+      "title": "06 - Joshua - KJV",
+      "preview": "\r\n# Joshua\r\n\r\n## Joshua Chapter 1\r\n\r\n1 Now after the death of Moses the servant of the Lord it came to pass, that the Lord spake unto Joshua the son of Nun, Moses' minister, saying,\r\n\r\n2 Moses my serv...",
+      "url": "writing/KJV-Bible_06 - Joshua - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Judges",
+      "title": "07 - Judges - KJV",
+      "preview": "\r\n# Judges\r\n\r\n## Judges Chapter 1\r\n\r\n1 Now after the death of Joshua it came to pass, that the children of Israel asked the Lord, saying, Who shall go up for us against the Canaanites first, to fight ...",
+      "url": "writing/KJV-Bible_07 - Judges - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Ruth",
+      "title": "08 - Ruth - KJV",
+      "preview": "\r\n# Ruth\r\n\r\n## Ruth Chapter 1\r\n\r\n1 Now it came to pass in the days when the judges ruled, that there was a famine in the land. And a certain man of Bethlehemjudah went to sojourn in the country of Moa...",
+      "url": "writing/KJV-Bible_08 - Ruth - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "1 Samuel",
+      "title": "09 - 1 Samuel - KJV",
+      "preview": "\r\n# 1 Samuel \r\n\r\n## 1 Samuel Chapter 1\r\n\r\n1 Now there was a certain man of Ramathaimzophim, of mount Ephraim, and his name was Elkanah, the son of Jeroham, the son of Elihu, the son of Tohu, the son o...",
+      "url": "writing/KJV-Bible_09 - 1 Samuel - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "2 Samuel",
+      "title": "10 - 2 Samuel - KJV",
+      "preview": "\r\n# 2 Samuel\r\n\r\n## 2 Samuel Chapter 1\r\n\r\n1 Now it came to pass after the death of Saul, when David was returned from the slaughter of the Amalekites, and David had abode two days in Ziklag;\r\n\r\n2 It ca...",
+      "url": "writing/KJV-Bible_10 - 2 Samuel - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "1 Kings",
+      "title": "11 - 1 Kings - KJV",
+      "preview": "\r\n# 1 Kings\r\n\r\n## 1 Kings Chapter 1\r\n\r\n1 Now king David was old and stricken in years; and they covered him with clothes, but he gat no heat.\r\n\r\n2 Wherefore his servants said unto him, Let there be so...",
+      "url": "writing/KJV-Bible_11 - 1 Kings - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "2 Kings",
+      "title": "12 - 2 Kings - KJV",
+      "preview": "\r\n# 2 Kings\r\n\r\n## 2 Kings Chapter 1\r\n\r\n1 Then Moab rebelled against Israel after the death of Ahab.\r\n\r\n2 And Ahaziah fell down through a lattice in his upper chamber that was in Samaria, and was sick:...",
+      "url": "writing/KJV-Bible_12 - 2 Kings - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "1 Chronicles",
+      "title": "13 - 1 Chronicles - KJV",
+      "preview": "\r\n# 1 Chronicles\r\n\r\n## 1 Chronicles Chapter 1\r\n\r\n1 Adam, Sheth, Enosh,\r\n\r\n2 Kenan, Mahalaleel, Jered,\r\n\r\n3 Henoch, Methuselah, Lamech,\r\n\r\n4 Noah, Shem, Ham, and Japheth.\r\n\r\n5 The sons of Japheth; Gome...",
+      "url": "writing/KJV-Bible_13 - 1 Chronicles - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "2 Chronicles",
+      "title": "14 - 2 Chronicles - KJV",
+      "preview": "\r\n# 2 Chronicles\r\n\r\n## 2 Chronicles Chapter 1\r\n\r\n1 And Solomon the son of David was strengthened in his kingdom, and the Lord his God was with him, and magnified him exceedingly.\r\n\r\n2 Then Solomon spa...",
+      "url": "writing/KJV-Bible_14 - 2 Chronicles - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Ezra",
+      "title": "15 - Ezra - KJV",
+      "preview": "\r\n# Ezra\r\n\r\n## Ezra Chapter 1\r\n\r\n1 Now in the first year of Cyrus king of Persia, that the word of the Lord by the mouth of Jeremiah might be fulfilled, the Lord stirred up the spirit of Cyrus king of...",
+      "url": "writing/KJV-Bible_15 - Ezra - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Nehemiah",
+      "title": "16 - Nehemiah - KJV",
+      "preview": "\r\n# Nehemiah\r\n\r\n## Nehemiah Chapter 1\r\n\r\n1 The words of Nehemiah the son of Hachaliah. And it came to pass in the month Chisleu, in the twentieth year, as I was in Shushan the palace,\r\n\r\n2 That Hanani...",
+      "url": "writing/KJV-Bible_16 - Nehemiah - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Esther",
+      "title": "17 - Esther - KJV",
+      "preview": "\r\n# Esther\r\n\r\n## Esther Chapter 1\r\n\r\n1 Now it came to pass in the days of Ahasuerus, (this is Ahasuerus which reigned, from India even unto Ethiopia, over an hundred and seven and twenty provinces:)\r\n...",
+      "url": "writing/KJV-Bible_17 - Esther - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Job",
+      "title": "18 - Job - KJV",
+      "preview": "\r\n# Job\r\n\r\n## Job Chapter 1\r\n\r\n1 There was a man in the land of Uz, whose name was Job; and that man was perfect and upright, and one that feared God, and eschewed evil.\r\n\r\n2 And there were born unto ...",
+      "url": "writing/KJV-Bible_18 - Job - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Psalms",
+      "title": "19 - Psalms - KJV",
+      "preview": "\r\n# Psalms\r\n\r\n## Psalm Chapter 1\r\n\r\n1 Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful.\r\n\r\n2 But his delig...",
+      "url": "writing/KJV-Bible_19 - Psalms - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Proverbs",
+      "title": "20 - Proverbs - KJV",
+      "preview": "\r\n# Proverbs\r\n\r\n## Proverbs Chapter 1\r\n\r\n1 The proverbs of Solomon the son of David, king of Israel;\r\n\r\n2 To know wisdom and instruction; to perceive the words of understanding;\r\n\r\n3 To receive the in...",
+      "url": "writing/KJV-Bible_20 - Proverbs - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Ecclesiastes",
+      "title": "21 - Ecclesiastes - KJV",
+      "preview": "\r\n# Ecclesiastes\r\n\r\n## Ecclesiastes Chapter 1\r\n\r\n1 The words of the Preacher, the son of David, king in Jerusalem.\r\n\r\n2 Vanity of vanities, saith the Preacher, vanity of vanities; all is vanity.\r\n\r\n3 ...",
+      "url": "writing/KJV-Bible_21 - Ecclesiastes - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "The Song of Solomon",
+      "title": "22 - The Song of Solomon - KJV",
+      "preview": "\r\n# The Song of Solomon\r\n\r\n## Song of Solomon Chapter 1\r\n\r\n1 The song of songs, which is Solomon's.\r\n\r\n2 Let him kiss me with the kisses of his mouth: for thy love is better than wine.\r\n\r\n3 Because of...",
+      "url": "writing/KJV-Bible_22 - The Song of Solomon - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Isaiah",
+      "title": "23 - Isaiah - KJV",
+      "preview": "\r\n# Isaiah\r\n\r\n## Isaiah Chapter 1\r\n\r\n1 The vision of Isaiah the son of Amoz, which he saw concerning Judah and Jerusalem in the days of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah.\r\n\r\n2 Hear, O...",
+      "url": "writing/KJV-Bible_23 - Isaiah - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Jeremiah",
+      "title": "24 - Jeremiah - KJV",
+      "preview": "\r\n# Jeremiah\r\n\r\n## Jeremiah Chapter 1\r\n\r\n1 The words of Jeremiah the son of Hilkiah, of the priests that were in Anathoth in the land of Benjamin:\r\n\r\n2 To whom the word of the Lord came in the days of...",
+      "url": "writing/KJV-Bible_24 - Jeremiah - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Lamentations",
+      "title": "25 - Lamentations - KJV",
+      "preview": "\r\n# Lamentations\r\n\r\n## Lamentations Chapter 1\r\n\r\n1 How doth the city sit solitary, that was full of people! how is she become as a widow! she that was great among the nations, and princess among the p...",
+      "url": "writing/KJV-Bible_25 - Lamentations - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Ezekiel",
+      "title": "26 - Ezekiel - KJV",
+      "preview": "\r\n# Ezekiel\r\n\r\n## Ezekiel Chapter 1\r\n\r\n1 Now it came to pass in the thirtieth year, in the fourth month, in the fifth day of the month, as I was among the captives by the river of Chebar, that the hea...",
+      "url": "writing/KJV-Bible_26 - Ezekiel - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Daniel",
+      "title": "27 - Daniel - KJV",
+      "preview": "\r\n# Daniel\r\n\r\n## Daniel Chapter 1\r\n\r\n1 In the third year of the reign of Jehoiakim king of Judah came Nebuchadnezzar king of Babylon unto Jerusalem, and besieged it.\r\n\r\n2 And the Lord gave Jehoiakim k...",
+      "url": "writing/KJV-Bible_27 - Daniel - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Hosea",
+      "title": "28 - Hosea - KJV",
+      "preview": "\r\n# Hosea\r\n\r\n## Hosea Chapter 1\r\n\r\n1 The word of the Lord that came unto Hosea, the son of Beeri, in the days of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah, and in the days of Jeroboam the son...",
+      "url": "writing/KJV-Bible_28 - Hosea - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Joel",
+      "title": "29 - Joel - KJV",
+      "preview": "\r\n# Joel\r\n\r\n## Joel Chapter 1\r\n\r\n1 The word of the Lord that came to Joel the son of Pethuel.\r\n\r\n2 Hear this, ye old men, and give ear, all ye inhabitants of the land. Hath this been in your days, or ...",
+      "url": "writing/KJV-Bible_29 - Joel - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Amos",
+      "title": "30 - Amos - KJV",
+      "preview": "\r\n# Amos\r\n\r\n## Amos Chapter 1\r\n\r\n1 The words of Amos, who was among the herdmen of Tekoa, which he saw concerning Israel in the days of Uzziah king of Judah, and in the days of Jeroboam the son of Joa...",
+      "url": "writing/KJV-Bible_30 - Amos - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Obadiah",
+      "title": "31 - Obadiah - KJV",
+      "preview": "\r\n# Obadiah\r\n\r\n1 The vision of Obadiah. Thus saith the Lord God concerning Edom; We have heard a rumour from the Lord, and an ambassador is sent among the heathen, Arise ye, and let us rise up against...",
+      "url": "writing/KJV-Bible_31 - Obadiah - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Jonah",
+      "title": "32 - Jonah - KJV",
+      "preview": "\r\n# Jonah\r\n\r\n## Jonah Chapter 1\r\n\r\n1 Now the word of the Lord came unto Jonah the son of Amittai, saying,\r\n\r\n2 Arise, go to Nineveh, that great city, and cry against it; for their wickedness is come u...",
+      "url": "writing/KJV-Bible_32 - Jonah - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Micah",
+      "title": "33 - Micah - KJV",
+      "preview": "\r\n# Micah\r\n\r\n## Micah Chapter 1\r\n\r\n1 The word of the Lord that came to Micah the Morasthite in the days of Jotham, Ahaz, and Hezekiah, kings of Judah, which he saw concerning Samaria and Jerusalem.\r\n\r...",
+      "url": "writing/KJV-Bible_33 - Micah - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Nahum",
+      "title": "34 - Nahum - KJV",
+      "preview": "\r\n# Nahum\r\n\r\n## Nahum Chapter 1\r\n\r\n1 The burden of Nineveh. The book of the vision of Nahum the Elkoshite.\r\n\r\n2 God is jealous, and the Lord revengeth; the Lord revengeth, and is furious; the Lord wil...",
+      "url": "writing/KJV-Bible_34 - Nahum - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Habakkuk",
+      "title": "35 - Habakkuk - KJV",
+      "preview": "\r\n# Habakkuk\r\n\r\n## Habakkuk Chapter 1\r\n\r\n1 The burden which Habakkuk the prophet did see.\r\n\r\n2 O Lord, how long shall I cry, and thou wilt not hear! even cry out unto thee of violence, and thou wilt n...",
+      "url": "writing/KJV-Bible_35 - Habakkuk - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Zephaniah",
+      "title": "36 - Zephaniah - KJV",
+      "preview": "\r\n# Zephaniah\r\n\r\n## Zephaniah Chapter 1\r\n\r\n1 The word of the Lord which came unto Zephaniah the son of Cushi, the son of Gedaliah, the son of Amariah, the son of Hizkiah, in the days of Josiah the son...",
+      "url": "writing/KJV-Bible_36 - Zephaniah - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Haggai",
+      "title": "37 - Haggai - KJV",
+      "preview": "\r\n# Haggai\r\n\r\n## Haggai Chapter 1\r\n\r\n1 In the second year of Darius the king, in the sixth month, in the first day of the month, came the word of the Lord by Haggai the prophet unto Zerubbabel the son...",
+      "url": "writing/KJV-Bible_37 - Haggai - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Zechariah",
+      "title": "38 - Zechariah - KJV",
+      "preview": "\r\n# Zechariah\r\n\r\n## Zechariah Chapter 1\r\n\r\n1 In the eighth month, in the second year of Darius, came the word of the Lord unto Zechariah, the son of Berechiah, the son of Iddo the prophet, saying,\r\n\r\n...",
+      "url": "writing/KJV-Bible_38 - Zechariah - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Malachi",
+      "title": "39 - Malachi - KJV",
+      "preview": "\r\n# Malachi\r\n\r\n## Malachi Chapter 1\r\n\r\n1 The burden of the word of the Lord to Israel by Malachi.\r\n\r\n2 I have loved you, saith the Lord. Yet ye say, Wherein hast thou loved us? Was not Esau Jacob's br...",
+      "url": "writing/KJV-Bible_39 - Malachi - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "The Gospel According to Matthew",
+      "title": "40 - Matthew - KJV",
+      "preview": "\r\n# The Gospel According to Matthew\r\n\r\n## Matthew Chapter 1\r\n\r\n1 The book of the generation of Jesus Christ, the son of David, the son of Abraham.\r\n\r\n2 Abraham begat Isaac; and Isaac begat Jacob; and ...",
+      "url": "writing/KJV-Bible_40 - Matthew - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "The Gospel According to Mark",
+      "title": "41 - Mark - KJV",
+      "preview": "\r\n# The Gospel According to Mark\r\n\r\n## Mark Chapter 1\r\n\r\n1 The beginning of the gospel of Jesus Christ, the Son of God;\r\n\r\n2 As it is written in the prophets, Behold, I send my messenger before thy fa...",
+      "url": "writing/KJV-Bible_41 - Mark - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "The Gospel According to Luke",
+      "title": "42 - Luke - KJV",
+      "preview": "\r\n# The Gospel According to Luke\r\n\r\n## Luke Chapter 1\r\n\r\n1 Forasmuch as many have taken in hand to set forth in order a declaration of those things which are most surely believed among us,\r\n\r\n2 Even a...",
+      "url": "writing/KJV-Bible_42 - Luke - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "The Gospel According to John",
+      "title": "43 - John - KJV",
+      "preview": "\r\n# The Gospel According to John\r\n\r\n## John Chapter 1\r\n\r\n1 In the beginning was the Word, and the Word was with God, and the Word was God.\r\n\r\n2 The same was in the beginning with God.\r\n\r\n3 All things ...",
+      "url": "writing/KJV-Bible_43 - John - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Acts",
+      "title": "44 - Acts - KJV",
+      "preview": "\r\n# Acts\r\n\r\n## Acts Chapter 1\r\n\r\n1 The former treatise have I made, O Theophilus, of all that Jesus began both to do and teach,\r\n\r\n2 Until the day in which he was taken up, after that he through the H...",
+      "url": "writing/KJV-Bible_44 - Acts - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Romans",
+      "title": "45 - Romans - KJV",
+      "preview": "\r\n# Romans\r\n\r\n## Romans Chapter 1\r\n\r\n1 Paul, a servant of Jesus Christ, called to be an apostle, separated unto the gospel of God,\r\n\r\n2 (Which he had promised afore by his prophets in the holy scriptu...",
+      "url": "writing/KJV-Bible_45 - Romans - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "1 Corinthians",
+      "title": "46 - 1 Corinthians - KJV",
+      "preview": "\r\n# 1 Corinthians\r\n\r\n## 1 Corinthians Chapter 1\r\n\r\n1 Paul called to be an apostle of Jesus Christ through the will of God, and Sosthenes our brother,\r\n\r\n2 Unto the church of God which is at Corinth, t...",
+      "url": "writing/KJV-Bible_46 - 1 Corinthians - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "2 Corinthians",
+      "title": "47 - 2 Corinthians - KJV",
+      "preview": "\r\n# 2 Corinthians\r\n\r\n## 2 Corinthians Chapter 1\r\n\r\n1 Paul, an apostle of Jesus Christ by the will of God, and Timothy our brother, unto the church of God which is at Corinth, with all the saints which...",
+      "url": "writing/KJV-Bible_47 - 2 Corinthians - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Galatians",
+      "title": "48 - Galatians - KJV",
+      "preview": "\r\n# Galatians\r\n\r\n## Galatians Chapter 1\r\n\r\n1 Paul, an apostle, (not of men, neither by man, but by Jesus Christ, and God the Father, who raised him from the dead;)\r\n\r\n2 And all the brethren which are ...",
+      "url": "writing/KJV-Bible_48 - Galatians - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Ephesians",
+      "title": "49 - Ephesians - KJV",
+      "preview": "\r\n# Ephesians\r\n\r\n## Ephesians Chapter 1\r\n\r\n1 Paul, an apostle of Jesus Christ by the will of God, to the saints which are at Ephesus, and to the faithful in Christ Jesus:\r\n\r\n2 Grace be to you, and pea...",
+      "url": "writing/KJV-Bible_49 - Ephesians - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Philippians",
+      "title": "50 - Philippians - KJV",
+      "preview": "\r\n# Philippians\r\n\r\n## Philippians Chapter 1\r\n\r\n1 Paul and Timotheus, the servants of Jesus Christ, to all the saints in Christ Jesus which are at Philippi, with the bishops and deacons:\r\n\r\n2 Grace be ...",
+      "url": "writing/KJV-Bible_50 - Philippians - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Colossians",
+      "title": "51 - Colossians - KJV",
+      "preview": "\r\n# Colossians\r\n\r\n## Colossians Chapter 1\r\n\r\n1 Paul, an apostle of Jesus Christ by the will of God, and Timotheus our brother,\r\n\r\n2 To the saints and faithful brethren in Christ which are at Colosse: ...",
+      "url": "writing/KJV-Bible_51 - Colossians - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "1 Thessalonians",
+      "title": "52 - 1 Thessalonians - KJV",
+      "preview": "\r\n# 1 Thessalonians\r\n\r\n## 1 Thessalonians Chapter 1\r\n\r\n1 Paul, and Silvanus, and Timotheus, unto the church of the Thessalonians which is in God the Father and in the Lord Jesus Christ: Grace be unto ...",
+      "url": "writing/KJV-Bible_52 - 1 Thessalonians - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "2 Thessalonians",
+      "title": "53 - 2 Thessalonians - KJV",
+      "preview": "\r\n# 2 Thessalonians\r\n\r\n## 2 Thessalonians Chapter 1\r\n\r\n1 Paul, and Silvanus, and Timotheus, unto the church of the Thessalonians in God our Father and the Lord Jesus Christ:\r\n\r\n2 Grace unto you, and p...",
+      "url": "writing/KJV-Bible_53 - 2 Thessalonians - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "1 Timothy",
+      "title": "54 - 1 Timothy - KJV",
+      "preview": "\r\n# 1 Timothy\r\n\r\n## 1 Timothy Chapter 1\r\n\r\n1 Paul, an apostle of Jesus Christ by the commandment of God our Saviour, and Lord Jesus Christ, which is our hope;\r\n\r\n2 Unto Timothy, my own son in the fait...",
+      "url": "writing/KJV-Bible_54 - 1 Timothy - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "2 Timothy",
+      "title": "55 - 2 Timothy - KJV",
+      "preview": "\r\n# 2 Timothy\r\n\r\n## 2 Timothy Chapter 1\r\n\r\n1 Paul, an apostle of Jesus Christ by the will of God, according to the promise of life which is in Christ Jesus,\r\n\r\n2 To Timothy, my dearly beloved son: Gra...",
+      "url": "writing/KJV-Bible_55 - 2 Timothy - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Titus",
+      "title": "56 - Titus - KJV",
+      "preview": "\r\n# Titus\r\n\r\n## Titus Chapter 1\r\n\r\n1 Paul, a servant of God, and an apostle of Jesus Christ, according to the faith of God's elect, and the acknowledging of the truth which is after godliness;\r\n\r\n2 In...",
+      "url": "writing/KJV-Bible_56 - Titus - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Philemon",
+      "title": "57 - Philemon - KJV",
+      "preview": "\r\n# Philemon\r\n\r\n1 Paul, a prisoner of Jesus Christ, and Timothy our brother, unto Philemon our dearly beloved, and fellowlabourer,\r\n\r\n2 And to our beloved Apphia, and Archippus our fellowsoldier, and ...",
+      "url": "writing/KJV-Bible_57 - Philemon - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Hebrews",
+      "title": "58 - Hebrews - KJV",
+      "preview": "\r\n# Hebrews\r\n\r\n## Hebrews Chapter 1\r\n\r\n1 God, who at sundry times and in divers manners spake in time past unto the fathers by the prophets,\r\n\r\n2 Hath in these last days spoken unto us by his Son, who...",
+      "url": "writing/KJV-Bible_58 - Hebrews - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "James",
+      "title": "59 - James - KJV",
+      "preview": "\r\n# James\r\n\r\n## James Chapter 1\r\n\r\n1 James, a servant of God and of the Lord Jesus Christ, to the twelve tribes which are scattered abroad, greeting.\r\n\r\n2 My brethren, count it all joy when ye fall in...",
+      "url": "writing/KJV-Bible_59 - James - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "1 Peter",
+      "title": "60 - 1 Peter - KJV",
+      "preview": "\r\n# 1 Peter\r\n\r\n## 1 Peter Chapter 1\r\n\r\n1 Peter, an apostle of Jesus Christ, to the strangers scattered throughout Pontus, Galatia, Cappadocia, Asia, and Bithynia,\r\n\r\n2 Elect according to the foreknowl...",
+      "url": "writing/KJV-Bible_60 - 1 Peter - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "2 Peter",
+      "title": "61 - 2 Peter - KJV",
+      "preview": "\r\n# 2 Peter\r\n\r\n## 2 Peter Chapter 1\r\n\r\n1 Simon Peter, a servant and an apostle of Jesus Christ, to them that have obtained like precious faith with us through the righteousness of God and our Saviour ...",
+      "url": "writing/KJV-Bible_61 - 2 Peter - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "1 John",
+      "title": "62 - 1 John - KJV",
+      "preview": "\r\n# 1 John\r\n\r\n## 1 John Chapter 1\r\n\r\n1 That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked upon, and our hands have handled, of the Word of l...",
+      "url": "writing/KJV-Bible_62 - 1 John - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "2 John",
+      "title": "63 - 2 John - KJV",
+      "preview": "\r\n# 2 John\r\n\r\n1 The elder unto the elect lady and her children, whom I love in the truth; and not I only, but also all they that have known the truth;\r\n\r\n2 For the truth's sake, which dwelleth in us, ...",
+      "url": "writing/KJV-Bible_63 - 2 John - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "3 John",
+      "title": "64 - 3 John - KJV",
+      "preview": "\r\n# 3 John\r\n\r\n1 The elder unto the wellbeloved Gaius, whom I love in the truth.\r\n\r\n2 Beloved, I wish above all things that thou mayest prosper and be in health, even as thy soul prospereth.\r\n\r\n3 For I...",
+      "url": "writing/KJV-Bible_64 - 3 John - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Jude",
+      "title": "65 - Jude - KJV",
+      "preview": "\r\n# Jude\r\n\r\n1 Jude, the servant of Jesus Christ, and brother of James, to them that are sanctified by God the Father, and preserved in Jesus Christ, and called:\r\n\r\n2 Mercy unto you, and peace, and lov...",
+      "url": "writing/KJV-Bible_65 - Jude - KJV",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
+      "post_title": "Revelation",
+      "title": "66 - Revelation - KJV",
+      "preview": "\r\n# Revelation\r\n\r\n## Revelation Chapter 1\r\n\r\n1 The Revelation of Jesus Christ, which God gave unto him, to shew unto his servants things which must shortly come to pass; and he sent and signified it b...",
+      "url": "writing/KJV-Bible_66 - Revelation - KJV",
+      "imageSources": [],
+      "scripts": []
+    }
+  ],
   "musings": [
     {
       "post_title": "Spider in the Drain",
@@ -158,6 +688,14 @@
       "image": "/writing/images/dont-read.png"
     },
     {
+      "post_title": "Echoes in Silence",
+      "title": "Echoes_in_silence",
+      "preview": "## Echoes in Silence\r\n\r\nRemoved...",
+      "url": "writing/poems_Echoes_in_silence",
+      "imageSources": [],
+      "scripts": []
+    },
+    {
       "post_title": "Exhaustion",
       "title": "exhastion_prose",
       "preview": "<div align=\"center\">\r\n\r\n## Exhaustion\r\n\r\nExhaustion is a nefarious beast. Insidious in that it creeps up on you, when you are most vulnerable. Vulnerable in your pleasure, or effort, that leaves you w...",
@@ -189,6 +727,14 @@
       ],
       "scripts": [],
       "image": "/writing/images/fumes.png"
+    },
+    {
+      "post_title": "Hate",
+      "title": "hate",
+      "preview": "## Hate\r\n\r\nremoved...",
+      "url": "writing/poems_hate",
+      "imageSources": [],
+      "scripts": []
     },
     {
       "post_title": "Reluctant Recluse",

@@ -2,6 +2,7 @@
 	import type { Comment } from './Comments';
     import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
+	import { cleanMD } from '$lib/utils/markdown';
 	import cheerio from 'cheerio';
 	export let comment: Comment;
 
@@ -27,7 +28,7 @@
 <div class="comment-container shadow-md rounded-lg">
 	<div class="comment-header font-semibold text-lg mb-2">{comment.User}</div>
 	<div class="text-sky-300 text-sm mb-2">{comment.UpdatedAt}</div>
-	<p class="comment-body">{text}</p>
+	<p class="comment-body">{@html cleanMD(text)}</p>
 	{#each $images as image}
 		<img src="{image}" alt="comment" class="my-2" />
 	{/each}
@@ -42,6 +43,7 @@
 		margin-bottom: 1rem; /* Space between bubbles */
 		padding: 1rem; /* Padding inside the bubble */
 		word-wrap: break-word; /* Ensures text wraps inside the bubble */
+		text-align: left;
 	}
 
 	img {

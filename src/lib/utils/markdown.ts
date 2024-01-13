@@ -1,7 +1,7 @@
 
 import { parse, Renderer } from 'marked';
 import cheerio from 'cheerio';
-import DOMPurify from 'dompurify';
+import { sanitize } from "isomorphic-dompurify";
 
 const renderer = new Renderer();
 
@@ -26,21 +26,39 @@ renderer.blockquote = (quote) => {
     return `<blockquote>${quote}</blockquote>`;
 };
 
-// Use the custom renderer in the parse function
+
+/**
+ * Loads HTML content, sanitizes it, and processes it with a custom renderer.
+ * Falls back to plain text processing if an error occurs.
+ * @param {string} data - The HTML data to be processed.
+ * @returns Processed content using the custom renderer.
+ */
 export function loadHtml(data: string) {
     try {
-        const cleanHtml = DOMPurify.sanitize(data);
-        const htmlContent = parse(cleanHtml, { renderer });
-        //remove html tags
-        return htmlContent;
+        // Sanitize and process HTML content
+        const cleanHtml = sanitize(data);
+        return parse(cleanHtml, { renderer });
     } catch (err) {
-        return parse(data, { renderer });
+        console.log(err);
+        // Convert to plain text by stripping HTML tags
+        const plainText = stripHtmlTags(data);
+        // Process plain text with the custom renderer
+        return parse(plainText, { renderer });
     }
+}
+
+/**
+ * Strips HTML tags from a string.
+ * @param {string} html - The string containing HTML.
+ * @returns The string without HTML tags.
+ */
+function stripHtmlTags(html) {
+    return html.replace(/<\/?[^>]+(>|$)/g, "");
 }
 
 
 export function cleanMD(text: string) {
-    let htmlContent = parse(text);
+    let htmlContent = loadHtml(parse(text));
     const $ = cheerio.load(htmlContent);
     
     //use cheerio to remove all div align center
