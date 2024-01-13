@@ -17,6 +17,7 @@
 
 
     onMount(() => {
+        try {
         const updateSelection = () => {
             selectedText = window.getSelection().toString();
             if (!selectedText) {
@@ -38,6 +39,9 @@
             document.removeEventListener('mouseup', updateSelection);
             document.removeEventListener('touchend', updateSelection);
         };
+    } catch (e) {
+        console.log(e);
+    }
     });
 
     function copyToClipboard(event) {

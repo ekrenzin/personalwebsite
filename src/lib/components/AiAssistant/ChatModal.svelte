@@ -12,10 +12,14 @@
 	let reading = false;
 
 	async function createMessage() {
+		try {
 		const messageToSend = message;
 		if (!message) return;
 		message = '';
 		sendMessage(messageToSend, window.location.pathname);
+    } catch (error) {
+        console.log(error);
+    }
 	}
 
 	async function toggleAudio() {

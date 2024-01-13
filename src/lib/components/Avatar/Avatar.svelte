@@ -10,65 +10,72 @@
 	let renderer: WebGLRenderer;
 	let mouse = new Vector2();
 	let bufferDelay = 0.1;
-	let buffering = false
+	let buffering = false;
 
 	onMount(() => {
-		const scene = new Scene();
-		camera = new PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+		try {
+			const scene = new Scene();
+			camera = new PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
 
-		// Adjust camera position and orientation
-		camera.position.set(0, -2, 3); // Position the camera
-		camera.lookAt(0, -2, 0); // Focus on the bottom right of the scene
+			// Adjust camera position and orientation
+			camera.position.set(0, -2, 3); // Position the camera
+			camera.lookAt(0, -2, 0); // Focus on the bottom right of the scene
 
-		const renderOptions = { alpha: true, canvas: canvas, antialias: true };
-		renderer = new WebGLRenderer(renderOptions);
-		renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+			const renderOptions = { alpha: true, canvas: canvas, antialias: true };
+			renderer = new WebGLRenderer(renderOptions);
+			renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 
-		window.addEventListener('resize', onWindowResize, false);
-		window.addEventListener('pointermove', onMouseMove, false);
-		window.addEventListener('touchmove', onTouchMove, false);
+			window.addEventListener('resize', onWindowResize, false);
+			window.addEventListener('pointermove', onMouseMove, false);
+			window.addEventListener('touchmove', onTouchMove, false);
 
-		avatarScene.set(scene);
-		avatarCamera.set(camera);
-		avatarRenderer.set(renderer);
+			avatarScene.set(scene);
+			avatarCamera.set(camera);
+			avatarRenderer.set(renderer);
 
+			animate(scene);
 
-		animate(scene);
-
-		return () => {
-			window.removeEventListener('resize', onWindowResize);
-			window.removeEventListener('pointermove', onMouseMove);
-			window.removeEventListener('touchmove', onTouchMove);
-			scene.clear();
-			renderer.dispose();
-		};
+			return () => {
+				window.removeEventListener('resize', onWindowResize);
+				window.removeEventListener('pointermove', onMouseMove);
+				window.removeEventListener('touchmove', onTouchMove);
+				scene.clear();
+				renderer.dispose();
+			};
+		} catch (error) {
+			console.log(error);
+		}
 	});
-
 
 	function animate(scene: THREE.Scene) {
 		requestAnimationFrame(() => animate(scene));
 		renderer.render(scene, camera);
-    	TWEEN.update();
+		TWEEN.update();
 	}
 
 	function onWindowResize() {
-		camera.aspect = canvas.clientWidth / canvas.clientHeight;
-		camera.updateProjectionMatrix();
-		renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+		try {
+			camera.aspect = canvas.clientWidth / canvas.clientHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+		} catch (error) {
+			console.log(error);
+		}
 	}
-
 
 	function onMouseMove(event: MouseEvent) {
 		//add in a buffer
 		if (!buffering) {
 			buffering = true;
-			setTimeout(() => {
-				buffering = false;
-			}, bufferDelay * 1000 * Math.random());
+			setTimeout(
+				() => {
+					buffering = false;
+				},
+				bufferDelay * 1000 * Math.random()
+			);
 		} else {
 			return;
 		}
-
 
 		const canvasBounds = canvas.getBoundingClientRect();
 		mouse.x = ((event.clientX - canvasBounds.left) / canvasBounds.width) * 2 - 1;
@@ -76,17 +83,13 @@
 		updateHeadRotation(mouse, $avatarCamera);
 	}
 
-
 	function onTouchMove(event: TouchEvent) {
 		const touch = event.touches[0];
 		const canvasBounds = canvas.getBoundingClientRect();
 		mouse.x = ((touch.clientX - canvasBounds.left) / canvasBounds.width) * 2 - 1;
 		mouse.y = -((touch.clientY - canvasBounds.top) / canvasBounds.height) * 2 + 1;
 		updateHeadRotation(mouse, $avatarCamera);
-		
 	}
-
-
 </script>
 
 <canvas bind:this={canvas}></canvas>

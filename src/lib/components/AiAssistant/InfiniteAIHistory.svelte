@@ -35,13 +35,16 @@
 	}
 
 	onMount(() => {
-
+try {
 		// Add scroll event listener
 		window.addEventListener('scroll', () => {
 			if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
 				loadMessages();
 			}
 		});
+    } catch (error) {
+        console.log(error);
+    }
 	});
 
 	// getMessages function

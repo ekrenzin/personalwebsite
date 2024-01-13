@@ -25,18 +25,22 @@
 
 	onMount(loadedScript);
 	function loadedScript() {
-    if (!window.DesktopVision) {
-      console.log('Desktop Vision JS SDK not loaded')
-      //try again in 1 second
-      setTimeout(loadedScript, 1000)
-      return
-    }
-		const { ManagedComputer } = window.DesktopVision.loadSDK(
-			THREE,
-			XRControllerModelFactory,
-			XRHandModelFactory
-		);
-		loadThreeAutomatedExample(ManagedComputer);
+		try {
+			if (!window.DesktopVision) {
+				console.log('Desktop Vision JS SDK not loaded');
+				//try again in 1 second
+				setTimeout(loadedScript, 1000);
+				return;
+			}
+			const { ManagedComputer } = window.DesktopVision.loadSDK(
+				THREE,
+				XRControllerModelFactory,
+				XRHandModelFactory
+			);
+			loadThreeAutomatedExample(ManagedComputer);
+		} catch (error) {
+			console.log(error);
+		}
 	}
 
 	const desktopVisionApiCredentials = {
@@ -82,11 +86,15 @@
 	}
 
 	function windowResizeEventListener() {
-		const sceneBounds = sceneContainer.getBoundingClientRect();
-		const { width, height } = sceneBounds;
-		camera.aspect = width / height;
-		camera.updateProjectionMatrix();
-		renderer.setSize(width - 4, height - 4);
+		try {
+			const sceneBounds = sceneContainer.getBoundingClientRect();
+			const { width, height } = sceneBounds;
+			camera.aspect = width / height;
+			camera.updateProjectionMatrix();
+			renderer.setSize(width - 4, height - 4);
+		} catch (error) {
+			console.log(error);
+		}
 	}
 
 	function loadRenderer(renderer, renderLoop) {
@@ -175,19 +183,20 @@
 		video.currentTime = 0;
 		video.load();
 
-        if (autoCode) {
-            desktop.generateCode();
-        }
+		if (autoCode) {
+			desktop.generateCode();
+		}
 	}
 </script>
+
 <svelte:head>
 	<script src="https://js.desktop.vision/three/v3.0.1/bundle.min.js" async></script>
 </svelte:head>
 <svelte:window on:resize={windowResizeEventListener} />
 <section id="dv-js-sdk-demo">
 	<div class="max-w-xl mx-auto">
-	<h1
-	class="
+		<h1
+			class="
   text-4xl
   tracking-tight
   font-extrabold
@@ -196,12 +205,14 @@
   md:text-6xl
   pb-4
 "
->Desktop Vision</h1>
-    <p>
-        Try moving the computer around with your mouse or finger. To do so, grab the move icon below
-        the computer and drag it around. 
-    </p>
-</div>
+		>
+			Desktop Vision
+		</h1>
+		<p>
+			Try moving the computer around with your mouse or finger. To do so, grab the move icon below
+			the computer and drag it around.
+		</p>
+	</div>
 	<div class="scene" bind:this={sceneContainer} />
 	<video bind:this={video} autoplay muted playsinline style="display: none" loop />
 	<!-- <div class="interactive-info">
@@ -229,7 +240,6 @@
 		height: 50vh;
 		min-height: 500px;
 	}
-
 
 	.interactive-info {
 		padding: 5%;

@@ -27,6 +27,7 @@
   let velocityArray = velocity.array
 
   function loadedScript() {
+    try {
     if (!window.DesktopVision) {
       console.log('Desktop Vision JS SDK not loaded')
       //try again in 1 second
@@ -40,6 +41,9 @@
       XRHandModelFactory,
     )
     loadThreeAutomatedExample(ManagedComputer)
+  } catch (e) {
+    console.log(e)
+  }
   }
 
   const desktopVisionApiCredentials = {

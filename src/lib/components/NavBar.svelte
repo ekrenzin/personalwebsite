@@ -9,6 +9,7 @@
 	let isOffset = false;
 
 	onMount(() => {
+		try {
 		// Define the function to update navbar class
 		const updateNavbarClass = () => {
 			const yOffset = window.pageYOffset || document.documentElement.scrollTop;
@@ -30,6 +31,9 @@
 		return () => {
 			window.removeEventListener('scroll', updateNavbarClass);
 		};
+	} catch (e) {
+		console.log(e);
+	}
 	});
 
 	let links = [
