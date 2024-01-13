@@ -71,9 +71,9 @@
 	<meta name="twitter:creator" content="@ekrenzin8" />
 </svelte:head>
 
-{#if isReady}
-	<div>
-		<NavBar />
+<div>
+	<NavBar />
+	{#if isReady}
 		<main>
 			<slot />
 		</main>
@@ -88,9 +88,9 @@
 		<AnalysisSelector />
 		<ChatBubble />
 		<Toasts />
-		<Footer />
-	</div>
-{/if}
+	{/if}
+	<Footer />
+</div>
 
 <style>
 	div {
