@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
@@ -9,6 +10,7 @@
 	let isOffset = false;
 
 	onMount(() => {
+		if (!browser) return;
 		try {
 			// Define the function to update navbar class
 			const updateNavbarClass = () => {
@@ -29,7 +31,12 @@
 
 			// Return a cleanup function to be called on component destruction
 			return () => {
-				window.removeEventListener('scroll', updateNavbarClass);
+				try {
+					// Remove scroll event listener
+					window.removeEventListener('scroll', updateNavbarClass);
+				} catch (e) {
+					console.log(e);
+				}
 			};
 		} catch (e) {
 			console.log(e);
