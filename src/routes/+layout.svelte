@@ -72,7 +72,7 @@
 </svelte:head>
 
 <div>
-	<NavBar />
+	<!-- <NavBar /> -->
 	{#if isReady}
 		<main>
 			<slot />
