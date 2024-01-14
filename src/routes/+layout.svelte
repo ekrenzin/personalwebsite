@@ -13,15 +13,8 @@
 
 	let routeID = '';
 	let url = '';
-	let isReady = false;
 
 	const avatar_urls = ['writing', 'demo'];
-
-	onMount(() => {
-		if (!browser) return;
-		isReady = true;
-	});
-
 	page.subscribe((value) => {
 		url = value.url.href || '';
 		routeID = value.route.id || '';
@@ -72,8 +65,8 @@
 </svelte:head>
 
 <div>
-	{#if isReady}
-	<NavBar />
+	{#if browser}
+		<NavBar />
 		<main>
 			<slot />
 		</main>

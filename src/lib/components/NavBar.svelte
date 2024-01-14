@@ -32,7 +32,7 @@
 			// Return a cleanup function to be called on component destruction
 			return () => {
 				try {
-					// Remove scroll event listener
+					if (!browser) return;
 					window.removeEventListener('scroll', updateNavbarClass);
 				} catch (e) {
 					console.log(e);

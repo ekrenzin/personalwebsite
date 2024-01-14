@@ -1,7 +1,7 @@
 
 import { parse, Renderer } from 'marked';
+import { browser } from '$app/environment';
 import cheerio from 'cheerio';
-import { sanitize } from "isomorphic-dompurify";
 
 const renderer = new Renderer();
 
@@ -33,11 +33,14 @@ renderer.blockquote = (quote) => {
  * @param {string} data - The HTML data to be processed.
  * @returns Processed content using the custom renderer.
  */
-export function loadHtml(data: string) {
+export async function  loadHtml(data: string) {
     try {
+        if (!browser) return "Loading..."
         // Sanitize and process HTML content
+        const { sanitize } = await import('isomorphic-dompurify');
         const cleanHtml = sanitize(data);
-        return parse(cleanHtml, { renderer });
+        const html = parse(cleanHtml, { renderer });
+        return html;
     } catch (err) {
         console.log(err);
         // Convert to plain text by stripping HTML tags
