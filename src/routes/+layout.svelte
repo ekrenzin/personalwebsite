@@ -64,36 +64,24 @@
 	<meta name="twitter:creator" content="@ekrenzin8" />
 </svelte:head>
 
-<div>
-	{#if browser}
-		<NavBar />
-		<main>
-			<slot />
-		</main>
-		{#key routeID}
-			{#if !url.includes('writing')}
-				<CommentArea source={routeID} />
-			{/if}
-			{#if processAvatarUrls()}
-				<Avatar />
-			{/if}
-		{/key}
-		<AnalysisSelector />
-		<ChatBubble />
-		<Toasts />
+<NavBar />
+<main>
+	<slot />
+</main>
+{#key routeID}
+	{#if !url.includes('writing')}
+		<CommentArea source={routeID} />
 	{/if}
-	<Footer />
-</div>
+	{#if processAvatarUrls()}
+		<Avatar />
+	{/if}
+{/key}
+<AnalysisSelector />
+<ChatBubble />
+<Toasts />
+<Footer />
 
 <style>
-	div {
-		position: relative;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		overflow: auto;
-	}
 
 	main {
 		max-width: 100%;
