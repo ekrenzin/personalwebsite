@@ -20,7 +20,6 @@
 
 		// remove all html content from text
 		text = $.text();
-
     });
 
 </script>
