@@ -19,7 +19,6 @@
 		const slug = $page.params.slug || 'AI_Chats';
 		await postComment({ source: slug, comment: message, user: 'AI Assistant' });
 	}
-``
 
 </script>
 
@@ -35,13 +34,18 @@
 				<LoadingSpinner size={40} />
 			</div>
 		{:else}
-			{@html loadHtml(message)}
+			{#await loadHtml(message) then html}
+				{@html html}
+			{:catch error}
+				<p>Something went wrong...</p>
+				<p>{error.message}</p>
+			{/await}
 		{/if}
 		{#if !commented && sender === 'assistant' && $page.params && $page.params.slug && !ignoredMessages.includes(message)}
 			<button class="focus:outline-none bg-black p-2 rounded-full text-white" on:click={comment}
 				>Comment this response</button
 			>
-			{:else if commented}
+		{:else if commented}
 			<p>Commented!</p>
 		{/if}
 	</div>
@@ -66,7 +70,6 @@
 		height: 100%;
 		width: 100%;
 	}
-
 
 	:global(.chat-message img) {
 		max-height: 50vh;

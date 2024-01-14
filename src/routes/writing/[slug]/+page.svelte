@@ -10,11 +10,15 @@
 	export let data;
 </script>
 
-
 <div class="container mx-auto page p-4 text-gray-300 px-10">
 	<!-- if the page.route includes poem -->
 	<div align={$page.url.toString().includes('poem') ? 'center' : 'left'}>
-		<PowerfulArticle html={loadHtml(data.post)} />
+		{#await loadHtml(data.post) then html}
+			<PowerfulArticle {html} />
+		{:catch error}
+			<p>Something went wrong...</p>
+			<p>{error.message}</p>
+		{/await}
 	</div>
 
 	<!-- centered button to go back -->

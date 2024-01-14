@@ -2,7 +2,6 @@
 import { parse, Renderer } from 'marked';
 import { browser } from '$app/environment';
 import cheerio from 'cheerio';
-import {sanitize} from 'isomorphic-dompurify';
 
 const renderer = new Renderer();
 
@@ -34,10 +33,11 @@ renderer.blockquote = (quote) => {
  * @param {string} data - The HTML data to be processed.
  * @returns Processed content using the custom renderer.
  */
-export function  loadHtml(data: string) {
+export async function  loadHtml(data: string) {
     try {
         if (!browser) return "Loading..."
         // Sanitize and process HTML content
+        const { sanitize } = await import('isomorphic-dompurify');
         const cleanHtml = sanitize(data);
         const html = parse(cleanHtml, { renderer });
         return html;
@@ -60,8 +60,8 @@ function stripHtmlTags(html) {
 }
 
 
-export function cleanMD(text: string) {
-    let htmlContent = loadHtml(parse(text));
+export async function cleanMD(text: string) {
+    let htmlContent = await loadHtml(parse(text));
     const $ = cheerio.load(htmlContent);
     
     //use cheerio to remove all div align center

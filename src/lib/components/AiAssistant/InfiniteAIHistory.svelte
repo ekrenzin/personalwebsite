@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
-    import { loadHtml } from '$lib/utils/markdown';
+	import { loadHtml } from '$lib/utils/markdown';
 
 	type Message = {
 		MessageId: number;
@@ -35,16 +35,16 @@
 	}
 
 	onMount(() => {
-try {
-		// Add scroll event listener
-		window.addEventListener('scroll', () => {
-			if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-				loadMessages();
-			}
-		});
-    } catch (error) {
-        console.log(error);
-    }
+		try {
+			// Add scroll event listener
+			window.addEventListener('scroll', () => {
+				if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+					loadMessages();
+				}
+			});
+		} catch (error) {
+			console.log(error);
+		}
 	});
 
 	// getMessages function
@@ -55,63 +55,76 @@ try {
 		const res = await response.json();
 		const results: Message[] = res.results;
 
-
-        return results;
+		return results;
 	}
 </script>
 
 <!-- Component UI -->
 <section>
 	<h1>Scrolling list of AI Messages</h1>
-    <div class="text-lg font-semibold mb-4">
-        <p>This section displays a list of AI-generated messages. Each thread shows the original prompt and the AI's response, demonstrating the interaction between human input and AI output.</p>
-    </div>
+	<div class="text-lg font-semibold mb-4">
+		<p>
+			This section displays a list of AI-generated messages. Each thread shows the original prompt
+			and the AI's response, demonstrating the interaction between human input and AI output.
+		</p>
+	</div>
 	{#await loadMessages()}
 		Loading...
-	{:then res} 
-	{#each $messages as message}
-    <div class="thread">
-            <div class="message prompt">
-                <h3>Human:</h3>
-                {@html loadHtml(message.Prompt)}
-            </div>
-            <div class="message result">
-                <h3>AI:</h3>
-                {@html loadHtml(message.Result)}
-            </div>
-        </div>
-	{/each}
+	{:then res}
+		{#each $messages as message}
+			<div class="thread">
+				<div class="message prompt">
+					<h3>Human:</h3>
+
+					{#await loadHtml(message.Prompt) then html}
+						{@html html}
+					{:catch error}
+						<p>Something went wrong...</p>
+						<p>{error.message}</p>
+					{/await}
+				</div>
+				<div class="message result">
+					<h3>AI:</h3>
+
+					{#await loadHtml(message.Result) then html}
+						{@html html}
+					{:catch error}
+						<p>Something went wrong...</p>
+						<p>{error.message}</p>
+					{/await}
+				</div>
+			</div>
+		{/each}
 	{/await}
 </section>
 
 <style>
-    section {
-        padding: 1rem;
-        max-width: 1000px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: auto;
-        gap: 1rem;
-    }
-    .message {
-        padding: 0.5rem;
-        width: 100%;
-    }
+	section {
+		padding: 1rem;
+		max-width: 1000px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin: auto;
+		gap: 1rem;
+	}
+	.message {
+		padding: 0.5rem;
+		width: 100%;
+	}
 
-    :global(.message img) {
-        max-height: 200px;
-    }
+	:global(.message img) {
+		max-height: 200px;
+	}
 
-    .thread {
-        background-color: black;
-        border-radius: 1rem;
-        overflow: hidden;
-        padding: 1rem;
-    }
+	.thread {
+		background-color: black;
+		border-radius: 1rem;
+		overflow: hidden;
+		padding: 1rem;
+	}
 
-    .prompt {
-        color: rgb(109, 152, 236)
-    }
-
+	.prompt {
+		color: rgb(109, 152, 236);
+	}
 </style>

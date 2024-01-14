@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
-	import { cleanMD, cleanMDParsed } from '$lib/utils/markdown';
+	import {  cleanMDParsed } from '$lib/utils/markdown';
 	import { onMount } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import { writingSettings } from './writingStore';
