@@ -960,6 +960,17 @@
       "url": "writing/poems_unanswered",
       "imageSources": [],
       "scripts": []
+    },
+    {
+      "post_title": "wind chimes",
+      "title": "windchimes",
+      "preview": "# wind chimes\n\nWrangling the nail onto the tree,\nRing and Thump. Ring and Thump.\nThe hammer hits the nail on the head\n\nAnd then it’s there, a nail in a tree,\nA sliver of metal, silver like a scar,\nBut...",
+      "url": "writing/poems_windchimes",
+      "imageSources": [
+        "https://workers-ai.eankrenzin.workers.dev/?key=image-1709324545840.png"
+      ],
+      "scripts": [],
+      "image": "https://workers-ai.eankrenzin.workers.dev/?key=image-1709324545840.png"
     }
   ],
   "quotes": [
