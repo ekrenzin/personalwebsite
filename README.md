@@ -1,38 +1,19 @@
-# create-svelte
+# Personal Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Hello
 
-## Creating a project
+Hi there! This is my personal website repo. This is an evolving and personal project built with sveltekit, and cloudflare tooling. I have decided to open source the repo as a way to share my code so that others may use it, and pick through it. The code is obviously far from flawless. Furthermore, there are some components that are in other repos, such as the AI and comment code. 
 
-If you're seeing this, you've probably already done this step. Congrats!
+The main goal I had with this iteration of my personal website was to demonstrate the capability of AI in 2023, and to integrate it with writing and art, two subjects I became especially passionate about in 2023.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+At some point, this version of my website will become legacy, and be moved to the ongoing history page. I think the next site I build will use [React and threejs](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction). I've been interested in building a 3D website for a while, and I think it would be a very fun project. As I attempt to build upon my previous work with each iteration, integrating art and writing into a 3D scene would be a fascinating exploration.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## How to use
 
-## Developing
+This project runs on [vite](https://vitejs.dev) and [cloudflare pages](https://pages.cloudflare.com). Learn more about them before diving too deep. It is built with [sveltekit](https://kit.svelte.dev/).
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To run the project locally, you will need to install deps `npm i` and then run the dev server `npm run dev`. You should be able to get most of the functionality without env keys, but feel free to reach out if you need help. 
 
-```bash
-npm run dev
+Some of the weirdness in this repo is how I manage the writing files, which I have uploaded as markdown files. There are some odd prebuild scripts that speed up some parsing stuff. Not too important, but odd.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
