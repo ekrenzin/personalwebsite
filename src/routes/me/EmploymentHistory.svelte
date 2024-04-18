@@ -20,7 +20,7 @@
 		},
 		{
 			period: 'May 2020 — Present',
-			title: 'Senior Full Stack Software Engineer',
+			title: 'Principal Software Engineer',
 			company: 'Vali Ventures',
 			location: 'San Francisco',
 			website: 'https://vali.ventures/',
