@@ -10,6 +10,7 @@ export const fetchMarkdownPosts = async (fetch) => {
 
         const returnData = {};
         const ignoreCategories = ["KJV-Bible", 'short-essays'];
+        console.log(categories);
         for (const category of categories) {
             if (ignoreCategories.includes(category)) {
                 continue;

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
-	import {  cleanMDParsed } from '$lib/utils/markdown';
+	import { cleanMDParsed } from '$lib/utils/markdown';
 	import { onMount } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import { writingSettings } from './writingStore';
@@ -89,11 +89,13 @@
 </script>
 
 {#key markdownContent}
-	{#if markdownContent}
+	{#if markdownContent && markdownContent.post_title}
 		<article bind:this={article} use:onIntersect class="article-container" id={getID()}>
 			<div class="content-container">
 				<h3>{markdownContent.post_title.replace(/-/g, ' ')}</h3>
-				<div class="preview-content">{@html cleanMDParsed(markdownContent.preview).htmlContent}</div>
+				<div class="preview-content">
+					{@html cleanMDParsed(markdownContent.preview).htmlContent}
+				</div>
 				<a href={markdownContent.url}>
 					<button
 						id="read-more-{markdownContent.post_title.replace(/-/g, ' ')}"
@@ -104,22 +106,22 @@
 				</a>
 			</div>
 			{#if showImages}
-			{#key intersecting}
-				{#if markdownContent.imageSources.length > 0}
-					<div in:fade class="image-preview-container">
-						<ImageCarousel imageSources={markdownContent.imageSources} />
-					</div>
-				{/if}
+				{#key intersecting}
+					{#if markdownContent.imageSources.length > 0}
+						<div in:fade class="image-preview-container">
+							<ImageCarousel imageSources={markdownContent.imageSources} />
+						</div>
+					{/if}
 
-				{#if markdownContent.scripts.length > 0}
-					{#await uuidv4() then uid}
-						<div class="canvas-container" id={`canvas-${index}-${markdownContent.title}`} />
-						{#each markdownContent.scripts as script}
-							<script src={script} id={`script-${index}-${markdownContent.title}`}></script>
-						{/each}
-					{/await}
-				{/if}
-			{/key}
+					{#if markdownContent.scripts.length > 0}
+						{#await uuidv4() then uid}
+							<div class="canvas-container" id={`canvas-${index}-${markdownContent.title}`} />
+							{#each markdownContent.scripts as script}
+								<script src={script} id={`script-${index}-${markdownContent.title}`}></script>
+							{/each}
+						{/await}
+					{/if}
+				{/key}
 			{/if}
 			<slot />
 		</article>
@@ -144,8 +146,8 @@
 		overflow: hidden;
 		padding: 2rem;
 		transition:
-		opacity 0.5s,
-		transform 0.5s;
+			opacity 0.5s,
+			transform 0.5s;
 		opacity: 0;
 		transform: scaleX(0.5);
 		overflow: visible;
@@ -202,11 +204,11 @@
 			align-items: center;
 			justify-content: center;
 		}
-		
+
 		a {
 			justify-content: center;
 		}
-		
+
 		.image-preview-container {
 			width: 100%;
 			height: 300px;

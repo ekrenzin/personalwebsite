@@ -1,3 +1,0 @@
-## Echoes in Silence
-
-Removed
