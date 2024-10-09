@@ -56,6 +56,18 @@
 			description: 'Personal knowledge management',
 			url: 'https://obsidian.md',
 			image: 'https://obsidian.md/favicon.ico'
+		},
+		{
+			name: 'Jira',
+			description: 'Project management tool',
+			url: 'https://www.atlassian.com/software/jira',
+			image: 'https://www.atlassian.com/software/jira/favicon.ico'
+		},
+		{
+			name: 'Twilio',
+			description: 'Communication platform',
+			url: 'https://www.twilio.com',
+			image: 'https://www.twilio.com/favicon.ico'
 		}
 	];
 </script>
