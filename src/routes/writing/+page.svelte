@@ -58,7 +58,7 @@ on:click={() =>updateWritingStore({discoColors: !$writingSettings.discoColors})}
 	md:text-6xl
 	pb-4"
 	>
-		All Content
+		All Conqtent
 	</h1>
 	{#each data.poems as post, index}
 		{console.log(post)}

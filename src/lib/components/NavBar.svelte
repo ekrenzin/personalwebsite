@@ -91,6 +91,12 @@
 			name: 'History',
 			alts: [],
 			icon: null
+		},
+		{
+			href: '/tools',
+			name: 'Tools',
+			alts: [],
+			icon: null
 		}
 	];
 </script>
