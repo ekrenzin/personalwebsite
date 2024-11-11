@@ -4,22 +4,37 @@
 	// Define employment history as an array of objects for modular design
 	const employmentHistory = [
 		{
-			period: 'Jul 2021 — Present',
-			title: 'Lead Software Engineer',
+			period: 'Oct 2024 — Present',
+			title: 'VP of Engineering',
 			company: 'SOS Technologies',
-			location: 'Miami',
-			website: 'https://sos-tech.com/',
+			location: 'Miami, FL',
+			website: 'https://sos-tech.com',
 			duties: [
-				'Developing and Enhancing the SmartSOS™ Platform: Involves coding, testing, and implementing improvements in the platform, integrating advanced tools and AI technology.',
-				'Creating Tailored Solutions for Various Industries: Customizing software solutions to meet the needs of sectors like education, healthcare, corporate, and others.',
-				'Ensuring Seamless Communication with First Responders: Maintaining and improving communication pathways with first responder dispatch systems.',
-				'Handling Data Responsibly: Ensuring data integrity, security, and privacy in handling sensitive and critical information.',
-				'Collaborating with Cross-Functional Teams: Working closely with engineers, product managers, and clients to gather requirements and deliver high-quality software solutions.',
-				"Innovating for Enhanced Safety and Responsiveness: Continuously innovating to improve the platform's ability to prevent violence and engage threats efficiently."
+				'Leading the engineering team to drive development and innovation in the SmartSOS™ platform.',
+				'Overseeing technical strategy and infrastructure to support scalable, reliable, and secure solutions.',
+				'Developing and enhancing the SmartSOS™ platform, implementing AI integrations and platform improvements.',
+				'Creating tailored software solutions across sectors like education, healthcare, and corporate environments.',
+				'Optimizing communication channels with first responders for seamless, real-time responsiveness.',
+				'Ensuring data integrity, security, and privacy standards in managing critical information.'
 			]
 		},
 		{
-			period: 'May 2020 — Present',
+			period: 'Jul 2021 — Oct 2024',
+			title: 'Lead Software Engineer',
+			company: 'SOS Technologies',
+			location: 'Miami, FL',
+			website: 'https://sos-tech.com',
+			duties: [
+				'Developed and enhanced the SmartSOS™ platform, implementing AI integrations and platform improvements.',
+				'Created tailored software solutions across sectors like education, healthcare, and corporate environments.',
+				'Optimized communication channels with first responders for seamless, real-time responsiveness.',
+				'Ensured data integrity, security, and privacy standards in managing critical information.',
+				'Collaborated with cross-functional teams to deliver high-quality software aligned with client needs.',
+				'Innovated to enhance platform responsiveness and improve violence prevention capabilities.'
+			]
+		},
+		{
+			period: 'May 2020 — Sep2024',
 			title: 'Principal Software Engineer',
 			company: 'Vali Ventures',
 			location: 'San Francisco',

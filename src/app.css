@@ -83,7 +83,11 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
+  /* black background with a gradient to make it look like its glowing   */
   background: radial-gradient(circle at center, rgba(0, 100, 200, 0.5), rgba(20, 20, 80, 0.5), rgba(100, 20, 10, 0.5));
+  /* glowing effect (outside of the box) */
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.25);
+
   background-size: 200% 200%;
   z-index: -1;
 }
@@ -121,8 +125,8 @@ body::before {
 
 
 body {
-  /* Define the gradient pattern */
-  background: linear-gradient(45deg, #3498db, #2980b9, #3498db);
+  /* Define the gradient pattern, silvery black */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: 200% 100%;
 
   background: hsla(217, 100%, 50%, 1);
